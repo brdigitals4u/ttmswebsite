@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Lapa" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rent" transform="translate(-213.000000, -3676.000000)">
+            <g id="Features" transform="translate(24.000000, 2949.000000)">
+                <g id="Item" transform="translate(126.000000, 439.000000)">
+                    <g id="Desc">
+                        <g id="More" transform="translate(64.000000, 289.000000)">
+                            <g id="Icon">
+                                <g id="Border" opacity="0.200000003" stroke="rgb(0, 124, 225)">
+                                    <circle id="Oval" cx="24" cy="24" r="24"></circle>
+                                </g>
+                                <g id="Components/Badges/Icon" transform="translate(6.000000, 6.000000)">
+                                    <g id="Elements/Shape/99-R">
+                                        <rect id="Shadow" x="0" y="0" width="36" height="36"></rect>
+                                        <rect id="Layer" fill="rgb(0, 124, 225)" fill-rule="evenodd" x="0" y="0" width="36" height="36"></rect>
+                                    </g>
+                                    <text id="Icon" font-family="FontAwesome5FreeSolid, Font Awesome 5 Free" font-size="12" font-weight="700" fill="#FFFFFF">
+                                        <tspan x="13.25" y="23">play</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+
+.modal {
+  background-color: rgba(000,000,000, .8);
+
+  &.modal-images {
+    .modal-content {
+      padding: 0;
+
+      .close {
+        margin-right: 24px;
+      }
+
+      .modal-body {
+        padding: 48px 64px;
+      }
+    }
+  }
+
+  &-content {
+    padding: 48px 64px;
+    border-radius: 12px;
+    border: none;
+
+    .modal-body,
+    .modal-header,
+    .modal-footer {
+      padding: 0;
+    }
+
+    .close {
+      outline: none;
+      position: absolute;
+      right: 0;
+      margin-right: -40px;
+      margin-top: -35px;
+    }
+  }
+}

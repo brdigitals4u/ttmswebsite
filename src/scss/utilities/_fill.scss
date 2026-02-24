@@ -1,0 +1,29 @@
+/*
+  Fill
+ */
+
+.fill-current { fill: currentColor; }
+
+@include breakpoint(map-get($breaks, sm)) {
+  .#{map-get($breaks, sm)}-full-current {
+    fill: currentColor;
+  }
+}
+
+@include breakpoint(map-get($breaks, md)) {
+  .#{map-get($breaks, md)}-full-current {
+    fill: currentColor;
+  }
+}
+
+@include breakpoint(map-get($breaks, lg)) {
+  .#{map-get($breaks, lg)}-full-current {
+    fill: currentColor;
+  }
+}
+
+@include breakpoint(map-get($breaks, xl)) {
+  .#{map-get($breaks, xl)}-full-current {
+    fill: currentColor;
+  }
+}

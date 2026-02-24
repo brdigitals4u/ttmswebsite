@@ -1,0 +1,40 @@
+/*
+  Min Height
+ */
+
+$values: (
+        0: 0,
+        "full": 100%,
+        "screen": 100vh,
+        "84" : 5.25rem 
+);
+
+@each $name, $value in $values {
+  .min-h-#{$name} {
+    min-height: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-min-h-#{$name} {
+      min-height: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-min-h-#{$name} {
+      min-height: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-min-h-#{$name} {
+      min-height: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-min-h-#{$name} {
+      min-height: $value;
+    }
+  }
+}

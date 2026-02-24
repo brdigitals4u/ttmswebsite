@@ -1,0 +1,49 @@
+/*
+  Opacity
+ */
+
+$values: (
+        0: 0,
+        "10": .1,
+        "20": .2,
+        "25": .25,
+        "30": .3,
+        "40": .4,
+        "50": .5,
+        "60": .6,
+        "70": .7,
+        "75": .75,
+        "80": .8,
+        "90": .9,
+        "100": 1
+);
+
+@each $name, $value in $values {
+  .opacity-#{$name} {
+    opacity: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-opacity-#{$name} {
+      opacity: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-opacity-#{$name} {
+      opacity: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-opacity-#{$name} {
+      opacity: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-opacity-#{$name} {
+      opacity: $value;
+    }
+  }
+}

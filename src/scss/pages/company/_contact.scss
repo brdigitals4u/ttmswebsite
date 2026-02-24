@@ -1,0 +1,145 @@
+.company-contact {
+
+  // header
+  header {
+    background-image: url('../images/covers/cover-5@2x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .hero {
+      padding-top: 98px;
+      padding-bottom: 175px;
+    }
+  }
+
+  // contact form
+  .contact-form {
+    margin-top: -350px;
+
+    .content {
+      box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.03);
+    }
+  }
+
+  // contact form detail
+  .contact-form-detail {
+    background-image: linear-gradient(to bottom, rgba(250, 251, 251, 0), #f8fbff);
+    padding-top: 142px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .company-contact {
+    // header
+    header {
+      .hero {
+        padding-top: 40px;
+
+        p {
+          font-size: 1rem !important;
+        }
+      }
+    }
+
+    // contact form
+    .contact-form {
+      margin-top: -180px;
+
+      .content {
+        padding: 24px 20px;
+
+        .form-row {
+          .col {
+            flex-basis: auto;
+          }
+        }
+      }
+    }
+
+    // contact form detail
+    .contact-form-detail {
+      padding-top: 80px;
+
+      .card-f {
+        margin-bottom: 56px;
+      }
+    }
+
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .company-contact {
+    // header
+    header {
+      .hero {
+        padding-top: 40px;
+
+        p {
+          font-size: 1rem !important;
+        }
+      }
+    }
+
+    // contact form
+    .contact-form {
+      margin-top: -180px;
+
+      .content {
+        padding: 24px 20px;
+
+        .form-row {
+          .col {
+            flex-basis: auto;
+          }
+        }
+      }
+    }
+
+    // contact form detail
+    .contact-form-detail {
+      padding-top: 80px;
+
+      .card-f {
+        margin-bottom: 56px;
+      }
+    }
+
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .company-contact {
+    // header
+    header {
+      .hero {
+        padding-top: 88px;
+
+        .heading {
+          p {
+            font-size: 20px !important;
+            line-height: 36px !important;
+          }
+        }
+      }
+    }
+
+    // form detail
+    .contact-form-detail {
+      padding-top: 120px;
+
+      &.clip-eb {
+        clip-path: ellipse(300% 120% at 50% -30%);
+      }
+
+      .card-f {
+        margin-bottom: 48px;
+        padding-left: 140px;
+        padding-right: 140px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/*
+  Table Layout
+ */
+
+$values: (
+        "auto": auto,
+        "fixed": fixed
+);
+
+@each $name, $value in $values {
+  .table-#{$name} {
+    table-layout: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-table-#{$name} {
+      table-layout: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-table-#{$name} {
+      table-layout: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-table-#{$name} {
+      table-layout: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-table-#{$name} {
+      table-layout: $value;
+    }
+  }
+}

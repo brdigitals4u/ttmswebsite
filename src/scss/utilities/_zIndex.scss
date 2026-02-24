@@ -1,0 +1,43 @@
+/*
+  Z Index
+ */
+
+$values: ( 
+        "auto": auto,
+        0: 0,
+        10: 10,
+        20: 20,
+        30: 30,
+        40: 40,
+        50: 50
+);
+
+@each $name, $value in $values {
+  .z-#{$name} {
+    z-index: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-z-#{$name} {
+      z-index: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-z-#{$name} {
+      z-index: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-z-#{$name} {
+      z-index: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-z-#{$name} {
+      z-index: $value;
+    }
+  }
+}

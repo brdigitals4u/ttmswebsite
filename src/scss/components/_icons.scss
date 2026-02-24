@@ -1,0 +1,61 @@
+.ic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // if using a img
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  &.justify-start {
+    justify-content: flex-start !important;
+  }
+
+  &.items-start {
+    align-items: flex-start !important;
+  }
+
+  &.rounded-8 {
+    border-radius: .5rem !important;
+  }
+
+  &.rounded-12 {
+    border-radius: .75rem !important;
+  }
+
+  &.rounded-16 {
+    border-radius: 1rem !important;
+  }
+
+  &-lg {
+    width: 64px !important;
+    height: 64px !important;
+
+    &.ic-badge {
+      border-radius: 1rem !important;
+    }
+
+    img {
+      width: 40px !important;
+      height: 40px !important;
+    }
+  }
+
+  &-badge {
+    border-radius: .5rem;
+    width: 48px;
+    height: 48px;
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+
+    // outline
+    &-outline {
+      border: 1px solid transparent;
+    }
+  }
+}

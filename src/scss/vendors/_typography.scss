@@ -1,0 +1,71 @@
+
+h1 {
+  font-family: 'hk_groteskbold', sans-serif;
+  font-size: 3.5rem !important; // 56px
+  font-weight: 700 !important;
+  line-height: 4.25rem !important; // 68px
+  letter-spacing: .2px;
+}
+
+h2 {
+  font-family: 'hk_groteskbold', sans-serif;
+  font-size: 2.5rem !important; // 40px
+  font-weight: 700 !important;
+  line-height: 3.25rem !important; // 52px
+  letter-spacing: .2px;
+}
+
+h3 {
+  font-family: 'hk_groteskbold', sans-serif;
+  font-size: 2rem !important; // 32px
+  font-weight: 700 !important;
+  line-height: 2.5rem !important; // 40px
+  letter-spacing: .2px;
+}
+
+h4 {
+  font-family: 'hk_groteskbold', sans-serif;
+  font-size: 1.5rem !important; // 24px
+  font-weight: 700 !important;
+  line-height: 2rem !important; // 32px
+  letter-spacing: .2px;
+}
+
+h5 {
+  font-size: 1.25rem; // 20px
+  font-weight: 700 !important;
+  line-height: 1.5rem !important; // 24px
+  letter-spacing: .2px;
+}
+
+h6 {
+  font-size: 1rem !important; // 16px
+  font-weight: 700 !important;
+  line-height: 1.25rem !important; // 20px
+}
+
+p, ul {
+  font-size: 1rem; // 16px
+  font-weight: normal;
+  line-height: 1.75rem; // 28px
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 48px !important;
+  }
+}

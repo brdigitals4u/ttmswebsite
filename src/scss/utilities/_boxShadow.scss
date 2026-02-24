@@ -1,0 +1,52 @@
+/*
+  Box Shadow
+ */
+
+$values: (
+        "none": none,
+        "sm": 0 5px 25px 0 rgba(0,0,0,0.05),
+        "md": 0 10px 20px 0 rgba(0, 0, 0, 0.02),
+        "lg": 0 15px 35px 0 rgba(0,0,0,0.05),
+        "xl": 0 50px 50px 0 rgba(0,0,0,0.05),
+        "xl-min": -50px 50px 50px 0 rgba(0,0,0,0.05),
+        "primary": 0 10px 25px 0 $s-color-primary,
+        "secondary": 0 10px 25px 0 $s-color-secondary,
+        "success": 0 10px 25px 0 $s-color-success,
+        "info": 0 10px 25px 0 $s-color-info,
+        "warning": 0 10px 25px 0 $s-color-warning,
+        "danger": 0 10px 25px 0 $s-color-danger,
+        "black": 0 10px 25px 0 $s-color-black,
+        "gray": 0 10px 25px 0 $s-color-gray,
+        "gray-light": 0 10px 25px 0 $s-color-gray-light,
+        "white": 0 10px 25px 0 $s-color-white
+);
+
+@each $name, $value in $values {
+  .shadow-#{$name} {
+    box-shadow: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-shadow-#{$name} {
+      box-shadow: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-shadow-#{$name} {
+      box-shadow: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-shadow-#{$name} {
+      box-shadow: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-shadow-#{$name} {
+      box-shadow: $value;
+    }
+  }
+}

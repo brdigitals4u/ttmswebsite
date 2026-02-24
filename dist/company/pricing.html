@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <title>TTMS</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/regular.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        .company-pricing .navbar.navbar-white .navbar-nav > .nav-item > .nav-link {
+            color: #183b56;
+        }
+
+        .company-pricing .navbar .navbar-brand .ttms-brand {
+            color: #183b56 !important;
+        }
+
+        .company-pricing .navbar .btn.btn-outline-white {
+            color: #183b56;
+            border-color: #183b56;
+        }
+
+        .company-pricing .navbar .fa-angle-down {
+            color: #183b56;
+        }
+
+        .company-pricing .navbar-toggler img {
+            filter: brightness(0) saturate(100%) invert(20%) sepia(23%) saturate(1172%) hue-rotate(164deg) brightness(95%) contrast(90%);
+        }
+
+        @media (min-width: 992px) {
+            .company-pricing header .navbar {
+                position: relative;
+            }
+
+            .company-pricing header .navbar .navbar-nav {
+                position: static;
+            }
+
+            .company-pricing header .navbar .navbar-nav > .nav-item-has-children {
+                position: static;
+            }
+
+            .company-pricing header .navbar .navbar-nav > .nav-item-has-children > .sub-menu.sub-menu-3-col {
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body class="company-pricing">
+
+<!--start:header-->
+<header class="header clip-eb">
+    <!--start:navBar-->
+        <nav class="navbar navbar-expand-lg navbar-white">
+            <div class="container">
+                <a class="navbar-brand" href="../apps/desktop.html">
+                    <!-- <span class="ttms-brand ttms-brand-dark">TTMS</span> -->
+                    <span class="ttms-brand ttms-brand-dark">TTMS</span>
+                </a>
+                <button class="navbar-toggler border-none" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="../assets/images/icons/ic-menu-white.svg" alt="">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="close-button">
+                            <button class="navbar-toggler border-none" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="true" aria-label="Toggle navigation">
+                                <img src="../assets/images/icons/ic-close.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../apps/desktop.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-item-has-children">
+                            <a class="nav-link" href="../services/index.html">
+                                <span>Services</span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="sub-menu sub-menu-3-col">
+                                <div class="sub-nav-items">
+                                    <h5>Fleet Services</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/fleet-management.html">Fleet
+                                                Management</a></li>
+                                        <li class="nav-item"><a href="../services/truck-tracking.html">Truck
+                                                Tracking</a></li>
+                                        <li class="nav-item"><a href="../services/trailer-tracking.html">Trailer
+                                                Tracking</a></li>
+                                        <li class="nav-item"><a href="../services/asset-tracking.html">Asset
+                                                Tracking</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-nav-items">
+                                    <h5>Dispatch & Routing</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/dispatch-management.html">Dispatch
+                                                Management</a></li>
+                                        <li class="nav-item"><a href="../services/smart-routing.html">Smart Routing</a>
+                                        </li>
+                                        <li class="nav-item"><a href="../services/route-optimization.html">Route
+                                                Optimization</a></li>
+                                        <li class="nav-item"><a href="../services/load-planning.html">Load Planning</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-nav-items">
+                                    <h5>Driver Services</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/eld-devices.html">ELD Devices</a></li>
+                                        <li class="nav-item"><a href="../services/ai-dashcams.html">AI DashCams</a></li>
+                                        <li class="nav-item"><a href="../services/driver-monitoring.html">Driver
+                                                Monitoring</a></li>
+                                        <li class="nav-item"><a href="../services/safety-solutions.html">Safety
+                                                Solutions</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-nav-items">
+                                    <h5>Analytics & Reporting</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/report-generation.html">Report
+                                                Generation</a></li>
+                                        <li class="nav-item"><a href="../services/fleet-analytics.html">Fleet
+                                                Analytics</a></li>
+                                        <li class="nav-item"><a href="../services/performance-metrics.html">Performance
+                                                Metrics</a></li>
+                                        <li class="nav-item"><a href="../services/compliance-reports.html">Compliance
+                                                Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-nav-items">
+                                    <h5>Alerts & Notifications</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/fuel-alerts.html">Fuel Alerts</a></li>
+                                        <li class="nav-item"><a href="../services/rest-food-alerts.html">Rest/Food
+                                                Alerts</a></li>
+                                        <li class="nav-item"><a href="../services/maintenance-alerts.html">Maintenance
+                                                Alerts</a></li>
+                                        <li class="nav-item"><a href="../services/safety-alerts.html">Safety Alerts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-nav-items">
+                                    <h5>Integrations</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/third-party-trucks.html">Third-party
+                                                Trucks</a></li>
+                                        <li class="nav-item"><a href="../services/oem-devices.html">OEM Devices</a></li>
+                                        <li class="nav-item"><a href="../services/telematics.html">Telematics</a></li>
+                                        <li class="nav-item"><a href="../services/api-access.html">API Access</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../services/telematics.html">Integrations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../company/pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog/blog-alt-1.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../company/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-white" href="../company/contact.html">Get a Quote</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--end:navBar-->
+
+    <!--start:hero-->
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+                    <div class="heading text-center wow fadeInUp">
+                        <h1 class="text-black mb-24">Our pricing plan made simple</h1>
+                        <p class="text-black mb-0 px-0 xl-px-52">All types of businesses need access to development resources, so we give you the option to decide how much you need to use.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="content px-0 xl-px-40 mt-24">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card-pricing-options wow fadeInUp">
+                                    <p class="text-gray">Bill Monthly</p>
+                                    <div class="custom-control custom-switch custom-switch-success">
+                                        <input type="checkbox" class="custom-control-input" checked id="customSwitch1">
+                                        <label class="custom-control-label text-gray text-left" for="customSwitch1">Bill Annually <br><span class="text-success">Save 15%</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <div class="card-pricing card-pricing-default wow fadeInUp">
+                                    <div class="card-pricing-body">
+                                        <div class="price">
+                                            <h2 class="mb-0">$39 <span>/month</span></h2>
+                                            <h4 class="mt-18">Standard</h4>
+                                            <p class="mt-12">All the basics for businesses that are just getting started.</p>
+                                        </div>
+                                        <div class="divider mt-24 mb-24"></div>
+                                        <ul class="pricing-list list-unstyled">
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> Single project use</li>
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> Basic dashboard</li>
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> All components included</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-pricing-footer">
+                                        <a href="#" class="btn btn-outline-primary btn-block btn-rounded d-flex justify-between items-center">Get Started <i class="fas fa-arrow-right text-14"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <div class="card-pricing card-pricing-success wow fadeInUp">
+                                    <div class="card-pricing-body">
+                                        <div class="price">
+                                            <h2 class="mb-0">$99 <span>/month</span></h2>
+                                            <h4 class="mt-18">Essentials</h4>
+                                            <p class="mt-12">Better for growing businesses that want more customers.</p>
+                                        </div>
+                                        <div class="divider mt-24 mb-24"></div>
+                                        <ul class="pricing-list list-unstyled">
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> Unlimited project use</li>
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> Advanced dashboard</li>
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> All components included</li>
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> Advanced insight</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-pricing-footer">
+                                        <a href="#" class="btn btn-outline-primary btn-block btn-rounded d-flex justify-between items-center">Get Started <i class="fas fa-arrow-right text-14"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <div class="card-pricing card-pricing-primary wow fadeInUp">
+                                    <div class="card-pricing-body">
+                                        <div class="price">
+                                            <h2 class="mb-0">$339 <span>/month</span></h2>
+                                            <h4 class="mt-18">Premium</h4>
+                                            <p class="mt-12">Advanced features for pros who need more customization.</p>
+                                        </div>
+                                        <div class="divider mt-24 mb-24"></div>
+                                        <ul class="pricing-list list-unstyled">
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> Unlimited project use</li>
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> Advanced dashboard</li>
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> Mutlivariate components</li>
+                                            <li><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> Phone Support</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-pricing-footer">
+                                        <a href="#" class="btn btn-primary btn-block btn-rounded d-flex justify-between items-center">Get Started <i class="fas fa-arrow-right text-14"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end:hero-->
+</header>
+<!--end:header-->
+
+<!--start:features-->
+<section class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-12 col-sm-12">
+                <div class="heading text-center wow fadeInUp">
+                    <span class="badge badge-success badge-pill">PREMIUM</span>
+                    <h3 class="text-black mt-16">All subscriptions plan include these features</h3>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="card-f card-f-2 flex mb-24 wow fadeInUp">
+                        <div class="card-f-heading mr-24">
+                            <div class="ic ic-lg ic-badge bg-primary-100 mb-24">
+                                <img src="../assets/images/icons/application.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-f-body">
+                            <h4 class="text-black">Marketing tools</h4>
+                            <p class="text-gray mt-8">Materials, education and campaigns to help you share with current and future clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="card-f card-f-2 flex mb-24 wow fadeInUp">
+                        <div class="card-f-heading mr-24">
+                            <div class="ic ic-lg ic-badge bg-primary-100 mb-24">
+                                <img src="../assets/images/icons/like.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-f-body">
+                            <h4 class="text-black">Benefits</h4>
+                            <p class="text-gray mt-8">Digital employee records, quoting, enrollment, and reporting in English and Indonesian.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="card-f card-f-2 flex wow fadeInUp">
+                        <div class="card-f-heading mr-24">
+                            <div class="ic ic-lg ic-badge bg-primary-100 mb-24">
+                                <img src="../assets/images/icons/cs.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-f-body">
+                            <h4 class="text-black">Customer services</h4>
+                            <p class="text-gray mt-8">Access to our team of industry experts, personal training, support line and help desk.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="card-f card-f-2 flex wow fadeInUp">
+                        <div class="card-f-heading mr-24">
+                            <div class="ic ic-lg ic-badge bg-primary-100 mb-24">
+                                <img src="../assets/images/icons/tent.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-f-body">
+                            <h4 class="text-black">Become partners</h4>
+                            <p class="text-gray mt-8">We can help you set up and manager your groups if you are become our partner.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:features-->
+
+<div class="container">
+    <div class="divider"></div>
+</div>
+
+<!--start:faq-->
+<section class="faq clip-eb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading text-center wow fadeInUp">
+                    <h3 class="text-black">Frequently asked questions</h3>
+                </div>
+            </div>
+            <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                <div class="content">
+                    <div class="accordion wow fadeInUp" id="accordionPricingFAQ">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="text-hkgrotesk font-bold" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span>How do I pay for the Essentials or Premium plan?</span>
+
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionPricingFAQ">
+                                <div class="card-body text-opensans">
+                                    <p>You can pay with a credit card or via net banking (if you’re in United States). We will renew your subscription automatically at the end of every billing cycle.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="collapsed text-hkgrotesk font-bold" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span>Can I cancel my Essentials or Premium plan subscription at any time?</span>
+
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionPricingFAQ">
+                                <div class="card-body text-opensans">
+                                    <p>You can pay with a credit card or via net banking (if you’re in United States). We will renew your subscription automatically at the end of every billing cycle.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="collapsed text-hkgrotesk font-bold" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <span>We need to add new users to our team. How will that be billed?</span>
+
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionPricingFAQ">
+                                <div class="card-body text-opensans">
+                                    <p>You can pay with a credit card or via net banking (if you’re in United States). We will renew your subscription automatically at the end of every billing cycle.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="collapsed text-hkgrotesk font-bold" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <span>We need to add new users to our team. How will that be billed?</span>
+
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionPricingFAQ">
+                                <div class="card-body text-opensans">
+                                    <p>You can pay with a credit card or via net banking (if you’re in United States). We will renew your subscription automatically at the end of every billing cycle.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="collapsed text-hkgrotesk font-bold" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <span>My team wants to cancel its subscription. How do we do that? Can we get a refund?</span>
+
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionPricingFAQ">
+                                <div class="card-body text-opensans">
+                                    <p>You can pay with a credit card or via net banking (if you’re in United States). We will renew your subscription automatically at the end of every billing cycle.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                    <button class="collapsed text-hkgrotesk font-bold" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <span>Do you offer discounts for non-profit organizations or educational institutions?</span>
+
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionPricingFAQ">
+                                <div class="card-body text-opensans">
+                                    <p>You can pay with a credit card or via net banking (if you’re in United States). We will renew your subscription automatically at the end of every billing cycle.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-question">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-12 col-sm-12">
+                    <div class="heading text-center wow fadeInUp">
+                        <h3 class="text-black">Still have a questions?</h3>
+                        <p class="text-gray mt-16 mb-0">If you cannot find answer to your question in our FAQ, you can always contact us. We wil answer to you shortly!</p>
+                    </div>
+                </div>
+                <div class="col-lg-10 offset-lg-1 col-md-8 offset-md-2 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="card-f card-f-bg-white text-center wow fadeInUp">
+                                <div class="card-f-heading mb-24">
+                                    <div class="ic">
+                                        <img src="../assets/images/icons/phone.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-f-body">
+                                    <h4 class="text-black text-20">+1 (646) 786-5060</h4>
+                                    <p class="text-gray mt-8">We are always happy to help.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="card-f card-f-bg-white text-center wow fadeInUp">
+                                <div class="card-f-heading mb-24">
+                                    <div class="ic">
+                                        <img src="../assets/images/icons/cs.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-f-body">
+                                    <h4 class="text-black text-20">support@helpcenter.com</h4>
+                                    <p class="text-gray mt-8">Alternative way to get anwser faster.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:faq-->
+
+<!--start:section footer-->
+    <footer id="footer" class="footer footer-white">
+        <div class="container">
+            <div class="row">
+                <div class="footer-left col-lg-3 col-md-5 col-sm-12">
+                    <div class="footer-widget wow fadeInUp">
+                        <a href="../apps/desktop.html" class="logo"><span class="ttms-brand ttms-brand-dark">TTMS</span></a>
+                        <p class="description">TTMS - Total Transport Management System. Dispatch, routing, fleet tracking, driver safety with ELD devices, AI DashCams, and real-time alerts.</p>
+                        <ul class="footer-sosmed">
+                            <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-facebook-f"></i></button></li>
+                            <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-twitter"></i></button></li>
+                            <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-instagram"></i></button></li>
+                            <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-linkedin"></i></button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right col-lg-9 col-md-7 col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Fleet Services</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/fleet-management.html">Fleet Management</a></li>
+                                    <li><a href="../services/truck-tracking.html">Truck Tracking</a></li>
+                                    <li><a href="../services/trailer-tracking.html">Trailer Tracking</a></li>
+                                    <li><a href="../services/asset-tracking.html">Asset Tracking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Dispatch & Routing</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/dispatch-management.html">Dispatch Management</a></li>
+                                    <li><a href="../services/smart-routing.html">Smart Routing</a></li>
+                                    <li><a href="../services/route-optimization.html">Route Optimization</a></li>
+                                    <li><a href="../services/load-planning.html">Load Planning</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Driver Services</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/eld-devices.html">ELD Devices</a></li>
+                                    <li><a href="../services/ai-dashcams.html">AI DashCams</a></li>
+                                    <li><a href="../services/driver-monitoring.html">Driver Monitoring</a></li>
+                                    <li><a href="../services/safety-solutions.html">Safety Solutions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Analytics & Reporting</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/report-generation.html">Report Generation</a></li>
+                                    <li><a href="../services/fleet-analytics.html">Fleet Analytics</a></li>
+                                    <li><a href="../services/performance-metrics.html">Performance Metrics</a></li>
+                                    <li><a href="../services/compliance-reports.html">Compliance Reports</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Alerts & Notifications</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/fuel-alerts.html">Fuel Alerts</a></li>
+                                    <li><a href="../services/rest-food-alerts.html">Rest/Food Alerts</a></li>
+                                    <li><a href="../services/maintenance-alerts.html">Maintenance Alerts</a></li>
+                                    <li><a href="../services/safety-alerts.html">Safety Alerts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Integrations</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/third-party-trucks.html">Third-party Trucks</a></li>
+                                    <li><a href="../services/oem-devices.html">OEM Devices</a></li>
+                                    <li><a href="../services/telematics.html">Telematics</a></li>
+                                    <li><a href="../services/api-access.html">API Access</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Company</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../company/about.html">About TTMS</a></li>
+                                    <li><a href="../company/career.html">Careers</a></li>
+                                    <li><a href="../company/contact.html">Contact Us</a></li>
+                                    <li><a href="../company/faq.html">Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="footer-copyright wow fadeInUp">
+                        <div class="btn btn-rounded btn-primary btn-ic pointer-events-none">
+                            <i class="fas fa-heart text-24"></i>
+                        </div>
+                        <p>Copyright © 2026 TTMS - Total Transport Management System. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end:section footer-->
+
+<!--start:javascript-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap-select.min.js"></script>
+<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/index.js"></script>
+<!--end:javascript-->
+
+</body>
+</html>

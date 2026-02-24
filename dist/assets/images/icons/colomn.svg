@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>colomn</title>
+    <desc>Created with Sketch.</desc>
+    <g id="colomn" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" points="0 0 48 0 48 48 0 48"></polygon>
+        <path d="M44.16,6.72 L44.16,37.44 C44.16,41.1513535 41.1513535,44.16 37.44,44.16 L30.72,44.16 L30.72,3.84 L41.28,3.84 C42.8705801,3.84 44.16,5.12941992 44.16,6.72 Z M17.28,3.84 L17.28,44.16 L10.56,44.16 C6.84864648,44.16 3.84,41.1513535 3.84,37.44 L3.84,6.72 C3.84,5.12941992 5.12941992,3.84 6.72,3.84 L17.28,3.84 Z" id="Path" fill="rgb(0, 124, 225)" fill-rule="nonzero"></path>
+        <polygon id="Path" fill="#B8D0F3" points="28.8 3.84 28.8 44.16 19.2 44.16 19.2 3.84 28.8 3.84"></polygon>
+    </g>
+</svg>

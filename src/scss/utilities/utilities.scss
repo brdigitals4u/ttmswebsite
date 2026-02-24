@@ -1,0 +1,97 @@
+/*
+  Author : Candra Dwi Waskito
+  Version : 0.1.1
+ */
+
+@import "../abstracts/abstracts";
+
+// BASE STYLES
+@import "preflight";
+
+// LAYOUT
+//@import "container";
+@import "display";
+@import "float";
+@import "objectFit";
+@import "objectPosition";
+@import "overflow";
+@import "position";
+@import "inset";
+@import "visibility";
+@import "zIndex";
+
+// TYPOGRAPHY
+@import "fontFamily";
+@import "fontSize";
+@import "fontSmoothing";
+@import "fontStyle";
+@import "fontWeight";
+@import "letterSpacing";
+@import "lineHeight";
+@import "listStyleType";
+@import "listStylePosition";
+@import "placeholderColor";
+@import "textAlign";
+@import "textColor";
+@import "textDecoration";
+@import "textTransform";
+@import "verticalAlign";
+@import "whitespace";
+@import "wordBreak";
+
+// BACKGROUND
+@import "backgroundAttachment";
+@import "backgroundColor";
+@import "backgroundPosition";
+@import "backgroundRepeat";
+@import "backgroundSize";
+
+// BORDER
+@import "borderColor";
+@import "borderStyle";
+@import "borderWidth";
+@import "borderRadius";
+
+// FLEX BOX
+@import "flexDirection";
+@import "flexWrap";
+@import "alignItems";
+@import "alignContent";
+@import "alignSelf";
+@import "justifyContent";
+@import "flex";
+@import "flexGrow";
+@import "flexShrink";
+@import "order";
+
+// SPACING
+@import "padding";
+@import "margin";
+
+// SIZING
+@import "width";
+@import "minWidth";
+@import "maxWidth";
+@import "height";
+@import "minHeight";
+@import "maxHeight";
+
+// TABLES
+@import "borderCollapse";
+@import "tableLayout";
+
+// EFFECT
+@import "boxShadow";
+@import "opacity";
+
+// INTERACTIVITY
+@import "appearance";
+@import "cursor";
+@import "outline";
+@import "pointerEvents";
+@import "resize";
+@import "userSelect";
+
+// SVG
+@import "fill";
+@import "stroke";

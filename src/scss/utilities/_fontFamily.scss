@@ -1,0 +1,50 @@
+/*
+  Font Family
+ */
+
+$values: (
+        "opensans": Open Sans,
+        "poppins": Poppins,
+        "hkgrotesk": hk_grotesk
+);
+
+@each $name, $value in $values {
+  .text-#{$name} {
+    font-family: "#{$value}", sans-serif;
+  }
+}
+
+.text-hkgrotesk {
+  &.font-hairline,
+  &.font-thin,
+  &.font-light,
+  .font-hairline,
+  .font-thin,
+  .font-light {
+    font-family: "hk_grotestlight", sans-serif !important;
+  }
+
+  &.font-normal,
+  .font-normal {
+    font-family: 'hk_groteskregular', sans-serif !important;
+  }
+
+  &.font-medium,
+  .font-medium {
+    font-family: "hk_groteskmedium", sans-serif !important;
+  }
+
+  &.font-semibold,
+  .font-semibold {
+    font-family: 'hk_grotesksemibold', sans-serif !important;
+  }
+
+  &.font-bold,
+  &.font-extrabold,
+  &.font-black,
+  .font-bold,
+  .font-extrabold,
+  .font-black {
+    font-family: 'hk_groteskbold', sans-serif !important;
+  }
+}

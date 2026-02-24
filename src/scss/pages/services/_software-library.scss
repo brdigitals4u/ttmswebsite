@@ -1,0 +1,88 @@
+.services-software-library .bg-linear-white {
+    background-image: linear-gradient(to bottom, #f8fbff, rgba(250, 251, 251, 0))
+}
+
+.services-software-library header {
+    background-image: url("../images/covers/cover-14@2x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover
+}
+
+.services-software-library header .hero {
+    padding-top: 96px;
+    padding-bottom: 250px
+}
+
+.services-software-library .features .card-featured.box-shadow {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.05)
+}
+
+.services-software-library .information .card-information {
+    border-top: 3px solid #1565d8;
+    background-color: #fff
+}
+
+.services-software-library .information .card-information.box-shadow {
+    box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.03)
+}
+
+.services-software-library .information .card-information>div {
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid rgba(229, 234, 244, 0.5)
+}
+
+.services-software-library .information .card-information>div:last-child {
+    border-right: none !important
+}
+
+.services-software-library .sponsor .card-sponsor.box-shadow {
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.05)
+}
+
+.services-software-library .question {
+    background-color: #0d2436
+}
+
+.services-software-library .question .accordion {
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top: 3px solid #36B37E;
+    padding: 0 32px
+}
+
+.services-software-library .question .accordion .card {
+    margin-bottom: 0;
+    border-radius: 0 !important;
+    background-color: transparent;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 26px 0 28px
+}
+
+.services-software-library .question .accordion .card.border {
+    border-bottom: 1px solid #E5EAF4 !important
+}
+
+.services-software-library .question .accordion .card-body {
+    padding: 12px 0 0 !important
+}
+
+.services-software-library .quotes {
+    background-color: #0d2436
+}
+
+.services-software-library .cta {
+    background-image: url("../images/covers/cover-15@2x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover
+}
+
+.services-software-library .footer {
+    padding-top: 128px
+} 

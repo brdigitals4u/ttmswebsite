@@ -1,0 +1,209 @@
+.company-pricing {
+  // header
+  header {
+    background-image: linear-gradient(to bottom, rgba(250, 251, 251, 0), #f8fbff);
+    padding-bottom: 238px;
+
+    &.clip-eb {
+      clip-path: ellipse(150% 122% at 50% -30%);
+    }
+
+    .hero {
+      padding-top: 96px;
+      padding-bottom: 63px;
+
+      .heading {
+        p {
+          font-size: 1.25rem !important;
+          line-height: 2.25rem !important;
+        }
+      }
+    }
+  }
+
+  // features
+  .features {
+    padding-top: 64px;
+    padding-bottom: 135px;
+
+    .heading {
+      margin-bottom: 64px;
+    }
+  }
+
+  // faq
+  .faq {
+    padding-top: 147px;
+    background-image: linear-gradient(to bottom, rgba(250, 251, 251, 0), #f8fbff);
+
+    &.clip-eb {
+      clip-path: ellipse(170% 125% at 50% -30%);
+    }
+
+    .heading {
+      margin-bottom: 64px;
+    }
+
+    &-question {
+      margin-top: 144px;
+      padding-bottom: 48px;
+    }
+  }
+
+  // footer
+  .footer {
+    padding-top: 64px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .company-pricing {
+    // header
+    header {
+      &.clip-eb {
+        clip-path: none;
+        padding-bottom: 0 !important;
+      }
+
+      .hero {
+        padding-top: 40px;
+
+        p {
+          font-size: 1rem !important;
+          line-height: 28px !important;
+        }
+
+        .card-pricing {
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    // features
+    .features {
+      padding-top: 96px;
+      padding-bottom: 63px;
+
+      .card-f {
+        margin-bottom: 33px;
+      }
+    }
+
+    // faq
+    .faq {
+      padding-top: 96px;
+
+      &.clip-eb {
+        clip-path: ellipse(300% 125% at 50% -30%);
+      }
+
+      .faq-question {
+        margin-top: 96px;
+
+        .card-f {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .company-pricing {
+    // header
+    header {
+      &.clip-eb {
+        clip-path: none;
+        padding-bottom: 0 !important;
+      }
+
+      .hero {
+        padding-top: 40px;
+
+        p {
+          font-size: 1rem !important;
+          line-height: 28px !important;
+        }
+
+        .card-pricing {
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    // features
+    .features {
+      padding-top: 96px;
+      padding-bottom: 63px;
+
+      .card-f {
+        margin-bottom: 33px;
+      }
+    }
+
+    // faq
+    .faq {
+      padding-top: 96px;
+
+      &.clip-eb {
+        clip-path: ellipse(300% 125% at 50% -30%);
+      }
+
+      .faq-question {
+        margin-top: 96px;
+
+        .card-f {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .company-pricing {
+    // header
+    header {
+      &.clip-eb {
+        clip-path: none;
+        padding-bottom: 0 !important;
+      }
+
+      .hero {
+        .card-pricing {
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    // features
+    .features {
+      padding-top: 96px;
+      padding-bottom: 63px;
+
+      .card-f {
+        margin-bottom: 33px;
+      }
+    }
+
+    // faq
+    .faq {
+      padding-top: 96px;
+
+      &.clip-eb {
+        clip-path: ellipse(300% 125% at 50% -30%);
+      }
+
+      .faq-question {
+        margin-top: 96px;
+
+        .card-f {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}

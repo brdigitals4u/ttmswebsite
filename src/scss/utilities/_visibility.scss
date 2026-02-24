@@ -1,0 +1,38 @@
+/*
+  Visibility
+ */
+
+$values: (
+        "visible": visible,
+        "invisible": hidden
+);
+
+@each $name, $value in $values {
+  .#{$name} {
+    visibility: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-#{$name} {
+      visibility: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-#{$name} {
+      visibility: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-#{$name} {
+      visibility: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-#{$name} {
+      visibility: $value;
+    }
+  }
+}

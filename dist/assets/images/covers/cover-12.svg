@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="780px" height="900px" viewBox="0 0 780 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>cover-12</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="780" height="900"></rect>
+        <linearGradient x1="100%" y1="50%" x2="0.266575169%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0.266575169%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sign-in---Right-Cover" transform="translate(-660.000000, 0.000000)">
+            <g id="Right" transform="translate(660.000000, 0.000000)">
+                <g id="cover-12">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="rgb(0, 124, 225)" xlink:href="#path-1"></use>
+                    <path d="M-274,372 C53.5048566,372 319,106.504857 319,-221 C319,-548.504857 53.5048566,-814 -274,-814 C-601.504857,-814 -867,-548.504857 -867,-221 C-867,106.504857 -601.504857,372 -274,372 Z M-274,172 C-491.047907,172 -667,-3.95209333 -667,-221 C-667,-438.047907 -491.047907,-614 -274,-614 C-56.9520933,-614 119,-438.047907 119,-221 C119,-3.95209333 -56.9520933,172 -274,172 Z" id="Oval" fill="url(#linearGradient-3)" opacity="0.149999991" mask="url(#mask-2)"></path>
+                    <g id="Shape-1" mask="url(#mask-2)" fill="url(#linearGradient-4)" opacity="0.049999997">
+                        <g transform="translate(734.000000, 807.500000) scale(-1, 1) translate(-734.000000, -807.500000) translate(440.000000, 614.000000)" id="Shape">
+                            <path d="M94.8100686,174 L522.387925,174 C528.110894,174 533.398068,177.056696 536.253725,182.016293 L571.088662,242.516293 C573.934262,247.458422 573.934262,253.541578 571.088662,258.483707 L536.253725,318.983707 C533.398068,323.943304 528.110894,327 522.387925,327 L94,327 L94,327 L94.8100686,174 Z" transform="translate(334.842777, 250.500000) rotate(-15.000000) translate(-334.842777, -250.500000) "></path>
+                            <path d="M12.8100686,60 L440.387925,60 C446.110894,60 451.398068,63.0566962 454.253725,68.0162928 L489.088662,128.516293 C491.934262,133.458422 491.934262,139.541578 489.088662,144.483707 L454.253725,204.983707 C451.398068,209.943304 446.110894,213 440.387925,213 L12,213 L12,213 L12.8100686,60 Z" transform="translate(252.842777, 136.500000) rotate(-15.000000) translate(-252.842777, -136.500000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

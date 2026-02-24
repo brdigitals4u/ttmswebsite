@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <title>TTMS</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/regular.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        @media (min-width: 992px) {
+            .blog-alt-1 header .navbar {
+                position: relative;
+            }
+
+            .blog-alt-1 header .navbar .navbar-nav {
+                position: static;
+            }
+
+            .blog-alt-1 header .navbar .navbar-nav > .nav-item-has-children {
+                position: static;
+            }
+
+            .blog-alt-1 header .navbar .navbar-nav > .nav-item-has-children > .sub-menu.sub-menu-3-col {
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body class="blog-alt-1">
+
+<!--start:header-->
+<header class="header blog-alt-1">
+    <!--start:navBar-->
+        <nav class="navbar navbar-expand-lg navbar-white">
+            <div class="container">
+                <a class="navbar-brand" href="../apps/desktop.html">
+                    <!-- <span class="ttms-brand ttms-brand-light">TTMS</span> -->
+                    <span class="ttms-brand ttms-brand-light">TTMS</span>
+                </a>
+                <button class="navbar-toggler border-none" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="../assets/images/icons/ic-menu-white.svg" alt="">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="close-button">
+                            <button class="navbar-toggler border-none" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="true" aria-label="Toggle navigation">
+                                <img src="../assets/images/icons/ic-close.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../apps/desktop.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-item-has-children">
+                            <a class="nav-link" href="../services/index.html">
+                                <span>Services</span>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="sub-menu sub-menu-3-col">
+                                <div class="sub-nav-items">
+                                    <h5>Fleet Services</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/fleet-management.html">Fleet
+                                                Management</a></li>
+                                        <li class="nav-item"><a href="../services/truck-tracking.html">Truck
+                                                Tracking</a></li>
+                                        <li class="nav-item"><a href="../services/trailer-tracking.html">Trailer
+                                                Tracking</a></li>
+                                        <li class="nav-item"><a href="../services/asset-tracking.html">Asset
+                                                Tracking</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-nav-items">
+                                    <h5>Dispatch & Routing</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/dispatch-management.html">Dispatch
+                                                Management</a></li>
+                                        <li class="nav-item"><a href="../services/smart-routing.html">Smart Routing</a>
+                                        </li>
+                                        <li class="nav-item"><a href="../services/route-optimization.html">Route
+                                                Optimization</a></li>
+                                        <li class="nav-item"><a href="../services/load-planning.html">Load Planning</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-nav-items">
+                                    <h5>Driver Services</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/eld-devices.html">ELD Devices</a></li>
+                                        <li class="nav-item"><a href="../services/ai-dashcams.html">AI DashCams</a></li>
+                                        <li class="nav-item"><a href="../services/driver-monitoring.html">Driver
+                                                Monitoring</a></li>
+                                        <li class="nav-item"><a href="../services/safety-solutions.html">Safety
+                                                Solutions</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-nav-items">
+                                    <h5>Analytics & Reporting</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/report-generation.html">Report
+                                                Generation</a></li>
+                                        <li class="nav-item"><a href="../services/fleet-analytics.html">Fleet
+                                                Analytics</a></li>
+                                        <li class="nav-item"><a href="../services/performance-metrics.html">Performance
+                                                Metrics</a></li>
+                                        <li class="nav-item"><a href="../services/compliance-reports.html">Compliance
+                                                Reports</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-nav-items">
+                                    <h5>Alerts & Notifications</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/fuel-alerts.html">Fuel Alerts</a></li>
+                                        <li class="nav-item"><a href="../services/rest-food-alerts.html">Rest/Food
+                                                Alerts</a></li>
+                                        <li class="nav-item"><a href="../services/maintenance-alerts.html">Maintenance
+                                                Alerts</a></li>
+                                        <li class="nav-item"><a href="../services/safety-alerts.html">Safety Alerts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-nav-items">
+                                    <h5>Integrations</h5>
+                                    <ul>
+                                        <li class="nav-item"><a href="../services/third-party-trucks.html">Third-party
+                                                Trucks</a></li>
+                                        <li class="nav-item"><a href="../services/oem-devices.html">OEM Devices</a></li>
+                                        <li class="nav-item"><a href="../services/telematics.html">Telematics</a></li>
+                                        <li class="nav-item"><a href="../services/api-access.html">API Access</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../services/telematics.html">Integrations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../company/pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog/blog-alt-1.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../company/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-white" href="../company/contact.html">Get a Quote</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--end:navBar-->
+
+    <!--start:hero-->
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+                    <div class="content text-center">
+                        <h1 class="text-48 xs-text-3x leading-40 xl-leading-56 text-white mb-40 xs-mb-32 wow fadeInUp">Our Newsroom</h1>
+                        <div class="input-group form-search mb-24 xs-mb-16 wow fadeInUp">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <input type="text" class="rounded-8 form-control bg-white" aria-label="" placeholder="Ask a questions…">
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-primary btn-sm">Search article</button>
+                            </div>
+                        </div>
+                        <div class="popular-tags">
+                            <p class="text-white font-semibold wow fadeInUp">Popular Tags :</p>
+                            <ul class=" wow fadeInUp">
+                                <li><a class="btn btn-outline-white btn-xs" href="">Design</a></li>
+                                <li><a class="btn btn-outline-white btn-xs" href="">User Experience</a></li>
+                                <li><a class="btn btn-outline-white btn-xs" href="">User Interfaces</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end:hero-->
+</header>
+<!--end:header-->
+
+<!--start:featured-article-->
+<section class="featured-article -mt-216 -md-mt-176 pb-48">
+    <div class="container">
+        <a href="blog-detail.html" class="box-featured-blog wow fadeInUp">
+            <div class="featured-image">
+                <img src="../assets/images/photos/570x380/570x380@2x.jpg" alt="" class="" width="570">
+            </div>
+            <div class="blog-metas">
+                <span class="badge badge-success badge-pill">FEATURED</span>
+                <h3 class="blog-title">Cheap Airline Tickets Great Ways To Save</h3>
+                <p class="blog-excerpt">In this digital generation where information can be easily obtained within seconds, business cards ...</p>
+                <div class="blog-author-detail flex justify-between items-center">
+                    <div class="c-customer-review-meta">
+                        <div class="user">
+                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                        </div>
+                        <div class="meta">
+                            <p class="text-black">Joshua William</p>
+                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                        </div>
+                    </div>
+                    <span class="font-semibold text-gray">02 May</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+<!--end:featured-article-->
+
+<!--start:popular-article-->
+<section class="popular-article py-48 xs-pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="blog-section-title heading mb-48 xs-mb-32 text-left xs-text-center sm-text-center">
+                    <h2 class="text-hkgrotesk font-bold text-alt text-black xs-text-24 xs-leading-snug mb-16 xs-mb-12 wow fadeInUp">Popular Articles</h2>
+                    <p class="wow fadeInUp text-gray">We share common trends, strategies ideas, opinions, short & long stories from the team behind company.</p>
+
+                    <a href="#" class="btn btn-outline-primary d-flex xs-hidden sm-hidden justify-between items-center">View all <i class="fas fa-arrow-right text-14"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
+                            <div class="blog-featured-badge"><span class="badge badge-secondary badge-pill">FEATURED</span></div>
+                            <img src="../assets/images/photos/555x600/1@2x.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">How to prevent and protect your family from Carbon monoxide</h3>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-white">Joshua William</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray-light-300">02 May</span>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
+                            <div class="blog-featured-badge"><span class="badge badge-secondary badge-pill">FEATURED</span></div>
+                            <img src="../assets/images/photos/555x600/2@2x.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">Motherhood is the hardest and the best job ever</h3>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-white">Joshua William</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray-light-300">02 May</span>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden xs-flex justify-center items-center">
+                <a href="#" class="btn btn-outline-primary d-flex justify-between items-center min-w-160">View all <i class="fas fa-arrow-right text-14"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:popular-article-->
+
+<!--start:blog-recent-article-->
+<section class="blog-recent-article py-48 xs-pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="blog-section-title heading mb-48 xs-mb-32 text-left xs-text-center sm-text-center">
+                    <h2 class="text-hkgrotesk font-bold text-alt text-black xs-text-24 xs-leading-snug mb-16 xs-mb-12 wow fadeInUp">Recent Articles</h2>
+                    <p class="wow fadeInUp text-gray">Here’s what we've been up to recently.</p>
+
+                    <a href="#" class="btn btn-outline-primary d-flex xs-hidden sm-hidden justify-between items-center">View all <i class="fas fa-arrow-right text-14"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
+                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
+                            <img src="../assets/images/photos/360x500/1@2x.png" alt="" class="card-img">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">Future of Work</h3>
+                                <p class="text-white mb-0">Majority of peole will work in jobs that don’t exist today.</p>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-white">Joshua William</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray-light-300">02 May</span>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
+                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
+                            <img src="../assets/images/photos/360x500/2@2x.png" alt="" class="card-img">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">Future of Data</h3>
+                                <p class="text-white mb-0">Thanks to never-ending piles of data & the amount of insight</p>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-white">Tyler Murray</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray-light-300">02 May</span>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
+                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
+                            <img src="../assets/images/photos/360x500/3@2x.png" alt="" class="card-img">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">Future of Learning</h3>
+                                <p class="text-white mb-0">A constant ability to learn will be on the most crucial skills</p>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-white">Warren Casey</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray-light-300">02 May</span>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden xs-flex justify-center items-center">
+                <a href="#" class="btn btn-outline-primary d-flex justify-between items-center min-w-160">View all <i class="fas fa-arrow-right text-14"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:blog-recent-article-->
+
+<!--start:blog-case-studies-->
+<section class="case-studies py-48 xs-pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="blog-section-title heading mb-48 xs-mb-32 text-left xs-text-center sm-text-center">
+                    <h2 class="text-hkgrotesk font-bold text-alt text-black xs-text-24 xs-leading-snug mb-16 xs-mb-12 wow fadeInUp">Case Studies</h2>
+                    <p class="wow fadeInUp text-gray">Here’s what we've been up to recently.</p>
+
+                    <a href="#" class="btn btn-outline-primary d-flex xs-hidden sm-hidden justify-between items-center">View all <i class="fas fa-arrow-right text-14"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="content wow blog-carousel-container fadeInUp">
+            <div id="carouselExampleControls" class="blog-carousel carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <a href="blog-detail.html" class="box-featured-blog">
+                            <div class="featured-image">
+                                <img src="../assets/images/photos/570x380/570x380@2x.jpg" alt="" class="" width="570">
+                            </div>
+                            <div class="blog-metas">
+                                <span class="badge badge-success badge-pill">FEATURED</span>
+                                <h3 class="blog-title">Motherhood is the hardest and the best job ever</h3>
+                                <p class="blog-excerpt">In this digital generation where information can be easily obtained within seconds, business cards ...</p>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-black">Joshua William</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray">02 May</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item active">
+                        <a href="blog-detail.html" class="box-featured-blog">
+                            <div class="featured-image">
+                                <img src="../assets/images/photos/570x380/570x380@2x.jpg" alt="" class="" width="570">
+                            </div>
+                            <div class="blog-metas">
+                                <span class="badge badge-success badge-pill">FEATURED</span>
+                                <h3 class="blog-title">Cheap Airline Tickets Great Ways To Save</h3>
+                                <p class="blog-excerpt">In this digital generation where information can be easily obtained within seconds, business cards ...</p>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-black">Joshua William</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray">02 May</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-icon" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-icon" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="hidden xs-flex justify-center items-center">
+                <a href="#" class="btn btn-outline-primary d-flex justify-between items-center min-w-160">View all <i class="fas fa-arrow-right text-14"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:blog-case-studies-->
+
+<!--start:all-article-->
+<section class="all-article py-48 xs-pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="blog-section-title heading mb-48 xs-mb-32 text-left xs-text-center sm-text-center">
+                    <h2 class="text-hkgrotesk font-bold text-alt text-black xs-text-24 xs-leading-snug mb-16 xs-mb-12 wow fadeInUp">All Articles</h2>
+                    <p class="wow fadeInUp text-gray">We share common trends, strategies ideas, opinions, short & long stories from the team behind company.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
+                            <img src="../assets/images/photos/555x600/1@2x.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">How to prevent and protect your family from Carbon monoxide</h3>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-white">Joshua William</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray-light-300">02 May</span>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
+                            <img src="../assets/images/photos/555x600/2@2x.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">Motherhood is the hardest and the best job ever</h3>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-white">Joshua William</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray-light-300">02 May</span>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
+                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
+                            <img src="../assets/images/photos/360x500/4@2x.png" alt="" class="card-img">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">Future of Work</h3>
+                                <p class="text-white mb-0">Majority of peole will work in jobs that don’t exist today.</p>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-white">Joshua William</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray-light-300">02 May</span>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
+                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
+                            <img src="../assets/images/photos/360x500/5@2x.png" alt="" class="card-img">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">Future of Data</h3>
+                                <p class="text-white mb-0">Thanks to never-ending piles of data & the amount of insight</p>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-white">Warren Casey</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray-light-300">02 May</span>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
+                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
+                            <img src="../assets/images/photos/360x500/6@2x.png" alt="" class="card-img">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">Future of Learning</h3>
+                                <p class="text-white mb-0">A constant ability to learn will be on the most crucial skills</p>
+                                <div class="blog-author-detail flex justify-between items-center">
+                                    <div class="c-customer-review-meta">
+                                        <div class="user">
+                                            <img src="../assets/images/photos/64x64/1.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <p class="text-white">Tyler Murray</p>
+                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="font-semibold text-gray-light-300">02 May</span>
+                                </div>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden xs-flex justify-center items-center">
+                <a href="#" class="btn btn-outline-primary d-flex justify-between items-center min-w-160">View all <i class="fas fa-arrow-right text-14"></i></a>
+            </div>
+        </div>
+        <div class="section-btn d-flex justify-center mt-20">
+            <a href="#" class="btn btn-outline-primary d-flex xs-hidden sm-hidden justify-between items-center">More articles <i class="fas fa-arrow-right text-14 ml-16"></i></a>
+        </div>
+    </div>
+</section>
+<!--end:all-article-->
+
+<!--start:footer-cta-->
+<section class="footer-cta">
+    <div class="container">
+        <div class="row">
+            <div class="left col-lg-6 col-md-12 col-sm-12 d-flex items-center">
+                <div class="d-block">
+                    <div class="heading wow fadeInUp">
+                        <h3 class="text-white">Get our stories delivered From us to your inbox weekly.</h3>
+                    </div>
+                    <div class="content">
+                        <form action="" class="mb-24 d-flex xs-block wow fadeInUp">
+                            <div class="form-group xl-w-60p w-full mr-8 md-mb-0 xl-mb-0">
+                                <input type="text" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="form-group md-mb-0 xl-mb-0 min-w-176">
+                                <button type="button" class="btn btn-lg btn-primary xs-min-w-full">Get started</button>
+                            </div>
+                        </form>
+                        <p class="text-gray mb-0 wow fadeInUp">Get a response tomorrow if you submit by 9pm today. If we received after 9pm will get a reponse the following day.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right col-lg-6 col-md-12 col-sm-12">
+                <div class="card-blog-footer-container wow fadeInRight">
+                    <div class="card-blog-footer">
+                        <div class="ill"><img src="../assets/images/photos/600x420/1@2x.png" alt="" class=""></div>
+                        <h4 class="text-22 text-black">The best aticles every week</h4>
+                        <p class="text-gray mt-8">Our insurance plans offers are priced the same everywhere else.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
+</section>
+<!--end:footer-cta-->
+
+<!--start:section footer-->
+    <footer id="footer" class="footer footer-white">
+        <div class="container">
+            <div class="row">
+                <div class="footer-left col-lg-3 col-md-5 col-sm-12">
+                    <div class="footer-widget wow fadeInUp">
+                        <a href="../apps/desktop.html" class="logo"><span class="ttms-brand ttms-brand-dark">TTMS</span></a>
+                        <p class="description">TTMS - Total Transport Management System. Dispatch, routing, fleet tracking, driver safety with ELD devices, AI DashCams, and real-time alerts.</p>
+                        <ul class="footer-sosmed">
+                            <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-facebook-f"></i></button></li>
+                            <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-twitter"></i></button></li>
+                            <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-instagram"></i></button></li>
+                            <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-linkedin"></i></button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right col-lg-9 col-md-7 col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Fleet Services</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/fleet-management.html">Fleet Management</a></li>
+                                    <li><a href="../services/truck-tracking.html">Truck Tracking</a></li>
+                                    <li><a href="../services/trailer-tracking.html">Trailer Tracking</a></li>
+                                    <li><a href="../services/asset-tracking.html">Asset Tracking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Dispatch & Routing</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/dispatch-management.html">Dispatch Management</a></li>
+                                    <li><a href="../services/smart-routing.html">Smart Routing</a></li>
+                                    <li><a href="../services/route-optimization.html">Route Optimization</a></li>
+                                    <li><a href="../services/load-planning.html">Load Planning</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Driver Services</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/eld-devices.html">ELD Devices</a></li>
+                                    <li><a href="../services/ai-dashcams.html">AI DashCams</a></li>
+                                    <li><a href="../services/driver-monitoring.html">Driver Monitoring</a></li>
+                                    <li><a href="../services/safety-solutions.html">Safety Solutions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Analytics & Reporting</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/report-generation.html">Report Generation</a></li>
+                                    <li><a href="../services/fleet-analytics.html">Fleet Analytics</a></li>
+                                    <li><a href="../services/performance-metrics.html">Performance Metrics</a></li>
+                                    <li><a href="../services/compliance-reports.html">Compliance Reports</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Alerts & Notifications</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/fuel-alerts.html">Fuel Alerts</a></li>
+                                    <li><a href="../services/rest-food-alerts.html">Rest/Food Alerts</a></li>
+                                    <li><a href="../services/maintenance-alerts.html">Maintenance Alerts</a></li>
+                                    <li><a href="../services/safety-alerts.html">Safety Alerts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Integrations</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../services/third-party-trucks.html">Third-party Trucks</a></li>
+                                    <li><a href="../services/oem-devices.html">OEM Devices</a></li>
+                                    <li><a href="../services/telematics.html">Telematics</a></li>
+                                    <li><a href="../services/api-access.html">API Access</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="footer-widget wow fadeInUp">
+                                <h5>Company</h5>
+                                <ul class="footer-widget-link">
+                                    <li><a href="../company/about.html">About TTMS</a></li>
+                                    <li><a href="../company/career.html">Careers</a></li>
+                                    <li><a href="../company/contact.html">Contact Us</a></li>
+                                    <li><a href="../company/faq.html">Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="footer-copyright wow fadeInUp">
+                        <div class="btn btn-rounded btn-primary btn-ic pointer-events-none">
+                            <i class="fas fa-heart text-24"></i>
+                        </div>
+                        <p>Copyright © 2026 TTMS - Total Transport Management System. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end:section footer-->
+
+<!--start:javascript-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap-select.min.js"></script>
+<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/index.js"></script>
+<!--end:javascript-->
+
+</body>
+</html>

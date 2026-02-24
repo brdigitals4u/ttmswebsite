@@ -1,0 +1,45 @@
+/*
+  Object Position
+ */
+
+$values: (
+        "bottom": bottom,
+        "center": center,
+        "left": left,
+        "left-bottom": left bottom,
+        "left-top": left top,
+        "right": right,
+        "right-bottom": right bottom,
+        "right-top": right top,
+        "top": top
+);
+
+@each $name, $value in $values {
+  .object-#{$name} {
+    object-position: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-object-#{$name} {
+      object-position: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-object-#{$name} {
+      object-position: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-object-#{$name} {
+      object-position: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-object-#{$name} {
+      object-position: $value;
+    }
+  }
+}

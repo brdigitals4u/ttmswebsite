@@ -1,0 +1,84 @@
+.auth.auth-signup-image .modal .ill-modal-images {
+    height: 813px
+}
+
+.auth.auth-signup-left-cover .auth-left {
+    height: 900px
+}
+
+.auth.auth-signup-left-cover .auth-left .logo {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 40px
+}
+
+.auth.auth-signup-left-cover .auth-left .bg-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.auth.auth-signup-left-cover .auth-right {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.auth.auth-signup-left-cover .auth-right .content {
+    width: 360px
+}
+
+.auth.auth-signup-right-cover .auth-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.auth.auth-signup-right-cover .auth-left .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px
+}
+
+.auth.auth-signup-right-cover .auth-left .logo a {
+    width: 360px
+}
+
+.auth.auth-signup-right-cover .auth-left .content {
+    width: 360px
+}
+
+.auth.auth-signup-right-cover .auth-right {
+    height: 960px
+}
+
+.auth.auth-signup-right-cover .auth-right .bg-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.auth.auth-signup-right-cover .auth-right .content {
+    width: 472px
+}
+
+.auth.auth-signup-right-cover .auth-right .content #shape-1 {
+    right: 0;
+    position: absolute;
+    margin-top: -100px;
+    margin-right: -40px
+}
+
+.auth.auth-signup-right-cover .auth-right .content #shape-2 {
+    right: 0;
+    position: absolute;
+    margin-top: 40px;
+    margin-right: -40px
+}
+
+.auth.auth-signup-right-cover .auth-right .content #shape-3 {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -40px
+}

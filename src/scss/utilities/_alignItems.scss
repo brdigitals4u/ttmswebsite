@@ -1,0 +1,47 @@
+/*
+  Align Items
+ */
+
+$values: (
+        "start": flex-start,
+        "end": flex-end,
+        "center": center,
+        "baseline": baseline,
+        "stretch": stretch
+);
+
+@each $name, $value in $values {
+  .items-#{$name} {
+    align-items: $value;
+  }
+
+  @include breakpoint(map-get($breaks, xs)) {
+    .#{map-get($breaks, xs)}-items-#{$name} {
+      align-items: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-items-#{$name} {
+      align-items: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-items-#{$name} {
+      align-items: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-items-#{$name} {
+      align-items: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-items-#{$name} {
+      align-items: $value !important;
+    }
+  }
+}

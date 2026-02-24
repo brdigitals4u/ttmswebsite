@@ -1,0 +1,40 @@
+/*
+  Text Transform
+ */
+
+$values: (
+        "uppercase": uppercase,
+        "lowercase": lowercase,
+        "capitalize": capitalize,
+        "normal-case": none
+);
+
+@each $name, $value in $values {
+  .#{$name} {
+    text-transform: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-#{$name} {
+      text-transform: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-#{$name} {
+      text-transform: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-#{$name} {
+      text-transform: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-#{$name} {
+      text-transform: $value;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+/*
+  Line Height
+ */
+
+$values: (
+        "none": none,
+        "tight": 1.25,
+        "snug": 1.375,
+        "normal": normal,
+        "relaxed": 1.625,
+        "loose": 2
+);
+
+@each $name, $value in $values {
+  .leading-#{$name} {
+    line-height: $value !important;
+  }
+
+  @include breakpoint(map-get($breaks, xs)) {
+    .#{map-get($breaks, xs)}-leading-#{$name} {
+      line-height: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-leading-#{$name} {
+      line-height: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-leading-#{$name} {
+      line-height: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-leading-#{$name} {
+      line-height: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-leading-#{$name} {
+      line-height: $value !important;
+    }
+  }
+}
+
+$values2: (
+        8: .5rem,
+        16: 1rem,
+        24: 1.5rem,
+        32: 2rem,
+        36: 2.25rem,
+        40: 2.5rem,
+        48: 3rem,
+        56: 3.5rem,
+        64: 4rem,
+        68: 4.25rem,
+        72: 4.5rem,
+        80: 5rem,
+        88: 5.5rem,
+        96: 6rem
+);
+
+@each $name, $value in $values2 {
+  .leading-#{$name} {
+    line-height: $value !important;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-leading-#{$name} {
+      line-height: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-leading-#{$name} {
+      line-height: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-leading-#{$name} {
+      line-height: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-leading-#{$name} {
+      line-height: $value !important;
+    }
+  }
+}

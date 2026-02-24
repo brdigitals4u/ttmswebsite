@@ -1,0 +1,199 @@
+/*
+  Padding
+ */
+
+$values: (
+        0: 0, px: 1px, 2px: 2px, 3px: 3px, 4px: 4px, 5px: 5px, 6px: 6px, 7px: 7px, 4: .25rem, 8: .5rem, 12: .75rem, 16: 1rem, 20: 1.25rem, 24: 1.5rem, 28: 1.75rem, 32: 2rem, 36: 2.25rem, 40: 2.5rem, 44: 2.75rem, 48: 3rem, 52: 3.25rem, 56: 3.5rem, 60: 3.75rem, 64: 4rem, 68: 4.25rem, 72: 4.5rem, 76: 4.75rem, 80: 5rem, 84: 5.25rem, 88: 5.5rem, 92: 5.75rem, 96: 6rem, 100: 6.25rem, 104: 6.5rem, 108: 6.75rem, 112: 7rem, 116: 7.25rem, 120: 7.5rem, 124: 7.75rem, 128: 8rem, 132: 8.25rem, 136: 8.5rem, 140: 8.75rem, 144: 9rem, 148: 9.25rem, 152: 9.5rem, 156: 9.75rem, 160: 10rem, 164: 10.25rem, 168: 10.5rem, 172: 10.75rem, 176: 11rem, 180: 11.25rem, 184: 11.5rem, 188: 11.75rem, 192: 12rem, 196: 12.25rem, 200: 12.5rem,
+);
+
+@each $name, $value in $values {
+  .p-#{$name} {
+    padding: $value;
+  }
+
+  .py-#{$name} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  .px-#{$name} {
+    padding-right: $value;
+    padding-left: $value;
+  }
+
+  .pt-#{$name} {
+    padding-top: $value;
+  }
+
+  .pr-#{$name} {
+    padding-right: $value;
+  }
+
+  .pb-#{$name} {
+    padding-bottom: $value;
+  }
+
+  .pl-#{$name} {
+    padding-left: $value;
+  }
+
+  @include breakpoint(map-get($breaks, xs)) {
+    .#{map-get($breaks, xs)}-p-#{$name} {
+      padding: $value !important;
+    }
+
+    .#{map-get($breaks, xs)}-py-#{$name} {
+      padding-top: $value !important;
+      padding-bottom: $value !important;
+    }
+
+    .#{map-get($breaks, xs)}-px-#{$name} {
+      padding-right: $value !important;
+      padding-left: $value !important;
+    }
+
+    .#{map-get($breaks, xs)}-pt-#{$name} {
+      padding-top: $value !important;
+    }
+
+    .#{map-get($breaks, xs)}-pr-#{$name} {
+      padding-right: $value !important;
+    }
+
+    .#{map-get($breaks, xs)}-pb-#{$name} {
+      padding-bottom: $value !important;
+    }
+
+    .#{map-get($breaks, xs)}-pl-#{$name} { 
+      padding-left: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-p-#{$name} {
+      padding: $value !important;
+    }
+
+    .#{map-get($breaks, sm)}-py-#{$name} {
+      padding-top: $value !important;
+      padding-bottom: $value !important;
+    }
+
+    .#{map-get($breaks, sm)}-px-#{$name} {
+      padding-right: $value !important;
+      padding-left: $value !important;
+    }
+
+    .#{map-get($breaks, sm)}-pt-#{$name} {
+      padding-top: $value !important;
+    }
+
+    .#{map-get($breaks, sm)}-pr-#{$name} {
+      padding-right: $value !important;
+    }
+
+    .#{map-get($breaks, sm)}-pb-#{$name} {
+      padding-bottom: $value !important;
+    }
+
+    .#{map-get($breaks, sm)}-pl-#{$name} {
+      padding-left: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-p-#{$name} {
+      padding: $value !important;
+    }
+
+    .#{map-get($breaks, md)}-py-#{$name} {
+      padding-top: $value !important;
+      padding-bottom: $value !important;
+    }
+
+    .#{map-get($breaks, md)}-px-#{$name} {
+      padding-right: $value !important;
+      padding-left: $value !important;
+    }
+
+    .#{map-get($breaks, md)}-pt-#{$name} {
+      padding-top: $value !important;
+    }
+
+    .#{map-get($breaks, md)}-pr-#{$name} {
+      padding-right: $value !important;
+    }
+
+    .#{map-get($breaks, md)}-pb-#{$name} {
+      padding-bottom: $value !important;
+    }
+
+    .#{map-get($breaks, md)}-pl-#{$name} {
+      padding-left: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-p-#{$name} {
+      padding: $value !important;
+    }
+
+    .#{map-get($breaks, lg)}-py-#{$name} {
+      padding-top: $value !important;
+      padding-bottom: $value !important;
+    }
+
+    .#{map-get($breaks, lg)}-px-#{$name} {
+      padding-right: $value !important;
+      padding-left: $value !important;
+    }
+
+    .#{map-get($breaks, lg)}-pt-#{$name} {
+      padding-top: $value !important;
+    }
+
+    .#{map-get($breaks, lg)}-pr-#{$name} {
+      padding-right: $value !important;
+    }
+
+    .#{map-get($breaks, lg)}-pb-#{$name} {
+      padding-bottom: $value !important;
+    }
+
+    .#{map-get($breaks, lg)}-pl-#{$name} {
+      padding-left: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-p-#{$name} {
+      padding: $value !important;
+    }
+
+    .#{map-get($breaks, xl)}-py-#{$name} {
+      padding-top: $value !important;
+      padding-bottom: $value !important;
+    }
+
+    .#{map-get($breaks, xl)}-px-#{$name} {
+      padding-right: $value !important;
+      padding-left: $value !important;
+    }
+
+    .#{map-get($breaks, xl)}-pt-#{$name} {
+      padding-top: $value !important;
+    }
+
+    .#{map-get($breaks, xl)}-pr-#{$name} {
+      padding-right: $value !important;
+    }
+
+    .#{map-get($breaks, xl)}-pb-#{$name} {
+      padding-bottom: $value !important;
+    }
+
+    .#{map-get($breaks, xl)}-pl-#{$name} {
+      padding-left: $value !important;
+    }
+  }
+}

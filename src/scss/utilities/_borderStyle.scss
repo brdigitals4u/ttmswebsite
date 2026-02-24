@@ -1,0 +1,96 @@
+/*
+  Border Style
+ */
+
+$values: (
+        "solid": solid,
+        "dashed": dashed,
+        "dotted": dotted,
+        "none": none
+);
+
+@each $name, $value in $values {
+  .border-#{$name} {
+    border-style: $value;
+  }
+
+  .hover-border-#{$name} {
+    &:hover {
+      border-style: $value;
+    }
+  }
+
+  .focus-border-#{$name} {
+    &:focus {
+      border-style: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-border-#{$name} {
+      border-style: $value;
+    }
+
+    .#{map-get($breaks, sm)}-hover-border-#{$name} {
+      &:hover {
+        border-style: $value;
+      }
+    }
+
+    .#{map-get($breaks, sm)}-focus-border-#{$name} {
+      &:focus {
+        border-style: $value;
+      }
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-border-#{$name} {
+      border-style: $value;
+    }
+
+    .#{map-get($breaks, md)}-hover-border-#{$name} {
+      &:hover {
+        border-style: $value;
+      }
+    }
+
+    .#{map-get($breaks, md)}-focus-border-#{$name} {
+      &:focus {
+        border-style: $value;
+      }
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-border-#{$name} {
+      border-style: $value;
+    }
+
+    .#{map-get($breaks, lg)}-hover-border-#{$name} {
+      &:hover {
+        border-style: $value;
+      }
+    }
+
+    .#{map-get($breaks, lg)}-focus-border-#{$name} {
+      &:focus {
+        border-style: $value;
+      }
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-border-#{$name} {
+      border-style: $value;
+    }
+
+    .#{map-get($breaks, xl)}-hover-border-#{$name} {
+      border-style: $value;
+    }
+
+    .#{map-get($breaks, xl)}-focus-border-#{$name} {
+      border-style: $value;
+    }
+  }
+}

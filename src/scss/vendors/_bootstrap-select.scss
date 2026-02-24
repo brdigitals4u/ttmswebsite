@@ -1,0 +1,39 @@
+.bootstrap-select {
+  .dropdown-toggle:focus,
+  > select.mobile-device:focus+.dropdown-toggle {
+    outline: none !important;
+  }
+
+  .btn-light {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background-color: transparent !important;
+    height: 48px;
+    border-radius: .5rem;
+    border: solid 1px #e5eaf4;
+    outline: none;
+    color: #183b56;
+    box-shadow: none;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:after {
+      // content: url("../images/icons/angle-down-solid.svg");
+      font-family:"Font Awesome 5 Free";
+      content:"\f078";
+      border: none;
+      height: 16px;
+      width: 10px;
+      margin-top: -25px
+    }
+  }
+
+  .dropdown-menu {
+    .dropdown-item { 
+      &.active {
+        background-color: #e5eaf4;
+      }
+
+    }
+  }
+}

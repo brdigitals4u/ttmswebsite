@@ -1,0 +1,180 @@
+.company-faq {
+
+  // header
+  header {
+    background-image: url("../images/covers/cover-4@2x.png");
+    background-position: top center;
+    background-size: cover;
+
+    .hero {
+      padding-top: 120px;
+      padding-bottom: 145px;
+    }
+  }
+
+  // categories
+  .categories {
+    padding-top: 46px;
+
+    .heading {
+      margin-bottom: 50px;
+    }
+
+    .content {
+
+    }
+  }
+
+  // faq
+  .faq {
+    padding-top: 147px;
+    background-image: linear-gradient(to bottom, rgba(250, 251, 251, 0), #f8fbff);
+
+    &.clip-eb {
+      clip-path: ellipse(180% 125% at 50% -30%);
+    }
+
+    .heading {
+      margin-bottom: 64px;
+    }
+
+    &-question {
+      margin-top: 144px;
+      padding-bottom: 48px;
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .company-faq {
+    // header
+    header {
+      .hero {
+        padding-top: 40px;
+        padding-bottom: 64px;
+      }
+    }
+
+    // categories
+    .categories {
+      .heading {
+        h3 {
+          font-size: 18px !important;
+          line-height: normal !important;
+        }
+      }
+
+      .content {
+        .card-f {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    // faq
+    .faq {
+      padding-top: 48px;
+    }
+
+    .faq-question {
+      margin-top: 72px;
+
+      .card-f {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .company-faq {
+    // header
+    header {
+      .hero {
+        padding-top: 40px;
+        padding-bottom: 64px;
+      }
+    }
+
+    // categories
+    .categories {
+      .heading {
+        h3 {
+          font-size: 18px !important;
+          line-height: normal !important;
+        }
+      }
+
+      .content {
+        .card-f {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    // faq
+    .faq {
+      padding-top: 48px;
+    }
+
+    .faq-question {
+      margin-top: 72px;
+
+      .card-f {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .company-faq {
+    // header
+    header {
+      &.clip-eb {
+        clip-path: ellipse(200% 120% at 50% -30%);
+      }
+
+      .hero {
+        padding-top: 40px;
+        padding-bottom: 64px;
+      }
+    }
+
+    // categories
+    .categories {
+      .heading {
+        h3 {
+          font-size: 18px !important;
+          line-height: normal !important;
+        }
+      }
+
+      .content {
+        .card-f {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    // faq
+    .faq {
+      padding-top: 48px;
+
+      &.clip-eb {
+        clip-path: ellipse(300% 120% at 50% -30%);
+      }
+    }
+
+    .faq-question {
+      margin-top: 72px;
+
+      .card-f {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+/*
+  Max Width
+ */
+
+.max-w-xs { max-width: 20rem; }
+.max-w-sm { max-width: 24rem; }
+.max-w-md { max-width: 28rem; }
+.max-w-lg { max-width: 32rem; }
+.max-w-xl { max-width: 36rem; }
+.max-w-2xl { max-width: 42rem; }
+.max-w-3xl { max-width: 48rem; }
+.max-w-4xl { max-width: 56rem; }
+.max-w-5xl { max-width: 64rem; }
+.max-w-6xl { max-width: 72rem; }
+.max-w-full { max-width: 100%; }
+.max-w-none { max-width: none; }
+
+@include breakpoint(map-get($breaks, xs)) {
+  .#{map-get($breaks, xs)}-max-w-360 {
+    max-width: 22.5rem; 
+  }
+}
+
+@include breakpoint(map-get($breaks, sm)) {
+  .#{map-get($breaks, sm)}-max-w-full {
+    max-width: 100%;
+  }
+  .#{map-get($breaks, sm)}-max-w-none {
+    max-width: none;
+  }
+  .#{map-get($breaks, sm)}-max-w-xs {
+    max-width: 20rem; 
+  }
+}
+
+@include breakpoint(map-get($breaks, md)) {
+  .#{map-get($breaks, md)}-max-w-full {
+    max-width: 100%;
+  }
+  .#{map-get($breaks, md)}-max-w-none {
+    max-width: none;
+  }
+}
+
+@include breakpoint(map-get($breaks, lg)) {
+  .#{map-get($breaks, lg)}-max-w-full {
+    max-width: 100%;
+  }
+  .#{map-get($breaks, lg)}-max-w-none {
+    max-width: none;
+  }
+}
+
+@include breakpoint(map-get($breaks, xl)) {
+  .#{map-get($breaks, xl)}-max-w-full {
+    max-width: 100%;
+  }
+  .#{map-get($breaks, xl)}-max-w-none {
+    max-width: none;
+  }
+}

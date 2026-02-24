@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <title>TTMS</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/regular.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class="services-insurance">
+
+<!--start:header-->
+<header class="header">
+    <!--start:navBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../">
+                <span class="ttms-brand ttms-brand-dark">TTMS</span>
+            </a>
+            <button class="navbar-toggler border-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/images/icons/ic-menu.svg" alt="">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="close-button">
+                        <button class="navbar-toggler border-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                            <img src="../assets/images/icons/ic-close.svg" alt="">
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apps/desktop.html">Home</a>
+                    </li>
+                    <li class="nav-item nav-item-has-children">
+                        <a class="nav-link" href="../services/index.html">
+                            <span>Services</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="sub-menu sub-menu-3-col">
+                            <div class="sub-nav-items">
+                                <h5>Fleet Services</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/fleet-management.html">Fleet Management</a></li>
+                                    <li class="nav-item"><a href="../services/truck-tracking.html">Truck Tracking</a></li>
+                                    <li class="nav-item"><a href="../services/trailer-tracking.html">Trailer Tracking</a></li>
+                                    <li class="nav-item"><a href="../services/asset-tracking.html">Asset Tracking</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Dispatch & Routing</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/dispatch-management.html">Dispatch Management</a></li>
+                                    <li class="nav-item"><a href="../services/smart-routing.html">Smart Routing</a></li>
+                                    <li class="nav-item"><a href="../services/route-optimization.html">Route Optimization</a></li>
+                                    <li class="nav-item"><a href="../services/load-planning.html">Load Planning</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Driver Services</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/eld-devices.html">ELD Devices</a></li>
+                                    <li class="nav-item"><a href="../services/ai-dashcams.html">AI DashCams</a></li>
+                                    <li class="nav-item"><a href="../services/driver-monitoring.html">Driver Monitoring</a></li>
+                                    <li class="nav-item"><a href="../services/safety-solutions.html">Safety Solutions</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Analytics & Reporting</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/report-generation.html">Report Generation</a></li>
+                                    <li class="nav-item"><a href="../services/fleet-analytics.html">Fleet Analytics</a></li>
+                                    <li class="nav-item"><a href="../services/performance-metrics.html">Performance Metrics</a></li>
+                                    <li class="nav-item"><a href="../services/compliance-reports.html">Compliance Reports</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Alerts & Notifications</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/fuel-alerts.html">Fuel Alerts</a></li>
+                                    <li class="nav-item"><a href="../services/rest-food-alerts.html">Rest/Food Alerts</a></li>
+                                    <li class="nav-item"><a href="../services/maintenance-alerts.html">Maintenance Alerts</a></li>
+                                    <li class="nav-item"><a href="../services/safety-alerts.html">Safety Alerts</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Integrations</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/third-party-trucks.html">Third-party Trucks</a></li>
+                                    <li class="nav-item"><a href="../services/oem-devices.html">OEM Devices</a></li>
+                                    <li class="nav-item"><a href="../services/telematics.html">Telematics</a></li>
+                                    <li class="nav-item"><a href="../services/api-access.html">API Access</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-item-has-children">
+                        <a class="nav-link" href="#">
+                            <span>Pages</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu sub-menu-with-child">
+                            <li class="nav-item nav-item-has-children">
+                                <a>Company <i class="fas fa-angle-right"></i></a>
+                                <ul class="sub-menu-children">
+                                    <li class="nav-item"><a href="../company/about.html">About Page 1</a></li>
+                                    <li class="nav-item"><a href="../landing/about-us.html">About Page 2</a></li>
+                                    <li class="nav-item"><a href="../company/faq.html">FAQ Page</a></li>
+                                    <li class="nav-item"><a href="../company/contact.html">Contact Page</a></li>
+                                    <li class="nav-item"><a href="../company/pricing.html">Pricing Page 1</a></li>
+                                    <li class="nav-item"><a href="../landing/pricing.html">Pricing Page 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-has-children">
+                                <a>Career <i class="fas fa-angle-right"></i></a>
+                                <ul class="sub-menu-children">
+                                    <li class="nav-item"><a href="../company/career.html">Career</a></li>
+                                    <li class="nav-item"><a href="../company/career-detail.html">Career Detail</a>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-has-children">
+                                <a>Blog <i class="fas fa-angle-right"></i></a>
+                                <ul class="sub-menu-children">
+                                    <li class="nav-item"><a href="../blog/blog-alt-1.html">Blog 1</a></li>
+                                    <li class="nav-item"><a href="../blog/blog-alt-2.html">Blog 2</a></li>
+                                    <li class="nav-item"><a href="../blog/blog-detail.html">Article Detail</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-has-children">
+                                <a>Utility - Sign in <i class="fas fa-angle-right"></i></a>
+                                <ul class="sub-menu-children">
+                                    <li class="nav-item"><a href="../auth/signin-basic.html">Basic</a></li>
+                                    <li class="nav-item"><a href="../auth/signin-left-cover.html">Left Cover</a></li>
+                                    <li class="nav-item"><a href="../auth/signin-right-cover.html">Right Cover</a></li>
+                                    <li class="nav-item"><a href="../auth/signin-popup.html">Modal</a></li>
+                                    <li class="nav-item"><a href="../auth/signin-popup-image.html">Modal with Image</a></li>
+                                    <li class="nav-item"><a href="../auth/signin-illustration.html">Illustration</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-has-children">
+                                <a>Utility - Sign up <i class="fas fa-angle-right"></i></a>
+                                <ul class="sub-menu-children">
+                                    <li class="nav-item"><a href="../auth/signup-basic.html">Basic</a></li>
+                                    <li class="nav-item"><a href="../auth/signup-left-cover.html">Left Cover</a></li>
+                                    <li class="nav-item"><a href="../auth/signup-right-cover.html">Right Cover</a></li>
+                                    <li class="nav-item"><a href="../auth/signup-popup.html">Modal</a></li>
+                                    <li class="nav-item"><a href="../auth/signup-popup-image.html">Modal with Image</a></li>
+                                    <li class="nav-item"><a href="../auth/signup-illustration.html">Illustration</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-has-children">
+                                <a>Utility - Password Reset <i class="fas fa-angle-right"></i></a>
+                                <ul class="sub-menu-children">
+                                    <li class="nav-item"><a href="../auth/reset-password.html">Basic</a></li>
+                                    <li class="nav-item"><a href="../auth/reset-password-illustration.html">Illustration</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-has-children">
+                                <a>Utility - Error 404 <i class="fas fa-angle-right"></i></a>
+                                <ul class="sub-menu-children">
+                                    <li class="nav-item"><a href="../auth/error-404-basic.html">Basic</a></li>
+                                    <li class="nav-item"><a href="../auth/error-404-illustration.html">Illustration</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary" href="https://designspace.io/product/ehya-landing-page-design-template/">Get it now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end:navBar-->
+
+    <!--start:hero-->
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="left col-lg-6 col-md-5 col-sm-12">
+                    <div class="illustration md-hidden wow fadeInLeft">
+                        <img src="../assets/images/illustrations/ill-insurance.svg" class="">
+                    </div>
+                    <div class="illustration hidden md-block wow fadeInRight">
+                        <img src="../assets/images/illustrations/ill-insurance-tablet.svg" class="">
+                    </div>
+                </div>
+                <div class="right col-lg-6 col-md-7 col-sm-12">
+                    <div class="content">
+                        <h1 class="text-black wow fadeInUp">Make your new life happier.</h1>
+                        <p class="text-20 leading-36 text-black mt-24 mb-32 wow fadeInUp">We work with several leading insurance companies to secure insurance coverages tailored to meet your needs.</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="card-f card-f-2 d-flex p-0 mb-32 wow fadeInUp">
+                                    <div class="card-f-heading mr-16">
+                                        <div class="ic">
+                                            <img src="../assets/images/icons/pouch.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-f-body">
+                                        <h4 class="text-16 text-black">Special expat rates </h4>
+                                        <p class="text-gray mt-8 leading-normal">Excellent coverage</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="card-f card-f-2 d-flex p-0 mb-32 wow fadeInUp">
+                                    <div class="card-f-heading mr-16">
+                                        <div class="ic">
+                                            <img src="../assets/images/icons/bag.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-f-body">
+                                        <h4 class="text-16 text-black">Work life balance</h4>
+                                        <p class="text-gray mt-8 leading-normal">Make your life easier</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="card-f card-f-2 d-flex p-0 wow fadeInUp">
+                                    <div class="card-f-heading mr-16">
+                                        <div class="ic">
+                                            <img src="../assets/images/icons/cs.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-f-body">
+                                        <h4 class="text-16 text-black">24/7 English Support</h4>
+                                        <p class="text-gray mt-8 leading-normal">Call us anytime</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="card-f card-f-2 d-flex p-0 wow fadeInUp">
+                                    <div class="card-f-heading mr-16">
+                                        <div class="ic">
+                                            <img src="../assets/images/icons/file.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-f-body">
+                                        <h4 class="text-16 text-black">No paperwork</h4>
+                                        <p class="text-gray mt-8 leading-normal">Just sign up & use app</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div col-lg-6 col-md-12 col-sm-12">
+                                <div class="card-f xl-hidden hidden md-block">
+                                    <button type="button" class="btn btn-primary">Get a consultation</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end:hero-->
+</header>
+<!--end:header-->
+
+<!--start:our services-->
+<section class="our-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+                <div class="heading text-center wow fadeInUp">
+                    <span class="text-success text-14">OUR SERVICES</span>
+                    <h3 class="text-black mt-16">Insurance made simple for you</h3>
+                    <p class="text-18 text-gray mt-16">We work with several leading insurance companies to secure insurance coverages tailored to meet your needs.</p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <ul class="c-list d-flex justify-around wow fadeInUp">
+                    <li>
+                        <img src="../assets/images/icons/checkmark-green-soft.svg" alt="">
+                        <p class="text-black">Flexible products to make your life easier</p>
+                    </li>
+                    <li>
+                        <img src="../assets/images/icons/checkmark-green-soft.svg" alt="">
+                        <p class="text-black">Highest standards of service</p>
+                    </li>
+                    <li>
+                        <img src="../assets/images/icons/checkmark-green-soft.svg" alt="">
+                        <p class="text-black">Fast and reliable service</p>
+                    </li>
+                </ul>
+
+                <div class="content">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="card-f card-f-bg-white wow fadeInUp">
+                                <div class="card-f-heading">
+                                    <div class="ic ic-lg ic-badge-outline border-primary-100 rounded-16 mb-32">
+                                        <img src="../assets/images/icons/home.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-f-body">
+                                    <h4 class="text-black">Home insurance</h4>
+                                    <p class="text-gray mt-8 mb-32">Home insurance is a type of insurance policy that provides cover for your home.</p>
+                                    <a href="#" class="text-primary font-bold">Learn more <i class="fas fa-arrow-right text-14 ml-8"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="card-f card-f-bg-white wow fadeInUp">
+                                <div class="card-f-heading">
+                                    <div class="ic ic-lg ic-badge-outline border-primary-100 rounded-16 mb-32">
+                                        <img src="../assets/images/icons/blood-donation.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-f-body">
+                                    <h4 class="text-black">Life insurance</h4>
+                                    <p class="text-gray mt-8 mb-32">Helping you bridge gaps in your health care coverage during times of transition.</p>
+                                    <a href="#" class="text-primary font-bold">Learn more <i class="fas fa-arrow-right text-14 ml-8"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="card-f card-f-bg-white wow fadeInUp">
+                                <div class="card-f-heading">
+                                    <div class="ic ic-lg ic-badge-outline border-primary-100 rounded-16 mb-32">
+                                        <img src="../assets/images/icons/car.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-f-body">
+                                    <h4 class="text-black">Car insurance</h4>
+                                    <p class="text-gray mt-8 mb-32">Car insurance is a type of insurance policy that provides cover for your car.</p>
+                                    <a href="#" class="text-primary font-bold">Learn more <i class="fas fa-arrow-right text-14 ml-8"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:out services-->
+
+<!--start:quote-->
+<section class="quote clip-eb">
+    <div class="container">
+        <div class="row">
+            <div class="left col-lg-7 col-md-12 col-sm-12">
+                <div class="card-f card-f-bg-white mr-32 wow fadeInUp">
+                    <div class="card-f-body">
+                        <i class="fas fa-quote-left text-success"></i>
+                        <p class="text-black font-normal mt-32">This platform is one of the best companies I have dealt with in Indonesia. They’re always happy to help, and i wouldn’t hesitate to recommend them.</p>
+                        <div class="meta mt-24">
+                            <p class="text-16 xl-text-20 font-semibold text-black mr-16">Daniel Anderson</p>
+                            <p class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified customer</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:quote-->
+
+<!--start:benefits-->
+<section class="benefits">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="heading wow fadeInUp">
+                    <span class="text-success text-14">YOUR BENEFITS</span>
+                    <h3 class="text-black mt-16">We’re your right insurance advocate</h3>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card-f p-0 mb-64 wow fadeInUp">
+                    <div class="card-f-heading">
+                        <div class="ic ic-badge ic-rounded rounded-16 ic-badge-outline border-primary-200 mb-24">
+                            <img src="../assets/images/icons/money-donation.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-f-body">
+                        <h4 class="text-22 text-black">We have the best prices</h4>
+                        <p class="text-gray mt-8 mb-0">Our insurance plans offers are priced the same everywhere else. We just make them easier for you to find.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card-f p-0 mb-64 wow fadeInUp">
+                    <div class="card-f-heading">
+                        <div class="ic ic-badge ic-rounded rounded-16 ic-badge-outline border-primary-200 mb-24">
+                            <img src="../assets/images/icons/shield.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-f-body">
+                        <h4 class="text-22 text-black">We’re your insurance advocate</h4>
+                        <p class="text-gray mt-8 mb-0">We will deal with the insurance companies for you, even after you’ve bought your plan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card-f p-0 wow fadeInUp">
+                    <div class="card-f-heading">
+                        <div class="ic ic-badge ic-rounded rounded-16 ic-badge-outline border-primary-200 mb-24">
+                            <img src="../assets/images/icons/neutron.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-f-body">
+                        <h4 class="text-22 text-black">We’re unbiased</h4>
+                        <p class="text-gray mt-8 mb-0">Our online tools help you decide what product is best for you. We’re here to insurance plan you choose.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card-f p-0 wow fadeInUp">
+                    <div class="card-f-heading">
+                        <div class="ic ic-badge ic-rounded rounded-16 ic-badge-outline border-primary-200 mb-24">
+                            <img src="../assets/images/icons/cs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-f-body">
+                        <h4 class="text-22 text-black">We’re available 24/7</h4>
+                        <p class="text-gray mt-8 mb-0">We have your back 24/7 between our online chat function, email and telephone support.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card-f p-0 wow fadeInUp">
+                    <div class="card-f-heading">
+                        <div class="ic ic-badge ic-rounded rounded-16 ic-badge-outline border-primary-200 mb-24">
+                            <img src="../assets/images/icons/like.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-f-body">
+                        <h4 class="text-22 text-black">We make insurance simple</h4>
+                        <p class="text-gray mt-8 mb-0">We’re committed to making applying for insurance as simple as can be for our customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:benefits-->
+
+<div class="container">
+    <div class="divider"></div>
+</div>
+
+<!--start:tips-->
+<section class="tips">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-12 col-sm-12">
+                <div class="heading text-center wow fadeInUp">
+                    <span class="text-success text-14">OUR TIPS FOR YOU</span>
+                    <h3 class="text-black mt-16">Reinventing your protection</h3>
+                    <p class="text-18 text-gray mt-16 mb-0">We share common trends, strategies ideas, opinions, short & long stories from the team behind company.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card card-article wow fadeInUp">
+                        <a href="#">
+                            <img src="../assets/images/photos/555x600/1@2x.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">How to prevent and protect your family from Carbon monoxide</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card card-article wow fadeInUp">
+                        <a href="#">
+                            <img src="../assets/images/photos/555x600/2@2x.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title text-white">Motherhood is the hardest and the best job ever</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:tips-->
+
+<!--start:testimonials-->
+<section class="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading text-center wow fadeInUp">
+                    <span class="text-success text-14">TESTIMONIALS</span>
+                    <h3 class="text-black mt-16">What our customer have to says</h3>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="c-customer-review wow fadeInUp">
+                        <div class="c-customer-review-heading">
+                            <ul class="star">
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="c-customer-review-body">
+                            <p class="text-gray">I received great customer service from the specialists who helped me. I would recommend to anyone who wants quality.</p>
+                        </div>
+                        <div class="c-customer-review-meta">
+                            <div class="user">
+                                <img src="../assets/images/photos/64x64/1.png" alt="">
+                            </div>
+                            <div class="meta">
+                                <p class="text-black">Viola Manisa</p>
+                                <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified customer</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="c-customer-review wow fadeInUp">
+                        <div class="c-customer-review-heading">
+                            <ul class="star">
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="c-customer-review-body">
+                            <p class="text-gray">Very responsive and competent! I've never dealt with an insurance company this customer-friendly in my entire life.</p>
+                        </div>
+                        <div class="c-customer-review-meta">
+                            <div class="user">
+                                <img src="../assets/images/photos/64x64/1.png" alt="">
+                            </div>
+                            <div class="meta">
+                                <p class="text-black">Viola Manisa</p>
+                                <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified customer</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="c-customer-review wow fadeInUp">
+                        <div class="c-customer-review-heading">
+                            <ul class="star">
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="c-customer-review-body">
+                            <p class="text-gray">My experience with this platform so far has been great. Everything is easy, from signing the contract to making an appointment.</p>
+                        </div>
+                        <div class="c-customer-review-meta">
+                            <div class="user">
+                                <img src="../assets/images/photos/64x64/1.png" alt="">
+                            </div>
+                            <div class="meta">
+                                <p class="text-black">Viola Manisa</p>
+                                <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified customer</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="c-customer-review wow fadeInUp">
+                        <div class="c-customer-review-heading">
+                            <ul class="star">
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                                <li><img src="../assets/images/icons/trustpilot.svg" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="c-customer-review-body">
+                            <p class="text-gray">It's the best online insurance you can find. Easy, without hidden costs and you can be very sure. your data is completely save.</p>
+                        </div>
+                        <div class="c-customer-review-meta">
+                            <div class="user">
+                                <img src="../assets/images/photos/64x64/1.png" alt="">
+                            </div>
+                            <div class="meta">
+                                <p class="text-black">Viola Manisa</p>
+                                <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified customer</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                    <div class="customer-review-result">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="left text-center px-0 xl-px-32 mt-20 wow fadeInUp">
+                                    <ul>
+                                        <li><img src="../assets/images/photos/64x64/1@2x.png" alt=""></li>
+                                        <li><img src="../assets/images/photos/96x96/1@2x.png" alt=""></li>
+                                        <li><img src="../assets/images/photos/96x96/2@2x.png" alt=""></li>
+                                    </ul>
+                                    <p class="text-black mt-20"><span class="font-bold">Friendly</span> customer support team</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="middle text-center px-0 xl-px-32 wow fadeInUp">
+                                    <img src="../assets/images/clients-logo/trustpilot.svg" alt="">
+                                    <ul class="star mt-12">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <p class="text-black mt-12 mb-0"><span class="font-bold">4.6 out of 5 stars</span> from 8.6k reviews</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="right text-center px-0 xl-px-32 mt-22 wow fadeInUp">
+                                    <div class="ic">
+                                        <img src="../assets/images/icons/like.svg" alt="">
+                                    </div>
+                                    <p class="text-black mt-16">We’re making <span class="font-bold">insurance</span> as <span class="font-bold">simple as</span> can be</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:testimonials-->
+
+<div class="relative">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 175">
+        <path fill="#0d2436" fill-rule="evenodd" d="M1440 175H0V0c240 53.333 480 80 720 80s480-26.667 720-80v175z"></path>
+    </svg>
+</div>
+
+<!--start:cta-->
+<section class="cta">
+    <div class="container">
+        <div class="row">
+            <div class="left col-lg-6 col-md-12 col-sm-12">
+                <div class="heading wow fadeInUp">
+                    <h3 class="text-white">Ready to get insured? Sumbit your request and hear back as soon as tomorrow</h3>
+                </div>
+                <div class="content">
+                    <form action="" class="mb-24 d-flex wow fadeInUp">
+                        <div class="form-group xl-w-60p xl-mr-8 md-mb-0 xl-mb-0">
+                            <input type="text" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group md-mb-0 xl-mb-0">
+                            <button type="button" class="btn btn-lg btn-primary">Get started</button>
+                        </div>
+                    </form>
+                    <p class="text-gray mb-0 wow fadeInUp">Get a response tomorrow if you submit by 9pm today. If we received after 9pm will get a reponse the following day.</p>
+                </div>
+            </div>
+            <div class="right col-lg-6 col-md-12 col-sm-12">
+                <div class="card-f card-f-bg-white card-f-2 d-flex mr-32 -mb-12 z-10 wow fadeInRight">
+                    <div class="card-f-heading mr-24">
+                        <div class="ic ic-badge ic-rounded rounded-16 ic-badge-outline border-primary-200">
+                            <img src="../assets/images/icons/money-donation.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-f-body">
+                        <h4 class="text-22 text-black">We have the best prices</h4>
+                        <p class="text-gray mt-8">Our insurance plans offers are priced the same everywhere else.</p>
+                    </div>
+                </div>
+                <div class="card-f card-f-bg-white card-f-2 d-flex wow fadeInRight">
+                    <div class="card-f-heading mr-24">
+                        <div class="ic ic-badge ic-rounded rounded-16 ic-badge-outline border-primary-200">
+                            <img src="../assets/images/icons/like.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-f-body">
+                        <h4 class="text-22 text-black">We make insurance simple</h4>
+                        <p class="text-gray mt-8">We’re committed to making applying for insurance as simple as can be.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
+</section>
+<!--end:cta-->
+
+<!--start:footer-->
+<footer id="footer" class="footer footer-dark">
+    <div class="container">
+        <div class="row">
+            <div class="footer-left col-lg-3 col-md-5 col-sm-12">
+                <div class="footer-widget wow fadeInUp">
+                    <a href="#" class="logo"><span class="ttms-brand ttms-brand-light">TTMS</span></a>
+                    <p class="description">Build a modern and creative website with crealand</p>
+                    <ul class="footer-sosmed">
+                        <li class="mr-24"><a href="#" class="no-underline text-gray"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="mr-24"><a href="#" class="no-underline text-gray"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mr-24"><a href="#" class="no-underline text-gray"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mr-24"><a href="#" class="no-underline text-gray"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#" class="no-underline text-gray"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right col-lg-8 col-md-7 col-sm-12">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>Product</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="#">Landingpage</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Referral Program</a></li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>Services</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Themes</a></li>
+                                <li><a href="#">Illustrations</a></li>
+                                <li><a href="#">UI Kit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>Company</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>More</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">License</a></li>
+                                <li><a href="#">Changelog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-xl-12">
+                <div class="footer-copyright wow fadeInUp">
+                    <div class="btn btn-rounded btn-primary btn-ic pointer-events-none">
+                        <i class="fas fa-heart text-24"></i>
+                    </div>
+                    <p>Copyright © 2019. Crafted with love.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end:footer-->
+
+<!--start:javascript-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap-select.min.js"></script>
+<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/index.js"></script>
+<!--end:javascript-->
+
+</body>
+</html>

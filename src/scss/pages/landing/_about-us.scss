@@ -1,0 +1,605 @@
+header.landing-about{ 
+  $h-ill : 500px;
+  background-color: #f9fbfe; 
+  margin-bottom: $h-ill/2;
+  .hero{
+    padding-top: 80px;
+    .content{ 
+      position: relative;
+      z-index: 2; 
+      text-align: center;
+      max-width: 710px;
+      margin: 0 auto; 
+    }
+    h1{
+      font-size: 56px !important;
+      line-height: 1.21 !important;
+      margin: 0 0 24px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+      color: $s-color-gray;
+      margin: 0 auto 56px; 
+    }
+  }
+  .illustration{
+    z-index: 1; 
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: $h-ill;
+    margin: 0 auto $h-ill/-2;
+    img{
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.about-us-information{ 
+  padding-top: 90px;
+  .content{
+    padding-bottom: 80px; 
+    padding-left: 40px; padding-right: 40px; 
+    border-bottom: solid 1px #e5efff;
+  }
+  .card-f{
+    .counter{
+      font-size: 48px !important;
+      line-height: 1.25 !important;
+      margin-bottom: 6px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+    }
+  }
+}
+.real-estate-signup.about-us-newsletter{
+  .real-estate-signup-box{
+    border-radius: 0;
+    padding: 76px 60px 80px;
+  }
+  h4{
+    font-size: 48px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 14px;
+  }
+  .form-submit-email{
+    margin-top: 43px;
+    .input-group{
+      border-radius: 8px;
+      overflow: hidden; 
+      max-width: 430px;
+      margin-bottom: 0;
+    }
+    .input-group-append{
+      padding: 5px;
+      .btn{
+        border-radius: 4px;
+        min-width: 130px;
+      }
+    }
+  }
+}
+
+.real-estate-about.about-us-page{
+  padding-top: 80px; 
+  padding-bottom: 60px; 
+  .content{
+    .left{
+      h3{
+        font-size: 48px !important;
+        line-height: 1.25 !important;
+      }
+    }
+    .left{
+      padding-top: 30px;
+      .c-list{
+        margin-right: -20px;
+        width: initial;
+        li{
+          align-items: center;
+          margin-bottom: 20px;
+          span{
+            font-size: 16px;
+            line-height: 1.375;
+          }
+        }
+      }
+    }
+    .right{
+      .features-photos{
+        display: flex;
+        width: 100%;
+        height: initial;
+        img{
+          width: 100%; height: 100%;
+          object-fit: cover; 
+        }
+        .photo-1, .photo-2, .photo-3{
+          position: relative;
+          z-index: 2;
+          overflow: hidden;
+          border-radius: 8px;
+        }
+        .photo-1{
+          width: 387px + 20px;
+          height: 430px + 20px;
+// margin: -10px;
+// border: solid 10px #ffffff;
+}
+.photo-2{
+  z-index: 1;
+  width: 322px;
+  height: 450px;
+  margin-top: 160px; 
+  margin-left: -134px;
+}
+.photo-3{
+  width: 455px; 
+  height: 520px;
+}
+}
+}
+
+.content-top{
+  margin-bottom: 100px;
+  .right{
+    justify-content: flex-start;
+  }
+}
+.content-bottom{
+  position: relative;
+  padding-top: 80px;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0; left: -140px;
+    width: 1290px; height: 536px;
+    background-color: #f9fbfe;
+  }
+  .left{ 
+    padding: 0;
+    max-width: 455px; 
+  }
+  .features-photos{
+    padding-top: 20px;
+  }
+}
+}
+}
+
+.landing-about-blog{
+  padding-bottom: 60px;
+  padding-top: 70px; 
+  .heading{
+    position: relative; 
+    margin-bottom: 48px;
+    h3{ 
+      font-size: 48px !important;
+      line-height: 1.25 !important;
+    } 
+  } 
+}
+.card-article-about{
+  display: block;
+  border: none; 
+  border-radius: 8px;
+  background-color: #f9fbfe;
+  padding: 10px; 
+  margin: 0 0 26px;
+  &:hover{
+    text-decoration: none;
+  }
+  .card-article-heading {
+    height: 240px;
+    border-radius: 8px;
+    overflow: hidden; 
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  .card-article-body {
+    padding: 18px 10px 14px; 
+    .category{
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.43;
+      color: #959ead;
+      margin: 0 0 10px; 
+    }
+    .title{
+      color: $s-color-black;
+      font-size: 24px !important;
+      line-height: 1.33 !important;
+      max-height: 2.66em;
+      margin: 0 0 32px;
+      overflow: hidden; 
+    }
+    .blog-read-more{
+      .read-more{
+        text-transform: uppercase; 
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.43;
+        color: #1565d8;  
+      }
+    }
+  } 
+}
+
+// Mobile-Tab devices (tablets, < 1200px)
+@media (max-width: $breakpoints-xl - 0.02px) {
+  .real-estate-about.about-us-page{
+    .content{
+      .left{
+        h3{
+          padding-right: 0;
+        }
+        .c-list{
+          li{
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+// Mobile-Tab devices (tablets, < 992px)
+@media (max-width: $breakpoints-lg - 0.02px) {
+  header.landing-about{
+    $h-ill : 440px;
+    margin-bottom: $h-ill/2;
+    .hero{
+      padding-top: 44px; 
+      p{
+        max-width: 540px;
+        margin-bottom: 64px;
+      }
+    }
+    .illustration{
+      height: $h-ill;
+      margin: 0 auto $h-ill/-2;
+    }
+  }
+  .about-us-information{
+    padding-top: 36px;
+    .container{
+      padding-left: 24px !important;
+      padding-right: 24px !important; 
+    }
+    .content{
+      text-align: center;
+      padding-left: 0; padding-right: 0;
+    }
+    .card-f{
+      padding-left: 0; padding-right: 0; 
+      .counter{
+        font-size: 32px !important;
+        margin-bottom: 8px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 1.78;
+      }
+    }
+  }
+
+  .real-estate-about.about-us-page{
+    padding-top: 50px; 
+    .container{
+      padding-left: 0 !important;
+      padding-right: 0 !important; 
+    }
+    .content{
+      .left{
+        h3{
+          font-size: 36px !important; 
+          line-height: 1.33 !important; 
+          margin-bottom: 20px;
+        }
+        p{
+          font-size: 16px;
+          line-height: 1.75;
+          margin-bottom: 1.75em; 
+        }
+        .c-list{
+          li{
+            margin-bottom: 16px; 
+            width: 50%;
+            span{
+              font-size: 14px;
+              line-height: 1.43;
+            }
+          }
+        }
+        .c-list{
+          margin-top: 24px;
+        }
+      }
+      .right{
+        .features-photos{
+          .photo-1{
+            min-width: 277px; width: 277px;
+            height: 380px;
+          }
+          .photo-2{
+            min-width: 292px; width: 292px;
+            height: 370px;
+            margin-top: 120px;
+            margin-left: -214px; 
+          }
+          .photo-3{
+            min-width: 282px; width: 282px; 
+            height: 410px;
+          }
+        }
+      }
+      .content-top{
+        margin-bottom: 80px;
+        .left{
+          padding-top: 50px; 
+          padding-left: 25px;
+        }
+        .right{
+          justify-content: flex-start;
+        }
+      }
+      .content-bottom{
+        &::before{
+          height: 400px; 
+        }
+        padding-top: 36px; 
+        .left{
+          padding-left: 25px;
+        }
+        .features-photos{
+          padding-top: 15px;
+        }
+      }
+    }
+  }
+
+  .landing-about-blog{
+    padding-top: 20px;
+    padding-bottom: 50px; 
+    .container{
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+    }
+    .heading{
+      margin-bottom: 36px; 
+    }
+  }
+  .card-article-about{
+    .card-article-body{
+      .title{
+        max-height: 3.99em;
+      }
+    }
+  }
+
+  .real-estate-signup.about-us-newsletter{
+    .real-estate-signup-box{
+      padding: 56px 40px 64px;
+    }
+    h4{
+      font-size: 40px !important;
+      line-height: 1.3 !important;
+    }
+    .form-submit-email{
+      margin-top: 42px;
+    }
+  }
+}
+// Mobile-Tab devices (tablets, < 768px)
+@media (max-width: $breakpoints-md - 0.02px) {
+  .real-estate-about.about-us-page{
+    .content{
+      .content-top, .content-bottom{
+        .left{
+          text-align: center; 
+          padding: 30px 25px 0; 
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .landing-about-blog{
+    .heading{
+      text-align: center;
+    }
+  } 
+  .real-estate-signup.about-us-newsletter{
+    padding-bottom: 0;
+  }
+}
+// Mobile devices (tablets, < 576px)
+@media (max-width: $breakpoints-sm - 0.02px) {
+  header.landing-about{
+    $h-ill : 360px;
+    margin-bottom: $h-ill/2;
+    .hero{
+      padding-top: 10px; 
+      h1{
+        font-size: 32px !important; 
+        line-height: 1.25 !important; 
+      }
+      p{
+        font-size: 16px;
+        line-height: 1.75;
+        margin-bottom: 36px;
+      }
+    }
+    .illustration{
+      height: $h-ill; 
+      margin: 0 auto $h-ill/-2;
+    }
+  }
+  .about-us-information{
+    padding-top: 24px;  
+    .content{
+      padding-bottom: 36px; 
+    }
+    .card-f{
+      padding: 20px 0;
+      .btn-ic{
+        width: 36px;
+        height: 36px;
+      }
+      .counter{
+        font-size: 20px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 4px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 1.71; 
+      }
+    }
+  }
+  .real-estate-about.about-us-page{
+    padding-top: 56px;
+    padding-bottom: 32px;
+    .content{
+      .left{
+        h3{
+          font-size: 28px !important;
+          line-height: 1.29 !important;
+          margin-bottom: 16px; 
+        }
+        .c-list{
+          margin: 0 -10px;
+          li{
+            margin: 0 4px 12px;
+            width: initial;
+          }
+        }
+      }
+      .right{
+        .features-photos{
+          .photo-1{
+            width: 280px;
+            min-width: 280px; 
+            height: 300px;
+          }
+          .photo-2{
+            height: 300px;
+            margin-left: -160px;
+          }
+          .photo-3{
+            width: 100%;
+            min-width: 100%;
+            height: initial;
+          }
+        }
+      }
+      .content-top, .content-bottom{
+        .left{
+          padding: 0 20px; 
+        }
+        .right{
+          .features-photos{
+            margin-bottom: 48px;
+          }
+        }
+      }
+      .content-top{
+        margin-bottom: 28px; 
+        .right{
+          .features-photos{
+            padding-left: 15px; 
+            padding-right: 15px; 
+          }
+        }
+      }
+      .content-bottom{
+        background: #f9fbfe; 
+        flex-direction: column-reverse;
+        .right{
+          .features-photos{
+            padding: 0 20px;
+            margin-top: 36px; 
+          }
+        }
+      }
+    }
+  }
+  .landing-about-blog{
+    padding-top: 32px;
+    .container{
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .heading{
+      margin-bottom: 24px; 
+      h3{
+        font-size: 28px !important; 
+        line-height: 1.29 !important; 
+      }
+    }
+  }
+  .card-article-about{
+    .card-article-body{
+      text-align: center;
+      padding-left: 0; padding-right: 0; 
+      margin: 0 -5px;
+      .title{
+        font-size: 20px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 24px; 
+      }
+    }
+  }
+  .real-estate-signup.about-us-newsletter{
+    text-align: center; 
+    h4{
+      font-size: 28px !important;
+      line-height: 1.29 !important;
+      margin-bottom: 24px;
+    }
+    .real-estate-signup-box{
+      padding: 56px 10px 48px;
+      margin: 0;
+    }
+    .form-submit-email{
+      margin-top: 36px;
+      .input-group{
+        padding: 10px;
+      }
+      .form-control{
+        height: 3rem;
+        border-radius: 8px; 
+        border: solid 1px #c3cad9;
+        padding-left: 48px; 
+      }
+      .input-group-prepend{
+        .btn{
+          background: transparent;
+          border: transparent;
+          padding: 0 0 0 20px;
+          width: 48px; margin-right: -48px;
+        }
+      }
+      .input-group-append{
+        padding: 10px 0 0;
+        width: 100%;
+        .btn{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+

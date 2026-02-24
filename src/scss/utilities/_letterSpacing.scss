@@ -1,0 +1,103 @@
+/*
+  Letter Spacing
+ */
+
+$values: (
+        "tighter": -.05em,
+        "tight": -.025em,
+        "normal": 0,
+        "wide": 0.025em,
+        "wider": 0.05em,
+        "widest": 0.1em,
+        "2": 0.2px 
+);
+
+@each $name, $value in $values {
+  .tracking-#{$name} {
+    letter-spacing: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-tracking-#{$name} {
+      letter-spacing: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-tracking-#{$name} {
+      letter-spacing: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-tracking-#{$name} {
+      letter-spacing: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-tracking-#{$name} {
+      letter-spacing: $value;
+    }
+  }
+}
+
+@for $i from 1 through 9 {
+  .tracking-0#{$i} {
+    letter-spacing: $i * 0.1px;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-tracking-0#{$i} {
+      letter-spacing: $i * 0.1px;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-tracking-0#{$i} {
+      letter-spacing: $i * 0.1px;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-tracking-0#{$i} {
+      letter-spacing: $i * 0.1px;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-tracking-0#{$i} {
+      letter-spacing: $i * 0.1px;
+    }
+  }
+}
+
+@for $i from 1 through 5 {
+  .tracking-#{$i} {
+    letter-spacing: $i * 1px;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-tracking-#{$i} {
+      letter-spacing: $i * 1px;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-tracking-#{$i} {
+      letter-spacing: $i * 1px;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-tracking-#{$i} {
+      letter-spacing: $i * 1px;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-tracking-#{$i} {
+      letter-spacing: $i * 1px;
+    }
+  }
+}

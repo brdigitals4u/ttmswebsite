@@ -1,0 +1,48 @@
+
+.custom-switch { 
+  padding-left: 5.5rem;
+
+  .custom-control-label {
+    padding-top: 10px;
+  }
+
+  .custom-control-label::before {
+    width: 64px;
+    height: 36px;
+    border-radius: 18px;
+    box-shadow: 0 10px 20px 0 rgba(20, 45, 65, 0.08);
+    border: 1px solid white;
+    left: -5.5rem;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .custom-control-input:checked~.custom-control-label::before {
+    background-color: white;
+    border: 1px solid white;
+  }
+
+  .custom-control-label::after {
+    top: calc(0.40rem + 2px);
+    left: calc(-5.3rem + 2px);
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .custom-control-input:checked~.custom-control-label::after {
+    left: calc(-4.3rem + 2px);
+  }
+
+  &-success {
+    .custom-control-input:checked~.custom-control-label::after {
+      background-color: $s-color-success;
+    }
+  }
+}

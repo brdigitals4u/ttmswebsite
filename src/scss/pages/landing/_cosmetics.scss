@@ -1,0 +1,958 @@
+header.landing-cosmetics{ 
+  background-color: rgba(#36b37e, .08);
+  padding-bottom: 100px;
+  .content{
+    flex: 0 0 520px;
+    max-width: 520px;
+  }
+  .hero {
+    position: relative; 
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .content{   
+    padding-top: 60px;
+    .header-label{
+      font-size: 18px;
+      line-height: 1.33;
+      font-weight: 600;
+      margin-bottom: 20px;
+      display: block;
+    }
+    h1{
+      font-size: 56px !important;
+      line-height: 1.21 !important;
+      margin: 0 0 20px;
+      color: #183b56;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+      margin: 0 0 48px;
+      max-width: 470px;
+      color: #5a7184;
+    }
+    .btn-container{
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-start;
+      .btn-rounded{ 
+        padding-left: 0;padding-right: 0;
+        width: 56px;
+      }
+    }
+  }
+  .illustration{
+    display: flex;
+    align-items: flex-end; 
+    margin: 0 -20px -130px; 
+    img{
+      position: relative;
+      max-width: 100%;
+    }
+  }
+}
+
+.landing-cosmetics-store{
+  padding-top: 100px; 
+  .container{
+    position: relative; 
+  }
+  .inner-container{
+    padding-bottom: 100px;
+    border-bottom: solid 1px #e5efff;
+  }
+  $h-width : 350px;
+  .heading{
+    flex: 0 0 $h-width; 
+    max-width: $h-width; 
+    padding: 40px 35px 0 15px;
+    border-right: solid 1px #eef0f2; 
+    h3{
+        font-size: 48px !important;
+        line-height: 1.25 !important;
+        margin: 0 0 20px; 
+    }
+    h5{
+      font-size: 20px;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      color: #183b56;
+      margin: 0 0 24px;
+    }
+    p{
+      font-size: 16px !important;
+      line-height: 1.75;
+      color: #183b56; 
+      margin: 0 0 72px;
+    } 
+    .btn{
+      min-width: 167px; 
+    }
+  }
+  .content{
+    padding: 0 15px 0 50px; 
+    flex: 1;  
+    max-width: calc(100% - 350px);
+  }
+}
+.cosmetics-store-container{
+  margin-left: -15px;
+  margin-right: -235px;
+  .owl-carousel{
+    position: initial;
+  }
+  .owl-carousel .owl-dots{
+    position: absolute;
+    top: 0; left: 15px;
+    display: flex;
+    justify-content: flex-end; 
+    margin: 0 -4px;
+    .owl-dot{
+      display: block;
+      width: 10px; height: 10px;
+      background-color: rgba(#5a7184, 0.1); 
+      border: solid 1px transparent; 
+      margin: 0 3px; 
+      border-radius: 50%;
+      &.active{
+        background-color: #ffffff;
+        border-color: #183b56;
+      }
+    }
+  } 
+}
+.cosmetics-store-item{
+  padding: 0 15px;
+}
+.cosmetics-product-box{
+  position: relative;
+  .ill{
+    position: relative;
+    height: 390px;
+    img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: fill; 
+    }
+  }
+  .description{
+    padding: 46px 0 0;
+    h4{
+      font-size: 28px !important; 
+      line-height: 1.29 !important;
+      letter-spacing: 0.2px;
+      color: #183b56;
+      margin: 0 0 8px;
+    }
+    p{
+      font-size: 20px;
+      line-height: 1.8;
+      color: #5a7184; 
+      margin: 0;
+    }
+  }
+}
+
+.landing-cosmetics-fact{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .heading{
+    text-align: center; 
+    max-width: 790px;
+    margin: 0 auto 70px; 
+    h3{ 
+      font-size: 40px !important;
+      line-height: 1.33 !important;
+      margin: 0 0 18px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+      color: #5a7184; 
+    }
+  }
+}
+.box-cosmetics-fact{
+  text-align: center;
+  margin: 0 0 20px;
+  .ic-container{
+    display: flex; align-items: center; justify-content: center; 
+    width: 64px; height: 64px;
+    background-color: #f2f6fd;
+    border-radius: 16px;
+    overflow: hidden; 
+    margin: 0 auto 42px;
+  }
+  .social-content{
+    h5{
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.2px;
+      color: #183b56;
+      margin: 0 0 10px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 1.71;
+      color: #5a7184;
+      margin: 0 auto;
+      max-width: 230px;
+    }
+  }
+}
+
+.landing-cosmetics-feature{
+  position: relative;
+  background-color: #f9fbfe;
+  padding: 90px 0;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 30px; bottom: -40px;
+    width: 405px; height: 80px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/landing-cosmetics/cosmetics-feature-splatter@2x.png');
+  }
+  .heading{
+    max-width: 390px;
+    h3{ 
+      font-size: 40px !important;
+      line-height: 1.33 !important;
+      max-width: 290px;
+      margin: 0 0 20px;
+    }
+    p{
+      font-size: 16px !important; 
+      line-height: 1.75;
+      color: #183b56; 
+      margin: 0 0 1.75em; 
+    }
+    .c-list{
+      color: #183b56;
+      li{
+        margin-bottom: 16px;
+        align-items: center;
+        span{
+          line-height: 1.375; 
+          font-size: 16px;
+        }
+        img{
+          width: 20px; height: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .illustration{
+    display: flex;
+    align-items: flex-start; 
+    img{
+      position: relative;
+      max-width: 100%;
+    }
+    .img-1{
+      position: relative;
+      flex: 0 0 400px;
+      width: 400px; 
+      margin-right: -95px;
+      z-index: 2;
+    }
+    .img-2{
+      position: relative;
+      flex: 0 0 290px;
+      width: 290px;
+      margin-top: 120px;
+      z-index: 1;
+    }
+  }
+}
+
+.landing-cosmetics-product-suited{
+  padding-top: 120px;
+  padding-bottom: 100px; 
+  .heading{
+    text-align: center; 
+    max-width: 790px;
+    margin: 0 auto 90px; 
+    h3{ 
+      font-size: 40px !important;
+      line-height: 1.33 !important;
+      margin: 0 0 18px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+      color: #5a7184; 
+    }
+  }
+  .content{
+    max-width: 944px;
+    margin: 0 auto;
+  }
+}
+.cosmetics-product-package{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 92px;
+  .product-package-item{
+    flex: 0 0 50%;
+    max-width: 50%; 
+  }
+}
+.product-package-item{
+  text-align: center; 
+  &.package-1{
+    background-color: rgba(#36b37e, 0.08);
+  }
+  &.package-2{
+    background-color: rgba(#faad13, 0.08);
+  }
+  &.package-double{
+    flex: 0 0 100%;
+    max-width: 100%; 
+    padding-top: 60px; 
+    background-color: rgba(#183b56, 0.08);
+    .description{
+      h4{
+        font-size: 40px !important;
+        line-height: 1.3 !important;
+      }
+    }
+  }
+  .ill{
+    display: flex; 
+    align-items: center; justify-content: center;
+    max-width: 204px;
+    margin: -90px auto 76px;
+    img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    } 
+  }
+  .description{
+    padding: 0 0 60px;
+    h4{
+      font-size: 32px !important;
+      line-height: 1.25 !important;
+      letter-spacing: 0.2px;
+      color: #183b56;
+      margin: 0 0 10px;
+    }
+    .pricing{
+      display: block;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 1.33;
+      letter-spacing: 0.2px;
+      color: #36b37e;
+      margin: 0 0 30px;
+    }
+    .btn{
+      min-width: 190px;
+      border-radius: 2000px; 
+      .fa{
+        margin-left: 8px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.landing-cosmetics-testimonial{
+  padding: 0 0 60px;
+}
+.cosmetics-testimonial-container{
+  margin: 0 -150px;
+}
+.cosmetics-testimonial{
+  .box-testimonial-container{
+    padding: 0 150px;
+  }
+  .box-testimonial{
+    position: relative;
+    padding: 100px 48px 84px 52px; 
+    border-radius: 0;
+    background-color: #f9fbfe; 
+    align-items: flex-start;
+    .quote{ 
+      .fa{
+        font-size: 100px;
+        line-height: 1;
+        color: #36b37e; 
+      }
+    }
+    .testimonial-content{
+      flex: 0 0 600px;
+      width: 600px;
+      padding: 0;
+      p{
+        font-size: 18px;
+        line-height: 1.78;
+        letter-spacing: 0.12px;
+        margin: 0 0 16px;
+        color: #183b56;
+        &::before{
+          display: none;
+        }
+      }
+      .quote{ 
+        float: right;
+        margin-top: -16px;
+      }
+    }
+    .meta{
+      strong{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #183b56;
+      }
+    }
+    .testimonial-product{
+      position: relative;
+      margin: 0;
+      .ill{
+        width: 313px;
+        img{
+          width: 100%; height: 100%;
+          max-height: 220px;
+          object-fit: contain;
+        }
+      }
+      .quote{
+        display: none;
+      }
+      .description{
+        position: relative;
+        float: right;
+        margin: -65px -30px -100px 0;
+        padding: 10px 16px;
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.08);
+        background-color: #ffffff;
+        h4{
+          font-size: 16px !important; 
+          font-weight: 600;
+          line-height: 1.25 !important; 
+          letter-spacing: 0.2px;
+          color: #183b56;
+          margin: 0 0 3px;
+        }
+        span{
+          display: block;
+          font-size: 14px;
+          line-height: 1.71;
+          color: #36b37e; 
+        }
+      }
+    }
+  }
+  .owl-dots{
+    position: absolute;
+    left: 500px + 150px;
+    bottom: 90px;
+    margin: 0 -4px;
+    display: flex;
+    .owl-dot{
+      display: block;
+      width: 10px; height: 10px;
+      background-color: rgba(#5a7184, 0.1); 
+      border: solid 1px transparent; 
+      margin: 0 4px; 
+      border-radius: 50%;
+      &.active{
+        background-color: #ffffff;
+        border-color: #183b56;
+      }
+    }
+  }
+}
+
+// Mobile-Tab devices (tablets, < 1200px)
+@media (max-width: $breakpoints-xl - 0.02px) {
+  .cosmetics-testimonial-container{
+    margin: 0;
+  }
+  .cosmetics-testimonial{
+    .box-testimonial-container{
+      padding: 0;
+    }
+    .box-testimonial{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0; 
+      padding: 48px 38px 94px;
+      .testimonial-product{
+        margin: 0 auto 56px;
+        .ill{
+          height: 184px; 
+        }
+        .quote{
+          position: absolute; 
+          display: block;
+          top: -32px; left: 16px;
+        }
+      }
+      .testimonial-content{
+        flex: 0 0 100%;
+        width: 100%;
+        p{
+          margin-bottom: 24px;
+        }
+        .quote{
+          display: none;
+        }
+      }
+    }
+    .owl-item{
+      height: 100%;
+    }
+    .owl-dots{
+      display: flex;
+      align-items: center; justify-content: center;
+      left: 0; right: 0;
+      bottom: 57px;
+    }
+  }
+}
+// Mobile-Tab devices (tablets, < 992px)
+@media (max-width: $breakpoints-lg - 0.02px) {
+  header.landing-cosmetics{
+    .content{
+      padding-top: 0;
+      flex: 0 0 630px;
+      max-width: 630px;
+      h1{
+        max-width: 520px;
+      }
+      p{
+        max-width: 630px;
+        margin: 0 0 36px;
+      }
+    }
+    .illustration{
+      max-width: 590px;
+      margin-left: auto; margin-right: auto;
+    }
+  } 
+
+  .landing-cosmetics-store{
+    padding-top: 120px;
+    padding-bottom: 40px;
+    .container{
+      max-width: 672px; 
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .inner-container{
+      border-bottom: none;
+      padding: 0;
+    }
+    .heading, .content{
+      width: 100%;
+      max-width: initial;
+      flex: initial;
+      padding-left: 15px; padding-right: 15px; 
+      border: none;
+    }
+    .heading{
+      text-align: center;
+      padding-top: 0;
+      margin-bottom: 38px; 
+      h5{
+        max-width: 550px;
+        margin-left: auto; margin-right: auto;
+      }
+      p{
+        max-width: 610px; 
+        margin: 0 auto;
+      }
+      .btn{
+        display: none;
+      }
+    }
+    .footer-btn-container{
+      padding-top: 35px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .btn{
+        min-width: 167px;
+      }
+    }
+  }
+  .cosmetics-store-container{
+    $m-right: 330px;
+    margin-right: $m-right*-1; 
+    .owl-carousel{
+      .owl-dots{
+        position: relative;
+        padding-top: 50px;
+        right: 15px;
+        justify-content: center;
+        padding-right: $m-right; 
+      }
+    }
+  }
+
+  .landing-cosmetics-fact{
+    padding-top: 40px; 
+    padding-bottom: 50px;
+    .heading{
+      margin-bottom: 56px; 
+    }
+  }
+  .box-cosmetics-fact{
+    margin-bottom: 36px;
+    .social-content{
+      p{
+        max-width: 300px;
+      }
+    }
+  }
+
+  .landing-cosmetics-feature{
+    padding-top: 48px;
+    padding-bottom: 90px;
+    .illustration{
+      .img-1{
+        flex: 0 0 390px;
+        width: 390px;
+      }
+      .img-2{
+        display: none;
+      }
+    }
+  }
+
+  .landing-cosmetics-product-suited{
+    padding-bottom: 80px;
+    .container{
+      padding: 0 20px !important; 
+    }
+    .heading{
+      margin-bottom: 48px;
+      p{
+        margin-left: auto; margin-right: auto;  
+        max-width: 620px;
+      }
+    }
+  }
+  .product-package-item{
+    .ill{
+      max-width: 165px;
+      margin-bottom: 36px;
+    }
+    .description{
+      padding-bottom: 36px;
+      .pricing{
+        font-size: 20px;
+        margin-bottom: 25px; 
+      }
+    }
+    &.package-double{
+      padding-top: 36px;
+      .description{
+        h4{
+          font-size: 32px !important;
+        }
+      }
+    }
+  }
+
+  .landing-cosmetics-testimonial{
+    padding-bottom: 40px;
+    .container{
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    } 
+  }
+}
+// Mobile-Tab devices (tablets, < 768px)
+@media (max-width: $breakpoints-md - 0.02px) {
+  .landing-cosmetics-store{
+    .container{
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+  }
+  .cosmetics-store-container{
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+  .landing-cosmetics-feature{
+    &::before{
+      left: 50%;
+      margin-left: -200px;
+    }
+    .heading{
+      text-align: center;
+      margin: 0 auto 16px; 
+      h3{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .c-list{
+        justify-content: center;
+        li{
+          display: flex;
+          align-items: center; justify-content: center;
+          flex-wrap: wrap;
+          img{
+            margin: 0 0 8px; 
+          }
+          span{
+            flex: 0 0 100%;
+          }
+        }
+      }
+    }
+    .illustration{
+      .img-1{
+        flex: 0 0 100%;
+        width: 100%;
+      }
+    } 
+  }
+}
+// Mobile devices (tablets, < 576px)
+@media (max-width: $breakpoints-sm - 0.02px) {
+  header.landing-cosmetics{
+    .hero{
+      padding-top: 10px; 
+    }
+    .content{
+      text-align: center;
+      .header-label{
+        font-size: 16px;
+      }
+      h1{
+        font-size: 32px !important;
+        line-height: 1.25 !important;
+      }
+      p{
+        font-size: 16px;
+        line-height: 1.75;
+        margin-bottom: 30px;
+      }
+      .btn-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    } 
+    .illustration{
+      justify-content: center;
+      width: 100%;
+      margin-bottom: -120px;
+      img{ 
+        width: 420px;
+        max-width: initial;
+      }
+    }
+  } 
+
+  .landing-cosmetics-store{
+    padding-top: 72px;
+    .container{
+      padding-left: 20px !important; 
+      padding-right: 20px !important; 
+    }
+    .heading{
+      margin-bottom: 36px; 
+      h3{
+        font-size: 28px !important;
+        line-height: 1.29 !important;
+        margin-bottom: 16px;
+      }
+      h5{
+        font-size: 16px;
+        margin-left: -5px; margin-right: -5px;
+      }
+      p{
+        font-size: 14px !important;
+        line-height: 1.71;
+      }
+    }
+    .footer-btn-container{
+      padding-top: 30px;
+    }
+  }
+  .cosmetics-store-container{
+    $m-right: 260px;
+    margin-right: $m-right*-1; 
+    margin-left: -8px;
+    .owl-carousel{
+      .owl-dots{
+        padding-top: 36px;
+        padding-right: $m-right;  
+      }
+    }
+    .owl-carousel .owl-dots{
+      padding-top: 36px;
+    }
+  }
+  .cosmetics-store-item{
+    padding: 0 8px;
+  }
+  .cosmetics-product-box{
+    .ill{
+      height: 320px;
+    }
+    .description{
+      padding-top: 15px;
+      h4 {
+        font-size: 22px !important;
+        line-height: 1.45 !important;
+        margin-bottom: 5px;
+      }
+      p{
+        font-size: 16px; 
+        line-height: 1.75;
+      }
+    }
+  } 
+  
+
+  .landing-cosmetics-fact{
+    padding-bottom: 16px;
+    .heading{
+      margin-bottom: 38px;
+      h3{
+        font-size: 28px !important;
+        line-height: 1.29 !important;
+        margin-bottom: 24px;
+      }
+      p{
+        font-size: 16px; 
+        line-height: 1.75;
+      }
+    }
+  }
+  .box-cosmetics-fact{
+    margin-bottom: 32px; 
+    .ic-container{
+      margin-bottom: 24px;
+    }
+  }
+
+  .landing-cosmetics-feature{
+    .heading{
+      h3{
+        font-size: 28px !important;
+        line-height: 1.29 !important;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .landing-cosmetics-product-suited{
+    padding-top: 72px;
+    padding-bottom: 66px;
+    .heading{
+      text-align: center;
+      margin-bottom: 12px;
+      h3{
+        font-size: 28px !important;
+        line-height: 1.29 !important;
+        margin-bottom: 24px;
+      }
+      p{
+        font-size: 16px; 
+        line-height: 1.75;
+      }
+    }
+  }
+  .cosmetics-product-package{
+    padding-top: 0;
+    .product-package-item{
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .product-package-item{
+    margin-top: 60px + 36px;
+    .ill{
+      max-width: 142px;
+      margin-bottom: 24px;
+      margin-top: -60px;
+    }
+    .description{
+      padding-bottom: 24px;
+      h4{
+        font-size: 22px !important;
+        line-height: 1.45 !important;
+        margin-bottom: 6px;
+      }
+      .pricing{
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 24px;
+      }
+    }
+    &.package-double{
+      padding-top: 24px;
+      margin-top: 36px;
+      .description{
+        h4{
+          font-size: 22px !important; 
+          line-height: 1.45 !important; 
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+
+  .cosmetics-testimonial-container{
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .cosmetics-testimonial{
+    .box-testimonial{
+      padding: 48px 20px 78px;
+      .quote{
+        left: 13px;
+        top: -50px;
+        .fa{
+          font-size: 80px;
+        }
+      }
+      .testimonial-product{
+        margin-bottom: 85px;
+        .ill{
+          width: 100%;
+          height: 150px;
+        }
+        .description{
+          margin: -25px -10px -100px 0;
+        }
+      }
+      .testimonial-content{
+        p{
+          font-size: 16px;
+          line-height: 1.88;
+          margin-bottom: 24px;
+        }
+      }
+      .meta{
+        strong{
+          font-size: 16px;
+          line-height: 1.25;  
+        }
+      }
+    }
+    .owl-dots{
+      bottom: 37px;
+    }
+  }
+}
+
+
+
+
+

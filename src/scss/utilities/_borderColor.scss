@@ -1,0 +1,198 @@
+/*
+  Border Color
+ */
+
+$values: (
+        "transparent": rgba(0, 0, 0, 0),
+        "default": $s-color-border, 
+        "primary": $s-color-primary,
+        "primary-100": $s-color-primary-100,
+        "primary-200": $s-color-primary-200,
+        "primary-300": $s-color-primary-300,
+        "primary-400": $s-color-primary-400,
+        "primary-500": $s-color-primary-500,
+        "primary-600": $s-color-primary-600,
+        "primary-700": $s-color-primary-700,
+        "primary-800": $s-color-primary-800,
+        "primary-900": $s-color-primary-900,
+        "secondary": $s-color-secondary,
+        "secondary-100": $s-color-secondary-100,
+        "secondary-200": $s-color-secondary-200,
+        "secondary-300": $s-color-secondary-300,
+        "secondary-400": $s-color-secondary-400,
+        "secondary-500": $s-color-secondary-500,
+        "secondary-600": $s-color-secondary-600,
+        "secondary-700": $s-color-secondary-700,
+        "secondary-800": $s-color-secondary-800,
+        "secondary-900": $s-color-secondary-900,
+        "success": $s-color-success,
+        "success-100": $s-color-success-100,
+        "success-200": $s-color-success-200,
+        "success-300": $s-color-success-300,
+        "success-400": $s-color-success-400,
+        "success-500": $s-color-success-500,
+        "success-600": $s-color-success-600,
+        "success-700": $s-color-success-700,
+        "success-800": $s-color-success-800,
+        "success-900": $s-color-success-900,
+        "info": $s-color-info,
+        "info-100": $s-color-info-100,
+        "info-200": $s-color-info-200,
+        "info-300": $s-color-info-300,
+        "info-400": $s-color-info-400,
+        "info-500": $s-color-info-500,
+        "info-600": $s-color-info-600,
+        "info-700": $s-color-info-700,
+        "info-800": $s-color-info-800,
+        "info-900": $s-color-info-900,
+        "warning": $s-color-warning,
+        "warning-100": $s-color-warning-100,
+        "warning-200": $s-color-warning-200,
+        "warning-300": $s-color-warning-300,
+        "warning-400": $s-color-warning-400,
+        "warning-500": $s-color-warning-500,
+        "warning-600": $s-color-warning-600,
+        "warning-700": $s-color-warning-700,
+        "warning-800": $s-color-warning-800,
+        "warning-900": $s-color-warning-900,
+        "danger": $s-color-danger,
+        "danger-100": $s-color-danger-100,
+        "danger-200": $s-color-danger-200,
+        "danger-300": $s-color-danger-300,
+        "danger-400": $s-color-danger-400,
+        "danger-500": $s-color-danger-500,
+        "danger-600": $s-color-danger-600,
+        "danger-700": $s-color-danger-700,
+        "danger-800": $s-color-danger-800,
+        "danger-900": $s-color-danger-900,
+        "black": $s-color-black,
+        "black-100": $s-color-black-100,
+        "black-200": $s-color-black-200,
+        "black-300": $s-color-black-300,
+        "black-400": $s-color-black-400,
+        "black-500": $s-color-black-500,
+        "black-600": $s-color-black-600,
+        "black-700": $s-color-black-700,
+        "black-800": $s-color-black-800,
+        "black-900": $s-color-black-900,
+        "gray": $s-color-gray,
+        "gray-100": $s-color-gray-100,
+        "gray-200": $s-color-gray-200,
+        "gray-300": $s-color-gray-300,
+        "gray-400": $s-color-gray-400,
+        "gray-500": $s-color-gray-500,
+        "gray-600": $s-color-gray-600,
+        "gray-700": $s-color-gray-700,
+        "gray-800": $s-color-gray-800,
+        "gray-900": $s-color-gray-900,
+        "gray-light": $s-color-gray-light,
+        "gray-light-100": $s-color-gray-light-100,
+        "gray-light-200": $s-color-gray-light-200,
+        "gray-light-300": $s-color-gray-light-300,
+        "gray-light-400": $s-color-gray-light-400,
+        "gray-light-500": $s-color-gray-light-500,
+        "gray-light-600": $s-color-gray-light-600,
+        "gray-light-700": $s-color-gray-light-700,
+        "gray-light-800": $s-color-gray-light-800,
+        "gray-light-900": $s-color-gray-light-900,
+        "white": $s-color-white,
+        "white-100": $s-color-white-100,
+        "white-200": $s-color-white-200,
+        "white-300": $s-color-white-300,
+        "white-400": $s-color-white-400,
+        "white-500": $s-color-white-500,
+        "white-600": $s-color-white-600,
+        "white-700": $s-color-white-700,
+        "white-800": $s-color-white-800,
+        "white-900": $s-color-white-900
+);
+
+@each $name, $value in $values {
+  .border-#{$name} {
+    border-color: $value !important;
+  }
+
+  .hover-border-#{$name} {
+    &:hover {
+      border-color: $value !important;
+    }
+  }
+
+  .focus-border-#{$name} {
+    &:focus {
+      border-color: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-border-#{$name} {
+      border-color: $value;
+    }
+
+    .#{map-get($breaks, sm)}-hover-border-#{$name} {
+      &:hover {
+        border-color: $value;
+      }
+    }
+
+    .#{map-get($breaks, sm)}-focus-border-#{$name} {
+      &:focus {
+        border-color: $value;
+      }
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-border-#{$name} {
+      border-color: $value;
+    }
+
+    .#{map-get($breaks, md)}-hover-border-#{$name} {
+      &:hover {
+        border-color: $value;
+      }
+    }
+
+    .#{map-get($breaks, md)}-focus-border-#{$name} {
+      &:focus {
+        border-color: $value;
+      }
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-border-#{$name} {
+      border-color: $value;
+    }
+
+    .#{map-get($breaks, lg)}-hover-border-#{$name} {
+      &:hover {
+        border-color: $value;
+      }
+    }
+
+    .#{map-get($breaks, lg)}-focus-border-#{$name} {
+      &:focus {
+        border-color: $value;
+      }
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-border-#{$name} {
+      border-color: $value;
+    }
+
+    .#{map-get($breaks, xl)}-hover-border-#{$name} {
+      &:hover {
+        border-color: $value;
+      }
+    }
+
+    .#{map-get($breaks, xl)}-focus-border-#{$name} {
+      &:focus {
+        border-color: $value;
+      }
+    }
+  }
+}

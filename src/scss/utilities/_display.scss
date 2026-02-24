@@ -1,0 +1,51 @@
+/*
+  Display
+ */
+
+$values: (
+        "block": block,
+        "inline-block": inline-block,
+        "inline": inline,
+        "flex": flex,
+        "inline-flex": inline-flex,
+        "table": table,
+        "table-row": table-row,
+        "table-cell": table-cell,
+        "hidden": none,
+);
+
+@each $name, $value in $values {
+  .#{$name} {
+    display: $value;
+  }
+
+  @include breakpoint(map-get($breaks, xs)) {
+    .#{map-get($breaks, xs)}-#{$name} {
+      display: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-#{$name} {
+      display: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-#{$name} {
+      display: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-#{$name} {
+      display: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-#{$name} {
+      display: $value !important;
+    }
+  }
+}

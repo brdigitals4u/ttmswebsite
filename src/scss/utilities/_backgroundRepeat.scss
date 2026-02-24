@@ -1,0 +1,42 @@
+/*
+  Background Repeat
+ */
+
+$values: (
+        "repeat": repeat,
+        "no-repeat": no-repeat,
+        "repeat-x": repeat-x,
+        "repeat-y": repeat-y,
+        "repeat-round": round,
+        "repeat-space": space
+);
+
+@each $name, $value in $values {
+  .bg-#{$name} {
+    background-repeat: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-bg-#{$name} {
+      background-repeat: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-bg-#{$name} {
+      background-repeat: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-bg-#{$name} {
+      background-repeat: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-bg-#{$name} {
+      background-repeat: $value;
+    }
+  }
+}

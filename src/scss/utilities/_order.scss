@@ -1,0 +1,69 @@
+/*
+  Order
+ */
+
+$values: (
+        "first": -9999,
+        "last": 9999,
+        "none": 0
+);
+
+@each $name, $value in $values {
+  .order-#{$name} {
+    order: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-order-#{$name} {
+      order: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-order-#{$name} {
+      order: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-order-#{$name} {
+      order: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-order-#{$name} {
+      order: $value;
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  .order-#{$i} {
+    order: $i;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-order-#{$i} {
+      order: $i;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-order-#{$i} {
+      order: $i;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-order-#{$i} {
+      order: $i;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-order-#{$i} {
+      order: $i;
+    }
+  }
+}

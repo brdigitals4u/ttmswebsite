@@ -1,0 +1,842 @@
+[
+  {
+    "slug": "fleet-management",
+    "category": "Fleet Services",
+    "title": "Fleet Management",
+    "hero_tag": "Fleet Services",
+    "hero_heading": "Fleet Management for TTMS - Total Transport Management System",
+    "hero_copy": "Run trucks, trailers, assets, and driver workflows from one TTMS control layer. Keep uptime high, costs visible, and safety standards consistent across every shift.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?american,semi-truck,fleet",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?american,truck,fleet,highway",
+    "kpi_metrics": [
+      { "value": "98.4%", "label": "Fleet availability" },
+      { "value": "24/7", "label": "Live asset visibility" },
+      { "value": "32%", "label": "Downtime reduction" }
+    ],
+    "core_capabilities": [
+      "Unified live map for trucks, trailers, and critical equipment status",
+      "Vehicle lifecycle controls from onboarding to retirement and replacement",
+      "Cost-per-mile and utilization analytics by lane, customer, and terminal",
+      "Maintenance planning tied to mileage, engine hours, and inspection intervals",
+      "Fuel monitoring with anomaly checks for theft, leakage, and inefficient driving",
+      "Central document vault for registration, insurance, permits, and audits"
+    ],
+    "safety_care_points": [
+      "Driver-first workflows reduce dispatch confusion and late-night call pressure",
+      "Escalation playbooks route high-risk events to the right team instantly",
+      "Planned rest windows and service checks protect driver wellbeing",
+      "Customer communication stays accurate with real-time ETA and delay updates"
+    ],
+    "execution_points": [
+      "Plan fleet capacity by demand, lane profile, and vehicle readiness in one screen.",
+      "Execute trips with live dispatch coordination, alerts, and issue handoffs.",
+      "Improve with daily service and safety reviews that drive measurable reliability gains."
+    ],
+    "cta_copy": "Deploy TTMS fleet controls to improve uptime, care for drivers, and deliver reliable service at scale."
+  },
+  {
+    "slug": "truck-tracking",
+    "category": "Fleet Services",
+    "title": "Truck Tracking",
+    "hero_tag": "Fleet Services",
+    "hero_heading": "Real-Time Truck Tracking with TTMS",
+    "hero_copy": "Track every truck in motion with precise location, route progress, and delay context. Give dispatch and customer teams one trusted feed for operational decisions.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?american,truck,tracking",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?semi-truck,gps,usa",
+    "kpi_metrics": [
+      { "value": "99.2%", "label": "Location accuracy" },
+      { "value": "15 min", "label": "Faster exception response" },
+      { "value": "22%", "label": "Reduced status-call volume" }
+    ],
+    "core_capabilities": [
+      "Second-by-second truck location with breadcrumb history for dispatch review",
+      "Arrival prediction engine that updates ETAs when route or traffic changes",
+      "Geo-fence alerts for yard entry, dwell time, and unauthorized movement",
+      "Route adherence checks to catch detours and risky off-plan behavior",
+      "Load-linked vehicle tracking for customer-facing shipment transparency",
+      "Shared status dashboard for operations, safety, and service teams"
+    ],
+    "safety_care_points": [
+      "Dispatch can quickly support drivers when route risks or stoppages appear",
+      "Live visibility helps avoid unsafe rerouting decisions under pressure",
+      "Customers receive proactive updates instead of uncertainty and repeated calls",
+      "Escalation timing improves incident response for people and cargo"
+    ],
+    "execution_points": [
+      "Plan tracking rules by corridor, customer SLA, and alert priority.",
+      "Execute with a live operations view that highlights risk before delays spread.",
+      "Improve ETA quality and driver support by reviewing route variance patterns."
+    ],
+    "cta_copy": "Use TTMS truck tracking to improve delivery confidence while protecting driver safety and customer trust."
+  },
+  {
+    "slug": "trailer-tracking",
+    "category": "Fleet Services",
+    "title": "Trailer Tracking",
+    "hero_tag": "Fleet Services",
+    "hero_heading": "Trailer Tracking That Removes Blind Spots",
+    "hero_copy": "Know trailer location, assignment status, and utilization in real time. Reduce trailer loss, cut dwell time, and keep dispatch decisions dependable.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?american,trailer,logistics",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?freight,trailer,yard",
+    "kpi_metrics": [
+      { "value": "27%", "label": "Lower dwell time" },
+      { "value": "94%", "label": "Trailer utilization visibility" },
+      { "value": "18%", "label": "Reduced idle assets" }
+    ],
+    "core_capabilities": [
+      "Live trailer inventory by yard, lane, and shipment assignment",
+      "Coupled and uncoupled trailer movement history for accountability",
+      "Trailer availability scoring for faster dispatch assignment",
+      "Exception alerts for unauthorized movement and long dwell periods",
+      "Condition tracking options for sensitive cargo and equipment",
+      "Automated trailer status handoffs between dispatch and yard teams"
+    ],
+    "safety_care_points": [
+      "Drivers receive clearer assignment instructions and fewer yard delays",
+      "Yard teams avoid rushed manual checks that increase safety risk",
+      "Cargo handling quality improves with better trailer-state visibility",
+      "Customer commitments stay predictable through cleaner trailer allocation"
+    ],
+    "execution_points": [
+      "Plan trailer pools by route demand, shipper profile, and cycle time.",
+      "Execute assignments with clear trailer-state and dwell alerts for operators.",
+      "Improve yard flow by auditing handoff delays and utilization imbalances."
+    ],
+    "cta_copy": "Bring trailer operations into TTMS so every assignment is safer, faster, and easier to execute."
+  },
+  {
+    "slug": "asset-tracking",
+    "category": "Fleet Services",
+    "title": "Asset Tracking",
+    "hero_tag": "Fleet Services",
+    "hero_heading": "Asset Tracking for Critical Fleet Equipment",
+    "hero_copy": "Track high-value tools, containers, and support assets with the same discipline as trucks. Keep operations ready and avoid expensive replacement cycles.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?truck,equipment,logistics",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?warehouse,asset,freight",
+    "kpi_metrics": [
+      { "value": "96%", "label": "Asset accountability" },
+      { "value": "41%", "label": "Lower loss incidents" },
+      { "value": "19%", "label": "Better asset utilization" }
+    ],
+    "core_capabilities": [
+      "Single inventory record for owned, leased, and customer assets",
+      "Asset movement timeline with custody checkpoints",
+      "Geo-fence and inactivity alerts for misplaced equipment",
+      "Service scheduling for tools and powered support devices",
+      "Asset assignment workflows linked to dispatch and route plans",
+      "Cost and replacement reporting to support procurement decisions"
+    ],
+    "safety_care_points": [
+      "Field teams spend less time searching for gear in active yards",
+      "Critical safety equipment remains inspected and available",
+      "Driver workload drops when handoff data is accurate and complete",
+      "Customers benefit from reliable equipment readiness at pickup"
+    ],
+    "execution_points": [
+      "Plan asset allocation by contract demand and operating geography.",
+      "Execute with custody checkpoints and automated anomaly alerts.",
+      "Improve replacement strategy by analyzing utilization and incident history."
+    ],
+    "cta_copy": "Standardize asset visibility inside TTMS and keep crews equipped, protected, and efficient."
+  },
+  {
+    "slug": "dispatch-management",
+    "category": "Dispatch & Routing",
+    "title": "Dispatch Management",
+    "hero_tag": "Dispatch & Routing",
+    "hero_heading": "Dispatch Management Built for Reliable Execution",
+    "hero_copy": "Coordinate loads, drivers, and fleet status from one dispatch workspace. Reduce manual handoffs and keep teams aligned on every move.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?dispatch,trucking,operations",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?logistics,dispatcher,truck",
+    "kpi_metrics": [
+      { "value": "28%", "label": "Faster load assignment" },
+      { "value": "97%", "label": "Dispatch accuracy" },
+      { "value": "30%", "label": "Lower exception backlog" }
+    ],
+    "core_capabilities": [
+      "Unified dispatch board with live truck, trailer, and driver context",
+      "Automated assignment recommendations using location and HOS readiness",
+      "Two-way workflow updates between dispatch, drivers, and customer teams",
+      "Shift-based workload balancing for faster response and less burnout",
+      "Exception queues for late departures, route changes, and customer holds",
+      "Audit timeline for every dispatch decision and status update"
+    ],
+    "safety_care_points": [
+      "Dispatch decisions incorporate driver fatigue and safety constraints",
+      "Real-time exception routing protects teams from avoidable escalations",
+      "Workload balancing supports healthier shift operations",
+      "Transparent updates reduce customer frustration during disruptions"
+    ],
+    "execution_points": [
+      "Plan dispatch capacity around shipment windows and labor coverage.",
+      "Execute faster with guided assignments and real-time exception routing.",
+      "Improve process quality through handoff audits and coaching insights."
+    ],
+    "cta_copy": "Move to TTMS dispatch workflows that protect people while improving service reliability."
+  },
+  {
+    "slug": "smart-routing",
+    "category": "Dispatch & Routing",
+    "title": "Smart Routing",
+    "hero_tag": "Dispatch & Routing",
+    "hero_heading": "Smart Routing for Safer and Faster Deliveries",
+    "hero_copy": "Build routes that balance delivery speed, driver safety, and operating cost. TTMS adjusts plans with live road context and service priorities.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?american,truck,route",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?highway,truck,map",
+    "kpi_metrics": [
+      { "value": "17%", "label": "Lower route cost" },
+      { "value": "21%", "label": "Reduced empty miles" },
+      { "value": "96%", "label": "On-time ETA confidence" }
+    ],
+    "core_capabilities": [
+      "Multi-stop route planning with lane and time-window logic",
+      "Live rerouting based on traffic, weather, and operational constraints",
+      "Driver-aware routing that respects HOS and rest requirements",
+      "Service-priority rules for premium, standard, and recovery loads",
+      "Route scorecards for distance, fuel, risk, and delay probability",
+      "Integrated customer ETA updates linked to route state changes"
+    ],
+    "safety_care_points": [
+      "Routes avoid known risk corridors when safer alternatives exist",
+      "Driver rest and legal HOS windows are enforced in planning",
+      "Dispatch can intervene before a risky delay becomes a safety event",
+      "Customers receive realistic windows that reduce pressure on drivers"
+    ],
+    "execution_points": [
+      "Plan route templates by lane profile, stop density, and safety policy.",
+      "Execute with adaptive rerouting that protects ETA and driver wellbeing.",
+      "Improve plans through route-risk and service-performance review cycles."
+    ],
+    "cta_copy": "Adopt TTMS smart routing to deliver more safely with fewer miles and stronger on-time performance."
+  },
+  {
+    "slug": "route-optimization",
+    "category": "Dispatch & Routing",
+    "title": "Route Optimization",
+    "hero_tag": "Dispatch & Routing",
+    "hero_heading": "Route Optimization That Lifts Margin and Service Quality",
+    "hero_copy": "Continuously optimize fleet routes using real performance data. Eliminate avoidable miles, reduce delays, and improve trip consistency across your network.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?route,optimization,truck",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?logistics,highway,route",
+    "kpi_metrics": [
+      { "value": "23%", "label": "Fewer empty miles" },
+      { "value": "14%", "label": "Lower fuel spend" },
+      { "value": "29%", "label": "Better route adherence" }
+    ],
+    "core_capabilities": [
+      "Optimization engine balancing cost, SLA, and safety constraints",
+      "Scenario modeling for seasonal demand and lane disruptions",
+      "Dynamic stop sequencing to reduce dwell and waiting time",
+      "Lane-level profitability analysis connected to route design",
+      "What-if planning for equipment type, shift model, and trailer mix",
+      "Continuous improvement loops using completed-trip performance"
+    ],
+    "safety_care_points": [
+      "Lower time pressure gives drivers safer operating conditions",
+      "Risk scoring flags route plans with high incident potential",
+      "Balanced trip design reduces fatigue across long-haul schedules",
+      "Customer ETA stability improves through predictable execution"
+    ],
+    "execution_points": [
+      "Plan optimized route sets before dispatch windows open.",
+      "Execute with real-time adjustments when constraints shift.",
+      "Improve route economics and care outcomes through weekly reviews."
+    ],
+    "cta_copy": "Use TTMS route optimization to improve safety, reduce cost, and scale dependable service."
+  },
+  {
+    "slug": "load-planning",
+    "category": "Dispatch & Routing",
+    "title": "Load Planning",
+    "hero_tag": "Dispatch & Routing",
+    "hero_heading": "Load Planning for Capacity, Care, and Control",
+    "hero_copy": "Plan loads with full visibility into equipment availability, delivery windows, and customer constraints. Keep execution smooth from tender to delivery confirmation.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?freight,load,truck",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?warehouse,truck,loading",
+    "kpi_metrics": [
+      { "value": "31%", "label": "Faster load tendering" },
+      { "value": "26%", "label": "Higher trailer utilization" },
+      { "value": "95%", "label": "SLA-ready planning" }
+    ],
+    "core_capabilities": [
+      "Load building tools tied to real fleet and trailer availability",
+      "Weight, cube, and equipment compatibility checks",
+      "Pickup-drop sequencing based on service windows and risk factors",
+      "Automated assignment suggestions with HOS and lane awareness",
+      "Customer-level planning templates for repeat shipment profiles",
+      "Plan-to-actual visibility for missed assumptions and recovery actions"
+    ],
+    "safety_care_points": [
+      "Balanced load plans prevent last-minute high-pressure assignments",
+      "Compliance checks reduce unsafe overloading or mismatch scenarios",
+      "Driver-ready instructions lower confusion at shipper and receiver sites",
+      "Proactive updates improve customer confidence and operational calm"
+    ],
+    "execution_points": [
+      "Plan loads with data-backed capacity and service commitments.",
+      "Execute with dispatch-ready instructions and fewer manual interventions.",
+      "Improve planning quality through plan-versus-actual scorecards."
+    ],
+    "cta_copy": "Deploy TTMS load planning to align dispatch precision with safer, more predictable service execution."
+  },
+  {
+    "slug": "eld-devices",
+    "category": "Driver Services",
+    "title": "ELD Devices",
+    "hero_tag": "Driver Services",
+    "hero_heading": "ELD Devices Integrated into TTMS Operations",
+    "hero_copy": "Connect compliant electronic logging data directly into dispatch and safety workflows. Reduce manual reconciliation while protecting driver hours and regulatory readiness.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?truck,cabin,driver",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?trucking,eld,driver",
+    "kpi_metrics": [
+      { "value": "99%", "label": "HOS log capture" },
+      { "value": "38%", "label": "Less compliance admin" },
+      { "value": "91%", "label": "Audit readiness" }
+    ],
+    "core_capabilities": [
+      "Automatic HOS capture with dispatch-aware duty status visibility",
+      "Unassigned drive-time review with fast correction workflows",
+      "DVIR and inspection logs linked to fleet maintenance planning",
+      "Violation risk warnings before dispatch assignment is finalized",
+      "Driver and supervisor dashboards for clear compliance posture",
+      "Centralized records export for DOT and internal safety teams"
+    ],
+    "safety_care_points": [
+      "Hours-based dispatch guardrails reduce fatigue-related risk",
+      "Drivers receive clear alerts before violations occur",
+      "Simpler compliance tasks reduce stress during long shifts",
+      "Safety leaders gain rapid insight for coaching and support"
+    ],
+    "execution_points": [
+      "Plan assignments with live HOS eligibility and break requirements.",
+      "Execute trips with compliant logs, DVIR status, and dispatch alignment.",
+      "Improve compliance quality through recurring violation trend analysis."
+    ],
+    "cta_copy": "Connect ELD workflows to TTMS so compliance, care, and dispatch quality move together."
+  },
+  {
+    "slug": "ai-dashcams",
+    "category": "Driver Services",
+    "title": "AI DashCams",
+    "hero_tag": "Driver Services",
+    "hero_heading": "AI DashCams for Preventive Fleet Safety",
+    "hero_copy": "Use AI-assisted video events to detect risk early and coach better driving habits. Bring event context into TTMS dispatch, safety, and claims workflows.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?truck,road,safety",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?highway,truck,driver,safety",
+    "kpi_metrics": [
+      { "value": "42%", "label": "Fewer risky events" },
+      { "value": "58%", "label": "Faster claim validation" },
+      { "value": "89%", "label": "Coaching completion" }
+    ],
+    "core_capabilities": [
+      "AI event detection for following distance, hard braking, and distraction",
+      "Driver-facing and road-facing footage with event bookmarks",
+      "Integrated workflow for review, coaching, and acknowledgment",
+      "Severity-based event queue with escalation routing",
+      "Incident packet generation for legal and insurance response",
+      "Safety trend analysis by driver, route, and terminal"
+    ],
+    "safety_care_points": [
+      "Coaching focuses on prevention, not punishment",
+      "Fast context on incidents protects drivers during disputes",
+      "Risk alerts support safer behavior before an accident occurs",
+      "Operations teams get clearer signals for high-risk lanes"
+    ],
+    "execution_points": [
+      "Plan event policies by fleet type and risk tolerance.",
+      "Execute rapid event triage and driver coaching from one queue.",
+      "Improve safety culture with transparent, data-based coaching cycles."
+    ],
+    "cta_copy": "Deploy TTMS-connected AI DashCams to protect drivers, reduce incidents, and improve response speed."
+  },
+  {
+    "slug": "driver-monitoring",
+    "category": "Driver Services",
+    "title": "Driver Monitoring",
+    "hero_tag": "Driver Services",
+    "hero_heading": "Driver Monitoring with Care-First Visibility",
+    "hero_copy": "Monitor driver activity, duty readiness, and exception risk without adding friction. Help supervisors coach effectively while keeping daily operations humane and safe.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?american,truck,driver,monitoring",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?driver,fleet,operations",
+    "kpi_metrics": [
+      { "value": "33%", "label": "Reduced high-risk behaviors" },
+      { "value": "26%", "label": "Faster coaching follow-up" },
+      { "value": "93%", "label": "Driver status visibility" }
+    ],
+    "core_capabilities": [
+      "Driver scorecards combining safety, compliance, and service indicators",
+      "Shift-level readiness status for dispatch-safe assignment decisions",
+      "Behavior trend tracking with configurable alert thresholds",
+      "Coaching workflow with manager notes and follow-up tasks",
+      "Driver acknowledgment trail for policy and training completion",
+      "Performance insights by driver, team, and operating region"
+    ],
+    "safety_care_points": [
+      "Supervisors can intervene earlier with constructive support",
+      "Clear expectations reduce misunderstanding and disciplinary friction",
+      "Fatigue and risk signals are visible before incidents escalate",
+      "Drivers feel supported through transparent coaching frameworks"
+    ],
+    "execution_points": [
+      "Plan monitoring rules aligned to policy and operational realities.",
+      "Execute coaching and support actions from prioritized risk queues.",
+      "Improve retention and safety outcomes through consistent feedback loops."
+    ],
+    "cta_copy": "Strengthen driver wellbeing and performance with TTMS monitoring built for support, not surveillance-only control."
+  },
+  {
+    "slug": "safety-solutions",
+    "category": "Driver Services",
+    "title": "Safety Solutions",
+    "hero_tag": "Driver Services",
+    "hero_heading": "Safety Solutions Across Every TTMS Workflow",
+    "hero_copy": "Unify policy, training, incident response, and operations data in one safety program. Build a proactive culture that protects drivers, cargo, and customers.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?truck,safety,transport",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?fleet,safety,highway",
+    "kpi_metrics": [
+      { "value": "47%", "label": "Incident prevention improvement" },
+      { "value": "36%", "label": "Faster corrective actions" },
+      { "value": "95%", "label": "Safety policy completion" }
+    ],
+    "core_capabilities": [
+      "Central safety command view combining operations and compliance signals",
+      "Incident intake and triage workflows with role-based accountability",
+      "Corrective action tracking from root cause through closure",
+      "Training assignment and certification monitoring by driver role",
+      "Near-miss and trend analysis for preventive program design",
+      "Safety communication templates for internal and customer updates"
+    ],
+    "safety_care_points": [
+      "Protective actions are prioritized before service penalties",
+      "Drivers get practical guidance and timely support during events",
+      "Safety teams can focus on prevention instead of manual reporting",
+      "Customers see dependable, transparent care standards"
+    ],
+    "execution_points": [
+      "Plan safety operating standards by fleet segment and route profile.",
+      "Execute incident workflows quickly with clear ownership and escalation.",
+      "Improve safety outcomes through recurring root-cause and trend reviews."
+    ],
+    "cta_copy": "Use TTMS safety solutions to make driver care and operational reliability your default operating model."
+  },
+  {
+    "slug": "report-generation",
+    "category": "Analytics & Reporting",
+    "title": "Report Generation",
+    "hero_tag": "Analytics & Reporting",
+    "hero_heading": "Report Generation for Fast Operational Decisions",
+    "hero_copy": "Generate accurate fleet, dispatch, and safety reports without spreadsheet delays. Deliver role-specific insights to leaders, dispatchers, and customer teams.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?logistics,reporting,data",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?transport,analytics,screen",
+    "kpi_metrics": [
+      { "value": "63%", "label": "Faster report turnaround" },
+      { "value": "97%", "label": "Data consistency" },
+      { "value": "12 hrs", "label": "Weekly admin time saved" }
+    ],
+    "core_capabilities": [
+      "Template-based operational reporting with scheduled distribution",
+      "Cross-functional data model joining dispatch, fleet, and safety metrics",
+      "Custom filters for lane, customer, terminal, and period analysis",
+      "Export-ready compliance and audit report packages",
+      "Automated exception highlights for faster management review",
+      "Role-specific dashboards for executives and frontline teams"
+    ],
+    "safety_care_points": [
+      "Safety and care metrics are visible alongside service KPIs",
+      "Teams respond earlier to negative trends before incidents grow",
+      "Drivers benefit when coaching and rest compliance data is transparent",
+      "Customers gain confidence through reliable service reporting"
+    ],
+    "execution_points": [
+      "Plan reporting cadences that match operational and leadership rhythms.",
+      "Execute automated report delivery with trusted, current data.",
+      "Improve decisions by comparing trends across service, cost, and safety."
+    ],
+    "cta_copy": "Use TTMS reporting to turn daily operations into measurable service and safety improvements."
+  },
+  {
+    "slug": "fleet-analytics",
+    "category": "Analytics & Reporting",
+    "title": "Fleet Analytics",
+    "hero_tag": "Analytics & Reporting",
+    "hero_heading": "Fleet Analytics for Margin, Reliability, and Care",
+    "hero_copy": "Turn fleet data into action with lane, vehicle, and driver performance analytics. Identify improvement opportunities before they impact service outcomes.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?fleet,analytics,truck",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?truck,fleet,data",
+    "kpi_metrics": [
+      { "value": "19%", "label": "Improved asset utilization" },
+      { "value": "24%", "label": "Cost variance reduction" },
+      { "value": "34%", "label": "Faster root-cause analysis" }
+    ],
+    "core_capabilities": [
+      "Lane profitability dashboards tied to fuel, dwell, and delay factors",
+      "Asset efficiency analytics by truck, trailer, and route",
+      "Driver performance insights connected to safety and service data",
+      "Terminal and shift comparisons for balanced operations",
+      "Predictive indicators for downtime and maintenance bottlenecks",
+      "Action-tracking to monitor improvement initiatives over time"
+    ],
+    "safety_care_points": [
+      "Risk trends are visible before they become severe incidents",
+      "Driver support plans can be targeted where stress indicators rise",
+      "Dispatch leaders can rebalance workload using evidence",
+      "Customers receive more stable service through proactive planning"
+    ],
+    "execution_points": [
+      "Plan analytics views around top business and care priorities.",
+      "Execute weekly performance reviews using one shared source of truth.",
+      "Improve fleet outcomes by acting on trend-driven recommendations."
+    ],
+    "cta_copy": "Activate TTMS fleet analytics to improve operational confidence while protecting drivers and service quality."
+  },
+  {
+    "slug": "performance-metrics",
+    "category": "Analytics & Reporting",
+    "title": "Performance Metrics",
+    "hero_tag": "Analytics & Reporting",
+    "hero_heading": "Performance Metrics That Keep Teams Aligned",
+    "hero_copy": "Track what matters across dispatch, fleet, and safety in one KPI framework. Align daily execution with strategic service and care goals.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?dashboard,logistics,kpi",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?operations,metrics,transport",
+    "kpi_metrics": [
+      { "value": "96%", "label": "KPI data timeliness" },
+      { "value": "29%", "label": "Faster manager decisions" },
+      { "value": "18%", "label": "SLA improvement" }
+    ],
+    "core_capabilities": [
+      "Standard KPI library for service, cost, compliance, and safety",
+      "Target tracking by region, terminal, and account",
+      "Early-warning indicators for service and risk deterioration",
+      "Performance drill-down from network to individual route",
+      "Trend benchmarking across weeks, months, and seasons",
+      "Executive snapshots with frontline action recommendations"
+    ],
+    "safety_care_points": [
+      "Safety and wellbeing KPIs remain visible, not secondary",
+      "Leaders can intervene faster when risk metrics move",
+      "Team recognition and coaching become data-backed and fair",
+      "Customers benefit from consistent performance governance"
+    ],
+    "execution_points": [
+      "Plan measurable objectives that include service and safety targets.",
+      "Execute with live KPI tracking and rapid exception ownership.",
+      "Improve continuously through structured review and follow-up actions."
+    ],
+    "cta_copy": "Set TTMS performance metrics as your operating language for quality service and responsible execution."
+  },
+  {
+    "slug": "compliance-reports",
+    "category": "Analytics & Reporting",
+    "title": "Compliance Reports",
+    "hero_tag": "Analytics & Reporting",
+    "hero_heading": "Compliance Reports Without Last-Minute Fire Drills",
+    "hero_copy": "Prepare DOT and policy documentation quickly with automated, audit-ready reporting. Keep your operation compliant while reducing manual effort across teams.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?compliance,trucking,report",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?audit,transport,compliance",
+    "kpi_metrics": [
+      { "value": "92%", "label": "Audit preparedness" },
+      { "value": "44%", "label": "Fewer manual report hours" },
+      { "value": "37%", "label": "Faster policy remediation" }
+    ],
+    "core_capabilities": [
+      "Prebuilt report packs for HOS, DVIR, safety, and maintenance records",
+      "Automated data validation before report publication",
+      "Policy variance detection with remediation tracking",
+      "Role-based access controls for sensitive compliance data",
+      "Historical archive for audit continuity and legal support",
+      "Submission-ready exports for internal and external stakeholders"
+    ],
+    "safety_care_points": [
+      "Compliance confidence reduces pressure on drivers and dispatch",
+      "Risk patterns are escalated before they create violations",
+      "Safety teams spend more time improving behavior, less on file chasing",
+      "Customers trust operations that demonstrate accountable governance"
+    ],
+    "execution_points": [
+      "Plan compliance calendars and reporting ownership across departments.",
+      "Execute report generation with validated data and clear approvals.",
+      "Improve policy adherence using trend-based corrective action tracking."
+    ],
+    "cta_copy": "Use TTMS compliance reporting to keep operations audit-ready while prioritizing safe, responsible service."
+  },
+  {
+    "slug": "fuel-alerts",
+    "category": "Alerts & Notifications",
+    "title": "Fuel Alerts",
+    "hero_tag": "Alerts & Notifications",
+    "hero_heading": "Fuel Alerts for Cost and Risk Control",
+    "hero_copy": "Detect abnormal fuel consumption, theft risk, and refill anomalies early. Protect operating margin while supporting safer routing and refueling behavior.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?truck,fuel,station",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?diesel,truck,highway",
+    "kpi_metrics": [
+      { "value": "16%", "label": "Fuel cost reduction" },
+      { "value": "48%", "label": "Faster anomaly detection" },
+      { "value": "27%", "label": "Less unauthorized fuel events" }
+    ],
+    "core_capabilities": [
+      "Fuel transaction monitoring against route and distance context",
+      "Anomaly alerts for unexpected drain, mismatch, or off-route fueling",
+      "Consumption trend analysis by truck, driver, and lane",
+      "Refuel policy checks tied to network and approved station rules",
+      "Dispatch notifications for rapid investigation and response",
+      "Cost reporting to support strategic fuel program decisions"
+    ],
+    "safety_care_points": [
+      "Drivers get clearer fueling guidance and less last-minute pressure",
+      "Route-aware alerts reduce unsafe fuel-stop decisions",
+      "Operations can intervene quickly when suspicious events occur",
+      "Customers benefit from stable pricing and predictable execution"
+    ],
+    "execution_points": [
+      "Plan fuel policies by lane, truck class, and risk profile.",
+      "Execute alert handling with clear investigation ownership.",
+      "Improve fuel efficiency and control using monthly anomaly review."
+    ],
+    "cta_copy": "Activate TTMS fuel alerts to protect margin, improve driver support, and reduce operational risk."
+  },
+  {
+    "slug": "rest-food-alerts",
+    "category": "Alerts & Notifications",
+    "title": "Rest/Food Alerts",
+    "hero_tag": "Alerts & Notifications",
+    "hero_heading": "Rest/Food Alerts to Support Driver Wellbeing",
+    "hero_copy": "Promote healthier, safer driving schedules with proactive rest and meal alerts. Integrate care-first reminders directly into dispatch and trip execution.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?truck,rest,driver",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?truck-stop,driver,rest",
+    "kpi_metrics": [
+      { "value": "39%", "label": "Improved rest compliance" },
+      { "value": "23%", "label": "Lower fatigue exceptions" },
+      { "value": "91%", "label": "Driver wellbeing participation" }
+    ],
+    "core_capabilities": [
+      "Rest and meal reminder engine aligned with HOS and trip timeline",
+      "Route-aware stop recommendations with safety-oriented options",
+      "Dispatch alerts when rest plans are at risk",
+      "Driver acknowledgment and completion logs",
+      "Wellbeing trend reporting by lane and schedule type",
+      "Integrated handoff notes for delays caused by mandatory rest"
+    ],
+    "safety_care_points": [
+      "Drivers receive practical reminders before fatigue risk rises",
+      "Dispatch planning includes human needs, not only schedule pressure",
+      "Transparent rest communication improves trust across teams",
+      "Customers benefit from safer operations and realistic ETAs"
+    ],
+    "execution_points": [
+      "Plan rest policies that reflect route length and shift realities.",
+      "Execute proactive reminders and dispatch support during long hauls.",
+      "Improve wellbeing outcomes by reviewing adherence and delay trends."
+    ],
+    "cta_copy": "Use TTMS rest and food alerts to make driver care a visible, operational standard."
+  },
+  {
+    "slug": "maintenance-alerts",
+    "category": "Alerts & Notifications",
+    "title": "Maintenance Alerts",
+    "hero_tag": "Alerts & Notifications",
+    "hero_heading": "Maintenance Alerts That Prevent Roadside Failures",
+    "hero_copy": "Trigger service interventions before small issues become major downtime events. Keep fleet reliability high while reducing emergency repair costs.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?truck,maintenance,service",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?diesel,mechanic,truck",
+    "kpi_metrics": [
+      { "value": "34%", "label": "Lower unplanned breakdowns" },
+      { "value": "29%", "label": "Faster maintenance response" },
+      { "value": "22%", "label": "Higher service uptime" }
+    ],
+    "core_capabilities": [
+      "Maintenance trigger rules for mileage, engine hours, and sensor data",
+      "Priority alerts for high-risk mechanical conditions",
+      "Service queue integration with dispatch availability windows",
+      "Repair history and recurring-fault analysis",
+      "Parts and vendor tracking for faster repair coordination",
+      "Maintenance KPI reporting for reliability programs"
+    ],
+    "safety_care_points": [
+      "Preemptive service reduces high-risk roadside events",
+      "Drivers avoid unsafe vehicles and emergency route interruptions",
+      "Dispatch receives clear status before assigning vulnerable equipment",
+      "Customers experience fewer unexpected service failures"
+    ],
+    "execution_points": [
+      "Plan preventive schedules aligned to operating intensity.",
+      "Execute prioritized maintenance alerts with dispatch coordination.",
+      "Improve fleet reliability using recurring-fault and delay analysis."
+    ],
+    "cta_copy": "Bring maintenance intelligence into TTMS to protect drivers, cargo, and service continuity."
+  },
+  {
+    "slug": "safety-alerts",
+    "category": "Alerts & Notifications",
+    "title": "Safety Alerts",
+    "hero_tag": "Alerts & Notifications",
+    "hero_heading": "Safety Alerts for Immediate Risk Response",
+    "hero_copy": "Route critical safety events to the right teams in real time. Coordinate faster response across dispatch, safety managers, and field leadership.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?truck,warning,safety",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?transport,safety,alert",
+    "kpi_metrics": [
+      { "value": "61%", "label": "Faster safety escalation" },
+      { "value": "32%", "label": "Lower repeat incidents" },
+      { "value": "95%", "label": "Critical event acknowledgment" }
+    ],
+    "core_capabilities": [
+      "Real-time incident alerting by severity and operational context",
+      "Escalation trees for dispatch, safety, and leadership notifications",
+      "Integrated event timeline for rapid response decisions",
+      "Policy-driven alert routing to reduce response delays",
+      "Post-incident workflow tracking with closure accountability",
+      "Safety event analytics for preventive planning"
+    ],
+    "safety_care_points": [
+      "Immediate routing helps protect drivers during active incidents",
+      "Clear alert ownership avoids confusion in high-pressure moments",
+      "Teams can document actions quickly for care and compliance",
+      "Customers receive timely communication during disruptions"
+    ],
+    "execution_points": [
+      "Plan alert thresholds by risk type and response objective.",
+      "Execute rapid escalation and coordinated intervention workflows.",
+      "Improve readiness through post-incident analysis and drills."
+    ],
+    "cta_copy": "Use TTMS safety alerts to shorten incident response time and strengthen your care-first operating model."
+  },
+  {
+    "slug": "third-party-trucks",
+    "category": "Integrations",
+    "title": "Third-party Trucks",
+    "hero_tag": "Integrations",
+    "hero_heading": "Third-party Truck Integrations in One TTMS Layer",
+    "hero_copy": "Unify contracted carriers and partner fleets into your operational view. Standardize tracking, safety visibility, and service execution across mixed networks.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?third-party,truck,carrier",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?freight,carrier,truck",
+    "kpi_metrics": [
+      { "value": "37%", "label": "Faster partner onboarding" },
+      { "value": "93%", "label": "Cross-fleet visibility" },
+      { "value": "24%", "label": "Reduced exception lag" }
+    ],
+    "core_capabilities": [
+      "Partner fleet connectivity with standardized status mapping",
+      "Unified tracking view across owned and third-party equipment",
+      "Carrier compliance and documentation readiness checks",
+      "Shared event and ETA updates for customer communication",
+      "Contractor performance analytics by route and service quality",
+      "Operational governance controls for external fleet participation"
+    ],
+    "safety_care_points": [
+      "Safety expectations remain consistent across partner fleets",
+      "Dispatch gets clear signals before assigning sensitive loads",
+      "Incident communication is faster with integrated event feeds",
+      "Customers experience consistent service regardless of carrier mix"
+    ],
+    "execution_points": [
+      "Plan partner integration standards before load assignment begins.",
+      "Execute unified dispatch and tracking across external fleets.",
+      "Improve partner outcomes using shared performance and safety metrics."
+    ],
+    "cta_copy": "Connect third-party fleets to TTMS and run one coordinated, safety-aligned transport network."
+  },
+  {
+    "slug": "oem-devices",
+    "category": "Integrations",
+    "title": "OEM Devices",
+    "hero_tag": "Integrations",
+    "hero_heading": "OEM Device Integration for Native Fleet Visibility",
+    "hero_copy": "Bring OEM telematics and device streams into TTMS without fragmented dashboards. Standardize data for dispatch, safety, and maintenance teams.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?truck,oem,telematics",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?connected,truck,technology",
+    "kpi_metrics": [
+      { "value": "41%", "label": "Lower integration setup time" },
+      { "value": "95%", "label": "Device data coverage" },
+      { "value": "21%", "label": "Faster maintenance detection" }
+    ],
+    "core_capabilities": [
+      "OEM device ingestion with normalized fleet event schemas",
+      "VIN and unit mapping for accurate vehicle identity management",
+      "Live diagnostics visibility for proactive maintenance planning",
+      "Cross-manufacturer telemetry standardization for operations",
+      "Alerting framework for fault codes and critical conditions",
+      "Historical data retention for reliability and warranty insights"
+    ],
+    "safety_care_points": [
+      "Reliable vehicle data supports safer dispatch decisions",
+      "Early fault visibility protects drivers from preventable failures",
+      "Teams avoid multi-portal confusion during urgent situations",
+      "Customer service improves through stronger operational certainty"
+    ],
+    "execution_points": [
+      "Plan OEM connectivity architecture by fleet makeup and priorities.",
+      "Execute device onboarding with standardized mapping and validation.",
+      "Improve reliability through telemetry-driven maintenance and routing changes."
+    ],
+    "cta_copy": "Integrate OEM devices into TTMS for consistent visibility, safer operations, and stronger fleet control."
+  },
+  {
+    "slug": "telematics",
+    "category": "Integrations",
+    "title": "Telematics",
+    "hero_tag": "Integrations",
+    "hero_heading": "Telematics Integration Across the Transport Stack",
+    "hero_copy": "Collect, normalize, and operationalize telematics data from all fleet sources. Give dispatch and safety teams one accurate foundation for decisions.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?telematics,truck,data",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?gps,truck,telematics",
+    "kpi_metrics": [
+      { "value": "97%", "label": "Operational data availability" },
+      { "value": "26%", "label": "Faster issue triage" },
+      { "value": "18%", "label": "Improved dispatch precision" }
+    ],
+    "core_capabilities": [
+      "Multi-source telematics ingestion for mixed hardware environments",
+      "Data normalization for consistent route, status, and event reporting",
+      "Live stream processing for operations and safety alerts",
+      "Historical trip reconstruction for investigations and analysis",
+      "Rule engine for custom event creation and escalations",
+      "Integration-ready data services for enterprise reporting tools"
+    ],
+    "safety_care_points": [
+      "Unified telemetry enables quicker, safer operational intervention",
+      "Driver risk signals are detected earlier across the full network",
+      "Dispatch teams operate with confidence from trusted live inputs",
+      "Customers benefit from consistent ETA and service transparency"
+    ],
+    "execution_points": [
+      "Plan telematics governance and data-quality standards first.",
+      "Execute live monitoring and event workflows on normalized feeds.",
+      "Improve operations with trend-based optimization and risk controls."
+    ],
+    "cta_copy": "Use TTMS telematics integration to connect every signal that matters for service, safety, and control."
+  },
+  {
+    "slug": "api-access",
+    "category": "Integrations",
+    "title": "API Access",
+    "hero_tag": "Integrations",
+    "hero_heading": "API Access for Extensible TTMS Workflows",
+    "hero_copy": "Connect TTMS with your ERP, TMS, WMS, and customer systems through secure APIs. Build reliable automation without sacrificing transport visibility or control.",
+    "hero_image_url": "https://source.unsplash.com/1600x900/?api,transport,software",
+    "operations_image_url": "https://source.unsplash.com/1400x900/?integration,logistics,software",
+    "kpi_metrics": [
+      { "value": "52%", "label": "Faster integration delivery" },
+      { "value": "99.9%", "label": "API uptime target" },
+      { "value": "34%", "label": "Reduced manual data entry" }
+    ],
+    "core_capabilities": [
+      "REST API access for loads, tracking, assets, and safety events",
+      "Webhook framework for real-time event subscriptions",
+      "Token-based authentication and role-aware access control",
+      "Schema documentation and sandbox support for dev teams",
+      "Idempotent workflow patterns for reliable sync operations",
+      "API analytics for usage, latency, and integration health"
+    ],
+    "safety_care_points": [
+      "Critical alerts can flow instantly into internal response systems",
+      "Less manual entry reduces operational mistakes and stress",
+      "Unified data context improves support quality for drivers and customers",
+      "Secure access controls protect sensitive operational information"
+    ],
+    "execution_points": [
+      "Plan API architecture around core operational and care workflows.",
+      "Execute integrations with documented endpoints and event contracts.",
+      "Improve reliability through monitoring, versioning, and SLA reviews."
+    ],
+    "cta_copy": "Expand TTMS safely with API access that keeps transport operations connected, resilient, and supportable."
+  }
+]

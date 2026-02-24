@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>monitor</title>
+    <desc>Created with Sketch.</desc>
+    <g id="monitor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" points="0 0 48 0 48 48 0 48"></polygon>
+        <path d="M29.2220235,34.56 L30.7580235,42.24 L33.6,42.24 C34.1301934,42.24 34.56,42.6698066 34.56,43.2 C34.56,43.7301934 34.1301934,44.16 33.6,44.16 L14.4,44.16 C13.8698066,44.16 13.44,43.7301934 13.44,43.2 C13.44,42.6698066 13.8698066,42.24 14.4,42.24 L17.664,42.24 L19.2,34.56 L10.56,34.56 C7.17458697,34.56 4.37387378,32.0566024 3.9080533,28.8 L44.0919467,28.8 C43.6261262,32.0566024 40.825413,34.56 37.44,34.56 L29.2220235,34.56 L29.2220235,34.56 Z" id="Path" fill="#B8D0F3"></path>
+        <path d="M3.84,26.88 L3.84,6.72 C3.84,5.12941992 5.12941992,3.84 6.72,3.84 L41.28,3.84 C42.8705801,3.84 44.16,5.12941992 44.16,6.72 L44.16,26.88 L3.84,26.88 Z" id="Path" fill="rgb(0, 124, 225)"></path>
+    </g>
+</svg>

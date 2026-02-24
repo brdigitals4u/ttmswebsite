@@ -1,0 +1,29 @@
+/*
+  Outline
+ */
+
+.outline-none { outline: 0; }
+
+@include breakpoint(map-get($breaks, sm)) {
+  .#{map-get($breaks, sm)}-outline-none {
+    outline: 0;
+  }
+}
+
+@include breakpoint(map-get($breaks, md)) {
+  .#{map-get($breaks, md)}-outline-none {
+    outline: 0;
+  }
+}
+
+@include breakpoint(map-get($breaks, lg)) {
+  .#{map-get($breaks, lg)}-outline-none {
+    outline: 0;
+  }
+}
+
+@include breakpoint(map-get($breaks, xl)) {
+  .#{map-get($breaks, xl)}-outline-none {
+    outline: 0;
+  }
+}

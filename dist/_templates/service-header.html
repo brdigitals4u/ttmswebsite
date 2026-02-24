@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{BASE_PATH}}assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{BASE_PATH}}assets/images/favicon-16x16.png">
+    <title>TTMS</title>
+    <link rel="stylesheet" href="{{BASE_PATH}}assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{BASE_PATH}}assets/css/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="{{BASE_PATH}}assets/css/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="{{BASE_PATH}}assets/css/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="{{BASE_PATH}}assets/css/fontawesome/regular.min.css">
+    <link rel="stylesheet" href="{{BASE_PATH}}assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="{{BASE_PATH}}assets/css/animate.css">
+    <link rel="stylesheet" href="{{BASE_PATH}}assets/css/main.css">
+    <link rel="stylesheet" href="{{BASE_PATH}}assets/css/services.css">
+    <style>
+        @media (min-width: 992px) {
+            .landing-about header .navbar {
+                position: relative;
+            }
+
+            .landing-about header .navbar .navbar-nav {
+                position: static;
+            }
+
+            .landing-about header .navbar .navbar-nav > .nav-item-has-children {
+                position: static;
+            }
+
+            .landing-about header .navbar .navbar-nav > .nav-item-has-children > .sub-menu.sub-menu-3-col {
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body class="{{BODY_CLASS}}">
+
+<!--start:header-->
+<header class="header landing-about">
+    <!--start:navBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{BASE_PATH}}apps/desktop.html">
+                <span class="ttms-brand ttms-brand-dark">TTMS</span>
+            </a>
+            <button class="navbar-toggler border-none" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="{{BASE_PATH}}assets/images/icons/ic-menu.svg" alt="">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="close-button">
+                        <button class="navbar-toggler border-none" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="true" aria-label="Toggle navigation">
+                            <img src="{{BASE_PATH}}assets/images/icons/ic-close.svg" alt="">
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{BASE_PATH}}apps/desktop.html">Home</a>
+                    </li>
+                    <li class="nav-item nav-item-has-children">
+                        <a class="nav-link" href="{{BASE_PATH}}services/index.html">
+                            <span>Services</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="sub-menu sub-menu-3-col">
+                            <div class="sub-nav-items">
+                                <h5>Fleet Services</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/fleet-management.html">Fleet Management</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/truck-tracking.html">Truck Tracking</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/trailer-tracking.html">Trailer Tracking</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/asset-tracking.html">Asset Tracking</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Dispatch & Routing</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/dispatch-management.html">Dispatch Management</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/smart-routing.html">Smart Routing</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/route-optimization.html">Route Optimization</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/load-planning.html">Load Planning</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Driver Services</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/eld-devices.html">ELD Devices</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/ai-dashcams.html">AI DashCams</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/driver-monitoring.html">Driver Monitoring</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/safety-solutions.html">Safety Solutions</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Analytics & Reporting</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/report-generation.html">Report Generation</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/fleet-analytics.html">Fleet Analytics</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/performance-metrics.html">Performance Metrics</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/compliance-reports.html">Compliance Reports</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Alerts & Notifications</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/fuel-alerts.html">Fuel Alerts</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/rest-food-alerts.html">Rest/Food Alerts</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/maintenance-alerts.html">Maintenance Alerts</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/safety-alerts.html">Safety Alerts</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Integrations</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/third-party-trucks.html">Third-party Trucks</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/oem-devices.html">OEM Devices</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/telematics.html">Telematics</a></li>
+                                    <li class="nav-item"><a href="{{BASE_PATH}}services/api-access.html">API Access</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{BASE_PATH}}services/telematics.html">Integrations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{BASE_PATH}}company/pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{BASE_PATH}}blog/blog-alt-1.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{BASE_PATH}}company/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary" href="{{BASE_PATH}}company/contact.html">Get a Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end:navBar-->
+
+    <!--start:hero-->
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <span class="badge badge-primary badge-pill wow fadeInUp">{{HERO_TAG}}</span>
+                        <h1 class="wow fadeInUp">{{HERO_HEADING}}</h1>
+                        <p class="wow fadeInUp">{{HERO_COPY}}</p>
+                        <div class="wow fadeInUp mt-24">
+                            <a href="{{BASE_PATH}}company/contact.html" class="btn btn-primary btn-lg mx-8">Book a Demo <i class="fas fa-arrow-right text-14"></i></a>
+                            <a href="{{BASE_PATH}}services/index.html" class="btn btn-outline-gray btn-lg mx-8">View All Services <i class="fas fa-arrow-right text-14"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="illustration wow fadeInUp">
+                        <img src="{{HERO_IMAGE_URL}}" alt="{{SERVICE_TITLE}}" class="w-100p rounded-16" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end:hero-->
+</header>
+<!--end:header-->

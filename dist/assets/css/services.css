@@ -1,0 +1,112 @@
+/* ============================================
+   TTMS Service Pages – Custom Styles
+   ============================================ */
+
+.hero-chip {
+    display: inline-block;
+    background: rgba(255,255,255,.15);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 18px;
+    backdrop-filter: blur(4px);
+}
+.hero-chip img {
+    vertical-align: middle;
+    margin-right: 6px;
+    filter: brightness(0) invert(1);
+}
+
+/* Metric cards (stats row) */
+.metric-card {
+    background: #fff;
+    border: 1px solid #e8edf2;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: box-shadow .25s ease;
+}
+.metric-card:hover {
+    box-shadow: 0 8px 24px rgba(0,124,225,.08);
+}
+.metric-card .value {
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(0, 124, 225);
+    line-height: 1.1;
+}
+
+/* Focus cards (capability rows) */
+.focus-card {
+    background: #fff;
+    border: 1px solid #e8edf2;
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    transition: box-shadow .25s ease;
+}
+.focus-card:hover {
+    box-shadow: 0 4px 16px rgba(0,124,225,.07);
+}
+.focus-card .ic {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+.focus-card .ic img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Bullet list (checklist beside image) */
+.bullet-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    font-size: 15px;
+    color: #5a6978;
+    line-height: 1.6;
+}
+.bullet-list li img {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-top: 3px;
+}
+
+.service-media-card {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.service-media-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+/* CTA box */
+.cta-box {
+    background: linear-gradient(135deg, rgb(0, 124, 225) 0%, #183b56 100%);
+    border-radius: 20px;
+    padding: 56px 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .metric-card .value {
+        font-size: 30px;
+    }
+    .cta-box {
+        padding: 36px 20px;
+    }
+}

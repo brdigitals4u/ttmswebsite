@@ -1,0 +1,88 @@
+/*
+  Word Break
+ */
+
+.break-normal {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.break-words { overflow-wrap: break-word; }
+.break-all { word-break: break-all; }
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@include breakpoint(map-get($breaks, sm)) {
+  .#{map-get($breaks, sm)}-break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  .#{map-get($breaks, sm)}-break-words {
+    overflow-wrap: break-word;
+  }
+  .#{map-get($breaks, sm)}-break-all {
+    word-break: break-all;
+  }
+  .#{map-get($breaks, sm)}-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@include breakpoint(map-get($breaks, md)) {
+  .#{map-get($breaks, md)}-break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  .#{map-get($breaks, md)}-break-words {
+    overflow-wrap: break-word;
+  }
+  .#{map-get($breaks, md)}-break-all {
+    word-break: break-all;
+  }
+  .#{map-get($breaks, md)}-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@include breakpoint(map-get($breaks, lg)) {
+  .#{map-get($breaks, lg)}-break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  .#{map-get($breaks, lg)}-break-words {
+    overflow-wrap: break-word;
+  }
+  .#{map-get($breaks, lg)}-break-all {
+    word-break: break-all;
+  }
+  .#{map-get($breaks, lg)}-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@include breakpoint(map-get($breaks, xl)) {
+  .#{map-get($breaks, xl)}-break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  .#{map-get($breaks, xl)}-break-words {
+    overflow-wrap: break-word;
+  }
+  .#{map-get($breaks, xl)}-break-all {
+    word-break: break-all;
+  }
+  .#{map-get($breaks, xl)}-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+

@@ -1,0 +1,47 @@
+.company-career-detail{
+	header{
+    .hero{
+
+      background: linear-gradient(to bottom, rgba(250, 251, 251, 0), #f8fbff), url(../images/components/wave-bottom-out.svg) center bottom;
+      background-size: 100%;  
+      background-repeat: no-repeat;
+      background-blend-mode: screen; 
+
+      padding-bottom: 180px; 
+    }
+	}
+  .card-f-career-detail{
+    border-radius: 8px;
+    box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.03);
+    background-color: #ffffff;
+    padding: 24px;
+  }
+
+
+  .career-detail-form {
+    .content {
+      box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.03);
+    }
+
+    .career-detail-form-bg{ 
+      background: linear-gradient(to bottom, #f8fbff, rgba(250, 251, 251, 0)), url(../images/components/wave-top-out.svg) center top;  
+      background-size: 100%;  
+      background-repeat: no-repeat;
+      background-blend-mode: screen; 
+
+      height: 1356px; 
+      margin-bottom: -1400px;  margin-top: 50px; 
+    }
+  }
+}
+
+// Mobile-Tab devices (tablets, < 991px)
+@media (max-width: $breakpoints-lg - 0.02px) { 
+  .company-career-detail{
+    header{
+      .hero{
+        padding-bottom: 152px;
+      }
+    }
+  }
+}

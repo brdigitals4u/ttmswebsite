@@ -1,0 +1,46 @@
+/*
+  Font Weight
+ */
+
+$values: (
+        "hairline": 100, 
+        "thin": 200,
+        "light": 300,
+        "normal": normal,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700,
+        "extrabold": 800,
+        "black": 900 
+);
+
+@each $name, $value in $values {
+  .font-#{$name} {
+    font-weight: $value !important;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-font-#{$name} {
+      font-weight: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-font-#{$name} {
+      font-weight: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-font-#{$name} {
+      font-weight: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-font-#{$name} {
+      font-weight: $value !important;
+    }
+  }
+}
+

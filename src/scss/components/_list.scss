@@ -1,0 +1,41 @@
+.i-list{ //list with icon
+  li{
+    padding-left: 26px;
+    margin-bottom: 8px;
+    > .fas{
+      margin-left: -24px; 
+      margin-right: 5px;
+    }
+  }
+}
+.c-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.w-50p {
+    width: 100%;
+
+    li {
+      width: 50%;
+    }
+  }
+
+  li {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-start;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-right: 12px;
+    }
+
+    p {
+      margin-bottom: 0;
+      line-height: normal !important;
+    }
+  }
+}

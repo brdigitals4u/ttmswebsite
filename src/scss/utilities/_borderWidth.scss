@@ -1,0 +1,408 @@
+/*
+  Border Width
+ */
+
+.border { border-width: 1px; }
+.border-2 { border-width: 2px !important; }
+.hover-border {
+  &:hover {
+    border-width: 1px;
+  }
+}
+.focus-border{
+  &:focus {
+    border-width: 1px;
+  }
+}
+
+.border-t { border-top-width: 1px; }
+.hover-border-t {
+  &:hover {
+    border-top-width: 1px;
+  }
+}
+.focus-border-t {
+  &:focus {
+    border-top-width: 1px;
+  }
+}
+
+.border-r { border-right-width: 1px; }
+.hover-border-r {
+  &:hover {
+    border-right-width: 1px;
+  }
+}
+.focus-border-r {
+  &:focus {
+    border-right-width: 1px;
+  }
+}
+
+.border-b { border-bottom-width: 1px; }
+.hover-border-b {
+  &:hover {
+    border-bottom-width: 1px;
+  }
+}
+.focus-border-b {
+  &:focus {
+    border-bottom-width: 1px;
+  }
+}
+
+.border-l { border-left-width: 1px; }
+.hover-border-l {
+  &:hover {
+    border-left-width: 1px;
+  }
+}
+.focus-border-l {
+  &:focus {
+    border-left-width: 1px;
+  }
+}
+
+@include breakpoint(map-get($breaks, sm)) {
+  .#{map-get($breaks, sm)}-border { border-width: 1px; }
+  .#{map-get($breaks, sm)}-hover-border {
+    &:hover {
+      border-width: 1px;
+    }
+  }
+  .#{map-get($breaks, sm)}-focus-border {
+    &:focus {
+      border-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, sm)}-border-t { border-top-width: 1px; }
+  .#{map-get($breaks, sm)}-hover-border-t {
+    &:hover {
+      border-top-width: 1px;
+    }
+  }
+  .#{map-get($breaks, sm)}-focus-border-t {
+    &:focus {
+      border-top-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, sm)}-border-r { border-right-width: 1px; }
+  .#{map-get($breaks, sm)}-hover-border-r {
+    &:hover {
+      border-right-width: 1px;
+    }
+  }
+  .#{map-get($breaks, sm)}-focus-border-r {
+    &:focus {
+      border-right-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, sm)}-border-b { border-bottom-width: 1px; }
+  .#{map-get($breaks, sm)}-hover-border-b {
+    &:hover {
+      border-bottom-width: 1px;
+    }
+  }
+  .#{map-get($breaks, sm)}-focus-border-b {
+    &:focus {
+      border-bottom-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, sm)}-border-l { border-left-width: 1px; }
+  .#{map-get($breaks, sm)}-hover-border-l {
+    &:hover {
+      border-left-width: 1px;
+    }
+  }
+  .#{map-get($breaks, sm)}-focus-border-l {
+    &:focus {
+      border-left-width: 1px;
+    }
+  }
+}
+
+@include breakpoint(map-get($breaks, md)) {
+  .#{map-get($breaks, md)}-border { border-width: 1px; }
+  .#{map-get($breaks, md)}-hover-border {
+    &:hover {
+      border-width: 1px;
+    }
+  }
+  .#{map-get($breaks, md)}-focus-border {
+    &:focus {
+      border-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, md)}-border-t { border-top-width: 1px; }
+  .#{map-get($breaks, md)}-hover-border-t {
+    &:hover {
+      border-top-width: 1px;
+    }
+  }
+  .#{map-get($breaks, md)}-focus-border-t {
+    &:focus {
+      border-top-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, md)}-border-r { border-right-width: 1px; }
+  .#{map-get($breaks, md)}-hover-border-r {
+    &:hover {
+      border-right-width: 1px;
+    }
+  }
+  .#{map-get($breaks, md)}-focus-border-r {
+    &:focus {
+      border-right-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, md)}-border-b { border-bottom-width: 1px; }
+  .#{map-get($breaks, md)}-hover-border-b {
+    &:hover {
+      border-bottom-width: 1px;
+    }
+  }
+  .#{map-get($breaks, md)}-focus-border-b {
+    &:focus {
+      border-bottom-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, md)}-border-l { border-left-width: 1px; }
+  .#{map-get($breaks, md)}-hover-border-l {
+    &:hover {
+      border-left-width: 1px;
+    }
+  }
+  .#{map-get($breaks, md)}-focus-border-l {
+    &:focus {
+      border-left-width: 1px;
+    }
+  }
+}
+
+@include breakpoint(map-get($breaks, lg)) {
+  .#{map-get($breaks, lg)}-border { border-width: 1px; }
+  .#{map-get($breaks, lg)}-hover-border {
+    &:hover {
+      border-width: 1px;
+    }
+  }
+  .#{map-get($breaks, lg)}-focus-border {
+    &:focus {
+      border-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, lg)}-border-t { border-top-width: 1px; }
+  .#{map-get($breaks, lg)}-hover-border-t {
+    &:hover {
+      border-top-width: 1px;
+    }
+  }
+  .#{map-get($breaks, lg)}-focus-border-t {
+    &:focus {
+      border-top-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, lg)}-border-r { border-right-width: 1px; }
+  .#{map-get($breaks, lg)}-hover-border-r {
+    &:hover {
+      border-right-width: 1px;
+    }
+  }
+  .#{map-get($breaks, lg)}-focus-border-r {
+    &:focus {
+      border-right-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, lg)}-border-b { border-bottom-width: 1px; }
+  .#{map-get($breaks, lg)}-hover-border-b {
+    &:hover {
+      border-bottom-width: 1px;
+    }
+  }
+  .#{map-get($breaks, lg)}-focus-border-b {
+    &:focus {
+      border-bottom-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, lg)}-border-l { border-left-width: 1px; }
+  .#{map-get($breaks, lg)}-hover-border-l {
+    &:hover {
+      border-left-width: 1px;
+    }
+  }
+  .#{map-get($breaks, lg)}-focus-border-l {
+    &:focus {
+      border-left-width: 1px;
+    }
+  }
+}
+
+@include breakpoint(map-get($breaks, xl)) {
+  .#{map-get($breaks, xl)}-border { border-width: 1px; }
+  .#{map-get($breaks, xl)}-hover-border {
+    &:hover {
+      border-width: 1px;
+    }
+  }
+  .#{map-get($breaks, xl)}-focus-border {
+    &:focus {
+      border-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, xl)}-border-t { border-top-width: 1px; }
+  .#{map-get($breaks, xl)}-hover-border-t {
+    &:hover {
+      border-top-width: 1px;
+    }
+  }
+  .#{map-get($breaks, xl)}-focus-border-t {
+    &:focus {
+      border-top-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, xl)}-border-r { border-right-width: 1px; }
+  .#{map-get($breaks, xl)}-hover-border-r {
+    &:hover {
+      border-right-width: 1px;
+    }
+  }
+  .#{map-get($breaks, xl)}-focus-border-r {
+    &:focus {
+      border-right-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, xl)}-border-b { border-bottom-width: 1px; }
+  .#{map-get($breaks, xl)}-hover-border-b {
+    &:hover {
+      border-bottom-width: 1px;
+    }
+  }
+  .#{map-get($breaks, xl)}-focus-border-b {
+    &:focus {
+      border-bottom-width: 1px;
+    }
+  }
+
+  .#{map-get($breaks, xl)}-border-l { border-left-width: 1px; }
+  .#{map-get($breaks, xl)}-hover-border-l {
+    &:hover {
+      border-left-width: 1px;
+    }
+  }
+  .#{map-get($breaks, xl)}-focus-border-l {
+    &:focus {
+      border-left-width: 1px;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .border-#{$i} {
+    border-width: #{$i}px;
+  }
+
+  .border-t-#{$i} {
+    border-top-width: #{$i}px;
+  }
+  .border-r-#{$i} {
+    border-right-width: #{$i}px;
+  }
+  .border-b-#{$i} {
+    border-bottom-width: #{$i}px;
+  }
+  .border-l-#{$i} {
+    border-left-width: #{$i}px;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-border-#{$i} {
+      border-width: #{$i}px;
+    }
+
+    .#{map-get($breaks, sm)}-border-t-#{$i} {
+      border-top-width: #{$i}px;
+    }
+    .#{map-get($breaks, sm)}-border-r-#{$i} {
+      border-right-width: #{$i}px;
+    }
+    .#{map-get($breaks, sm)}-border-b-#{$i} {
+      border-bottom-width: #{$i}px;
+    }
+    .#{map-get($breaks, sm)}-border-l-#{$i} {
+      border-left-width: #{$i}px;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-border-#{$i} {
+      border-width: #{$i}px;
+    }
+
+    .#{map-get($breaks, md)}-border-t-#{$i} {
+      border-top-width: #{$i}px;
+    }
+    .#{map-get($breaks, md)}-border-r-#{$i} {
+      border-right-width: #{$i}px;
+    }
+    .#{map-get($breaks, md)}-border-b-#{$i} {
+      border-bottom-width: #{$i}px;
+    }
+    .#{map-get($breaks, md)}-border-l-#{$i} {
+      border-left-width: #{$i}px;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-border-#{$i} {
+      border-width: #{$i}px;
+    }
+
+    .#{map-get($breaks, lg)}-border-t-#{$i} {
+      border-top-width: #{$i}px;
+    }
+    .#{map-get($breaks, lg)}-border-r-#{$i} {
+      border-right-width: #{$i}px;
+    }
+    .#{map-get($breaks, lg)}-border-b-#{$i} {
+      border-bottom-width: #{$i}px;
+    }
+    .#{map-get($breaks, lg)}-border-l-#{$i} {
+      border-left-width: #{$i}px;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-border-#{$i} {
+      border-width: #{$i}px;
+    }
+
+    .#{map-get($breaks, xl)}-border-t-#{$i} {
+      border-top-width: #{$i}px;
+    }
+    .#{map-get($breaks, xl)}-border-r-#{$i} {
+      border-right-width: #{$i}px;
+    }
+    .#{map-get($breaks, xl)}-border-b-#{$i} {
+      border-bottom-width: #{$i}px;
+    }
+    .#{map-get($breaks, xl)}-border-l-#{$i} {
+      border-left-width: #{$i}px;
+    }
+  }
+
+}

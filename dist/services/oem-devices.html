@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <title>TTMS</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/regular.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
+    <style>
+        @media (min-width: 992px) {
+            .landing-about header .navbar {
+                position: relative;
+            }
+
+            .landing-about header .navbar .navbar-nav {
+                position: static;
+            }
+
+            .landing-about header .navbar .navbar-nav > .nav-item-has-children {
+                position: static;
+            }
+
+            .landing-about header .navbar .navbar-nav > .nav-item-has-children > .sub-menu.sub-menu-3-col {
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body class="landing-about services-page">
+
+<!--start:header-->
+<header class="header landing-about">
+    <!--start:navBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../apps/desktop.html">
+                <span class="ttms-brand ttms-brand-dark">TTMS</span>
+            </a>
+            <button class="navbar-toggler border-none" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="../assets/images/icons/ic-menu.svg" alt="">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="close-button">
+                        <button class="navbar-toggler border-none" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="true" aria-label="Toggle navigation">
+                            <img src="../assets/images/icons/ic-close.svg" alt="">
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../apps/desktop.html">Home</a>
+                    </li>
+                    <li class="nav-item nav-item-has-children">
+                        <a class="nav-link" href="../services/index.html">
+                            <span>Services</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="sub-menu sub-menu-3-col">
+                            <div class="sub-nav-items">
+                                <h5>Fleet Services</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/fleet-management.html">Fleet Management</a></li>
+                                    <li class="nav-item"><a href="../services/truck-tracking.html">Truck Tracking</a></li>
+                                    <li class="nav-item"><a href="../services/trailer-tracking.html">Trailer Tracking</a></li>
+                                    <li class="nav-item"><a href="../services/asset-tracking.html">Asset Tracking</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Dispatch & Routing</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/dispatch-management.html">Dispatch Management</a></li>
+                                    <li class="nav-item"><a href="../services/smart-routing.html">Smart Routing</a></li>
+                                    <li class="nav-item"><a href="../services/route-optimization.html">Route Optimization</a></li>
+                                    <li class="nav-item"><a href="../services/load-planning.html">Load Planning</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Driver Services</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/eld-devices.html">ELD Devices</a></li>
+                                    <li class="nav-item"><a href="../services/ai-dashcams.html">AI DashCams</a></li>
+                                    <li class="nav-item"><a href="../services/driver-monitoring.html">Driver Monitoring</a></li>
+                                    <li class="nav-item"><a href="../services/safety-solutions.html">Safety Solutions</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Analytics & Reporting</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/report-generation.html">Report Generation</a></li>
+                                    <li class="nav-item"><a href="../services/fleet-analytics.html">Fleet Analytics</a></li>
+                                    <li class="nav-item"><a href="../services/performance-metrics.html">Performance Metrics</a></li>
+                                    <li class="nav-item"><a href="../services/compliance-reports.html">Compliance Reports</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Alerts & Notifications</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/fuel-alerts.html">Fuel Alerts</a></li>
+                                    <li class="nav-item"><a href="../services/rest-food-alerts.html">Rest/Food Alerts</a></li>
+                                    <li class="nav-item"><a href="../services/maintenance-alerts.html">Maintenance Alerts</a></li>
+                                    <li class="nav-item"><a href="../services/safety-alerts.html">Safety Alerts</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-items">
+                                <h5>Integrations</h5>
+                                <ul>
+                                    <li class="nav-item"><a href="../services/third-party-trucks.html">Third-party Trucks</a></li>
+                                    <li class="nav-item"><a href="../services/oem-devices.html">OEM Devices</a></li>
+                                    <li class="nav-item"><a href="../services/telematics.html">Telematics</a></li>
+                                    <li class="nav-item"><a href="../services/api-access.html">API Access</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../services/telematics.html">Integrations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../company/pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blog/blog-alt-1.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../company/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary" href="../company/contact.html">Get a Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end:navBar-->
+
+    <!--start:hero-->
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <span class="badge badge-primary badge-pill wow fadeInUp">Integrations</span>
+                        <h1 class="wow fadeInUp">OEM Device Integration for Native Fleet Visibility</h1>
+                        <p class="wow fadeInUp">Bring OEM telematics and device streams into TTMS without fragmented dashboards. Standardize data for dispatch, safety, and maintenance teams.</p>
+                        <div class="wow fadeInUp mt-24">
+                            <a href="../company/contact.html" class="btn btn-primary btn-lg mx-8">Book a Demo <i class="fas fa-arrow-right text-14"></i></a>
+                            <a href="../services/index.html" class="btn btn-outline-gray btn-lg mx-8">View All Services <i class="fas fa-arrow-right text-14"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="illustration wow fadeInUp">
+                        <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=80" alt="OEM Devices" class="w-100p rounded-16" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end:hero-->
+</header>
+<!--end:header-->
+
+<section class="about-us-information">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-20">
+                    <div class="card-f d-flex items-center xl-items-start flex-col wow fadeInUp">
+                        <div class="card-f-heading mb-32 md-mb-16 xs-mb-12">
+                            <button class="btn btn-ic-primary btn-rounded bg-primary-200 text-primary pointer-events-none btn-ic"><i class="fas fa-truck"></i></button>
+                        </div>
+                        <div class="card-f-body">
+                            <h4 class="counter">41%</h4>
+                            <p class="text-gray mb-0">Lower integration setup time</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-20">
+                    <div class="card-f d-flex items-center xl-items-start flex-col wow fadeInUp">
+                        <div class="card-f-heading mb-32 md-mb-16 xs-mb-12">
+                            <button class="btn btn-ic-primary btn-rounded bg-primary-200 text-primary pointer-events-none btn-ic"><i class="fas fa-road"></i></button>
+                        </div>
+                        <div class="card-f-body">
+                            <h4 class="counter">95%</h4>
+                            <p class="text-gray mb-0">Device data coverage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-20">
+                    <div class="card-f d-flex items-center xl-items-start flex-col wow fadeInUp">
+                        <div class="card-f-heading mb-32 md-mb-16 xs-mb-12">
+                            <button class="btn btn-ic-primary btn-rounded bg-primary-200 text-primary pointer-events-none btn-ic"><i class="fas fa-chart-line"></i></button>
+                        </div>
+                        <div class="card-f-body">
+                            <h4 class="counter">21%</h4>
+                            <p class="text-gray mb-0">Faster maintenance detection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="real-estate-about about-us-page">
+    <div class="container">
+        <div class="content">
+            <div class="row content-top">
+                <div class="right col-lg-6 col-md-6 col-sm-12">
+                    <div class="features-photos wow fadeInUp">
+                        <div class="photo-1"><img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="OEM Devices operations" loading="lazy"></div>
+                        <div class="photo-2"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="OEM Devices dispatch" loading="lazy"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="left">
+                        <h3 class="text-black wow fadeInUp">How TTMS powers OEM Devices</h3>
+                        <p class="text-gray wow fadeInUp">Operationally practical capabilities inspired by modern fleet technology teams and tailored for transport businesses.</p>
+                        <ul class="c-list wow fadeInUp">
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">OEM device ingestion with normalized fleet event schemas</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">VIN and unit mapping for accurate vehicle identity management</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">Live diagnostics visibility for proactive maintenance planning</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">Cross-manufacturer telemetry standardization for operations</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">Alerting framework for fault codes and critical conditions</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">Historical data retention for reliability and warranty insights</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row content-bottom">
+                <div class="right col-lg-6 col-md-4 col-sm-12">
+                    <div class="features-photos wow fadeInUp">
+                        <div class="photo-3"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="Customers, drivers and owners" loading="lazy"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <div class="left">
+                        <h3 class="text-black wow fadeInUp">User Safety & Care</h3>
+                        <p class="text-gray wow fadeInUp">We care for customers, drivers, and owners by turning day-to-day fleet execution into safer, clearer, and less stressful workflows.</p>
+                        <ul class="c-list wow fadeInUp">
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">Reliable vehicle data supports safer dispatch decisions</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">Early fault visibility protects drivers from preventable failures</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">Teams avoid multi-portal confusion during urgent situations</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">Customer service improves through stronger operational certainty</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-about-blog">
+    <div class="container">
+        <div class="heading">
+            <h3 class="wow fadeInUp">Hardware & Anti-Theft for TTMS</h3>
+        </div>
+        <div class="row">
+
+            <div class="col col-lg-4 col-md-6 col-12">
+                <div class="card card-article card-article-about wow fadeInUp">
+                    <div class="card-article-heading">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="Connected ELD Compliance" loading="lazy">
+                    </div>
+                    <div class="card-article-body">
+                        <label class="category">ELD DEVICES</label>
+                        <h3 class="title">Connected ELD Compliance</h3>
+                        <p class="text-gray mt-8 mb-0">OEM Devices stays compliant with real-time ELD logs, HOS visibility, and inspection-ready records.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-12">
+                <div class="card card-article card-article-about wow fadeInUp">
+                    <div class="card-article-heading">
+                        <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="Proactive Driver Safety" loading="lazy">
+                    </div>
+                    <div class="card-article-body">
+                        <label class="category">AI DASHCAM</label>
+                        <h3 class="title">Proactive Driver Safety</h3>
+                        <p class="text-gray mt-8 mb-0">AI DashCam events help teams coach better, reduce risk, and respond faster to road incidents.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-12">
+                <div class="card card-article card-article-about wow fadeInUp">
+                    <div class="card-article-heading">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="Asset Protection Visibility" loading="lazy">
+                    </div>
+                    <div class="card-article-body">
+                        <label class="category">GPS ANTI-THEFT</label>
+                        <h3 class="title">Asset Protection Visibility</h3>
+                        <p class="text-gray mt-8 mb-0">GPS anti-theft tracking surfaces unauthorized movement quickly and protects owner assets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-about-blog">
+    <div class="container">
+        <div class="heading">
+            <h3 class="wow fadeInUp">Service Execution Framework</h3>
+        </div>
+        <div class="row">
+
+            <div class="col col-lg-4 col-md-6 col-12">
+                <div class="card card-article card-article-about wow fadeInUp">
+                    <div class="card-article-heading">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="Plan" loading="lazy">
+                    </div>
+                    <div class="card-article-body">
+                        <label class="category">SERVICE EXECUTION</label>
+                        <h3 class="title">Plan</h3>
+                        <p class="text-gray mt-8 mb-0">Plan OEM connectivity architecture by fleet makeup and priorities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-12">
+                <div class="card card-article card-article-about wow fadeInUp">
+                    <div class="card-article-heading">
+                        <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="Execute" loading="lazy">
+                    </div>
+                    <div class="card-article-body">
+                        <label class="category">SERVICE EXECUTION</label>
+                        <h3 class="title">Execute</h3>
+                        <p class="text-gray mt-8 mb-0">Execute device onboarding with standardized mapping and validation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-12">
+                <div class="card card-article card-article-about wow fadeInUp">
+                    <div class="card-article-heading">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="Improve" loading="lazy">
+                    </div>
+                    <div class="card-article-body">
+                        <label class="category">SERVICE EXECUTION</label>
+                        <h3 class="title">Improve</h3>
+                        <p class="text-gray mt-8 mb-0">Improve reliability through telemetry-driven maintenance and routing changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="real-estate-about about-us-page">
+    <div class="container">
+        <div class="content">
+            <div class="row content-top">
+                <div class="right col-lg-6 col-md-6 col-sm-12">
+                    <div class="features-photos wow fadeInUp">
+                        <div class="photo-1"><img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="OEM Devices audit reporting" loading="lazy"></div>
+                        <div class="photo-2"><img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="TTMS audit reporting" loading="lazy"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="left">
+                        <h3 class="text-black wow fadeInUp">Audit & Compliance Reporting</h3>
+                        <p class="text-gray wow fadeInUp">OEM Devices data feeds TTMS reporting automatically so teams can prepare regulator-facing and owner-facing reviews with less manual effort.</p>
+                        <ul class="c-list wow fadeInUp">
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">OEM Devices events are captured with timestamps and operational context for cleaner audit trails.</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">ELD, AI DashCam, and GPS records support compliance reporting without fragmented manual collection.</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">Owners can review KPI, exception, and safety logs in one TTMS - Total Transport Management System workflow.</span>
+                            </li>
+
+                            <li>
+                                <img src="../assets/images/icons/checkmark-green-plain.svg" alt="">
+                                <span class="text-gray">Teams generate regulator-ready and customer-facing reports with accurate, centralized data.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-about-blog">
+    <div class="container">
+        <div class="heading">
+            <h3 class="wow fadeInUp">OEM Devices Gallery</h3>
+        </div>
+        <div class="row">
+
+            <div class="col col-lg-4 col-md-6 col-12">
+                <div class="card card-article card-article-about wow fadeInUp">
+                    <div class="card-article-heading">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="OEM Devices Visual 1" loading="lazy">
+                    </div>
+                    <div class="card-article-body">
+                        <label class="category">SERVICE GALLERY</label>
+                        <h3 class="title">OEM Devices Visual 1</h3>
+                        <p class="text-gray mt-8 mb-0">Real transport operations aligned with TTMS service workflows.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-12">
+                <div class="card card-article card-article-about wow fadeInUp">
+                    <div class="card-article-heading">
+                        <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="OEM Devices Visual 2" loading="lazy">
+                    </div>
+                    <div class="card-article-body">
+                        <label class="category">SERVICE GALLERY</label>
+                        <h3 class="title">OEM Devices Visual 2</h3>
+                        <p class="text-gray mt-8 mb-0">Real transport operations aligned with TTMS service workflows.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-12">
+                <div class="card card-article card-article-about wow fadeInUp">
+                    <div class="card-article-heading">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=80" alt="OEM Devices Visual 3" loading="lazy">
+                    </div>
+                    <div class="card-article-body">
+                        <label class="category">SERVICE GALLERY</label>
+                        <h3 class="title">OEM Devices Visual 3</h3>
+                        <p class="text-gray mt-8 mb-0">Real transport operations aligned with TTMS service workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="real-estate-signup about-us-newsletter">
+    <div class="real-estate-signup-box wow fadeInUp">
+        <div class="inner-container text-center">
+            <h4>Need this workflow in your fleet operation?</h4>
+            <p>Integrate OEM devices into TTMS for consistent visibility, safer operations, and stronger fleet control.</p>
+            <div class="mt-24">
+                <a href="../company/contact.html" class="btn btn-primary btn-lg mx-8">Talk to Team</a>
+                <a href="../services/index.html" class="btn btn-outline-gray btn-lg mx-8">Browse Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--start:section footer-->
+<footer id="footer" class="footer footer-white">
+    <div class="container">
+        <div class="row">
+            <div class="footer-left col-lg-3 col-md-5 col-sm-12">
+                <div class="footer-widget wow fadeInUp">
+                    <a href="../apps/desktop.html" class="logo"><span class="ttms-brand ttms-brand-dark">TTMS</span></a>
+                    <p class="description">TTMS - Total Transport Management System. Dispatch, routing, fleet tracking, driver safety with ELD devices, AI DashCams, and real-time alerts.</p>
+                    <ul class="footer-sosmed">
+                        <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-facebook-f"></i></button></li>
+                        <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-twitter"></i></button></li>
+                        <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-instagram"></i></button></li>
+                        <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-linkedin"></i></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right col-lg-9 col-md-7 col-sm-12">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>Fleet Services</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="../services/fleet-management.html">Fleet Management</a></li>
+                                <li><a href="../services/truck-tracking.html">Truck Tracking</a></li>
+                                <li><a href="../services/trailer-tracking.html">Trailer Tracking</a></li>
+                                <li><a href="../services/asset-tracking.html">Asset Tracking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>Dispatch & Routing</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="../services/dispatch-management.html">Dispatch Management</a></li>
+                                <li><a href="../services/smart-routing.html">Smart Routing</a></li>
+                                <li><a href="../services/route-optimization.html">Route Optimization</a></li>
+                                <li><a href="../services/load-planning.html">Load Planning</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>Driver Services</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="../services/eld-devices.html">ELD Devices</a></li>
+                                <li><a href="../services/ai-dashcams.html">AI DashCams</a></li>
+                                <li><a href="../services/driver-monitoring.html">Driver Monitoring</a></li>
+                                <li><a href="../services/safety-solutions.html">Safety Solutions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>Analytics & Reporting</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="../services/report-generation.html">Report Generation</a></li>
+                                <li><a href="../services/fleet-analytics.html">Fleet Analytics</a></li>
+                                <li><a href="../services/performance-metrics.html">Performance Metrics</a></li>
+                                <li><a href="../services/compliance-reports.html">Compliance Reports</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>Alerts & Notifications</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="../services/fuel-alerts.html">Fuel Alerts</a></li>
+                                <li><a href="../services/rest-food-alerts.html">Rest/Food Alerts</a></li>
+                                <li><a href="../services/maintenance-alerts.html">Maintenance Alerts</a></li>
+                                <li><a href="../services/safety-alerts.html">Safety Alerts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>Integrations</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="../services/third-party-trucks.html">Third-party Trucks</a></li>
+                                <li><a href="../services/oem-devices.html">OEM Devices</a></li>
+                                <li><a href="../services/telematics.html">Telematics</a></li>
+                                <li><a href="../services/api-access.html">API Access</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="footer-widget wow fadeInUp">
+                            <h5>Company</h5>
+                            <ul class="footer-widget-link">
+                                <li><a href="../company/about.html">About TTMS</a></li>
+                                <li><a href="../company/career.html">Careers</a></li>
+                                <li><a href="../company/contact.html">Contact Us</a></li>
+                                <li><a href="../company/faq.html">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-xl-12">
+                <div class="footer-copyright wow fadeInUp">
+                    <div class="btn btn-rounded btn-primary btn-ic pointer-events-none">
+                        <i class="fas fa-heart text-24"></i>
+                    </div>
+                    <p>Copyright &copy; 2026 TTMS - Total Transport Management System. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end:section footer-->
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap-select.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script src="../assets/js/masonry.pkgd.min.js"></script>
+<script src="../assets/js/isotope.pkgd.min.js"></script>
+<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/index.js"></script>
+</body>
+</html>

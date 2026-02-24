@@ -1,0 +1,29 @@
+/*
+  Stroke
+ */
+
+.stroke-current { stroke: currentColor; }
+
+@include breakpoint(map-get($breaks, sm)) {
+  .#{map-get($breaks, sm)}-stroke-current {
+    stroke: currentColor;
+  }
+}
+
+@include breakpoint(map-get($breaks, md)) {
+  .#{map-get($breaks, md)}-stroke-current {
+    stroke: currentColor;
+  }
+}
+
+@include breakpoint(map-get($breaks, lg)) {
+  .#{map-get($breaks, lg)}-stroke-current {
+    stroke: currentColor;
+  }
+}
+
+@include breakpoint(map-get($breaks, xl)) {
+  .#{map-get($breaks, xl)}-stroke-current {
+    stroke: currentColor;
+  }
+}

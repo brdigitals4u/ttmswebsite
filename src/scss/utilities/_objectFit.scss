@@ -1,0 +1,41 @@
+/*
+   Object Fit
+ */
+
+$values: (
+        "contain": contain,
+        "cover": cover,
+        "fill": fill,
+        "none": none,
+        "scale-down": scale-down
+);
+
+@each $name, $value in $values {
+  .object-#{$name} {
+    object-fit: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-object-#{$name} {
+      object-fit: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-object-#{$name} {
+      object-fit: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-object-#{$name} {
+      object-fit: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-object-#{$name} {
+      object-fit: $value;
+    }
+  }
+}

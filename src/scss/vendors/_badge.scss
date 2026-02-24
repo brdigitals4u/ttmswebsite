@@ -1,0 +1,31 @@
+.badge {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 2rem;
+  padding: 0 1rem;
+
+  &-secondary {
+    background-color: $s-color-white;
+    color: $s-color-success !important;
+  }
+  &-white-transparent {
+    background-color: rgba($s-color-white, 0.1);
+    color: $s-color-white !important;
+  }
+
+  &-primary {
+    background-color: $s-color-primary-100;
+    color: $s-color-primary !important;
+  }
+
+  &-success {
+    background-color: rgba($s-color-success, .1);
+    color: $s-color-success !important;
+  }
+
+  &-danger {
+    background-color: $s-color-danger-100;
+    color: $s-color-danger !important;
+  }
+}

@@ -1,0 +1,38 @@
+/*
+  Width
+ */
+
+$values: (
+        "auto": auto, "full": 100%, "screen": 100vw,
+        0: 0, 1: 1px, 2: 2px, 3: 3px, 4: 4px, 5: 5px, 6: 6px, 7: 7px, 8: .5rem, 10: .625rem, 12: .75rem, 14: .875rem, 16: 1rem, 18: 1.125rem, 20: 1.25rem, 24: 1.5rem, 28: 1.75rem, 32: 2rem, 36: 2.25rem, 40: 2.5rem, 44: 2.75rem, 48: 3rem, 52: 3.25rem, 56: 3.5rem, 60: 3.75rem, 64: 4rem, 68: 4.25rem, 72: 4.5rem, 76: 4.75rem, 80: 5rem, 84: 5.25rem, 88: 5.5rem, 92: 5.75rem, 96: 6rem, 100: 6.25rem, 104: 6.5rem, 108: 6.75rem, 112: 7rem, 116: 7.25rem, 120: 7.5rem, 124: 7.75rem, 128: 8rem, 132: 8.25rem, 136: 8.5rem, 140: 8.75rem, 144: 9rem, 148: 9.25rem, 152: 9.5rem, 156: 9.75rem, 160: 10rem, 168: 10.5rem, 176: 11rem, 180: 11.25rem, 184: 11.5rem, 192: 12rem, 200: 12.5rem, 208: 13rem, 224: 14rem, 240: 15rem, 256: 16rem, 272: 17rem, 280: 17.5rem, 288: 18rem, 304: 19rem, 314: 19.625rem, 320: 20rem, 336: 21rem, 352: 22rem, 368: 23rem, 376: 23.5rem, 384: 24rem, 400: 25rem, 416: 26rem, 432: 27rem, 448: 28rem, 464: 29rem, 480: 30rem, 496: 31rem, 512: 32rem, 528: 33rem, 544: 34rem, 560: 35rem, 576: 36rem, 592: 37rem, 33p: 33.33333%, 66p: 66.66666%, 25p: 25%, 20p: 20%, 40p: 40%, 45p: 45%, 50p: 50%, 55p: 55%, 60p: 60%, 65p: 65%, 70p: 70%, 75p: 75%, 80p: 80%, 16p: 16.66666%, 83p: 83.33333%, 8p: 8.33333%, 41p: 41.66666%, 58p: 58.33333%, 91p: 91.66666%, 100p: 100%
+);
+
+@each $name, $value in $values {
+  .w-#{$name} {
+    width: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-w-#{$name} {
+      width: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-w-#{$name} {
+      width: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-w-#{$name} {
+      width: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-w-#{$name} {
+      width: $value !important;
+    }
+  }
+}

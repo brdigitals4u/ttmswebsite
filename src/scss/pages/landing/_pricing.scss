@@ -1,0 +1,846 @@
+body.landing-pricing{
+  background-color: #f9fbfe
+}
+header.landing-pricing{ 
+  background: #fff; 
+  padding-bottom: 333px; 
+  margin-bottom: -333px;
+  .hero{
+    padding-top: 80px;
+    padding-bottom: 0;
+    .heading{
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+    h1{
+      font-size: 56px !important;
+      line-height: 1.21 !important;
+      max-width: 420px;
+      margin: 0 auto 28px;
+    }
+    p{
+      font-size: 18px !important;
+      line-height: 1.78;
+      color: $s-color-gray;
+      margin: 0 auto 0;
+    }
+  }
+}
+
+.landing-pricing-boxes{ 
+  padding: 96px 0 50px; 
+  .content{
+  	padding: 20px 60px 60px;  
+  } 
+  .pricing-footer{
+    text-align: center;
+    padding: 0 0 100px;
+    border-bottom: solid 1px #e5efff; 
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+      color: #183b56;
+      max-width: 542px;
+      margin: 0 auto;
+    }
+  }
+}
+.card-pricing.card-pricing-landing{
+	padding: 48px 36px 20px;
+  min-height: 551px; 
+  background: #fff;
+	.price{
+    padding-bottom: 24px;
+    border-bottom: solid 1px #e5eaf4;
+		h2{
+			font-size: 40px !important;
+			line-height: 1.15 !important;
+			margin: 0 0 18px; 
+			span{
+        font-weight: normal;
+			}
+		}
+		h4{
+			font-size: 24px !important;
+			line-height: 1.33 !important;
+			margin: 0 0 12px;  
+		}
+		p{
+			font-size: 16px;
+			line-height: 1.75;
+		}
+	}
+  .pricing-list{
+    line-height: 1.5;
+    margin-top: 32px;
+    li{
+      margin-bottom: 24px;
+    }
+  }
+  &.card-pricing-with-heading{ 
+    padding-bottom: 40px;
+    .card-pricing-heading{
+      margin: -68px -36px 26px; 
+      h5{
+        font-size: 16px !important;
+        line-height: 2.75 !important;
+        color: #fff;
+        background-color: #5a7184;
+        text-align: center;
+        text-transform: uppercase;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px; 
+      }
+    }
+  }
+  &.card-pricing-landing-success{
+    .card-pricing-heading{
+      h5{
+        background-color: #36b37e;
+      }
+    }
+    .price{
+      h2{
+        color: #36b37e;
+      }
+    }
+  }
+  &.card-pricing-landing-primary{
+    .card-pricing-heading{
+      h5{
+        background-color: #1565d8;
+      }
+    }
+    .price{
+      h2{
+        color: #1565d8;
+      }
+    }
+  }
+}
+
+.landing-pricing-features{
+  padding-top: 50px;
+  .heading{
+    text-align: center;
+    margin: 0 0 36px;
+    h3{
+      font-size: 48px !important;
+      line-height: 1.25 !important;
+    }
+  }
+}
+.card-pricing-feature{
+  text-align: center;
+  border-radius: 16px; 
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #e5eaf4;
+  background-color: #ffffff;
+  margin: 60px 0 0;
+  .ic{
+    width: 64px; height: 64px;
+    border-radius: 50%; 
+    border: solid 1px #e5eaf4;
+    background-color: #ffffff;
+    margin: -32px auto 0;
+    padding: 14px;
+    img{
+      width: 100%; height: 100%;
+      object-fit: contain;
+    }
+  }
+  .card-body{
+    padding: 12px 0 20px;
+    max-width: 258px;
+    margin: 0 auto;
+    h4{
+      font-size: 22px !important;
+      font-weight: 600;
+      line-height: 1.45 !important;
+      margin: 0 -20px 4px;
+      color: #183b56;
+    }
+    p{
+      font-size: 16px;
+      font-style: normal;
+      line-height: 1.75;
+      color: #5a7184;
+      margin: 0; 
+    }
+  }
+}
+
+.landing-pricing-partner{
+  padding-top: 120px;
+  padding-bottom: 100px; 
+  .pricing-partner-item{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 100%;height: 100%;
+      object-fit: fill;
+    }
+  }
+}
+
+.landing-pricing-faq{
+  background: #183b56;
+  color: #fff;
+  padding: 100px 0 110px;
+  .heading{
+    text-align: center;
+    margin: 0 0 60px;
+    h3{
+      font-size: 48px !important;
+      line-height: 1.25 !important;
+      color: #fff;
+    }
+  }
+  .content{
+    max-width: 862px;
+    margin: 0 auto;
+  }
+}
+.accordion.accordion-pricing-white{ 
+  .card{
+    background: rgba(#b3bac5, .1);
+    border: none !important;
+    color: #b3bac5;
+  }
+  .card-header{
+    background: transparent; 
+    cursor: pointer;
+    h5{
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px !important;
+      font-weight: 600;
+      line-height: 1.2 !important;
+      letter-spacing: 0.2px;
+      color: #fff; 
+      padding: 24px;
+      &[aria-expanded="true"]{
+        padding-bottom: 12px;
+      }
+      i{ 
+        font-size: 14px;
+      }
+    }
+  } 
+}
+
+.landing-pricing-testimonial{
+  padding: 20px 0 50px;
+}
+.pricing-testimonial-container{ 
+  margin: 0 -150px;
+  .owl-carousel .owl-nav{
+    position: absolute;
+    bottom: 100px; right: 212px;
+    display: flex;
+    .owl-prev, .owl-next{
+      display: flex;
+      align-items: center; justify-content: center;
+      width: 56px; height: 56px;
+      background-color: transparent;
+      font-size: 18px;
+      color: #959ead;
+      &:hover{
+        color: #183b56;
+      }
+    }
+  } 
+}
+.pricing-testimonial{
+  .box-testimonial{ 
+    background: transparent;
+    padding: 100px 218px 100px 200px; 
+    .testimonial-content{
+      flex: 0 0 712px;
+      width: 712px;
+      padding: 32px 0 0; 
+      p{
+        line-height: 1.44;
+        margin-bottom: 36px;
+        font-weight: bold;
+        color: #183b56;
+        &::before{
+          display: none;
+        }
+      }
+    }
+    .meta{
+      strong,span{
+        display: block;
+      }
+      strong{
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.66;
+        color: #183b56;
+      }
+    }
+    .testimonial-profile{
+      position: relative;
+      margin: 0;
+      &::before{
+        position: absolute;
+        z-index: 2;
+        left: 28px;
+        bottom: -50px;
+        content: '';
+        font-size: 100px;
+        line-height: 1em;
+        color: #183b56;
+        font-family: 'Font Awesome 5 Free';
+        content:"\f10d";
+        font-weight: 900;
+      }
+      .user{
+        position: relative; 
+        width: 253px;
+        height: 292px;
+        border-radius: 8px;
+        overflow: hidden; 
+        img{ 
+          width: 100%;height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.landing-pricing-download{
+  position: relative;
+  z-index: 2;
+  padding-bottom: 0;
+  text-align: center;
+  color: $s-color-white;
+  & + .footer{
+    padding-top: 240px;
+  }
+  .landing-pricing-download-box{
+    border-radius: 16px;
+    padding: 54px 60px;
+    margin-bottom: -175px; 
+
+    background: url(../images/pattern/box-email-pattern-1.svg) left top, url(../images/pattern/box-email-pattern-2.svg) right bottom;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-color: #36b37e;
+  }
+  .inner-container{ 
+    max-width: 685px; 
+    margin: 0 auto;
+  }
+  h4{
+    font-size: 48px !important;
+    line-height: 1.25 !important;
+    margin: 0 0 17px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 1.78;
+  }
+  .form-submit-email{ 
+    max-width: 430px;
+    margin: 43px auto 0;
+    .input-group{
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .form-control{
+      border: none;
+      &:focus{
+        box-shadow: none;
+      }
+    }
+    .input-group-append{
+      padding: 5px;
+      .btn{
+        border-radius: 4px;
+        min-width: 130px;
+      }
+    }
+  }
+}
+
+// Mobile-Tab devices (tablets, < 1200px)
+@media (max-width: $breakpoints-xl - 0.02px) {
+  .landing-pricing-boxes{
+    .content{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .landing-pricing-features{
+    .content{
+      max-width: 800px; 
+      margin: 0 auto;
+    }
+  }
+  .pricing-testimonial-container{
+    margin: 0;
+    .owl-carousel{
+      .owl-nav{
+        position: relative;
+        top: 0; right: 0; bottom: 0; left: 0; 
+        justify-content: center;
+      }
+    }
+  }
+  .pricing-testimonial{
+    .box-testimonial{
+      position: relative;
+      display: block;
+      text-align: center;
+      margin: 0; 
+      padding: 48px 25px 36px;
+      .testimonial-profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: initial;
+        top: 0; left: 0;
+        height: initial;
+        &::before{
+          left: 50%;
+          margin-left: -80px; 
+        }
+        .user{
+          width: 200px;
+          height: 230px;
+        }
+      }
+      .testimonial-content{
+        flex: 0 0 100%;
+        width: 100%;
+        padding-top: 80px; 
+        p{
+          font-size: 30px;
+          line-height: 1.44;
+          margin-bottom: 26px;
+        }
+      }
+    }
+  }
+}
+// Mobile-Tab devices (tablets, < 992px)
+@media (max-width: $breakpoints-lg - 0.02px) {
+  header.landing-pricing{
+    .hero{
+      padding-top: 56px;
+      h1{
+        font-size: 48px !important;
+        line-height: 1.25 !important;
+        margin-bottom: 20px;
+      } 
+    }
+  }	
+
+  .landing-pricing-boxes{
+    padding-top: 36px;
+    padding-bottom: 40px;
+    .container{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .row{
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+    .col{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .content{
+      padding: 20px 0 36px;
+    }
+    .pricing-footer{
+      padding-bottom: 36px; 
+    }
+  }
+
+  .card-pricing.card-pricing-landing{
+    padding: 24px 15px 24px;
+    min-height: 450px; 
+    .price{
+      padding-bottom: 16px;
+      h2{
+        font-size: 36px !important;   
+        margin-bottom: 16px; 
+      }
+      h4{
+        font-size: 22px !important;
+        line-height: 1.45 !important;
+        margin-bottom: 3px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 1.71;
+      }
+    }
+    .pricing-list{
+      margin-top: 16px;
+      font-size: 14px;
+      li{
+        margin-bottom: 16px;
+      }
+    }
+    &.card-pricing-with-heading{
+      padding-top: 22px;
+      padding-bottom: 24px;
+      .card-pricing-heading{
+        margin: -56px -15px 22px;
+        h5{
+          font-size: 14px !important;
+          line-height: 2.43 !important;
+        }
+      }
+    }
+  }
+
+  .landing-pricing-features{
+    padding-top: 40px;
+    .container{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .heading{
+      margin-bottom: 20px; 
+    }
+  }
+  .landing-pricing-partner{
+    padding-top: 60px;
+    padding-bottom: 50px; 
+    .container{
+      padding-left: 0 !important;
+      padding-right: 0 !important; 
+    }
+    .row{
+      justify-content: center;  
+    }
+    .col-company{
+      min-width: 225px; 
+      margin-bottom: 30px;
+    }
+  }
+
+  .landing-pricing-faq{
+    padding-top: 56px;
+    padding-bottom: 64px;
+    .heading{
+      margin-bottom: 48px; 
+    }
+    .container{
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  }
+
+  .landing-pricing-testimonial {
+    padding: 0;
+    .container{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    } 
+  }
+  
+
+  .landing-pricing-download{
+    padding-top: 48px; 
+    padding-bottom: 0;
+    .container{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .landing-pricing-download-box{
+      padding: 56px 44px 64px;
+      margin-bottom: -170px;
+    }
+    h4{
+      font-size: 40px !important;
+      line-height: 1.3 !important;
+      margin-bottom: 14px;
+    }
+    .form-submit-email{
+      margin-top: 37px; 
+    }
+
+    & + .footer{
+      padding-top: 260px;
+    }
+  }
+}
+// Mobile-Tab devices (tablets, < 768px)
+@media (max-width: $breakpoints-md - 0.02px) {
+  header.landing-pricing{
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
+  .card-pricing.card-pricing-landing{
+    min-height: initial;
+    max-width: 300px; 
+    margin-bottom: 24px;
+    margin-left: auto; margin-right: auto;
+    &.card-pricing-with-heading{
+      .card-pricing-heading{
+        margin-top: -22px;
+        margin-bottom: 28px;
+      }
+    } 
+  }
+  .card-pricing-feature{
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+// Mobile devices (tablets, < 576px)
+@media (max-width: $breakpoints-sm - 0.02px) {
+  header.landing-pricing{
+    padding-bottom: 794px;
+    margin-bottom: -794px;
+    .hero{
+      padding-top: 10px; 
+      h1{
+        font-size: 32px !important;
+        line-height: 1.25 !important;
+        margin-bottom: 24px;
+      }
+      p{
+        font-size: 16px !important;
+        line-height: 1.75;
+      }
+    }
+  }
+
+  .landing-pricing-boxes{
+    padding-bottom: 0;
+    .container{
+      padding-left: 15px !important;
+      padding-right: 15px !important; 
+    }
+    .content{
+      padding-top: 0;
+      padding-bottom: 12px;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+    .row{
+      flex-direction: column-reverse;
+    }
+    .pricing-footer{
+      padding-bottom: 24px; 
+      p{
+        font-size: 16px;
+        line-height: 1.75;
+      }
+    }
+  }
+  .card-pricing.card-pricing-landing{
+    .price{
+      padding-bottom: 20px;
+      h4{
+        margin-bottom: 12px;
+      }
+      p{
+        font-size: 16px; 
+        line-height: 1.75;
+      }
+    }
+    .pricing-list{
+      margin-top: 24px;
+      li{
+        margin-bottom: 20px;
+      }
+    }
+    .card-pricing-footer{
+      margin-top: 16px;
+    }
+  }
+
+  .landing-pricing-features{
+    padding-top: 64px;
+    .container{
+      padding-left: 20px !important; 
+      padding-right: 20px !important; 
+    }
+    .heading{
+      margin-bottom: 6px;
+      h3{
+        font-size: 32px !important; 
+      }
+    }
+  }
+  .card-pricing-feature{
+    .ic{
+      width: 56px;
+      height: 56px;
+      padding: 12px;
+      margin: -28px auto 0;
+    }
+    .card-body{
+      padding: 16px 0 17px;
+      h4{
+        font-size: 20px !important;
+        line-height: 1.2 !important; 
+        margin-bottom: 6px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 1.71;
+      }
+    }
+  }
+
+  .landing-pricing-partner{
+    padding-top: 56px;
+    padding-bottom: 20px;
+    .container{
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .col-company{
+      min-width: 50%;
+    }
+    .pricing-partner-item{
+      height: 32px;
+    }
+  }
+
+  .landing-pricing-faq{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    .heading{
+      margin-bottom: 24px; 
+      h3{
+        font-size: 28px !important;
+        line-height: 1.29 !important;
+      }
+    }
+  } 
+  .accordion.accordion-pricing-white{
+    text-align: center;
+    .card{
+      margin-bottom: 20px;
+    }
+    .card-header{
+      h5{
+        font-size: 16px !important;
+        line-height: 1.25 !important;
+        flex-direction: column;
+        padding: 24px 10px;
+        span{
+          margin: 0 0 20px;
+        }
+        &[aria-expanded="true"]{
+          i{
+            display: none; 
+          }
+        }
+      }
+    }
+    .card-body{
+      padding: 6px 20px 24px; 
+      p{
+        font-size: 14px;
+        line-height: 1.71;
+      }
+    }
+  }
+
+  .pricing-testimonial-container{ 
+    .owl-carousel .owl-nav{
+      .owl-prev, .owl-next{
+        width: 48px; height: 48px;
+        font-size: 16px;
+      }
+    }
+  }
+  .pricing-testimonial{
+    .box-testimonial{
+      padding: 48px 20px 24px;
+      .testimonial-profile{
+        &::before{
+          font-size: 80px;
+          bottom: -40px;
+        }
+      }
+      .testimonial-content{
+        padding-top: 76px;
+        p{
+          font-size: 20px;
+          line-height: 1.2;
+          margin-bottom: 24px;
+        }
+      }
+      .meta{
+        strong{
+          font-size: 16px;
+          line-height: 1.375;
+        }
+      }
+    }
+  }
+
+  .landing-pricing-download{
+    .container{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .landing-pricing-download-box{
+      padding: 56px 10px 48px;
+      border-radius: 0;
+    }
+    h4{
+      font-size: 28px !important;
+      line-height: 1.29 !important;
+      margin-bottom: 24px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    .form-submit-email{
+      margin-top: 36px;
+      .input-group{
+        padding: 10px;
+      }
+      .form-control{
+        height: 3rem;
+        border-radius: 8px; 
+        border: solid 1px #c3cad9;
+        padding-left: 48px; 
+      }
+      .input-group-prepend{
+        .btn{
+          background: transparent;
+          border: transparent;
+          padding: 0 0 0 20px;
+          width: 48px; margin-right: -48px;
+        }
+      }
+      .input-group-append{
+        padding: 10px 0 0;
+        width: 100%;
+        .btn{
+          width: 100%;
+        }
+      }
+    }
+    & + .footer{
+      padding-top: 240px; 
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,1327 @@
+header.landing-travel{ 
+  background: url(../images/covers/landing-travel-header@2x.jpg);
+  background-size: cover;
+  background-color: #223225;
+  padding-bottom: 145px;
+  .row-content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .content{
+    flex: 0 0 447px;
+    max-width: 447px;
+  }
+  .form-box{
+    margin: 0;
+    max-width: 420px;
+    h4{
+      margin-bottom: 10px;
+      font-size: 20px !important;
+      line-height: 1.2 !important;
+    }
+  }
+  .hero {
+    position: relative; 
+    padding-top: 60px;
+    padding-bottom: 0;
+    .content{
+      position: relative;
+      z-index: 2;
+      color: $s-color-white;
+    }
+  }
+  .content{   
+    padding-top: 60px;
+    h1{
+      font-size: 56px !important;
+      line-height: 1.21 !important;
+      margin: 0 0 30px;
+    }
+    p{
+      font-size: 20px;
+      line-height: 1.8;
+      margin: 0 0 40px;
+    }
+    .btn-container{
+      .btn{
+        padding-left: 0;padding-right: 0;
+        width: 56px;
+      }
+    }
+  }
+}
+
+.landing-travel-benefit{
+  padding-top: 100px;
+  padding-bottom: 70px;
+  .heading{
+    text-align: center;
+    margin-bottom: 42px;
+    h3{ 
+      font-size: 2rem !important;
+      line-height: 1.33 !important;
+      margin-bottom: 16px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+      margin: 0 auto;
+      max-width: 700px;
+      color: #5a7184;
+    }
+  }
+}
+.box-travel-benefit{
+  text-align: center;
+  border-radius: 8px;
+  border: solid 1px #e5eaf4;
+  background-color: #ffffff;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 30px;
+  &:hover{
+    border-color: #fff;
+    box-shadow: 2px 4px 34px 0 rgba(15, 24, 44, 0.05);
+  }
+  .ill{
+    width: 64px;height: 64px;
+    border-radius: 16px;
+    background-color: rgba(#1565d8, 0.06);
+    display: flex;align-items: center;justify-content: center;
+    padding: 12px;
+    margin: 0 0 35px;
+  }
+  h4{
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+    margin: 0 0 12px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 1.71;
+    color: #5a7184;
+  }
+}
+
+.landing-travel-destinations{
+  padding: 60px 0 80px;
+  background-color: #f9fbfe;
+  .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 40px;
+    h3{ 
+      font-size: 36px !important;
+      line-height: 1.33 !important;
+      margin: 0;
+    }
+    .see-all{
+      font-size: 18px;
+      line-height: 1.78;
+      color: #1565d8;
+      .fa{
+        font-size: 14px;
+      }
+    }
+  }
+  .destinations-carousel-container{
+    margin-left: -580px;
+    margin-right: -560px;
+  }
+  .see-all-footer{
+    display: none;
+    align-items: center; justify-content: center;
+  }
+}
+.destinations-carousel-item{
+  padding: 0 15px;
+}
+.destinations-carousel-box{
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  .description{
+    position: absolute;
+    bottom: 0;
+    left: 0;right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom, rgba(25, 60, 87, 0), #183b56);
+    padding: 40px 30px;
+    .btn{
+      flex: 0 0 130px;
+      min-width: 130px;
+      padding: 0;
+      color: #1565d8;
+    }
+  }
+  .text{
+    color: #fff;
+    h4{
+      font-size: 36px !important;
+      line-height: 1.33 !important;
+      margin: 0 0 6px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.75;
+      color: #fafafb;
+      margin: 0;
+    }
+  }
+}
+
+.landing-travel-about{
+  padding-top: 100px;
+  padding-bottom: 70px;
+  .heading{ 
+    text-align: center;
+    max-width: 664px;
+    margin-left: auto;margin-right: auto;
+    margin-bottom: 80px;
+    h3{
+      font-size: 36px !important;
+      line-height: 1.33 !important;
+      margin: 16px 0 0;
+    }
+  }
+
+  .content {
+    &-top {
+      margin-bottom: 56px;
+    }
+
+    .left {
+      padding: 27px 36px 27px 64px;
+      h3{
+        padding-right: 35px;
+        font-size: 2rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 24px;
+      }
+      p{
+        font-size: 18px;
+        line-height: 1.78;
+        margin: 0 0 1.78em;
+      }
+      .btn-container{
+
+      }
+      .c-list.w-50p{
+        margin-top: 32px;
+        li{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          p{
+            font-size: 16px;
+            line-height: 1.375;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      justify-content: center;
+
+      .features-photos {  
+        width: 458px;
+        border-radius: .5rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  } 
+
+  .content-bottom{
+    flex-direction: row-reverse;
+  }
+}
+.travel-about-ill-1{
+  img{
+    border-radius: 8px;
+  }
+  .search{
+    position: relative;
+    margin: -34px 5px 0;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .search-form{
+    border-radius: 8px 8px 0 0;
+    box-shadow: inset 0 -1px 0 0 #eff3f5;
+    background-color: #ffffff;
+    line-height: 1.75;
+    color: #183b56;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    .fa{
+      font-size: 20px;
+      line-height: 1.4;
+      margin-right: 12px;
+    }
+  }
+  .search-results{
+    color: #5a7184;
+    li{ 
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px 8px 48px;
+      &::after{
+        display: block;
+        content: '';
+        width: 26px;height: 26px;
+        display: block;
+        background-image: url('../images/icons/checkmark-green-plain.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+      } 
+      &.active{
+        box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+.travel-about-ill-2{
+  max-width: 360px;
+  position: relative;
+  &::before{
+    font-family: 'Font Awesome 5 Free';
+    content: "\f295";
+    font-weight: 900;
+    position: absolute;
+    top: 25px;right: -50px;
+    display: flex;
+    align-items: center;justify-content: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    font-size: 42px;
+    color: #00b8d9;
+    border-radius: 50%;
+  }
+  img{
+    border-radius: 8px 8px 0 0;
+  }
+  .detail{
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 28px 32px 0 rgba(0, 0, 0, 0.06);
+    padding: 16px 24px 20px;
+    label{
+      font-size: 14px;
+      line-height: 1.43;
+      color: #36b37e;
+      margin: 0 0 12px;
+    }
+    h4{
+      font-size: 28px !important;
+      line-height: 1.29 !important;
+      letter-spacing: 0.2px;
+      color: #183b56;
+      margin: 0 0 10px;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: 0.2px;
+      color: #5a7184;
+      margin: 0 0 24px;
+    }
+  }
+}
+
+.landing-travel-guarantee{
+  background-color: #fafdff;
+  padding: 95px 0;
+  .description{
+    padding-left: 50px;
+    max-width: 440px;
+    h4{
+      font-size: 32px !important;
+      line-height: 1.25 !important;
+      letter-spacing: 0.2px;
+      color: #183b56;
+      margin: 0 0 22px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+      letter-spacing: normal;
+      color: #5a7184;
+    }
+  }
+  .guarantees{
+    margin: 26px 0 0;
+    max-width: 420px;
+    .card{
+      background: transparent;
+      border: none;
+      margin: 0 0 10px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card-header{
+      border: none;
+      padding: 20px 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 18px !important;
+      line-height: 1.11 !important;
+      letter-spacing: 0.23px;
+      color: #183b56;
+      background: rgba(#b3bac5, 0.1);
+      &.collapsed{
+        background: transparent;
+        .indicator{
+          background: transparent;
+        }
+        .arrow{
+          transform: rotate(180deg);
+        }
+      }
+      i{
+        display: block;
+        &.indicator{
+          width: 18px;height: 18px;
+          border: solid 1px #36b37e;
+          border-radius: 50%;
+          display: block;
+          margin-right: 10px;
+          background: #36b37e;
+        }
+        &.arrow{
+          margin-left: 10px;
+          font-size: 16px;
+          color: #5a7184;
+        }
+      }
+    }
+    .show{
+      .card-body{
+        background: rgba(#b3bac5, 0.1);
+      }  
+    }
+    .card-body{
+      padding: 0 32px 20px 20px;
+      p{
+        font-size: 16px;
+        line-height: 1.75;
+        color: #183b56;
+      }
+    }
+  }
+  .illustration{
+    position: relative;
+    margin-left: -160px;
+    img{
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .chats{
+      position: absolute;
+      top: 257px;right: -64px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      li{
+        border-radius: 8px;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.08);
+        background-color: #ffffff;
+        padding: 12px 20px;
+        margin: 0 0 16px;
+        font-size: 16px;
+        line-height: 1.75;
+        color: #183b56;
+        & + li{
+          margin-left: 35px;
+          & + li{
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.landing-travel-customer-review{  
+  padding-bottom: 100px;
+}
+.customer-review-result-section {
+  .c-customer-review {
+    padding-left: 0;
+    padding-right: 0;
+
+    &-body {
+      margin-top: 24px;
+    }
+  }
+
+  .customer-review-result {
+    .left {
+      ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+          width: 40px;
+          height: 40px;
+          border: 2px solid $s-color-white;
+          border-radius: 100px;
+
+          &:nth-of-type(1) {
+            margin-right: -10px;
+            z-index: 11;
+          }
+
+          &:nth-of-type(2) {
+            margin-top: -10px;
+            z-index: 1;
+          }
+
+          &:nth-of-type(3) {
+            margin-left: -10px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100px;
+          }
+        }
+      }
+    }
+
+    .middle {
+      img {
+        height: 32px;
+      }
+
+      .star {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+          margin-left: 2px;
+          margin-right: 2px;
+
+          .fas {
+            color: $s-color-warning;
+          }
+        }
+      }
+    }
+
+    .right {
+    }
+  }
+}
+
+.landing-travel-tips{
+  padding-top: 120px;
+  padding-bottom: 100px;
+  .heading{ 
+    text-align: center;
+    max-width: 664px;
+    margin-left: auto;margin-right: auto;
+    margin-bottom: 64px;
+    h3{
+      font-size: 36px !important;
+      line-height: 1.33 !important;
+      margin: 16px 0;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+      color: #5a7184;
+      margin: 0 auto;
+      max-width: 602px;
+    }
+  }
+  .container{
+    max-width: 1034px;
+  }
+  .content{
+    position: relative;
+  }
+  .row{
+    margin-left: -20px;
+    margin-right: -20px;
+    .col{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .btn-container{
+    position: absolute;
+    right: -36px; bottom: 264px;
+    .btn-see-all{
+      display: flex;
+      align-items: center;justify-content: center;
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      box-shadow: 0 34px 68px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      font-size: 20.6px;
+      color: #1565d8; 
+    }
+  }
+}
+.tips-carousel-container{
+  position: relative;
+  margin: -100px -497px;
+  .tips-carousel-item{ 
+    padding: 100px 10px;
+  }
+  .owl-carousel .owl-nav{
+    position: absolute;
+    top: 50%;right: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    $var : 527px;
+    width: $var*2;
+    margin: -36px $var*-1;
+
+    .owl-prev, .owl-next{
+      display: flex;
+      align-items: center;justify-content: center;
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      box-shadow: 0 34px 68px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      font-size: 20.6px;
+      color: #1565d8;
+    }
+  }
+}
+.card-travel-tips{
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px 0 rgba(15, 24, 44, 0.15);
+  height: 600px;
+  overflow: hidden;
+  img{
+    width: 100%;height: 100%;
+    object-fit: cover;
+  }
+  .card-img-overlay{
+    background-image: linear-gradient(to bottom, rgba(24,59,86,0), #152532);
+    padding: 45px;
+  }
+  h4{
+    font-size: 32px !important;
+    line-height: 1.25 !important;
+    margin: 0 0 24px;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+ 
+.landing-travel-testimonial{
+  padding: 150px 0 0;
+}
+.travel-testimonial-container{
+  margin: 0 -150px;
+}
+.travel-testimonial{
+  .box-testimonial{
+    flex-direction: row-reverse; 
+    background: transparent;
+    padding: 70px 150px 100px;
+    .testimonial-content{
+      flex: 0 0 685px;
+      width: 685px;
+      padding: 10px 0 0;
+      p{
+        line-height: 1.8;
+        margin-bottom: 36px;
+        &::before{
+          display: none;
+        }
+      }
+    }
+    .meta{
+      strong,span{
+        display: block;
+      }
+      strong{
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.4;
+        color: #1565d8;
+        margin: 0 0 4px;
+      }
+      span{
+        font-size: 18px;
+        color: #183b56;
+      }
+    }
+    .testimonial-profile{
+      position: relative;
+      margin: 0;
+      &::before{
+        position: absolute;
+        left: 0;
+        bottom: -35px;
+        content: '';
+        font-size: 140px;
+        line-height: 1em;
+        color: #1565d8;
+        font-family: 'Font Awesome 5 Free';
+        content:"\f10d";
+        font-weight: 900;
+      }
+      .user{
+        width: 350px;
+        height: 350px;
+        box-shadow: 0 34px 68px 0 rgba(0, 0, 0, 0.1);
+        border: solid 12px #ffffff;
+        overflow: hidden;border-radius: 50%;
+        img{
+          width: 100%;height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .owl-dots{
+    position: absolute;
+    left: 150px;
+    bottom: 70px;
+    margin: 0 -16px;
+    button.owl-dot{
+      width: 10px; height: 10px;
+      background-color: #b3bac5;
+      border-radius: 50px;
+      margin: 0 16px;
+      &.active{ 
+        background-color: #1565d8;
+      }
+    }
+  }
+}
+
+// Mobile-Tab devices (tablets, < 1200px)
+@media (max-width: $breakpoints-xl - 0.02px) {
+
+}
+// Mobile-Tab devices (tablets, < 992px)
+@media (max-width: $breakpoints-lg - 0.02px) {
+  header.landing-travel{
+    .row-content{
+      display: block;
+      text-align: center;
+    }
+    .hero{
+      padding-top: 30px;
+      .content{
+        position: initial;
+        margin-left: auto; margin: auto; 
+        padding-top: 0;
+      }
+    }
+    .content{
+      .btn-container{
+        position: absolute;
+        left: 0; right: 0;
+        bottom: -102px; 
+        display: block;
+        align-items: center; justify-content: center; 
+      }
+    }
+    .form-box{
+      margin: 0 auto; 
+      text-align: left;
+    }
+  }
+
+  .landing-travel-benefit{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    .heading{
+      margin-bottom: 36px;
+    }
+  }
+
+  .box-travel-benefit{
+    padding-left: 30px; padding-right: 30px; 
+  }
+
+  .landing-travel-destinations{
+    padding-bottom: 48px;
+    .destinations-carousel-container{
+      margin-left: -590px;
+      margin-right: -500px;
+    }
+  }
+
+  .landing-travel-about{ 
+    padding-top: 80px; 
+    .heading{
+      margin-bottom: 54px;
+      h3{
+        font-size: 32px !important;
+        line-height: 1.25 !important;
+        margin: 22px 0 0;
+      }
+    }
+    .container{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .content-top{
+      margin-top: 48px;
+    }
+    .content{
+      .left{ 
+        padding: 24px 10px; 
+        h3{
+          font-size: 24px !important;
+          line-height: 1.33 !important;
+          margin: 0 0 16px; 
+        }
+        p{
+          font-size: 16px;
+          line-height: 1.75;
+          margin-bottom: 1.75em;
+        }
+        .btn-container{
+
+        }
+        .c-list.w-50p{
+          margin-top: 0;
+          li{
+            margin-bottom: 16px;
+            p{
+              font-size: 14px;
+              line-height: 1.43em; 
+            }
+          }
+        }
+      }
+    }
+
+    .col-ill{
+      flex: 0 0 314px;
+      max-width: 314px; 
+    }
+    .col-desc{
+      flex: 1; 
+    }
+  }
+  .travel-about-ill-2{
+    .detail{
+      padding: 14px 22px 18px;
+      h4{
+        font-size: 24px !important;
+      }
+      p{
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .landing-travel-guarantee{
+    padding: 60px 0; 
+    .container{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    } 
+
+    .illustration{
+      margin-left: 0;
+      .chats{
+        right: -15px;
+      }
+      .img-container{
+        width: 324px;
+        height: 470px;
+        img{
+          width: 100%; height: 100%;
+          object-fit: cover; 
+        }
+      }
+    }
+    .description{
+      padding-left: 0;
+      h4{
+        font-size: 24px !important;
+        line-height: 1.33 !important;
+        margin-bottom: 12px;
+        max-width: 274px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 1.75;
+      }
+      .guarantees{
+        margin-top: 20px; 
+      }
+    }
+  }
+
+  .landing-travel-testimonial{
+    padding: 80px 0 0;
+    .container{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  .travel-testimonial-container{
+    margin: 0;
+  }
+  .travel-testimonial{
+    .box-testimonial{
+      display: block;
+      margin-top: 0;
+      padding: 0 20px 114px;
+      .testimonial-profile{
+        overflow: initial;
+        top: initial;
+        left: initial;
+        height: initial;
+        border-radius: initial;
+        width: 245px; margin: 0 auto 75px; 
+        &::before{
+          font-size: 98px;
+          bottom: -27px; 
+          left: 0;
+        }
+        .user {
+          width: 245px; height: 245px;
+        }
+      }
+      .testimonial-content{
+        width: initial;
+        p{
+          font-size: 28px;
+          margin-bottom: 36px;
+        }
+      }
+    }
+    .owl-dots{
+      left: 0; right: 0;
+      bottom: 56px;
+      display: flex;
+      align-items: center; justify-content: center;
+    }
+  }
+
+  .landing-travel-tips{
+    padding-top: 80px;
+    padding-bottom: 56px;
+    .heading{
+      margin-bottom: 48px;
+    }
+    .container{
+      padding-left: 38px !important;
+      padding-right: 38px !important;
+    }
+    .row{
+      margin-left: -10px;
+      margin-right: -10px;
+      .col{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+  .tips-carousel-container{
+    margin: -100px -392px;
+    .owl-carousel .owl-nav{
+      $var : 768px/2;
+      width: $var*2;
+      margin: -36px $var*-1;
+    }
+  }
+  .card-travel-tips{
+    .card-img-overlay{
+      padding: 24px 42px; 
+    }
+  }
+}
+// Mobile-Tab devices (tablets, < 768px)
+@media (max-width: $breakpoints-md - 0.02px) {
+  .landing-travel-about{
+    .content{
+      .left{
+        text-align: center;
+        padding: 40px 0 0;
+        max-width: 400px;
+        margin: 0 auto;
+        h3{
+          padding: 0;
+        }
+        .c-list.w-50p{
+          li{
+            width: 100%;
+            justify-content: center; 
+          }
+        }
+      }
+    }
+    .content-top, .content-bottom{
+      display: block;
+    }
+    .col-ill{
+      margin-left: auto; margin-right: auto;
+    }
+  }
+  .landing-travel-destinations{
+    .heading{
+      display: block;
+      text-align: center; 
+      h3{
+        margin-bottom: 20px;
+      }
+    }
+    .destinations-carousel-box{
+      height: 400px; 
+      text-align: center; 
+      img{
+        height: 100%;
+        object-fit: cover; 
+      }
+    }
+  }
+
+  .landing-travel-guarantee{
+    .description{
+      padding: 40px 0 0; 
+      margin: 0 auto;
+    }
+  }
+
+  .landing-travel-tips{
+    .btn-container{
+      position: relative;
+      bottom: initial; right: initial;
+      display: flex; align-items: center; justify-content: center;
+    }
+  }
+  .card-travel-tips {
+    height: 420px;
+    max-width: 500px;
+    margin: 0 auto 24px;
+  }
+}
+// Mobile devices (tablets, < 576px)
+@media (max-width: $breakpoints-sm - 0.02px) {
+  header.landing-travel{
+    padding-bottom: 132px;
+    .hero{
+      padding-top: 16px; 
+    }
+    .content{
+      h1{
+        font-size: 32px !important;
+        line-height: 1.25 !important;
+        margin: 0 0 16px;
+      }
+      p{
+        font-size: 16px; 
+        line-height: 1.75;
+        margin-bottom: 32px;
+      }
+      .btn-container{
+        bottom: -36px - 48px;
+        .btn{
+          width: 48px; height: 48px;
+          font-size: 16px; 
+          line-height: 1em;  
+        }
+      }
+    }
+    .form-box{
+      padding: 25px 15px;
+      text-align: center; 
+      margin: 0 -10px;
+      .form-group{
+        text-align: left;  
+      }
+    }
+  }
+
+  .landing-travel-benefit{
+    padding-top: 64px;
+    padding-bottom: 40px; 
+    .heading{
+      margin-bottom: 32px;
+      h3{
+        font-size: 28px !important;
+        line-height: 1.29 !important;
+        margin: 0 0 20px;
+      }
+    }
+  }
+  .box-travel-benefit{
+    text-align: left;
+    padding: 20px 15px; 
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 -5px 16px;
+    .ill{
+      flex: 0 0 36px; 
+      width: 36px; height: 36px; 
+      padding: 7px;
+      margin: 0 10px 0 0;
+      border-radius: 8px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .desc{
+      padding: 3px 0 0;
+    }
+    h4{
+      font-size: 16px !important;
+      line-height: 20px !important;
+      margin-bottom: 6px;
+    }
+  }
+
+  .landing-travel-destinations{
+    padding-top: 48px;
+    padding-bottom: 36px;
+    .heading{
+      margin-bottom: 36px; 
+      h3{
+        font-size: 28px !important; 
+        line-height: 1.29 !important; 
+        margin-bottom: 0;
+      }
+      .see-all-container{
+        display: none;
+      }
+    }
+    .see-all-footer{
+      display: flex; 
+      padding-top: 36px;
+    }
+
+    .destinations-carousel-container{
+      margin: 0 -20px; 
+    }
+    .destinations-carousel-item{
+      padding: 0 10px;
+    }
+    .destinations-carousel-box{
+      height: 320px; 
+      .text{
+        margin-bottom: 17px;
+        h4{
+          font-size: 24px !important;
+          line-height: 1.33 !important;
+          margin-bottom: 8px;
+        }
+        p{
+          font-size: 14px;
+          line-height: 1.71;
+        }
+      }
+      .description{
+        padding: 20px 15px;
+        display: block;
+        .btn{
+          line-height: 38px;
+        }
+      }
+    }
+  }
+
+  .landing-travel-about{
+    padding-top: 64px;
+    padding-bottom: 64px; 
+    .container{
+      padding: 0 20px !important;  
+    }
+    .heading{
+      margin-bottom: 36px; 
+      h3{
+        font-size: 28px !important;
+        line-height: 1.29 !important;
+        margin: 16px 0 0;
+      }
+    }
+    .content-top{
+      margin-top: 0;
+    }
+    .content{
+      .left{
+        h3{
+        }
+        .c-list.w-50p{
+          li{
+            width: 100%; 
+            margin-bottom: 16px; 
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  .travel-about-ill-2{
+    &::before{
+      width: 72px;
+      height: 72px;
+      font-size: 30px; 
+      right: -20px;
+    }
+    .detail{
+      padding-left: 15px; padding-right: 15px;
+    }
+  }
+
+  .landing-travel-guarantee{
+    padding: 48px 0;
+    .container{
+      padding: 0 20px !important; 
+    }
+    .illustration{
+      .img-container{
+        width: 100%;
+        height: 420px; 
+      }
+      .chats{
+        left: -15px;
+        li{
+          padding: 10px 20px;
+        }
+      }
+    }
+    .description{
+      text-align: center;
+      padding: 85px 0 0;
+      h4{
+        max-width: initial;
+      }
+      .guarantees{
+        text-align: left; 
+        margin-left: -5px;
+        margin-right: -5px;
+        max-width: initial;
+      }
+    }
+    .guarantees{
+      .card-header{
+        padding-right: 10px;
+        i{
+          &.arrow{
+            margin: 0 0 0 10px; 
+          }
+        }
+      }
+      .card-body{
+        padding: 0 15px 20px 20px; 
+      }
+    }
+  }
+
+  .landing-travel-testimonial{
+    padding-top: 64px;
+  }
+  .travel-testimonial{
+    .box-testimonial{
+      padding: 0 20px 70px;
+      .testimonial-profile{
+        margin-bottom: 50px;
+        &::before{
+          font-size: 88px;
+          bottom: -25px; 
+        }
+        .user{
+          width: 220px; height: 220px;
+          border-width: 8px;
+        }
+      }
+      .testimonial-content{
+        p{
+          font-size: 20px;
+          line-height: 1.9;
+        }
+      }
+      .meta{
+        strong{
+          font-size: 18px;
+          line-height: 24px;
+        }
+        span{
+          font-size: 16px;
+        }
+      }
+    }
+    .owl-dots{
+      bottom: 36px;
+      button.owl-dot{
+        margin: 0 8px; 
+      }
+    }
+  }
+
+  .landing-travel-tips{
+    padding-top: 70px;
+    .heading{
+      margin-bottom: 36px; 
+      h3{
+        margin: 24px 0 16px; 
+      }
+    }
+    .container{
+      padding: 0 24px !important; 
+    }
+    .btn-container{
+      .btn-see-all{
+        width: 52px; height: 52px;
+      }
+    } 
+  }
+  .card-travel-tips{
+    height: 375px;
+    .card-img-overlay{ 
+      padding: 30px 32px 30px 20px;
+    }
+    h4{
+      font-size: 24px !important; 
+      line-height: 1.33 !important; 
+      margin: 0 0 15px; 
+    }
+  }
+
+  .landing-travel-customer-review{
+    padding-bottom: 16px;
+    .box-review-result{
+      margin-bottom: 48px;
+    }
+  }
+}
+
+
+
+

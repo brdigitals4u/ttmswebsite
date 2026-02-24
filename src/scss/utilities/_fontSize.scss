@@ -1,0 +1,60 @@
+/*
+  Font Size
+ */
+
+$values: (
+        1: 1px, 2: 2px, 3: 3px, 4: 4px, 5: 5px, 6: 6px, 7: 7px, 8: .5rem, 12: .75rem, 14: .875rem, 16: 1rem, 18: 1.125rem, 20: 1.25rem, 22: 1.375rem, 24: 1.5rem, 28: 1.75rem, 32: 2rem, 36: 2.25rem, 40: 2.5rem, 48: 3rem, 56: 3.5rem, 64: 4rem, 72: 4.5rem, 80: 5rem,
+        1px: 1px, 2px: 2px, 3px: 3px, 4px: 4px, 5px: 5px, 6px: 6px, 7px: 7px,
+        "xxs": .5rem, // 8px
+        "xs": .75rem, // 12px
+        "sm": .875rem, // 14px
+        "base": 1rem, // 16px
+        "lg": 1.125rem, // 18px
+        "xl": 1.25rem, // 20px
+        "1x": 1.5rem, // 24px
+        "2x": 1.75rem, // 28px
+        "3x": 2rem, // 32px
+        "4x": 2.25rem, // 36px
+        "5x": 2.5rem, // 40px
+        "6x": 3rem, // 48px
+        "7x": 3.5rem, // 56px
+        "8x": 4rem, // 64px
+        "9x": 4.5rem, // 72px
+        "10x": 5rem // 80px
+);
+
+@each $name, $value in $values {
+  .text-#{$name} {
+    font-size: $value !important;
+  }
+
+  @include breakpoint(map-get($breaks, xs)) { 
+    .#{map-get($breaks, xs)}-text-#{$name} {
+      font-size: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-text-#{$name} {
+      font-size: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-text-#{$name} {
+      font-size: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-text-#{$name} {
+      font-size: $value !important;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-text-#{$name} {
+      font-size: $value !important;
+    }
+  }
+}

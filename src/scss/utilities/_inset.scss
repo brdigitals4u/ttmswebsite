@@ -1,0 +1,192 @@
+/*
+  Inset
+ */
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+.inset-x-0 { right: 0;
+  left: 0;
+}
+.top-0 { top: 0; }
+.right-0 { right: 0; }
+.bottom-0 { bottom: 0; }
+.left-0 { left: 0; }
+.inset-auto {
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+.inset-y-auto {
+  top: auto;
+  bottom: auto;
+}
+.inset-x-auto {
+  left: auto;
+  right: auto;
+}
+.top-auto { top: auto; }
+.bottom-auto { bottom: auto; }
+.left-auto { left: auto; }
+.right-auto { right: auto; }
+
+@include breakpoint(map-get($breaks, sm)) {
+  .#{map-get($breaks, sm)}-inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .#{map-get($breaks, sm)}-inset-y-0 {
+    top: 0;
+    bottom: 0;
+  }
+  .#{map-get($breaks, sm)}-inset-x-0 { right: 0;
+    left: 0;
+  }
+  .#{map-get($breaks, sm)}-top-0 { top: 0; }
+  .#{map-get($breaks, sm)}-right-0 { right: 0; }
+  .#{map-get($breaks, sm)}-bottom-0 { bottom: 0; }
+  .#{map-get($breaks, sm)}-left-0 { left: 0; }
+  .#{map-get($breaks, sm)}-inset-auto {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+  .#{map-get($breaks, sm)}-inset-y-auto {
+    top: auto;
+    bottom: auto;
+  }
+  .#{map-get($breaks, sm)}-inset-x-auto {
+    left: auto;
+    right: auto;
+  }
+  .#{map-get($breaks, sm)}-top-auto { top: auto; }
+  .#{map-get($breaks, sm)}-bottom-auto { bottom: auto; }
+  .#{map-get($breaks, sm)}-left-auto { left: auto; }
+  .#{map-get($breaks, sm)}-right-auto { right: auto; }
+}
+
+@include breakpoint(map-get($breaks, md)) {
+  .#{map-get($breaks, md)}-inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .#{map-get($breaks, md)}-inset-y-0 {
+    top: 0;
+    bottom: 0;
+  }
+  .#{map-get($breaks, md)}-inset-x-0 { right: 0;
+    left: 0;
+  }
+  .#{map-get($breaks, md)}-top-0 { top: 0; }
+  .#{map-get($breaks, md)}-right-0 { right: 0; }
+  .#{map-get($breaks, md)}-bottom-0 { bottom: 0; }
+  .#{map-get($breaks, md)}-left-0 { left: 0; }
+  .#{map-get($breaks, md)}-inset-auto {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+  .#{map-get($breaks, md)}-inset-y-auto {
+    top: auto;
+    bottom: auto;
+  }
+  .#{map-get($breaks, md)}-inset-x-auto {
+    left: auto;
+    right: auto;
+  }
+  .#{map-get($breaks, md)}-top-auto { top: auto; }
+  .#{map-get($breaks, md)}-bottom-auto { bottom: auto; }
+  .#{map-get($breaks, md)}-left-auto { left: auto; }
+  .#{map-get($breaks, md)}-right-auto { right: auto; }
+}
+
+@include breakpoint(map-get($breaks, lg)) {
+  .#{map-get($breaks, lg)}-inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .#{map-get($breaks, lg)}-inset-y-0 {
+    top: 0;
+    bottom: 0;
+  }
+  .#{map-get($breaks, lg)}-inset-x-0 {
+    right: 0;
+    left: 0;
+  }
+  .#{map-get($breaks, lg)}-top-0 { top: 0; }
+  .#{map-get($breaks, lg)}-right-0 { right: 0; }
+  .#{map-get($breaks, lg)}-bottom-0 { bottom: 0; }
+  .#{map-get($breaks, lg)}-left-0 { left: 0; }
+  .#{map-get($breaks, lg)}-inset-auto {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+  .#{map-get($breaks, lg)}-inset-y-auto {
+    top: auto;
+    bottom: auto;
+  }
+  .#{map-get($breaks, lg)}-inset-x-auto {
+    left: auto;
+    right: auto;
+  }
+  .#{map-get($breaks, lg)}-top-auto { top: auto; }
+  .#{map-get($breaks, lg)}-bottom-auto { bottom: auto; }
+  .#{map-get($breaks, lg)}-left-auto { left: auto; }
+  .#{map-get($breaks, lg)}-right-auto { right: auto; }
+}
+
+@include breakpoint(map-get($breaks, xl)) {
+  .#{map-get($breaks, xl)}-inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .#{map-get($breaks, xl)}-inset-y-0 {
+    top: 0;
+    bottom: 0;
+  }
+  .#{map-get($breaks, xl)}-inset-x-0 { right: 0;
+    left: 0;
+  }
+  .#{map-get($breaks, xl)}-top-0 { top: 0; }
+  .#{map-get($breaks, xl)}-right-0 { right: 0; }
+  .#{map-get($breaks, xl)}-bottom-0 { bottom: 0; }
+  .#{map-get($breaks, xl)}-left-0 { left: 0; }
+  .#{map-get($breaks, xl)}-inset-auto {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+  .#{map-get($breaks, xl)}-inset-y-auto {
+    top: auto;
+    bottom: auto;
+  }
+  .#{map-get($breaks, xl)}-inset-x-auto {
+    left: auto;
+    right: auto;
+  }
+  .#{map-get($breaks, xl)}-top-auto { top: auto; }
+  .#{map-get($breaks, xl)}-bottom-auto { bottom: auto; }
+  .#{map-get($breaks, xl)}-left-auto { left: auto; }
+  .#{map-get($breaks, xl)}-right-auto { right: auto; }
+}

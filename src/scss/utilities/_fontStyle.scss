@@ -1,0 +1,38 @@
+/*
+  Font Style
+ */
+
+$values: (
+        "italic": italic,
+        "not-italic": normal
+);
+
+@each $name, $value in $values {
+  .#{$name} {
+    font-style: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-#{$name} {
+      font-style: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-#{$name} {
+      font-style: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-#{$name} {
+      font-style: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-#{$name} {
+      font-style: $value;
+    }
+  }
+}

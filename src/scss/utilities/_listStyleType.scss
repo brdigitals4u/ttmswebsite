@@ -1,0 +1,39 @@
+/*
+  List Style Type
+ */
+
+$values: (
+        "none": none,
+        "disc": disc,
+        "decimal": decimal
+);
+
+@each $name, $value in $values {
+  .list-#{$name} {
+    list-style-type: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-list-#{$name} {
+      list-style-type: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-list-#{$name} {
+      list-style-type: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-list-#{$name} {
+      list-style-type: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-list-#{$name} {
+      list-style-type: $value;
+    }
+  }
+}

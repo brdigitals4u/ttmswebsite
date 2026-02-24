@@ -1,0 +1,147 @@
+/*
+  Overflow
+ */
+
+$values-overflow: (
+        "auto": auto,
+        "hidden": hidden,
+        "visible": visible,
+        "scroll": scroll,
+);
+
+@each $name, $value in $values-overflow {
+  .overflow-#{$name} {
+    overflow: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-overflow-#{$name} {
+      overflow: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-overflow-#{$name} {
+      overflow: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-overflow-#{$name} {
+      overflow: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-overflow-#{$name} {
+      overflow: $value;
+    }
+  }
+}
+
+$values-overflow-x: (
+        x-auto: auto,
+        x-hidden: hidden,
+        x-visible: visible
+);
+
+@each $name, $value in $values-overflow-x {
+  .overflow-x-#{$name} {
+    overflow-x: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-overflow-x-#{$name} {
+      overflow-x: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-overflow-x-#{$name} {
+      overflow-x: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-overflow-x-#{$name} {
+      overflow-x: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-overflow-x-#{$name} {
+      overflow-x: $value;
+    }
+  }
+}
+
+$values-overflow-y: (
+        y-auto: auto,
+        y-hidden: hidden,
+        y-visible: visible
+);
+
+@each $name, $value in $values-overflow-y {
+  .overflow-y-#{$name} {
+    overflow-y: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-overflow-y-#{$name} {
+      overflow-y: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-overflow-y-#{$name} {
+      overflow-y: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-overflow-y-#{$name} {
+      overflow-y: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-overflow-y-#{$name} {
+      overflow-y: $value;
+    }
+  }
+}
+
+$values-overflow-scrolling: (
+        x-scroll: scroll,
+        y-scroll: scroll
+);
+
+@each $name, $value in $values-overflow-scrolling {
+  .scrolling-#{$name} {
+    -webkit-overflow-scrolling: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-scrolling-#{$name} {
+      -webkit-overflow-scrolling: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-scrolling-#{$name} {
+      -webkit-overflow-scrolling: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-scrolling-#{$name} {
+      -webkit-overflow-scrolling: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-scrolling-#{$name} {
+      -webkit-overflow-scrolling: $value;
+    }
+  }
+}

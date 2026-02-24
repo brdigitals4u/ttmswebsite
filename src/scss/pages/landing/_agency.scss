@@ -1,0 +1,979 @@
+header.landing-agency{ 
+  background-color: #fafdff;
+  padding-bottom: 100px;
+  .content{
+    flex: 0 0 490px;
+    max-width: 490px;
+  }
+  .hero {
+    position: relative; 
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .content{   
+    padding-top: 60px;
+    h1{
+      font-size: 48px !important;
+      line-height: 1.25 !important;
+      margin: 0 0 20px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+      margin: 0 0 48px;
+    }
+    .btn-container{
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-start;
+      .btn + .btn{
+      }
+      .btn-black{
+        min-width: 245px; 
+      }
+      .btn-rounded{ 
+        margin-top: 56px;
+        padding-left: 0;padding-right: 0;
+        width: 56px;
+      }
+    }
+  }
+  .illustration{
+    display: flex;
+    align-items: flex-end; 
+    margin-right: -150px;
+    img{
+      position: relative;
+      max-width: 100%;
+    }
+    .iphone{
+      position: relative;
+      flex: 0 0 220px;
+      width: 220px; 
+      margin-right: -180px;
+      position: relative; 
+      z-index: 2;
+      &::before{
+        content: '';
+        position: absolute;
+        left: -30px; top: -40px; 
+        width: 102px;
+        height: 118px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        background-image: url(../images/landing-agency/ill-pattern.svg);
+      }
+    }
+    .macbook{
+      position: relative;
+      $m-right: 200px;
+      flex: 0 0 (685px + $m-right);
+      width: (685px + $m-right);
+      margin-bottom: 22px;
+      margin-right: $m-right * -1;
+      position: relative; 
+      z-index: 1;
+      &::before{
+        content: '';
+        position: absolute;
+        right: 0; bottom: -100px;
+        width: 540px; height: 540px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        background-image: url(../images/landing-agency/ill-oval.svg);
+      }
+    }
+  }
+}
+
+.landing-agency-partner{
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .heading{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 82px; 
+    .top{
+      flex: 0 0 420px;
+      width: 420px;
+      margin: 0 192px 0 0;
+    }
+    span{
+      display: block;
+      margin: 0 0 28px;
+    }
+    h3{
+      font-size: 36px !important;
+      line-height: 1.33 !important;
+    }
+    p{
+      max-width: 460px;
+      font-size: 18px;
+      line-height: 1.78;
+      color: #5a7184; 
+    }
+  }
+  .agency-partner-item{
+    height: 40px;
+    display: flex;
+    align-items: center;justify-content: center;
+    img{
+      width: 100%;height: 100%;
+      object-fit: fill;
+    }
+  }
+}
+
+.landing-agency-wwd{
+  padding: 80px 0 60px;
+  background-color: #f9fbfe; 
+  .heading{
+    display: flex;
+    align-items: center;
+    margin: 0 0 56px; 
+    h3{ 
+      width: 390px; 
+      font-size: 36px !important;
+      line-height: 1.33 !important;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.78;
+      color: #5a7184; 
+    }
+  }
+}
+.box-wwd{
+  border-radius: 16px;
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #e5eaf4;
+  background-color: #ffffff;
+  padding: 22px 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 0 28px; 
+  .ill{
+    flex: 0 0 40px;
+    width: 40px; height: 40px;
+    img{
+      width: 100%; height: 100%;
+      object-fit: contain;
+    }
+  }
+  .text{
+    padding: 0 0 0 15px;
+  }
+  h4{
+    font-size: 22px !important;
+    line-height: 1.5 !important;
+    color: #183b56;
+    margin: 0 0 4px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 1.75;
+    color: #5a7184; 
+    margin: 0;
+  }
+}
+
+.landing-agency-projects{ 
+  padding: 100px 0 80px;
+  .heading{
+    margin: 0 0 48px;
+    span{
+      display: block;
+      margin: 0 0 20px;
+    } 
+    h3{ 
+      font-size: 36px !important;
+      line-height: 1.33 !important;
+    }
+  }
+}
+
+.projects-carousel-container{
+  margin: 0 -410px -40px -15px;
+  .owl-carousel .owl-nav{
+    position: absolute;
+    top: -100px; left: 15px;
+    display: flex;
+    justify-content: flex-end; 
+    width: 1040px; 
+    .owl-prev, .owl-next{
+      display: flex;
+      align-items: center; justify-content: center;
+      width: 56px; height: 56px;
+      background-color: #ffffff;
+      font-size: 18px;
+      color: #959ead;
+      &:hover{
+        color: #183b56;
+      }
+    }
+  }
+}
+.projects-carousel-item{
+  padding: 0 15px 40px;
+}
+.projects-carousel-box{
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-decoration: none;
+  display: block; 
+  &:hover{
+    text-decoration: none;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.05);
+  }
+  .ill{ 
+    overflow: hidden;
+    border-radius: 8px 8px 0 0; 
+    border: solid 1px #dde6f4;
+    border-bottom: none;
+    height: 400px;
+    img{ 
+      width: 100%; height: 100%;
+      object-fit: cover; 
+    }
+  }
+  .description{
+    border-radius: 0 0 8px 8px; 
+    border: solid 1px #dde6f4;
+    padding: 24px;
+    h4{
+      font-size: 32px !important;
+      line-height: 1.25 !important;
+      margin: 16px 0 0;
+      color: #183b56;
+    }
+  }
+}
+
+.landing-agency-testimonial{
+  padding: 80px 0 50px; 
+  .heading{
+    margin: 0 0 50px;
+    span{
+      display: block;
+      margin: 0 0 20px;
+    } 
+    h3{ 
+      font-size: 36px !important;
+      line-height: 1.33 !important;
+    }
+  }
+  .agency-testimonial-container{
+    margin: -50px -600px; 
+  }
+} 
+.agency-testimonial-container{
+  .owl-carousel .owl-nav{
+    $var-w : 1196px;
+    position: absolute;
+    width: $var-w;
+    left: 50%; margin-left: $var-w * -0.5; 
+    top: 50%; margin-top: -28px;
+    display: flex;
+    justify-content: space-between;
+    .owl-prev, .owl-next{ 
+      display: flex;
+      align-items: center; justify-content: center;
+      width: 56px; height: 56px;
+      background-color: #ffffff;
+      font-size: 18px;
+      color: #959ead;
+      border-radius: 2000px;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.08); 
+      &:hover{
+        color: #183b56;
+      }
+    }
+  }
+  .owl-carousel.owl-grab .owl-item{
+    opacity: 1;
+  }
+}
+.agency-testimonial{
+  .owl-item{
+    padding: 50px 15px;
+    opacity: 0; 
+    &.active{
+      & + .active{
+        opacity: 1;
+        & + .active{
+          & + .active{
+            opacity: 0; 
+          }
+        }
+      }
+    }
+  }
+  .box-testimonial{
+    display: block; 
+    border-radius: 8px;
+    border: solid 1px #e5eaf4;
+    background-color: #ffffff;
+    padding: 40px; 
+    &:hover{
+      box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.05);
+    } 
+    .testimonial-content{
+      width: initial;
+      p{
+        font-size: 18px;
+        line-height: 1.78;
+        margin: 0; 
+        &::before{
+          display: none; 
+        }
+      }
+    }
+    .testimonial-profile{
+      margin: 0;
+    }
+    .c-customer-review-meta{
+      margin: 0 0 30px;
+      .user{
+        width: 56px; height: 56px;
+        border: none;
+      }
+      .meta{
+        p,span{
+          display: block; 
+        }
+        p{
+          color: #183b56;
+          font-weight: bold;
+          font-size: 24px; 
+          line-height: 1.33 !important;
+          margin-bottom: 5px;
+        }
+        span{
+          font-size: 16px;
+          line-height: 1.75; 
+          color: #5a7184; 
+        }
+      }
+    }
+  } 
+}
+
+.landing-agency-social{
+  padding: 50px 0 100px;  
+  .heading{
+    text-align: center; 
+    margin: 0 0 60px; 
+    span{
+      display: block;
+      margin: 0 0 20px; 
+    } 
+    h3{ 
+      font-size: 36px !important;
+      line-height: 1.33 !important;
+    }
+  }
+}
+.box-agency-social{
+  text-align: center;
+  margin: 0 0 20px;
+  .ic{
+    display: flex; align-items: center; justify-content: center; 
+    width: 64px; height: 64px;
+    border-radius: 16px;
+    background-color: rgba(#1565d8, 0.06);
+    margin: 0 auto 35px;
+    font-size: 36px;
+    color: #1565d8;
+  }
+  .social-content{
+    h5{
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.2px;
+      color: #183b56;
+      margin: 0 0 12px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.75;
+      color: #5a7184;
+      margin: 0 auto 19px;
+      max-width: 220px;
+    }
+    a{
+      font-size: 18px;
+      font-weight: bold;
+      color: #1565d8;
+      line-height: 24px; 
+      i{ 
+        font-size: 14px;
+      }
+    }
+  }
+}
+ 
+.landing-agency-cta{
+  text-align: center;
+  background: url(../images/landing-agency/agency-cta-pattern.svg) top right; 
+  background-repeat: no-repeat;  
+  background-blend-mode: normal; 
+  background-color: #00b8d9;
+  padding: 60px 0 80px;
+  color: #fff; 
+  h3{
+      font-size: 48px !important;
+      line-height: 1.25 !important;
+      margin: 0 0 16px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 1.78;
+    margin: 0 0 50px;
+  }
+  .btn{
+
+  }
+
+  & + .footer{
+    padding-top: 128px; 
+  }
+}
+
+// Mobile-Tab devices (tablets, < 1200px)
+@media (max-width: $breakpoints-xl - 0.02px) {
+  .box-wwd{
+    .ill{
+      flex: 0 0 36px;
+      width: 36px;
+    }
+  }
+}
+// Mobile-Tab devices (tablets, < 992px)
+@media (max-width: $breakpoints-lg - 0.02px) {
+  header.landing-agency{
+    padding-bottom: 128px;
+    .hero{
+      padding-top: 30px;
+    }
+    .content{
+      text-align: center; 
+      padding: 0;
+      max-width: 515px;
+      margin: 0 auto;
+      p{
+        margin-bottom: 36px;
+      }
+      .btn-container{
+        align-items: center;
+        margin-bottom: 64px;
+        .btn-rounded{ 
+          position: absolute;
+          bottom: -36px - 56px;
+          margin: 0;
+        }
+      }
+    }
+    .container,.row,.col{
+      position: static;
+    }
+
+    .illustration{
+      margin: 0;
+      .iphone{
+        $w : 135px;
+        flex: 0 0 $w;
+        width: $w;
+        margin-right: $w * -1;
+        &::before{
+          height: 76px;
+          top: -76px - 32px;
+        }
+      }
+      .macbook{
+        $w : 100%; 
+        flex: 0 0 $w;
+        width: $w;
+        margin: 0;
+        &::before{
+          width: 378px;
+          height: 378px;
+          bottom: -36px;
+          right: -72px; 
+        }
+      }
+    }
+  }
+
+  .landing-agency-partner{
+    padding: 80px 0; 
+    .heading{
+      display: block;
+      text-align: center;
+      margin-bottom: 55px;
+      .top{
+        width: initial;
+        margin: 0 auto 24px;
+      }
+      p{
+        max-width: 580px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .landing-agency-wwd{
+    padding: 48px 0 40px;
+    .heading{
+      display: block;
+      text-align: center;
+      margin-bottom: 36px;
+      h3{
+        width: initial;
+        margin: 0 auto 24px; 
+      }
+      p{
+        margin: 0 auto;
+      }
+    }
+    .container{
+      padding-left: 12px !important; 
+      padding-right: 12px !important; 
+    }
+    .row{
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    .col{
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-bottom: 16px; 
+    }
+  }
+  .box-wwd{
+    margin: 0;
+    height: 100%;
+    padding: 22px;
+  }
+
+  .landing-agency-projects{
+    padding: 80px 0 40px;
+    .heading{
+      margin: 0 0 36px;
+    }
+    .container{
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
+  }
+  .projects-carousel-container{
+    margin-right: -54px;
+    .owl-carousel .owl-nav{
+      top: -32px - 56px;
+      width: 696px; 
+    }
+  }
+
+  $margin-total: -970px;
+  $margin-left: -543px;
+  .landing-agency-testimonial{
+    padding: 40px 0;
+    .container{
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
+    .heading{
+      display: block;
+      text-align: center;
+      margin-bottom: 36px; 
+    }
+    .agency-testimonial-container{
+      margin-left: $margin-left; 
+      margin-right: $margin-total - $margin-left;
+    }
+  }
+  .agency-testimonial-container{
+    .owl-carousel{
+      .owl-nav{
+        left: 545px;
+        margin-left: 0; 
+        width: 696px; 
+      }
+    }
+  }
+  .agency-testimonial{
+    .owl-item{
+      padding-left: 10px; 
+      padding-right: 10px; 
+    }
+    .box-testimonial{
+      margin-top: 0;
+      text-align: left;
+      padding: 30px;
+      .testimonial-profile{
+        position: relative;
+        height: initial;
+        left: initial;
+        top: initial;
+        display: block;
+        border-radius: 0; 
+      }
+    }
+  }
+
+  .landing-agency-social{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    .row{
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+    .col{
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .container{
+      padding-left: 12px !important; 
+      padding-right: 12px !important; 
+    }
+    .heading{
+      margin-bottom: 36px;
+    }
+  }
+  .box-agency-social{
+    .ic{
+      font-size: 24px;
+      width: 48px; 
+      height: 48px; 
+      margin-bottom: 15px;
+    }
+    .social-content{
+      h5{
+        margin-bottom: 8px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 1.71;
+        min-height: 1.71 * 3em;
+        margin-bottom: 14px;
+      }
+      a{
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .landing-agency-cta{
+    padding: 56px 0;
+    .container{
+      max-width: 385px + 40px; 
+      padding-left: 20px !important;
+      padding-right: 20px !important; 
+    }
+    h3{
+      font-size: 40px !important;
+      line-height: 1.3 !important;
+      margin-bottom: 16px;
+    }
+    .btn{
+      min-width: 220px;
+    }
+  }
+}
+// Mobile-Tab devices (tablets, < 768px)
+@media (max-width: $breakpoints-md - 0.02px) {
+  .landing-agency-partner{
+    .agency-partner-item{
+      margin-bottom: 34px;
+    }
+  }
+  .landing-agency-projects{
+    .heading{ 
+      text-align: center;
+      margin-bottom: 36px; 
+    }
+  }
+  .projects-carousel-container{
+    margin: 0;
+    .owl-carousel .owl-nav{
+      position: relative;
+      width: 100%;
+      left: initial;
+      right: initial;
+      top: initial;
+      justify-content: center;
+      margin: 15px 0 0;
+    }
+  }
+
+  .landing-agency-testimonial{
+    .agency-testimonial-container{
+      margin-left: -12px; margin-right: -12px;
+      margin-bottom: 0;
+    } 
+  }
+  .agency-testimonial-container{
+    .owl-carousel .owl-nav{
+      position: relative;
+      width: 100%;
+      left: initial;
+      right: initial;
+      top: initial;
+      justify-content: center;
+      .owl-prev,.owl-next{
+        margin: 0 10px; 
+      }
+    }
+  }
+  .agency-testimonial{
+    .owl-item{
+      opacity: 1;
+      padding-left: 15px; padding-right: 15px;
+    }
+    .box-testimonial{
+      text-align: center; 
+      .c-customer-review-meta{
+        display: block;
+        margin-bottom: 24px;
+        .user{
+          margin: 0 auto 16px;
+        }
+      }
+    }
+  }
+  .box-agency-social{
+    margin-bottom: 32px;
+    .social-content{
+      p{
+        min-height: initial; 
+      }
+    }
+  }
+}
+// Mobile devices (tablets, < 576px)
+@media (max-width: $breakpoints-sm - 0.02px) {
+  header.landing-agency{
+    .content{
+      h1{
+        font-size: 32px !important;
+        line-height: 1.25 !important;
+      }
+      p{
+        font-size: 16px;
+        line-height: 1.75;
+        margin-bottom: 26px;
+      }
+      .btn-container{
+        min-width: 250px;
+        margin-bottom: 50px;
+        .btn-black{
+          min-width: 220px;
+          font-size: 1rem;
+          line-height: 3rem; 
+        }
+      }
+    }
+    .illustration{
+      $ml: -20px;
+      margin-left: -24px; 
+      margin-right: -24px; 
+      .iphone{
+        $w : 100px;
+        flex: 0 0 $w;
+        width: $w;
+        margin-left: $ml;
+        margin-right: $w * -1;
+        &::before{
+          top: -80px;
+        }
+      }
+      .macbook{
+        $mb-mr: 80px;
+        margin-left: $ml * -1;
+        margin-right: $mb-mr * -1;
+        flex: 0 0 calc(100% + 80px);
+        width: calc(100% + 80px);
+        &::before{
+          width: 302px; height: 302px;
+          bottom: -73px;
+        }
+      }
+    }
+  }
+
+  .landing-agency-partner{
+    padding: 64px 0 40px;
+    .container{
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    .heading{
+      margin-bottom: 37px;
+      h3{
+        font-size: 28px !important; 
+        line-height: 36px !important;
+      }
+    }
+
+    .agency-partner-item{
+      max-height: 25px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .landing-agency-wwd{
+    padding: 36px 0;
+    .heading{
+      h3{
+        font-size: 28px !important;
+        line-height: 36px !important;
+        margin-bottom: 16px; 
+      }
+    }
+    .container{
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+  }
+  .box-wwd{
+    padding: 18px 24px;
+    flex-direction: column;
+    .text{
+      padding: 16px 0 0;
+    }
+    h4{
+      font-size: 20px !important;
+      line-height: 1.2 !important;
+      margin-bottom: 7px;
+    }
+  }
+
+  .landing-agency-projects{
+    padding: 48px 0 32px;
+    .heading{
+      h3{
+        font-size: 28px !important;
+        line-height: 36px !important;
+      }
+    }
+  }
+  .projects-carousel-item{
+    padding: 0 8px;
+  }
+  .projects-carousel-box{
+    .ill{
+      height: 300px;
+    }
+    .description{
+      text-align: center;
+      padding: 20px;
+      h4{
+        font-size: 24px !important;
+        line-height: 1.33 !important;
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .landing-agency-testimonial{
+    padding: 32px 0 36px;
+    .heading{
+      max-width: 280px;
+      margin: 0 auto 32px;
+      h3{
+        font-size: 28px !important;
+        line-height: 36px !important;
+        margin-top: 16px; 
+      }
+    }
+  }
+  .agency-testimonial-container{
+    .owl-carousel .owl-nav{
+      margin: -24px 0 0;
+      .owl-prev{
+        display: none;
+      }
+      .owl-next{
+        width: 48px; height: 48px;
+        font-size: 16px; 
+      }
+    }
+  }
+  .agency-testimonial{
+    .box-testimonial{ 
+      padding: 24px 10px 36px;   
+      .c-customer-review-meta{
+        .meta{
+          p{
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+          }
+          span{
+            font-size: 14px;
+            line-height: 1.71;
+          }
+        }
+      }
+      .testimonial-content{
+        p{
+          font-size: 16px;
+          line-height: 1.75;
+        }
+      }
+    }
+  }
+
+  .landing-agency-social{
+    padding: 36px 0 24px;
+    .heading{
+      h3{
+        font-size: 28px !important;
+        line-height: 36px !important;
+        margin-bottom: 16px; 
+      }
+    }
+  }
+  .box-agency-social{
+    .social-content{
+      p{
+        margin-bottom: 12px;
+      }
+      a{
+        font-size: 14px;
+        line-height: 20px;
+        i{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .landing-agency-cta{
+    padding: 64px 0;
+    h3{
+      font-size: 28px !important;
+      line-height: 1.3 !important;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.75;
+      margin-bottom: 36px;
+    }
+
+    & + .footer{
+      padding-top: 48px;
+    }
+  }
+}
+
+
+
+
+

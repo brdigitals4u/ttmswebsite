@@ -1,0 +1,29 @@
+/*
+  Appearance
+ */
+
+.appearance-none { appearance: none; }
+
+@include breakpoint(map-get($breaks, sm)) {
+  .#{map-get($breaks, sm)}-appearance-none {
+    appearance: none;
+  }
+}
+
+@include breakpoint(map-get($breaks, md)) {
+  .#{map-get($breaks, md)}-appearance-none {
+    appearance: none;
+  }
+}
+
+@include breakpoint(map-get($breaks, lg)) {
+  .#{map-get($breaks, lg)}-appearance-none {
+    appearance: none;
+  }
+}
+
+@include breakpoint(map-get($breaks, xl)) {
+  .#{map-get($breaks, xl)}-appearance-none {
+    appearance: none;
+  }
+}

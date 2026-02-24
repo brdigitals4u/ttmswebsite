@@ -1,0 +1,887 @@
+/*
+  Border Radius
+ */
+
+.rounded-4 { border-radius: .25rem; }
+.rounded-8 { border-radius: .5rem; }
+.rounded-12 { border-radius: .75rem; }
+.rounded-16 { border-radius: 1rem; }
+.rounded-t-8 {
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+.rounded-t-12 {
+  border-top-right-radius: .75rem;
+  border-top-left-radius: .75rem;
+}
+.rounded-t-16 {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.rounded-b-4 {
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+.rounded-b-8 {
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+.rounded-b-12 {
+  border-bottom-right-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+}
+.rounded-b-16 {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.rounded-l-4 {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+.rounded-l-8 {
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+.rounded-l-12 {
+  border-top-left-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+}
+.rounded-l-16 {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.rounded-r-4 {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+.rounded-r-8 {
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+.rounded-r-12 {
+  border-top-right-radius: .75rem;
+  border-bottom-right-radius: .75rem;
+}
+.rounded-r-16 {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.rounded-none { border-radius: 0; }
+.rounded-sm { border-radius: .125rem; }
+.rounded { border-radius: .25rem; }
+.rounded-lg { border-radius: .5rem; }
+.rounded-full { border-radius: 9999px; }
+.rounded-t-none {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.rounded-r-none {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rounded-b-none {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.rounded-l-none {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.rounded-t-sm {
+  border-top-left-radius: .125rem;
+  border-top-right-radius: .125rem;
+}
+.rounded-r-sm {
+  border-top-right-radius: .125rem;
+  border-bottom-right-radius: .125rem;
+}
+.rounded-b-sm {
+  border-bottom-right-radius: .125rem;
+  border-bottom-left-radius: .125rem;
+}
+.rounded-l-sm {
+  border-top-left-radius: .125rem;
+  border-bottom-left-radius: .125rem;
+}
+.rounded-t {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+.rounded-r {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+.rounded-b {
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+.rounded-l {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+.rounded-t-lg {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+.rounded-r-lg {
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+.rounded-b-lg {
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+.rounded-l-lg {
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+.rounded-t-full {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+.rounded-b-full {
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+.rounded-l-full {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+.rounded-tl-none { border-top-left-radius: 0; }
+.rounded-tr-none { border-top-right-radius: 0; }
+.rounded-br-none { border-bottom-right-radius: 0; }
+.rounded-bl-none { border-bottom-left-radius: 0; }
+.rounded-tl-4 { border-top-left-radius: .25rem; }
+.rounded-tl-8 { border-top-left-radius: .5rem; }
+.rounded-tl-12 { border-top-left-radius: .75rem; }
+.rounded-tl-16 { border-top-left-radius: 1rem; }
+.rounded-tr-4 { border-top-right-radius: .25rem; }
+.rounded-tr-8 { border-top-right-radius: .5rem; }
+.rounded-tr-12 { border-top-right-radius: .75rem; }
+.rounded-tr-16 { border-top-right-radius: 1rem; }
+.rounded-bl-4 { border-bottom-left-radius: .25rem; }
+.rounded-bl-8 { border-bottom-left-radius: .5rem; }
+.rounded-bl-12 { border-bottom-left-radius: .75rem; }
+.rounded-bl-16 { border-bottom-left-radius: 1rem; }
+.rounded-br-4 { border-bottom-right-radius: .25rem; }
+.rounded-br-8 { border-bottom-right-radius: .5rem; }
+.rounded-br-12 { border-bottom-right-radius: .75rem; }
+.rounded-br-16 { border-bottom-right-radius: 1rem; }
+.rounded-tl-sm { border-top-left-radius: .125rem; }
+.rounded-tr-sm { border-top-right-radius: .125rem; }
+.rounded-br-sm { border-bottom-right-radius: .125rem; }
+.rounded-bl-sm { border-bottom-left-radius: .125rem; }
+.rounded-tl { border-top-left-radius: .25rem; }
+.rounded-tr { border-top-right-radius: .25rem; }
+.rounded-br { border-bottom-right-radius: .25rem; }
+.rounded-bl { border-bottom-left-radius: .25rem; }
+.rounded-tl-lg { border-top-left-radius: .5rem; }
+.rounded-tr-lg { border-top-right-radius: .5rem; }
+.rounded-br-lg { border-bottom-right-radius: .5rem; }
+.rounded-bl-lg { border-bottom-left-radius: .5rem; }
+.rounded-tl-full { border-top-left-radius: 9999px; }
+.rounded-tr-full { border-top-right-radius: 9999px; }
+.rounded-br-full { border-bottom-right-radius: 9999px; }
+.rounded-bl-full { border-bottom-left-radius: 9999px; }
+
+@include breakpoint(map-get($breaks, sm)) {
+  .#{map-get($breaks, sm)}-rounded-4 { border-radius: .25rem; }
+  .#{map-get($breaks, sm)}-rounded-8 { border-radius: .5rem; }
+  .#{map_get($breaks, sm)}-rounded-12 { border-radius: .75rem; }
+  .#{map_get($breaks, sm)}-rounded-16 { border-radius: 1rem; }
+  .#{map_get($breaks, sm)}-rounded-t-8 {
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-t-12 {
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-t-16 {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-b-8 {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-b-12 {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-b-16 {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .#{map_get($breaks, sm)}-rounded-l-8 {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-l-12 {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-l-16 {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .#{map_get($breaks, sm)}-rounded-r-8 {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-r-12 {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-r-16 {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .#{map_get($breaks, sm)}-rounded-none { border-radius: 0; }
+  .#{map_get($breaks, sm)}-rounded-sm { border-radius: .125rem; }
+  .#{map_get($breaks, sm)}-rounded { border-radius: .25rem; }
+  .#{map_get($breaks, sm)}-rounded-lg { border-radius: .5rem; }
+  .#{map_get($breaks, sm)}-rounded-full { border-radius: 9999px; }
+  .#{map_get($breaks, sm)}-rounded-t-none {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .#{map_get($breaks, sm)}-rounded-r-none {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .#{map_get($breaks, sm)}-rounded-b-none {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .#{map_get($breaks, sm)}-rounded-l-none {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .#{map_get($breaks, sm)}-rounded-t-sm {
+    border-top-left-radius: .125rem;
+    border-top-right-radius: .125rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-r-sm {
+    border-top-right-radius: .125rem;
+    border-bottom-right-radius: .125rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-b-sm {
+    border-bottom-right-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-l-sm {
+    border-top-left-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-t {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-r {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-b {
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-l {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-t-lg {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-r-lg {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-b-lg {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-l-lg {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map_get($breaks, sm)}-rounded-t-full {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+  .#{map_get($breaks, sm)}-rounded-r-full {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+  .#{map_get($breaks, sm)}-rounded-b-full {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+  .#{map_get($breaks, sm)}-rounded-l-full {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+  .#{map_get($breaks, sm)}-rounded-tl-8 { border-top-left-radius: .5rem; }
+  .#{map_get($breaks, sm)}-rounded-tl-12 { border-top-left-radius: .75rem; }
+  .#{map_get($breaks, sm)}-rounded-tl-16 { border-top-left-radius: 1rem; }
+  .#{map_get($breaks, sm)}-rounded-tr-8 { border-top-right-radius: .5rem; }
+  .#{map_get($breaks, sm)}-rounded-tr-12 { border-top-right-radius: .75rem; }
+  .#{map_get($breaks, sm)}-rounded-tr-16 { border-top-right-radius: 1rem; }
+  .#{map_get($breaks, sm)}-rounded-bl-8 { border-bottom-left-radius: .5rem; }
+  .#{map_get($breaks, sm)}-rounded-bl-12 { border-bottom-left-radius: .75rem; }
+  .#{map_get($breaks, sm)}-rounded-bl-16 { border-bottom-left-radius: 1rem; }
+  .#{map_get($breaks, sm)}-rounded-br-8 { border-bottom-right-radius: .5rem; }
+  .#{map_get($breaks, sm)}-rounded-br-12 { border-bottom-right-radius: .75rem; }
+  .#{map_get($breaks, sm)}-rounded-br-16 { border-bottom-right-radius: 1rem; }
+  .#{map_get($breaks, sm)}-rounded-tl-none { border-top-left-radius: 0; }
+  .#{map_get($breaks, sm)}-rounded-tr-none { border-top-right-radius: 0; }
+  .#{map_get($breaks, sm)}-rounded-br-none { border-bottom-right-radius: 0; }
+  .#{map_get($breaks, sm)}-rounded-bl-none { border-bottom-left-radius: 0; }
+  .#{map_get($breaks, sm)}-rounded-tl-sm { border-top-left-radius: .125rem; }
+  .#{map_get($breaks, sm)}-rounded-tr-sm { border-top-right-radius: .125rem; }
+  .#{map_get($breaks, sm)}-rounded-br-sm { border-bottom-right-radius: .125rem; }
+  .#{map_get($breaks, sm)}-rounded-bl-sm { border-bottom-left-radius: .125rem; }
+  .#{map_get($breaks, sm)}-rounded-tl { border-top-left-radius: .25rem; }
+  .#{map_get($breaks, sm)}-rounded-tr { border-top-right-radius: .25rem; }
+  .#{map_get($breaks, sm)}-rounded-br { border-bottom-right-radius: .25rem; }
+  .#{map_get($breaks, sm)}-rounded-bl { border-bottom-left-radius: .25rem; }
+  .#{map_get($breaks, sm)}-rounded-tl-lg { border-top-left-radius: .5rem; }
+  .#{map_get($breaks, sm)}-rounded-tr-lg { border-top-right-radius: .5rem; }
+  .#{map_get($breaks, sm)}-rounded-br-lg { border-bottom-right-radius: .5rem; }
+  .#{map_get($breaks, sm)}-rounded-bl-lg { border-bottom-left-radius: .5rem; }
+  .#{map_get($breaks, sm)}-rounded-tl-full { border-top-left-radius: 9999px; }
+  .#{map_get($breaks, sm)}-rounded-tr-full { border-top-right-radius: 9999px; }
+  .#{map_get($breaks, sm)}-rounded-br-full { border-bottom-right-radius: 9999px; }
+  .#{map_get($breaks, sm)}-rounded-bl-full { border-bottom-left-radius: 9999px; }
+}
+
+@include breakpoint(map-get($breaks, md)) {
+  .#{map-get($breaks, md)}-rounded-8 { border-radius: .5rem; }
+  .#{map-get($breaks, md)}-rounded-12 { border-radius: .75rem; }
+  .#{map-get($breaks, md)}-rounded-16 { border-radius: 1rem; }
+  .#{map-get($breaks, md)}-rounded-t-8 {
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+  .#{map-get($breaks, md)}-rounded-t-12 {
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+  }
+  .#{map-get($breaks, md)}-rounded-t-16 {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  .#{map-get($breaks, md)}-rounded-b-8 {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, md)}-rounded-b-12 {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+  .#{map-get($breaks, md)}-rounded-b-16 {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .#{map-get($breaks, md)}-rounded-l-8 {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, md)}-rounded-l-12 {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+  .#{map-get($breaks, md)}-rounded-l-16 {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .#{map-get($breaks, md)}-rounded-r-8 {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+  .#{map-get($breaks, md)}-rounded-r-12 {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+  .#{map-get($breaks, md)}-rounded-r-16 {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .#{map-get($breaks, md)}-rounded-none { border-radius: 0; }
+  .#{map-get($breaks, md)}-rounded-sm { border-radius: .125rem; }
+  .#{map-get($breaks, md)}-rounded { border-radius: .25rem; }
+  .#{map-get($breaks, md)}-rounded-lg { border-radius: .5rem; }
+  .#{map-get($breaks, md)}-rounded-full { border-radius: 9999px; }
+  .#{map-get($breaks, md)}-rounded-t-none {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .#{map-get($breaks, md)}-rounded-r-none {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .#{map-get($breaks, md)}-rounded-b-none {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .#{map-get($breaks, md)}-rounded-l-none {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .#{map-get($breaks, md)}-rounded-t-sm {
+    border-top-left-radius: .125rem;
+    border-top-right-radius: .125rem;
+  }
+  .#{map-get($breaks, md)}-rounded-r-sm {
+    border-top-right-radius: .125rem;
+    border-bottom-right-radius: .125rem;
+  }
+  .#{map-get($breaks, md)}-rounded-b-sm {
+    border-bottom-right-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+  }
+  .#{map-get($breaks, md)}-rounded-l-sm {
+    border-top-left-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+  }
+  .#{map-get($breaks, md)}-rounded-t {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+  .#{map-get($breaks, md)}-rounded-r {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+  }
+  .#{map-get($breaks, md)}-rounded-b {
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  .#{map-get($breaks, md)}-rounded-l {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  .#{map-get($breaks, md)}-rounded-t-lg {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+  }
+  .#{map-get($breaks, md)}-rounded-r-lg {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+  .#{map-get($breaks, md)}-rounded-b-lg {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, md)}-rounded-l-lg {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, md)}-rounded-t-full {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+  .#{map-get($breaks, md)}-rounded-r-full {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+  .#{map-get($breaks, md)}-rounded-b-full {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+  .#{map-get($breaks, md)}-rounded-l-full {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+  .#{map-get($breaks, md)}-rounded-tl-8 { border-top-left-radius: .5rem; }
+  .#{map-get($breaks, md)}-rounded-tl-12 { border-top-left-radius: .75rem; }
+  .#{map-get($breaks, md)}-rounded-tl-16 { border-top-left-radius: 1rem; }
+  .#{map-get($breaks, md)}-rounded-tr-8 { border-top-right-radius: .5rem; }
+  .#{map-get($breaks, md)}-rounded-tr-12 { border-top-right-radius: .75rem; }
+  .#{map-get($breaks, md)}-rounded-tr-16 { border-top-right-radius: 1rem; }
+  .#{map-get($breaks, md)}-rounded-bl-8 { border-bottom-left-radius: .5rem; }
+  .#{map-get($breaks, md)}-rounded-bl-12 { border-bottom-left-radius: .75rem; }
+  .#{map-get($breaks, md)}-rounded-bl-16 { border-bottom-left-radius: 1rem; }
+  .#{map-get($breaks, md)}-rounded-br-8 { border-bottom-right-radius: .5rem; }
+  .#{map-get($breaks, md)}-rounded-br-12 { border-bottom-right-radius: .75rem; }
+  .#{map-get($breaks, md)}-rounded-br-16 { border-bottom-right-radius: 1rem; }
+  .#{map-get($breaks, md)}-rounded-tl-none { border-top-left-radius: 0; }
+  .#{map-get($breaks, md)}-rounded-tr-none { border-top-right-radius: 0; }
+  .#{map-get($breaks, md)}-rounded-br-none { border-bottom-right-radius: 0; }
+  .#{map-get($breaks, md)}-rounded-bl-none { border-bottom-left-radius: 0; }
+  .#{map-get($breaks, md)}-rounded-tl-sm { border-top-left-radius: .125rem; }
+  .#{map-get($breaks, md)}-rounded-tr-sm { border-top-right-radius: .125rem; }
+  .#{map-get($breaks, md)}-rounded-br-sm { border-bottom-right-radius: .125rem; }
+  .#{map-get($breaks, md)}-rounded-bl-sm { border-bottom-left-radius: .125rem; }
+  .#{map-get($breaks, md)}-rounded-tl { border-top-left-radius: .25rem; }
+  .#{map-get($breaks, md)}-rounded-tr { border-top-right-radius: .25rem; }
+  .#{map-get($breaks, md)}-rounded-br { border-bottom-right-radius: .25rem; }
+  .#{map-get($breaks, md)}-rounded-bl { border-bottom-left-radius: .25rem; }
+  .#{map-get($breaks, md)}-rounded-tl-lg { border-top-left-radius: .5rem; }
+  .#{map-get($breaks, md)}-rounded-tr-lg { border-top-right-radius: .5rem; }
+  .#{map-get($breaks, md)}-rounded-br-lg { border-bottom-right-radius: .5rem; }
+  .#{map-get($breaks, md)}-rounded-bl-lg { border-bottom-left-radius: .5rem; }
+  .#{map-get($breaks, md)}-rounded-tl-full { border-top-left-radius: 9999px; }
+  .#{map-get($breaks, md)}-rounded-tr-full { border-top-right-radius: 9999px; }
+  .#{map-get($breaks, md)}-rounded-br-full { border-bottom-right-radius: 9999px; }
+  .#{map-get($breaks, md)}-rounded-bl-full { border-bottom-left-radius: 9999px; }
+}
+
+@include breakpoint(map-get($breaks, lg)) {
+  .#{map-get($breaks, lg)}-rounded-8 { border-radius: .5rem; }
+  .#{map-get($breaks, lg)}-rounded-12 { border-radius: .75rem; }
+  .#{map-get($breaks, lg)}-rounded-16 { border-radius: 1rem; }
+  .#{map-get($breaks, lg)}-rounded-t-8 {
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-t-12 {
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-t-16 {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-b-8 {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-b-12 {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-b-16 {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .#{map-get($breaks, lg)}-rounded-l-8 {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-l-12 {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-l-16 {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .#{map-get($breaks, lg)}-rounded-r-8 {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-r-12 {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-r-16 {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .#{map-get($breaks, lg)}-rounded-none { border-radius: 0; }
+  .#{map-get($breaks, lg)}-rounded-sm { border-radius: .125rem; }
+  .#{map-get($breaks, lg)}-rounded { border-radius: .25rem; }
+  .#{map-get($breaks, lg)}-rounded-lg { border-radius: .5rem; }
+  .#{map-get($breaks, lg)}-rounded-full { border-radius: 9999px; }
+  .#{map-get($breaks, lg)}-rounded-t-none {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .#{map-get($breaks, lg)}-rounded-r-none {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .#{map-get($breaks, lg)}-rounded-b-none {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .#{map-get($breaks, lg)}-rounded-l-none {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .#{map-get($breaks, lg)}-rounded-t-sm {
+    border-top-left-radius: .125rem;
+    border-top-right-radius: .125rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-r-sm {
+    border-top-right-radius: .125rem;
+    border-bottom-right-radius: .125rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-b-sm {
+    border-bottom-right-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-l-sm {
+    border-top-left-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-t {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-r {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-b {
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-l {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-t-lg {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-r-lg {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-b-lg {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-l-lg {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, lg)}-rounded-t-full {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+  .#{map-get($breaks, lg)}-rounded-r-full {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+  .#{map-get($breaks, lg)}-rounded-b-full {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+  .#{map-get($breaks, lg)}-rounded-l-full {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+  .#{map-get($breaks, lg)}-rounded-tl-8 { border-top-left-radius: .5rem; }
+  .#{map-get($breaks, lg)}-rounded-tl-12 { border-top-left-radius: .75rem; }
+  .#{map-get($breaks, lg)}-rounded-tl-16 { border-top-left-radius: 1rem; }
+  .#{map-get($breaks, lg)}-rounded-tr-8 { border-top-right-radius: .5rem; }
+  .#{map-get($breaks, lg)}-rounded-tr-12 { border-top-right-radius: .75rem; }
+  .#{map-get($breaks, lg)}-rounded-tr-16 { border-top-right-radius: 1rem; }
+  .#{map-get($breaks, lg)}-rounded-bl-8 { border-bottom-left-radius: .5rem; }
+  .#{map-get($breaks, lg)}-rounded-bl-12 { border-bottom-left-radius: .75rem; }
+  .#{map-get($breaks, lg)}-rounded-bl-16 { border-bottom-left-radius: 1rem; }
+  .#{map-get($breaks, lg)}-rounded-br-8 { border-bottom-right-radius: .5rem; }
+  .#{map-get($breaks, lg)}-rounded-br-12 { border-bottom-right-radius: .75rem; }
+  .#{map-get($breaks, lg)}-rounded-br-16 { border-bottom-right-radius: 1rem; }
+  .#{map-get($breaks, lg)}-rounded-tl-none { border-top-left-radius: 0; }
+  .#{map-get($breaks, lg)}-rounded-tr-none { border-top-right-radius: 0; }
+  .#{map-get($breaks, lg)}-rounded-br-none { border-bottom-right-radius: 0; }
+  .#{map-get($breaks, lg)}-rounded-bl-none { border-bottom-left-radius: 0; }
+  .#{map-get($breaks, lg)}-rounded-tl-sm { border-top-left-radius: .125rem; }
+  .#{map-get($breaks, lg)}-rounded-tr-sm { border-top-right-radius: .125rem; }
+  .#{map-get($breaks, lg)}-rounded-br-sm { border-bottom-right-radius: .125rem; }
+  .#{map-get($breaks, lg)}-rounded-bl-sm { border-bottom-left-radius: .125rem; }
+  .#{map-get($breaks, lg)}-rounded-tl { border-top-left-radius: .25rem; }
+  .#{map-get($breaks, lg)}-rounded-tr { border-top-right-radius: .25rem; }
+  .#{map-get($breaks, lg)}-rounded-br { border-bottom-right-radius: .25rem; }
+  .#{map-get($breaks, lg)}-rounded-bl { border-bottom-left-radius: .25rem; }
+  .#{map-get($breaks, lg)}-rounded-tl-lg { border-top-left-radius: .5rem; }
+  .#{map-get($breaks, lg)}-rounded-tr-lg { border-top-right-radius: .5rem; }
+  .#{map-get($breaks, lg)}-rounded-br-lg { border-bottom-right-radius: .5rem; }
+  .#{map-get($breaks, lg)}-rounded-bl-lg { border-bottom-left-radius: .5rem; }
+  .#{map-get($breaks, lg)}-rounded-tl-full { border-top-left-radius: 9999px; }
+  .#{map-get($breaks, lg)}-rounded-tr-full { border-top-right-radius: 9999px; }
+  .#{map-get($breaks, lg)}-rounded-br-full { border-bottom-right-radius: 9999px; }
+  .#{map-get($breaks, lg)}-rounded-bl-full { border-bottom-left-radius: 9999px; }
+}
+
+@include breakpoint(map-get($breaks, xl)) {
+  .#{map-get($breaks, xl)}-rounded-8 { border-radius: .5rem; }
+  .#{map-get($breaks, xl)}-rounded-12 { border-radius: .75rem; }
+  .#{map-get($breaks, xl)}-rounded-16 { border-radius: 1rem; }
+  .#{map-get($breaks, xl)}-rounded-t-8 {
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-t-12 {
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-t-16 {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-b-8 {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-b-12 {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-b-16 {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .#{map-get($breaks, xl)}-rounded-l-8 {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-l-12 {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-l-16 {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .#{map-get($breaks, xl)}-rounded-r-8 {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-r-12 {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-r-16 {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .#{map-get($breaks, xl)}-rounded-none { border-radius: 0; }
+  .#{map-get($breaks, xl)}-rounded-sm { border-radius: .125rem; }
+  .#{map-get($breaks, xl)}-rounded { border-radius: .25rem; }
+  .#{map-get($breaks, xl)}-rounded-lg { border-radius: .5rem; }
+  .#{map-get($breaks, xl)}-rounded-full { border-radius: 9999px; }
+  .#{map-get($breaks, xl)}-rounded-t-none {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .#{map-get($breaks, xl)}-rounded-r-none {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .#{map-get($breaks, xl)}-rounded-b-none {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .#{map-get($breaks, xl)}-rounded-l-none {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .#{map-get($breaks, xl)}-rounded-t-sm {
+    border-top-left-radius: .125rem;
+    border-top-right-radius: .125rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-r-sm {
+    border-top-right-radius: .125rem;
+    border-bottom-right-radius: .125rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-b-sm {
+    border-bottom-right-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-l-sm {
+    border-top-left-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-t {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-r {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-b {
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-l {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-t-lg {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-r-lg {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-b-lg {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-l-lg {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+  .#{map-get($breaks, xl)}-rounded-t-full {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+  .#{map-get($breaks, xl)}-rounded-r-full {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+  .#{map-get($breaks, xl)}-rounded-b-full {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+  .#{map-get($breaks, xl)}-rounded-l-full {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+  .#{map-get($breaks, xl)}-rounded-tl-8 { border-top-left-radius: .5rem; }
+  .#{map-get($breaks, xl)}-rounded-tl-12 { border-top-left-radius: .75rem; }
+  .#{map-get($breaks, xl)}-rounded-tl-16 { border-top-left-radius: 1rem; }
+  .#{map-get($breaks, xl)}-rounded-tr-8 { border-top-right-radius: .5rem; }
+  .#{map-get($breaks, xl)}-rounded-tr-12 { border-top-right-radius: .75rem; }
+  .#{map-get($breaks, xl)}-rounded-tr-16 { border-top-right-radius: 1rem; }
+  .#{map-get($breaks, xl)}-rounded-bl-8 { border-bottom-left-radius: .5rem; }
+  .#{map-get($breaks, xl)}-rounded-bl-12 { border-bottom-left-radius: .75rem; }
+  .#{map-get($breaks, xl)}-rounded-bl-16 { border-bottom-left-radius: 1rem; }
+  .#{map-get($breaks, xl)}-rounded-br-8 { border-bottom-right-radius: .5rem; }
+  .#{map-get($breaks, xl)}-rounded-br-12 { border-bottom-right-radius: .75rem; }
+  .#{map-get($breaks, xl)}-rounded-br-16 { border-bottom-right-radius: 1rem; }
+  .#{map-get($breaks, xl)}-rounded-tl-none { border-top-left-radius: 0; }
+  .#{map-get($breaks, xl)}-rounded-tr-none { border-top-right-radius: 0; }
+  .#{map-get($breaks, xl)}-rounded-br-none { border-bottom-right-radius: 0; }
+  .#{map-get($breaks, xl)}-rounded-bl-none { border-bottom-left-radius: 0; }
+  .#{map-get($breaks, xl)}-rounded-tl-sm { border-top-left-radius: .125rem; }
+  .#{map-get($breaks, xl)}-rounded-tr-sm { border-top-right-radius: .125rem; }
+  .#{map-get($breaks, xl)}-rounded-br-sm { border-bottom-right-radius: .125rem; }
+  .#{map-get($breaks, xl)}-rounded-bl-sm { border-bottom-left-radius: .125rem; }
+  .#{map-get($breaks, xl)}-rounded-tl { border-top-left-radius: .25rem; }
+  .#{map-get($breaks, xl)}-rounded-tr { border-top-right-radius: .25rem; }
+  .#{map-get($breaks, xl)}-rounded-br { border-bottom-right-radius: .25rem; }
+  .#{map-get($breaks, xl)}-rounded-bl { border-bottom-left-radius: .25rem; }
+  .#{map-get($breaks, xl)}-rounded-tl-lg { border-top-left-radius: .5rem; }
+  .#{map-get($breaks, xl)}-rounded-tr-lg { border-top-right-radius: .5rem; }
+  .#{map-get($breaks, xl)}-rounded-br-lg { border-bottom-right-radius: .5rem; }
+  .#{map-get($breaks, xl)}-rounded-bl-lg { border-bottom-left-radius: .5rem; }
+  .#{map-get($breaks, xl)}-rounded-tl-full { border-top-left-radius: 9999px; }
+  .#{map-get($breaks, xl)}-rounded-tr-full { border-top-right-radius: 9999px; }
+  .#{map-get($breaks, xl)}-rounded-br-full { border-bottom-right-radius: 9999px; }
+  .#{map-get($breaks, xl)}-rounded-bl-full { border-bottom-left-radius: 9999px; }
+}

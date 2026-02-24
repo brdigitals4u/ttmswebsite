@@ -1,0 +1,64 @@
+/*
+  Resize
+ */
+.resize { resize: both; }
+
+@include breakpoint(map-get($breaks, sm)) {
+  .#{map-get($breaks, sm)}-resize {
+    resize: both;
+  }
+}
+
+@include breakpoint(map-get($breaks, md)) {
+  .#{map-get($breaks, md)}-resize {
+    resize: both;
+  }
+}
+
+@include breakpoint(map-get($breaks, lg)) {
+  .#{map-get($breaks, lg)}-resize {
+    resize: both;
+  }
+}
+
+@include breakpoint(map-get($breaks, xl)) {
+  .#{map-get($breaks, xl)}-resize {
+    resize: both;
+  }
+}
+
+$values: (
+        "x": horizontal,
+        "y": vertical,
+        "none": none
+);
+
+@each $name, $value in $values {
+  .resize-#{$name} {
+    resize: $value;
+  }
+
+  @include breakpoint(map-get($breaks, sm)) {
+    .#{map-get($breaks, sm)}-resize-#{$name} {
+      resize: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, md)) {
+    .#{map-get($breaks, md)}-resize-#{$name} {
+      resize: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, lg)) {
+    .#{map-get($breaks, lg)}-resize-#{$name} {
+      resize: $value;
+    }
+  }
+
+  @include breakpoint(map-get($breaks, xl)) {
+    .#{map-get($breaks, xl)}-resize-#{$name} {
+      resize: $value;
+    }
+  }
+}

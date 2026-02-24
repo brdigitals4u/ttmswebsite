@@ -1,0 +1,891 @@
+.services-insurance {
+
+  // header
+  header {
+    .hero {
+      .illustration {
+        margin-left: -220px;
+      }
+
+      .content {
+        padding-top: 125px;
+
+        .card-f {
+          .ic {
+            img {
+              width: 32px;
+              height: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // our services
+  .our-services {
+    padding-top: 144px;
+    padding-bottom: 144px;
+
+    .heading {
+      margin-bottom: 65px;
+    }
+
+    .c-list {
+      margin-bottom: 64px;
+    }
+  }
+
+  // quote
+  .quote {
+    background-image: url("../images/covers/cover-2@2x.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 48px;
+
+    &.clip-eb {
+      padding-bottom: 75px !important;
+    }
+
+    .card-f {
+      border-radius: 1rem;
+      border: none;
+      padding: 64px;
+
+      &-body {
+        .fas {
+          font-size: 40px;
+        }
+
+        > p {
+          font-family: 'hk_groteskregular', sans-serif;
+          font-size: 32px !important;
+          line-height: 52px !important;
+          font-weight: normal !important;
+        }
+
+        .meta {
+          display: flex;
+
+          p {
+            margin-bottom: 0;
+
+            &:last-child {
+              img {
+                margin-right: 8px;
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // your benefits
+  .benefits {
+    padding-top: 64px;
+    padding-bottom: 144px;
+  }
+
+  // tips
+  .tips {
+    padding-top: 144px;
+
+    .heading {
+      margin-bottom: 64px;
+    }
+
+    .content {
+      .card-article {
+        min-height: 600px;
+      }
+    }
+  }
+
+  // testimonials
+  .testimonials {
+    padding-top: 144px;
+    padding-bottom: 121px;
+
+    .heading {
+      margin-bottom: 64px;
+    }
+
+    .content {
+      .c-customer-review {
+        padding-left: 0;
+        padding-right: 0;
+
+        &-body {
+          margin-top: 24px;
+        }
+      }
+
+      .customer-review-result {
+        margin-top: 147px;
+
+        .left {
+          ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+              width: 40px;
+              height: 40px;
+              border: 2px solid $s-color-white;
+              border-radius: 100px;
+
+              &:nth-of-type(1) {
+                margin-right: -10px;
+                z-index: 11;
+              }
+
+              &:nth-of-type(2) {
+                margin-top: -10px;
+                z-index: 1;
+              }
+
+              &:nth-of-type(3) {
+                margin-left: -10px;
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+                border-radius: 100px;
+              }
+            }
+          }
+        }
+
+        .middle {
+          img {
+            height: 32px;
+          }
+
+          .star {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+              margin-left: 2px;
+              margin-right: 2px;
+
+              .fas {
+                color: $s-color-warning;
+              }
+            }
+          }
+        }
+
+        .right {
+        }
+      }
+    }
+  }
+
+  // cta
+  .cta {
+    background-color: #0d2436;
+    padding-top: 67px;
+
+    .heading {
+      margin-bottom: 48px;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .card-f {
+      width: 466px;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: -50px 50px 50px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .divider {
+      padding-top: 158px;
+      border-bottom: 1px solid #1a3245;
+    }
+  }
+
+  // footer
+  .footer {
+    padding-top: 127px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .services-insurance {
+
+    .relative {
+      svg {
+        display: none;
+      }
+    }
+
+    // header
+    header {
+      .hero {
+        > .container {
+          > .row {
+            flex-direction: column-reverse;
+          }
+        }
+
+        .illustration {
+          margin-left: -30px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .content {
+          padding-top: 40px;
+          padding-bottom: 40px;
+          .card-f {
+            flex-direction: row !important;
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
+            text-align: left;
+            margin-bottom: 15px;
+
+            &-heading {
+              margin-right: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    // service
+    .our-services {
+      padding-top: 80px;
+      padding-bottom: 56px;
+
+      .heading {
+        margin-bottom: 24px;
+      }
+
+      .c-list {
+        justify-content: flex-start;
+      }
+
+      .card-f {
+        margin-bottom: 24px;
+      }
+    }
+
+    // quotes
+    .quote {
+      padding-top: 24px;
+      padding-bottom: 0 !important;
+
+      &.clip-eb {
+        padding-bottom: 0 !important;
+      }
+
+      .card-f {
+        margin-right: 0;
+        padding: 40px 24px;
+        margin-bottom: -80px;
+
+        &-body {
+          .fas {
+            font-size: 32px;
+          }
+
+          > p {
+            font-size: 20px !important;
+            line-height: 36px !important;
+          }
+
+          .meta {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    // benefits
+    .benefits {
+      padding-top: 160px;
+      padding-bottom: 40px;
+
+      .heading {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .card-f {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    // tips
+    .tips {
+      padding-top: 80px;
+
+      .heading {
+        margin-bottom: 40px;
+      }
+
+      .content {
+        .card-article {
+          min-height: 400px;
+          margin-bottom: 24px;
+
+          .card-img {
+            height: 400px;
+            object-fit: cover;
+          }
+
+          .card-img-overlay {
+            padding: 50px 24px;
+
+            h3 {
+              font-size: 20px !important;
+              line-height: 24px !important;
+            }
+          }
+        }
+      }
+    }
+
+    // testimonials
+    .testimonials {
+      padding-top: 56px;
+      padding-bottom: 80px;
+
+      .c-customer-review {
+        margin-bottom: 51px;
+      }
+    ;
+
+      .customer-review-result {
+        margin-top: 46px !important;
+
+        .left {
+          margin-bottom: 50px;
+        }
+
+        .middle {
+          margin-bottom: 70px;
+        }
+      }
+    }
+
+    // cta
+    .cta {
+      margin-bottom: -1px;
+      .divider {
+        display: none;
+        border-bottom: none;
+      }
+      > .container {
+        > .row {
+          flex-direction: column-reverse;
+        }
+      }
+
+      .card-f {
+        width: 100%;
+        margin-right: 0;
+        align-items: flex-start !important;
+        text-align: left;
+        padding: 32px 24px;
+        margin-bottom: 0;
+        margin-top: 12px;
+      }
+
+      .heading {
+        margin-top: 48px;
+        margin-bottom: 40px;
+
+        h3 {
+          font-size: 24px !important;
+          line-height: 32px !important;
+        }
+      }
+
+      .content {
+        form {
+          flex-wrap: wrap;
+
+          .form-control,
+          .form-group {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+
+    // footer
+    .footer {
+      padding-top: 80px;
+    }
+
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .services-insurance {
+
+    .relative {
+      svg {
+        display: none;
+      }
+    }
+
+    // header
+    header {
+      .hero {
+        > .container {
+          > .row {
+            flex-direction: column-reverse;
+          }
+        }
+
+        .illustration {
+          margin-left: -30px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .content {
+          padding-top: 40px;
+          padding-bottom: 40px;
+          .card-f {
+            flex-direction: row !important;
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
+            text-align: left;
+            margin-bottom: 15px;
+
+            &-heading {
+              margin-right: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    // service
+    .our-services {
+      padding-top: 80px;
+      padding-bottom: 56px;
+
+      .heading {
+        margin-bottom: 24px;
+      }
+
+      .c-list {
+        justify-content: flex-start;
+      }
+
+      .card-f {
+        margin-bottom: 24px;
+      }
+    }
+
+    // quotes
+    .quote {
+      padding-top: 24px;
+      padding-bottom: 0 !important;
+
+      &.clip-eb {
+        padding-bottom: 0 !important;
+      }
+
+      .card-f {
+        margin-right: 0;
+        padding: 40px 24px;
+        margin-bottom: -80px;
+
+        &-body {
+          .fas {
+            font-size: 32px;
+          }
+
+          > p {
+            font-size: 20px !important;
+            line-height: 36px !important;
+          }
+
+          .meta {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    // benefits
+    .benefits {
+      padding-top: 160px;
+      padding-bottom: 40px;
+
+      .heading {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .card-f {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    // tips
+    .tips {
+      padding-top: 80px;
+
+      .heading {
+        margin-bottom: 40px;
+      }
+
+      .content {
+        .card-article {
+          min-height: 400px;
+          margin-bottom: 24px;
+
+          .card-img {
+            height: 400px;
+            object-fit: cover;
+          }
+
+          .card-img-overlay {
+            padding: 50px 24px;
+
+            h3 {
+              font-size: 20px !important;
+              line-height: 24px !important;
+            }
+          }
+        }
+      }
+    }
+
+    // testimonials
+    .testimonials {
+      padding-top: 56px;
+      padding-bottom: 80px;
+
+      .c-customer-review {
+        margin-bottom: 51px;
+      }
+    ;
+
+      .customer-review-result {
+        margin-top: 46px !important;
+
+        .left {
+          margin-bottom: 50px;
+        }
+
+        .middle {
+          margin-bottom: 70px;
+        }
+      }
+    }
+
+    // cta
+    .cta {
+      margin-bottom: -1px;
+      .divider {
+        display: none;
+        border-bottom: none;
+      }
+      > .container {
+        > .row {
+          flex-direction: column-reverse;
+        }
+      }
+
+      .card-f {
+        width: 100%;
+        margin-right: 0;
+        align-items: flex-start !important;
+        text-align: left;
+        padding: 32px 24px;
+        margin-bottom: 0;
+        margin-top: 12px;
+      }
+
+      .heading {
+        margin-top: 48px;
+        margin-bottom: 40px;
+
+        h3 {
+          font-size: 24px !important;
+          line-height: 32px !important;
+        }
+      }
+
+      .content {
+        form {
+          flex-wrap: wrap;
+
+          .form-control,
+          .form-group {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+
+    // footer
+    .footer {
+      padding-top: 80px;
+    }
+
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services-insurance {
+
+    // header
+    header {
+      .hero {
+        > .container {
+          > .row {
+            flex-direction: row-reverse;
+          }
+        }
+
+        .illustration {
+          margin-left: 0;
+
+          img {
+            border-radius: 16px !important;
+            margin-top: 100px;
+            height: 600px !important;
+          }
+        }
+
+        .content {
+          padding-top: 40px;
+          padding-bottom: 40px;
+
+          .card-f {
+            flex-direction: row !important;
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
+            text-align: left;
+            margin-bottom: 15px;
+
+            &-heading {
+              margin-right: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    // service
+    .our-services {
+      padding-top: 80px;
+      padding-bottom: 56px;
+
+      .heading {
+        margin-bottom: 24px;
+      }
+
+      .c-list {
+        justify-content: flex-start;
+        li {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+
+      .card-f {
+        margin-bottom: 24px;
+      }
+    }
+
+    // quotes
+    .quote {
+      padding-top: 24px;
+      padding-bottom: 0 !important;
+      background-image: url('../images/illustrations/bg-quote-insurance.svg');
+      background-position: bottom left;
+
+      &.clip-eb {
+        clip-path: none !important;
+      }
+
+      .card-f {
+        margin-right: 0;
+        padding: 40px 24px;
+        margin-bottom: -80px;
+
+        &-body {
+          .fas {
+            font-size: 32px;
+          }
+
+          > p {
+            font-size: 20px !important;
+            line-height: 36px !important;
+          }
+
+          .meta {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    // benefits
+    .benefits {
+      padding-top: 160px;
+      padding-bottom: 40px;
+
+      .heading {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .card-f {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    // tips
+    .tips {
+      padding-top: 80px;
+
+      .heading {
+        margin-bottom: 40px;
+      }
+
+      .content {
+        .card-article {
+          min-height: 400px;
+          margin-bottom: 24px;
+
+          .card-img {
+            height: 400px;
+            object-fit: cover;
+          }
+
+          .card-img-overlay {
+            padding: 50px 24px;
+
+            h3 {
+              font-size: 20px !important;
+              line-height: 24px !important;
+            }
+          }
+        }
+      }
+    }
+
+    // testimonials
+    .testimonials {
+      padding-top: 56px;
+      padding-bottom: 40px;
+
+      .c-customer-review {
+        margin-bottom: 51px;
+      }
+    ;
+
+      .customer-review-result {
+        margin-top: 46px !important;
+
+        .left {
+          margin-bottom: 50px;
+        }
+
+        .middle {
+          margin-bottom: 70px;
+        }
+      }
+    }
+
+    // cta
+    .cta {
+      margin-bottom: -1px;
+      .divider {
+        display: none;
+        border-bottom: none;
+      }
+      > .container {
+        > .row {
+          flex-direction: column-reverse;
+        }
+      }
+
+      .right {
+        align-items: center;
+      }
+
+      .card-f {
+        width: 466px;
+        flex-direction: row !important;
+        text-align: left;
+        align-items: flex-start !important;
+        padding: 32px;
+
+        &-heading {
+          margin-right: 24px;
+        }
+      }
+
+      .heading {
+        margin-top: 48px;
+        margin-bottom: 40px;
+        text-align: center;
+
+        h3 {
+          font-size: 36px !important;
+          line-height: 48px !important;
+        }
+      }
+
+      .content {
+        text-align: center;
+
+        form {
+          justify-content: center;
+
+          .btn {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+
+    // footer
+    .footer {
+      padding-top: 160px;
+    }
+
+  }
+}

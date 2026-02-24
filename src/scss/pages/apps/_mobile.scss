@@ -1,0 +1,125 @@
+.apps-mobile header {
+}
+
+.apps-mobile header .hero { 
+    background: url(../images/covers/cover-10@2x.png) center bottom, url(../images/components/wave-bottom-out.svg) center bottom; 
+    background-size: 100%, 102%;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+
+    padding-bottom: 175px;
+}
+
+.apps-mobile header .hero .button-cta img {
+    height: 54px
+}
+
+.apps-mobile header .hero .touch p {
+    color: #b3bac5
+}
+
+.apps-mobile header .hero .touch p span {
+    color: #5A7184
+}
+
+.apps-mobile header .illustration img {
+    width: 540px
+}
+
+.apps-mobile .features {
+}
+
+.apps-mobile .features.clip-eb {
+}
+
+.apps-mobile .more-features {
+    background: url(../images/components/wave-top-in.svg) center top, url("../images/covers/cover-13@2x.png") center center, url(../images/components/wave-bottom-out.svg) center bottom; 
+    background-size: 100%, cover, 102%;  
+    background-repeat: no-repeat; 
+    background-blend-mode: screen;
+}
+
+.apps-mobile .more-features .content p {
+    color: rgba(250, 250, 251, 0.6)
+}
+
+.apps-mobile .more-features .content .iphone img {
+    width: 340px;
+    height: 678px;
+    box-shadow: 0 27px 53px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 48px
+}
+
+.apps-mobile .multi-platform .pattern { 
+    margin-left: 136px;
+    margin-top: -62px;
+    z-index: -1;
+    position: relative
+}
+
+.apps-mobile .pricing {
+    background: url(../images/components/wave-top-out.svg) center top, url(../images/components/wave-bottom-out.svg) center bottom; 
+    background-size: 100%;  
+    background-repeat: no-repeat; 
+    background-blend-mode: screen;
+    background-color: #f8fbff;
+}
+
+.apps-mobile .pricing .card-pricing {
+    background-color: #fff
+}
+
+.apps-mobile .cta {
+    position: relative;
+    margin-top: -291px
+}
+
+.apps-mobile .cta .content {
+    background-image: url("../images/covers/cover-11@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// Mobile-Tab devices (tablets, < 991px)
+@media (max-width: $breakpoints-lg - 0.02px) { 
+    .apps-mobile{
+        header {
+            .hero{
+                background-position: center bottom 2px, center bottom; 
+                background-size: 1200px auto; 
+            }
+        }
+        .features{ 
+        }
+        .more-features{
+        }
+
+        .multi-platform{
+            .illustration{ 
+                display: none;  
+            }
+        }
+    }
+}
+// Mobile devices (tablets, < 576px)
+@media (max-width: ($breakpoints-sm - 0.02px)) {
+    .apps-mobile {
+        header {
+            .hero{
+                background-size: 800px auto; 
+                .button-cta{
+                    img{
+                        height: 40px;  
+                    }
+                }
+            }
+            .illustration{
+                img{
+                    width: 295px; 
+                }
+            }
+        }
+    }
+}
+
+
