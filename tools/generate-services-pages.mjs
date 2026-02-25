@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -11,6 +11,8 @@ const ROOT = path.resolve(__dirname, "..");
 const TEMPLATES_DIR = path.join(ROOT, "dist", "_templates");
 const SERVICES_DIR = path.join(ROOT, "dist", "services");
 const BASE_PATH = "../";
+const LOCAL_LIBRARY_ROOT = path.join(ROOT, "dist", "assets", "images", "services-library");
+const LOCAL_LIBRARY_BASE_URL = `${BASE_PATH}assets/images/services-library`;
 
 const REQUIRED_KEYS = [
   "slug",
@@ -83,15 +85,28 @@ const TAXONOMY = [
 
 const METRIC_ICONS = ["truck", "road", "chart-line", "shield-alt"];
 const EXECUTION_STEPS = ["Plan", "Execute", "Improve"];
-const ABOUT_THEME_IMAGE_IDS = [
-  "photo-1601584115197-04ecc0da31d7",
-  "photo-1586528116311-ad8dd3c8310d",
-  "photo-1519003722824-194d4455a60c",
-  "photo-1558618666-fcd25c85f82e",
-  "photo-1544620347-c4fd4a3d5957",
-  "photo-1581092160562-40aa08e78837",
-  "photo-1580674285054-bed31e145f59"
+const LOCAL_GROUPS = ["truck", "trailer", "eld", "dashcam", "gps", "dashboard", "driver"];
+const PINNED_IMAGES = {
+  driverSafety: `${BASE_PATH}assets/images/ttms/driver-safety-alert.png`,
+  integrationEld: `${BASE_PATH}assets/images/ttms/integration-eld-platform.png`,
+  aiDashcam: `${BASE_PATH}assets/images/ttms/ai-dashcam-device.png`,
+  eldDevice: `${BASE_PATH}assets/images/ttms/eld-hardware-device.png`
+};
+const FLEET_IMAGES = [
+  `${BASE_PATH}assets/images/ttms/fleet-trucks-lineup.png`,
+  `${BASE_PATH}assets/images/ttms/fleet-truck-red-driver.png`,
+  `${BASE_PATH}assets/images/ttms/fleet-trucks-highway.png`
 ];
+const FALLBACK_LIBRARY = {
+  truck: FLEET_IMAGES,
+  trailer: FLEET_IMAGES,
+  eld: [PINNED_IMAGES.eldDevice],
+  dashcam: [PINNED_IMAGES.aiDashcam],
+  gps: [`${BASE_PATH}assets/images/ttms/services-anti-theft.jpg`],
+  dashboard: [`${BASE_PATH}assets/images/ttms/services-hardware-overview.jpg`],
+  driver: [PINNED_IMAGES.driverSafety]
+};
+let IMAGE_LIBRARY = { ...FALLBACK_LIBRARY };
 
 function escapeHtml(value) {
   return String(value)
@@ -117,36 +132,175 @@ function hashString(input) {
   return hash;
 }
 
-function parseSize(size) {
-  const [w, h] = String(size).split("x");
-  return { width: Number(w) || 1200, height: Number(h) || 800 };
+function normalizeHintText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replaceAll(/[=&/?_.,+-]+/g, " ")
+    .replaceAll(/\s+/g, " ")
+    .trim();
 }
 
-function buildUnsplashImage(seed, size = "1200x800") {
-  const { width, height } = parseSize(size);
-  const imageId = ABOUT_THEME_IMAGE_IDS[hashString(seed) % ABOUT_THEME_IMAGE_IDS.length];
-  return `https://images.unsplash.com/${imageId}?auto=format&fit=crop&w=${width}&h=${height}&q=80`;
+function pickImageGroup(seed) {
+  const text = normalizeHintText(seed);
+  if (/(trailer|load planning|yard|freight)/.test(text)) return "trailer";
+  if (/(eld|hos|ifta|dvir|logbook)/.test(text)) return "eld";
+  if (/(dashcam|camera|vision|incident|collision)/.test(text)) return "dashcam";
+  if (/(gps|anti theft|antitheft|theft|asset tracking|geo|geofence)/.test(text)) return "gps";
+  if (/(audit|analytics|report|metrics|dashboard|kpi|api|integration|telematics|oem|compliance)/.test(text)) return "dashboard";
+  if (/(driver|monitoring|fatigue|drowsy|coaching|rest|food|wellbeing)/.test(text)) return "driver";
+  if (/(safety alert|safety solution|safety)/.test(text)) return "dashcam";
+  return "truck";
 }
 
-function resolveThemeImage(url, seed, size = "1200x800") {
+function groupCandidates(group) {
+  const preferred = IMAGE_LIBRARY[group];
+  if (Array.isArray(preferred) && preferred.length) {
+    return preferred;
+  }
+  return FALLBACK_LIBRARY[group] || FALLBACK_LIBRARY.truck;
+}
+
+function dedupeUrls(items) {
+  return Array.from(new Set(items.filter(Boolean)));
+}
+
+function pickFromCandidates(seed, candidates, usedImages) {
+  if (!candidates.length) {
+    return FLEET_IMAGES[0];
+  }
+
+  for (const imageUrl of candidates) {
+    if (!usedImages || !usedImages.has(imageUrl)) {
+      if (usedImages) usedImages.add(imageUrl);
+      return imageUrl;
+    }
+  }
+
+  const fallback = candidates[hashString(seed) % candidates.length];
+  if (usedImages) usedImages.add(fallback);
+  return fallback;
+}
+
+function buildPreferredCandidates(seed, group) {
+  const text = normalizeHintText(seed);
+  const preferredGroup = group || pickImageGroup(seed);
+
+  if (/(audit|edit)/.test(text)) {
+    return dedupeUrls([
+      ...groupCandidates("dashboard")
+    ]);
+  }
+
+  if (/(care|driver care|user safety)/.test(text)) {
+    return dedupeUrls([
+      PINNED_IMAGES.driverSafety,
+      ...groupCandidates("driver"),
+      ...groupCandidates("dashcam")
+    ]);
+  }
+
+  if (/(integration|integrations)/.test(text) && /(eld|hos|ifta|dvir|logbook)/.test(text)) {
+    return dedupeUrls([
+      PINNED_IMAGES.integrationEld,
+      ...groupCandidates("eld"),
+      ...groupCandidates("dashboard")
+    ]);
+  }
+
+  if (/(eld|hos|ifta|dvir|logbook)/.test(text)) {
+    return dedupeUrls([
+      PINNED_IMAGES.eldDevice,
+      PINNED_IMAGES.integrationEld,
+      ...groupCandidates("eld"),
+      ...groupCandidates("dashboard")
+    ]);
+  }
+
+  if (/(dashcam|ai dashcam|camera ai|camera|vision|incident|collision)/.test(text)) {
+    return dedupeUrls([
+      PINNED_IMAGES.aiDashcam,
+      ...groupCandidates("dashcam"),
+      ...groupCandidates("driver")
+    ]);
+  }
+
+  if (/(safety|driver safety|driver monitoring|monitoring|fatigue|drowsy|coaching|wellbeing|rest food)/.test(text)) {
+    return dedupeUrls([
+      PINNED_IMAGES.driverSafety,
+      ...groupCandidates("driver"),
+      ...groupCandidates("dashcam")
+    ]);
+  }
+
+  if (
+    preferredGroup === "truck" ||
+    preferredGroup === "trailer" ||
+    /(fleet|truck|trailer|dispatch|routing|route|load planning|carrier|freight)/.test(text)
+  ) {
+    return dedupeUrls([
+      ...FLEET_IMAGES,
+      ...groupCandidates(preferredGroup),
+      ...groupCandidates("truck"),
+      ...groupCandidates("trailer")
+    ]);
+  }
+
+  const fallbackOrder = [
+    preferredGroup,
+    "truck",
+    "trailer",
+    "eld",
+    "dashcam",
+    "gps",
+    "dashboard",
+    "driver"
+  ].filter((item, index, arr) => arr.indexOf(item) === index);
+  return dedupeUrls(fallbackOrder.flatMap((candidateGroup) => groupCandidates(candidateGroup)));
+}
+
+function pickLocalImage(seed, group, usedImages) {
+  const candidates = buildPreferredCandidates(seed, group);
+  return pickFromCandidates(seed, candidates, usedImages);
+}
+
+function buildThemeImage(seed, _size = "1200x800", options = {}) {
+  return pickLocalImage(seed, options.group, options.usedImages);
+}
+
+function resolveThemeImage(url, seed, size = "1200x800", options = {}) {
   if (!url) {
-    return buildUnsplashImage(seed, size);
+    return buildThemeImage(seed, size, options);
   }
 
   if (url.includes("source.unsplash.com")) {
-    return buildUnsplashImage(seed, size);
+    const hint = normalizeHintText(url.split("?")[1] || "");
+    return buildThemeImage(`${seed} ${hint}`, size, options);
   }
 
   if (url.includes("images.unsplash.com")) {
-    if (/([?&])auto=format/.test(url) && /([?&])fit=crop/.test(url) && /([?&])w=/.test(url) && /([?&])h=/.test(url)) {
-      return url;
-    }
-    const { width, height } = parseSize(size);
-    const separator = url.includes("?") ? "&" : "?";
-    return `${url}${separator}auto=format&fit=crop&w=${width}&h=${height}&q=80`;
+    return buildThemeImage(seed, size, options);
   }
 
   return url;
+}
+
+async function loadLocalImageLibrary() {
+  const libraryEntries = await Promise.all(
+    LOCAL_GROUPS.map(async (group) => {
+      const folder = path.join(LOCAL_LIBRARY_ROOT, group);
+      try {
+        const files = (await readdir(folder))
+          .filter((file) => /\.(jpg|jpeg|png|webp)$/i.test(file))
+          .sort((left, right) => left.localeCompare(right, undefined, { numeric: true }));
+        const urls = files.map((file) => `${LOCAL_LIBRARY_BASE_URL}/${group}/${file}`);
+        return [group, urls.length ? urls : FALLBACK_LIBRARY[group] || FALLBACK_LIBRARY.truck];
+      } catch {
+        return [group, FALLBACK_LIBRARY[group] || FALLBACK_LIBRARY.truck];
+      }
+    })
+  );
+
+  IMAGE_LIBRARY = Object.fromEntries(libraryEntries);
 }
 
 function getServiceOrder() {
@@ -225,35 +379,122 @@ function renderArticleCards(items) {
     .join("\n");
 }
 
-function buildDefaultHardware(record) {
+function secondaryGroupFor(primaryGroup) {
+  switch (primaryGroup) {
+    case "trailer":
+      return "truck";
+    case "truck":
+      return "trailer";
+    case "eld":
+      return "truck";
+    case "dashcam":
+      return "driver";
+    case "gps":
+      return "truck";
+    case "dashboard":
+      return "truck";
+    case "driver":
+      return "dashcam";
+    default:
+      return "truck";
+  }
+}
+
+function careGroupFor(record) {
+  const text = normalizeHintText(`${record.slug} ${record.title} ${record.hero_heading || ""}`);
+  if (/(driver|monitoring|dashcam|camera|safety|wellbeing|care|rest food)/.test(text)) return "driver";
+  return "driver";
+}
+
+function createImageContext(record) {
+  const usedImages = new Set();
+  return {
+    pick(seed, group, size = "1200x800") {
+      return buildThemeImage(`${record.slug} ${seed}`, size, { group, usedImages });
+    },
+    resolve(url, seed, size = "1200x800", group) {
+      return resolveThemeImage(url, `${record.slug} ${seed}`, size, { group, usedImages });
+    }
+  };
+}
+
+function buildOpsHeading(record) {
+  return `How TTMS powers ${record.title}`;
+}
+
+function ensureSentence(text) {
+  const value = String(text || "").trim();
+  if (!value) return "";
+  return /[.!?]$/.test(value) ? value : `${value}.`;
+}
+
+function buildOpsOverview(record) {
+  const lead = record.core_capabilities?.[0] || `${record.title} execution`;
+  return `${ensureSentence(record.hero_copy)} This service emphasizes ${lead.toLowerCase()}.`;
+}
+
+function buildCareHeading(record) {
+  if (record.category === "Driver Services") return "Driver Safety & Care";
+  if (record.category === "Alerts & Notifications") return "Proactive Safety Response";
+  return "User Safety & Care";
+}
+
+function buildCareOverview(record) {
+  const first = record.safety_care_points?.[0] || "";
+  const second = record.safety_care_points?.[1] || "";
+  return [ensureSentence(first), ensureSentence(second)].filter(Boolean).join(" ");
+}
+
+function buildHardwareHeading(record) {
+  return `${record.title}: Hardware, Dashcam & Anti-Theft`;
+}
+
+function buildExecutionHeading(record) {
+  return `${record.title} Execution Framework`;
+}
+
+function buildAuditHeading(record) {
+  return `${record.title} Audit & Compliance Reporting`;
+}
+
+function buildAuditOverview(record) {
+  const focus = record.execution_points?.[0] || "prepare regulator-facing and owner-facing reviews";
+  return `${record.title} data feeds TTMS reporting automatically so teams can ${focus.replace(/\.$/, "").toLowerCase()} and maintain audit-ready records.`;
+}
+
+function buildDefaultHardware(record, imageContext) {
   return [
     {
       category: "ELD DEVICES",
-      title: "Connected ELD Compliance",
-      copy: `${record.title} stays compliant with real-time ELD logs, HOS visibility, and inspection-ready records.`,
-      image_url: buildUnsplashImage(`${record.title} american truck eld device cabin`)
+      title: `${record.title} ELD Compliance`,
+      copy: `Keep ${record.title.toLowerCase()} compliant with real-time ELD logs, HOS visibility, and inspection-ready records.`,
+      image_url: imageContext.pick("hardware eld ifta hos compliance", "eld")
     },
     {
       category: "AI DASHCAM",
-      title: "Proactive Driver Safety",
-      copy: "AI DashCam events help teams coach better, reduce risk, and respond faster to road incidents.",
-      image_url: buildUnsplashImage(`${record.title} ai dashcam truck road safety`)
+      title: `${record.title} AI Safety`,
+      copy: `Use AI DashCam events in ${record.title.toLowerCase()} workflows to coach better, reduce risk, and respond faster to incidents.`,
+      image_url: imageContext.pick("hardware ai dashcam road safety camera", "dashcam")
     },
     {
       category: "GPS ANTI-THEFT",
-      title: "Asset Protection Visibility",
-      copy: "GPS anti-theft tracking surfaces unauthorized movement quickly and protects owner assets.",
-      image_url: buildUnsplashImage(`${record.title} gps anti theft truck fleet tracking`)
+      title: `${record.title} GPS Protection`,
+      copy: `GPS anti-theft tracking keeps ${record.title.toLowerCase()} assets visible and flags unauthorized movement quickly.`,
+      image_url: imageContext.pick("hardware gps anti theft tracker geofence", "gps")
     }
   ];
 }
 
-function buildExecutionArticles(record) {
+function buildExecutionArticles(record, imageContext, primaryGroup) {
+  const executeGroup = primaryGroup === "trailer" ? "trailer" : "truck";
+  const improveGroup = /(driver|monitoring|rest-food|safety|dashcam)/.test(record.slug) ? "driver" : "dashboard";
+  const stepGroups = ["dashboard", executeGroup, improveGroup];
+
   return EXECUTION_STEPS.map((step, index) => ({
     category: "SERVICE EXECUTION",
     title: step,
     copy: record.execution_points[index] || record.execution_points[record.execution_points.length - 1],
-    image_url: buildUnsplashImage(`${record.title} ${step} transport operations`) 
+    image_url: imageContext.pick(`execution ${step} ${record.title}`, stepGroups[index] || primaryGroup)
   }));
 }
 
@@ -266,24 +507,35 @@ function buildDefaultAuditPoints(record) {
   ];
 }
 
-function buildGalleryArticles(record) {
+function buildGalleryArticles(record, imageContext, primaryGroup) {
+  const fallbackGallery = [
+    record.hero_image_url,
+    record.operations_image_url,
+    null
+  ];
   const galleryImages = Array.isArray(record.gallery_image_urls) && record.gallery_image_urls.length
-    ? record.gallery_image_urls
-    : [
-        record.hero_image_url,
-        record.operations_image_url || buildUnsplashImage(`${record.title} fleet dispatch operations`),
-        buildUnsplashImage(`${record.title} american trucking team`)
-      ];
+    ? record.gallery_image_urls.slice(0, 3)
+    : fallbackGallery;
+  const galleryCopy = [
+    record.hero_copy,
+    record.core_capabilities?.[0] || "Operational clarity with service-specific visibility.",
+    record.safety_care_points?.[0] || "Safer execution for drivers, owners, and customers."
+  ];
 
-  return galleryImages.slice(0, 3).map((image, index) => ({
+  return galleryImages.map((image, index) => {
+    const galleryGroup = index === 0 ? primaryGroup : index === 1 ? secondaryGroupFor(primaryGroup) : careGroupFor(record);
+    return {
     category: "SERVICE GALLERY",
     title: `${record.title} Visual ${index + 1}`,
-    copy: "Real transport operations aligned with TTMS service workflows.",
-    image_url: resolveThemeImage(image, `${record.slug}-gallery-${index + 1}`)
-  }));
+    copy: galleryCopy[index] || galleryCopy[galleryCopy.length - 1],
+    image_url: image
+      ? imageContext.resolve(image, `gallery ${index + 1}`, "1200x800", galleryGroup)
+      : imageContext.pick(`gallery ${index + 1}`, galleryGroup)
+    };
+  });
 }
 
-function buildServiceSections(record, bodyTemplate) {
+function buildServiceSections(record, bodyTemplate, imageContext = createImageContext(record)) {
   const kpis = Array.isArray(record.kpi_metrics) && record.kpi_metrics.length
     ? record.kpi_metrics
     : [
@@ -294,24 +546,41 @@ function buildServiceSections(record, bodyTemplate) {
 
   const coreCapabilities = record.core_capabilities.slice(0, 6);
   const safetyPoints = record.safety_care_points.slice(0, 6);
+  const primaryGroup = pickImageGroup(`${record.slug} ${record.title} ${record.hero_heading}`);
+  const opsImage = imageContext.resolve(record.operations_image_url || record.hero_image_url, "operations", "1200x800", primaryGroup);
+  const secondaryImage = imageContext.resolve(record.secondary_image_url, "secondary", "1200x800", secondaryGroupFor(primaryGroup));
+  const careImage = imageContext.resolve(record.care_image_url, "care driver camera", "1200x800", careGroupFor(record));
+  const auditImage = imageContext.resolve(record.audit_image_url, "audit", "1200x800", "dashboard");
+  const auditSecondaryImage = imageContext.resolve(record.audit_secondary_image_url, "audit secondary dashboard", "1200x800", "dashboard");
+
   const hardwareArticles = Array.isArray(record.hardware_highlights) && record.hardware_highlights.length
-    ? record.hardware_highlights
-    : buildDefaultHardware(record);
-  const executionArticles = buildExecutionArticles(record);
+    ? record.hardware_highlights.map((item, index) => ({
+        ...item,
+        image_url: imageContext.resolve(
+          item.image_url,
+          `hardware custom ${index + 1} ${item.category || ""} ${item.title || ""}`,
+          "1200x800",
+          pickImageGroup(`${item.category || ""} ${item.title || ""}`)
+        )
+      }))
+    : buildDefaultHardware(record, imageContext);
+  const executionArticles = buildExecutionArticles(record, imageContext, primaryGroup);
   const auditPoints = Array.isArray(record.audit_report_points) && record.audit_report_points.length
     ? record.audit_report_points
     : buildDefaultAuditPoints(record);
-  const galleryArticles = buildGalleryArticles(record);
-
-  const opsImage = resolveThemeImage(record.operations_image_url || record.hero_image_url, `${record.slug}-ops`);
-  const secondaryImage = resolveThemeImage(record.secondary_image_url, `${record.slug}-secondary`);
-  const careImage = resolveThemeImage(record.care_image_url, `${record.slug}-care`);
-  const auditImage = resolveThemeImage(record.audit_image_url, `${record.slug}-audit`);
-  const auditSecondaryImage = resolveThemeImage(record.audit_secondary_image_url, `${record.slug}-audit-secondary`);
+  const galleryArticles = buildGalleryArticles(record, imageContext, primaryGroup);
 
   return replaceTokens(bodyTemplate, {
     BASE_PATH,
     SERVICE_TITLE: escapeHtml(record.title),
+    OPS_HEADING: escapeHtml(buildOpsHeading(record)),
+    OPS_OVERVIEW_COPY: escapeHtml(buildOpsOverview(record)),
+    CARE_HEADING: escapeHtml(buildCareHeading(record)),
+    CARE_OVERVIEW_COPY: escapeHtml(buildCareOverview(record)),
+    HARDWARE_HEADING: escapeHtml(buildHardwareHeading(record)),
+    EXECUTION_HEADING: escapeHtml(buildExecutionHeading(record)),
+    AUDIT_HEADING: escapeHtml(buildAuditHeading(record)),
+    AUDIT_OVERVIEW_COPY: escapeHtml(buildAuditOverview(record)),
     KPI_CARDS: renderKpiCards(kpis),
     OPS_IMAGE_URL: escapeHtml(opsImage),
     SECONDARY_IMAGE_URL: escapeHtml(secondaryImage),
@@ -329,6 +598,7 @@ function buildServiceSections(record, bodyTemplate) {
 }
 
 function renderCategoryCards(contentBySlug) {
+  const usedImages = new Set();
   return TAXONOMY.map((group) => {
     const cards = group.services
       .map(([slug, title, fallbackSummary]) => {
@@ -339,7 +609,10 @@ function renderCategoryCards(contentBySlug) {
             <div class="col col-lg-4 col-md-6 col-12">
                 <div class="card card-article card-article-about wow fadeInUp">
                     <div class="card-article-heading">
-                        <img src="${escapeHtml(resolveThemeImage(content?.hero_image_url, `${slug}-catalog`, "1200x800"))}" alt="${escapeHtml(title)}" loading="lazy">
+                        <img src="${escapeHtml(resolveThemeImage(content?.hero_image_url, `${slug}-catalog`, "1200x800", {
+                          usedImages,
+                          group: pickImageGroup(`${slug} ${title}`)
+                        }))}" alt="${escapeHtml(title)}" loading="lazy">
                     </div>
                     <div class="card-article-body">
                         <label class="category">${escapeHtml(group.category)}</label>
@@ -365,6 +638,8 @@ ${cards}
 }
 
 async function main() {
+  await loadLocalImageLibrary();
+
   const [headerTemplate, bodyTemplate, footerTemplate, rawContent] = await Promise.all([
     readFile(path.join(TEMPLATES_DIR, "service-header.html"), "utf8"),
     readFile(path.join(TEMPLATES_DIR, "service-body.html"), "utf8"),
@@ -386,6 +661,8 @@ async function main() {
       throw new Error(`Missing content record for slug \"${expected.slug}\"`);
     }
     validateRecord(record, expected);
+    const imageContext = createImageContext(record);
+    const heroGroup = pickImageGroup(`${record.slug} ${record.title} ${record.hero_heading}`);
 
     const header = replaceTokens(headerTemplate, {
       BASE_PATH,
@@ -395,10 +672,10 @@ async function main() {
       HERO_TAG: escapeHtml(record.hero_tag || record.category),
       HERO_HEADING: escapeHtml(record.hero_heading),
       HERO_COPY: escapeHtml(record.hero_copy),
-      HERO_IMAGE_URL: escapeHtml(resolveThemeImage(record.hero_image_url, `${record.slug}-hero`, "1600x900"))
+      HERO_IMAGE_URL: escapeHtml(imageContext.resolve(record.hero_image_url, "hero", "1600x900", heroGroup))
     });
 
-    const body = buildServiceSections(record, bodyTemplate);
+    const body = buildServiceSections(record, bodyTemplate, imageContext);
     const footer = replaceTokens(footerTemplate, { BASE_PATH });
 
     await writeFile(path.join(SERVICES_DIR, `${record.slug}.html`), `${header}\n${body}\n${footer}`, "utf8");
@@ -413,7 +690,7 @@ async function main() {
     HERO_HEADING: "TTMS - Total Transport Management System Services",
     HERO_COPY:
       "Explore all 24 services across fleet operations, dispatch, driver safety, analytics, alerts, and integrations. Every page follows the same visual language as the about-us theme.",
-    HERO_IMAGE_URL: buildUnsplashImage("ttms-service-catalog", "1600x900")
+    HERO_IMAGE_URL: `${BASE_PATH}assets/images/ttms/services-hardware-overview.jpg`
   });
 
   const indexBody = `

@@ -78,3 +78,20 @@
     line-height: 2.5rem !important;
   }
 }
+
+/* TTMS integration icon sizing override */
+.app-desktop .integration .integration-list-left li img,
+.app-desktop .integration .integration-list-right li img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  .app-desktop .integration .integration-list-left li img,
+  .app-desktop .integration .integration-list-right li img {
+    width: 17px !important;
+    height: 17px !important;
+  }
+}

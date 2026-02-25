@@ -37,6 +37,112 @@
                 margin-left: 0;
             }
         }
+
+        .fleet-featured-wrap {
+            margin-top: -120px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .fleet-featured-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 22px 55px rgba(22, 48, 83, 0.12);
+            text-decoration: none;
+            display: block;
+        }
+
+        .fleet-featured-thumb {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .fleet-featured-content {
+            padding: 28px;
+        }
+
+        .fleet-featured-title {
+            font-size: 26px;
+            line-height: 1.25;
+            margin: 12px 0;
+            color: #163053;
+        }
+
+        .fleet-featured-excerpt {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #526581;
+            margin-bottom: 16px;
+        }
+
+        .ttms-post-card {
+            background: #fff;
+            border: 1px solid #e8edf5;
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 24px;
+            display: block;
+            text-decoration: none;
+            box-shadow: 0 8px 30px rgba(22, 48, 83, 0.06);
+        }
+
+        .ttms-post-thumb {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ttms-post-content {
+            padding: 14px 16px;
+        }
+
+        .ttms-post-title {
+            font-size: 18px;
+            line-height: 1.35;
+            margin-bottom: 8px;
+            color: #163053;
+        }
+
+        .ttms-post-excerpt {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #5c6f8b;
+            margin-bottom: 12px;
+        }
+
+        .ttms-post-date {
+            color: #6e809b;
+            font-size: 13px;
+        }
+
+        @media (max-width: 991px) {
+            .fleet-featured-wrap {
+                margin-top: -56px;
+            }
+
+            .fleet-featured-thumb {
+                height: 250px;
+            }
+
+            .fleet-featured-content {
+                padding: 18px;
+            }
+
+            .fleet-featured-title {
+                font-size: 22px;
+            }
+        }
+
+        .fleet-featured-title,
+        .fleet-featured-excerpt,
+        .ttms-post-title,
+        .ttms-post-excerpt {
+            word-break: break-word;
+        }
     </style>
 </head>
 <body class="blog-alt-1">
@@ -175,24 +281,10 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
                     <div class="content text-center">
-                        <h1 class="text-48 xs-text-3x leading-40 xl-leading-56 text-white mb-40 xs-mb-32 wow fadeInUp">Our Newsroom</h1>
-                        <div class="input-group form-search mb-24 xs-mb-16 wow fadeInUp">
-                            <div class="input-group-prepend">
-                                <i class="fas fa-search"></i>
-                            </div>
-                            <input type="text" class="rounded-8 form-control bg-white" aria-label="" placeholder="Ask a questions…">
-                            <div class="input-group-append">
-                                <button type="button" class="btn btn-primary btn-sm">Search article</button>
-                            </div>
-                        </div>
-                        <div class="popular-tags">
-                            <p class="text-white font-semibold wow fadeInUp">Popular Tags :</p>
-                            <ul class=" wow fadeInUp">
-                                <li><a class="btn btn-outline-white btn-xs" href="">Design</a></li>
-                                <li><a class="btn btn-outline-white btn-xs" href="">User Experience</a></li>
-                                <li><a class="btn btn-outline-white btn-xs" href="">User Interfaces</a></li>
-                            </ul>
-                        </div>
+                        <h1 class="text-48 xs-text-3x leading-40 xl-leading-56 text-white mb-24 xs-mb-20 wow fadeInUp">Fleet Insights & Compliance Updates</h1>
+                        <p class="text-white mb-0 wow fadeInUp">
+                            Latest practical updates on ELD, HOS, IFTA, driver safety, dispatch operations, and fleet growth.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -202,269 +294,32 @@
 </header>
 <!--end:header-->
 
-<!--start:featured-article-->
-<section class="featured-article -mt-216 -md-mt-176 pb-48">
+<!--start:fleet-featured-->
+<section class="fleet-featured-wrap pb-48">
     <div class="container">
-        <a href="blog-detail.html" class="box-featured-blog wow fadeInUp">
-            <div class="featured-image">
-                <img src="../assets/images/photos/570x380/570x380@2x.jpg" alt="" class="" width="570">
-            </div>
-            <div class="blog-metas">
-                <span class="badge badge-success badge-pill">FEATURED</span>
-                <h3 class="blog-title">Cheap Airline Tickets Great Ways To Save</h3>
-                <p class="blog-excerpt">In this digital generation where information can be easily obtained within seconds, business cards ...</p>
+        <a href="blog-detail.html" class="fleet-featured-card wow fadeInUp" id="featuredPostLink">
+            <img src="../assets/images/photos/570x380/570x380@2x.jpg" alt="" class="fleet-featured-thumb" id="featuredPostImage">
+            <div class="fleet-featured-content">
+                <span class="badge badge-success badge-pill">Latest Fleet Update</span>
+                <h3 class="fleet-featured-title" id="featuredPostTitle">Latest operational update for modern fleets</h3>
+                <p class="fleet-featured-excerpt" id="featuredPostExcerpt">Fleet, compliance, and safety guidance from the TTM Konnect team.</p>
                 <div class="blog-author-detail flex justify-between items-center">
                     <div class="c-customer-review-meta">
                         <div class="user">
                             <img src="../assets/images/photos/64x64/1.png" alt="">
                         </div>
                         <div class="meta">
-                            <p class="text-black">Joshua William</p>
+                            <p class="text-black" id="featuredPostAuthor">TTM Konnect Support</p>
                             <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
                         </div>
                     </div>
-                    <span class="font-semibold text-gray">02 May</span>
+                    <span class="font-semibold text-gray" id="featuredPostDate"></span>
                 </div>
             </div>
         </a>
     </div>
 </section>
-<!--end:featured-article-->
-
-<!--start:popular-article-->
-<section class="popular-article py-48 xs-pt-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12">
-                <div class="blog-section-title heading mb-48 xs-mb-32 text-left xs-text-center sm-text-center">
-                    <h2 class="text-hkgrotesk font-bold text-alt text-black xs-text-24 xs-leading-snug mb-16 xs-mb-12 wow fadeInUp">Popular Articles</h2>
-                    <p class="wow fadeInUp text-gray">We share common trends, strategies ideas, opinions, short & long stories from the team behind company.</p>
-
-                    <a href="#" class="btn btn-outline-primary d-flex xs-hidden sm-hidden justify-between items-center">View all <i class="fas fa-arrow-right text-14"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
-                            <div class="blog-featured-badge"><span class="badge badge-secondary badge-pill">FEATURED</span></div>
-                            <img src="../assets/images/photos/555x600/1@2x.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title text-white">How to prevent and protect your family from Carbon monoxide</h3>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-white">Joshua William</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray-light-300">02 May</span>
-                                </div>
-                            </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
-                            <div class="blog-featured-badge"><span class="badge badge-secondary badge-pill">FEATURED</span></div>
-                            <img src="../assets/images/photos/555x600/2@2x.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title text-white">Motherhood is the hardest and the best job ever</h3>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-white">Joshua William</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray-light-300">02 May</span>
-                                </div>
-                            </div>
-                    </a>
-                </div>
-            </div>
-            <div class="hidden xs-flex justify-center items-center">
-                <a href="#" class="btn btn-outline-primary d-flex justify-between items-center min-w-160">View all <i class="fas fa-arrow-right text-14"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--end:popular-article-->
-
-<!--start:blog-recent-article-->
-<section class="blog-recent-article py-48 xs-pt-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12">
-                <div class="blog-section-title heading mb-48 xs-mb-32 text-left xs-text-center sm-text-center">
-                    <h2 class="text-hkgrotesk font-bold text-alt text-black xs-text-24 xs-leading-snug mb-16 xs-mb-12 wow fadeInUp">Recent Articles</h2>
-                    <p class="wow fadeInUp text-gray">Here’s what we've been up to recently.</p>
-
-                    <a href="#" class="btn btn-outline-primary d-flex xs-hidden sm-hidden justify-between items-center">View all <i class="fas fa-arrow-right text-14"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
-                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
-                            <img src="../assets/images/photos/360x500/1@2x.png" alt="" class="card-img">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title text-white">Future of Work</h3>
-                                <p class="text-white mb-0">Majority of peole will work in jobs that don’t exist today.</p>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-white">Joshua William</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray-light-300">02 May</span>
-                                </div>
-                            </div>
-                    </a>
-                </div>
-                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
-                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
-                            <img src="../assets/images/photos/360x500/2@2x.png" alt="" class="card-img">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title text-white">Future of Data</h3>
-                                <p class="text-white mb-0">Thanks to never-ending piles of data & the amount of insight</p>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-white">Tyler Murray</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray-light-300">02 May</span>
-                                </div>
-                            </div>
-                    </a>
-                </div>
-                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
-                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
-                            <img src="../assets/images/photos/360x500/3@2x.png" alt="" class="card-img">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title text-white">Future of Learning</h3>
-                                <p class="text-white mb-0">A constant ability to learn will be on the most crucial skills</p>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-white">Warren Casey</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray-light-300">02 May</span>
-                                </div>
-                            </div>
-                    </a>
-                </div>
-            </div>
-            <div class="hidden xs-flex justify-center items-center">
-                <a href="#" class="btn btn-outline-primary d-flex justify-between items-center min-w-160">View all <i class="fas fa-arrow-right text-14"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--end:blog-recent-article-->
-
-<!--start:blog-case-studies-->
-<section class="case-studies py-48 xs-pt-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12">
-                <div class="blog-section-title heading mb-48 xs-mb-32 text-left xs-text-center sm-text-center">
-                    <h2 class="text-hkgrotesk font-bold text-alt text-black xs-text-24 xs-leading-snug mb-16 xs-mb-12 wow fadeInUp">Case Studies</h2>
-                    <p class="wow fadeInUp text-gray">Here’s what we've been up to recently.</p>
-
-                    <a href="#" class="btn btn-outline-primary d-flex xs-hidden sm-hidden justify-between items-center">View all <i class="fas fa-arrow-right text-14"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="content wow blog-carousel-container fadeInUp">
-            <div id="carouselExampleControls" class="blog-carousel carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <a href="blog-detail.html" class="box-featured-blog">
-                            <div class="featured-image">
-                                <img src="../assets/images/photos/570x380/570x380@2x.jpg" alt="" class="" width="570">
-                            </div>
-                            <div class="blog-metas">
-                                <span class="badge badge-success badge-pill">FEATURED</span>
-                                <h3 class="blog-title">Motherhood is the hardest and the best job ever</h3>
-                                <p class="blog-excerpt">In this digital generation where information can be easily obtained within seconds, business cards ...</p>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-black">Joshua William</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray">02 May</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item active">
-                        <a href="blog-detail.html" class="box-featured-blog">
-                            <div class="featured-image">
-                                <img src="../assets/images/photos/570x380/570x380@2x.jpg" alt="" class="" width="570">
-                            </div>
-                            <div class="blog-metas">
-                                <span class="badge badge-success badge-pill">FEATURED</span>
-                                <h3 class="blog-title">Cheap Airline Tickets Great Ways To Save</h3>
-                                <p class="blog-excerpt">In this digital generation where information can be easily obtained within seconds, business cards ...</p>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-black">Joshua William</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray">02 May</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <a class="carousel-control carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-icon" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-icon" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <div class="hidden xs-flex justify-center items-center">
-                <a href="#" class="btn btn-outline-primary d-flex justify-between items-center min-w-160">View all <i class="fas fa-arrow-right text-14"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--end:blog-case-studies-->
+<!--end:fleet-featured-->
 
 <!--start:all-article-->
 <section class="all-article py-48 xs-pt-0">
@@ -472,124 +327,17 @@
         <div class="row">
             <div class="col-12 col-sm-12">
                 <div class="blog-section-title heading mb-48 xs-mb-32 text-left xs-text-center sm-text-center">
-                    <h2 class="text-hkgrotesk font-bold text-alt text-black xs-text-24 xs-leading-snug mb-16 xs-mb-12 wow fadeInUp">All Articles</h2>
-                    <p class="wow fadeInUp text-gray">We share common trends, strategies ideas, opinions, short & long stories from the team behind company.</p>
+                    <h2 class="text-hkgrotesk font-bold text-alt text-black xs-text-24 xs-leading-snug mb-16 xs-mb-12 wow fadeInUp">All Fleet Articles</h2>
+                    <p class="wow fadeInUp text-gray">Live feed from your API with practical fleet operations, safety, and compliance updates.</p>
                 </div>
             </div>
         </div>
         <div class="content">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
-                            <img src="../assets/images/photos/555x600/1@2x.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title text-white">How to prevent and protect your family from Carbon monoxide</h3>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-white">Joshua William</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray-light-300">02 May</span>
-                                </div>
-                            </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
-                            <img src="../assets/images/photos/555x600/2@2x.png" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title text-white">Motherhood is the hardest and the best job ever</h3>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-white">Joshua William</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray-light-300">02 May</span>
-                                </div>
-                            </div>
-                    </a>
-                </div>
-
-                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
-                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
-                            <img src="../assets/images/photos/360x500/4@2x.png" alt="" class="card-img">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title text-white">Future of Work</h3>
-                                <p class="text-white mb-0">Majority of peole will work in jobs that don’t exist today.</p>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-white">Joshua William</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray-light-300">02 May</span>
-                                </div>
-                            </div>
-                    </a>
-                </div>
-                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
-                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
-                            <img src="../assets/images/photos/360x500/5@2x.png" alt="" class="card-img">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title text-white">Future of Data</h3>
-                                <p class="text-white mb-0">Thanks to never-ending piles of data & the amount of insight</p>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-white">Warren Casey</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray-light-300">02 May</span>
-                                </div>
-                            </div>
-                    </a>
-                </div>
-                <div class="col-12 col-sm-12 col-lg-4 col-xl-4">
-                    <a href="blog-detail.html" class="card card-article card-article-blog wow fadeInUp">
-                            <img src="../assets/images/photos/360x500/6@2x.png" alt="" class="card-img">
-                            <div class="card-img-overlay">
-                                <h3 class="card-title text-white">Future of Learning</h3>
-                                <p class="text-white mb-0">A constant ability to learn will be on the most crucial skills</p>
-                                <div class="blog-author-detail flex justify-between items-center">
-                                    <div class="c-customer-review-meta">
-                                        <div class="user">
-                                            <img src="../assets/images/photos/64x64/1.png" alt="">
-                                        </div>
-                                        <div class="meta">
-                                            <p class="text-white">Tyler Murray</p>
-                                            <span class="text-gray"><img src="../assets/images/icons/checkmark-green-soft.svg" alt=""> <i>Verified writer</i></span>
-                                        </div>
-                                    </div>
-                                    <span class="font-semibold text-gray-light-300">02 May</span>
-                                </div>
-                            </div>
-                    </a>
-                </div>
-            </div>
-            <div class="hidden xs-flex justify-center items-center">
-                <a href="#" class="btn btn-outline-primary d-flex justify-between items-center min-w-160">View all <i class="fas fa-arrow-right text-14"></i></a>
-            </div>
+            <div class="row" id="blogPostsGrid"></div>
+            <p id="blogPostsStatus" class="text-gray mt-16 mb-0"></p>
         </div>
         <div class="section-btn d-flex justify-center mt-20">
-            <a href="#" class="btn btn-outline-primary d-flex xs-hidden sm-hidden justify-between items-center">More articles <i class="fas fa-arrow-right text-14 ml-16"></i></a>
+            <button type="button" id="blogLoadMoreBtn" class="btn btn-outline-primary d-flex justify-between items-center">Load more <i class="fas fa-arrow-right text-14 ml-16"></i></button>
         </div>
     </div>
 </section>
@@ -753,6 +501,241 @@
 <script src="../assets/js/bootstrap-select.min.js"></script>
 <script src="../assets/js/wow.min.js"></script>
 <script src="../assets/js/index.js"></script>
+<script>
+    (function () {
+        const API_BASE_URL = "https://ttmkonnect.com/api/posts";
+        const API_PROXY_BASE_URL = "https://api.codetabs.com/v1/proxy/?quest=";
+        const POSTS_PER_PAGE = 10;
+        const FALLBACK_IMAGE = "../assets/images/ttms/services-hardware-overview.jpg";
+        const DEFAULT_AVATAR = "../assets/images/photos/64x64/1.png";
+
+        const featuredLinkEl = document.getElementById("featuredPostLink");
+        const featuredImageEl = document.getElementById("featuredPostImage");
+        const featuredTitleEl = document.getElementById("featuredPostTitle");
+        const featuredExcerptEl = document.getElementById("featuredPostExcerpt");
+        const featuredAuthorEl = document.getElementById("featuredPostAuthor");
+        const featuredDateEl = document.getElementById("featuredPostDate");
+
+        const postsGridEl = document.getElementById("blogPostsGrid");
+        const statusEl = document.getElementById("blogPostsStatus");
+        const loadMoreBtn = document.getElementById("blogLoadMoreBtn");
+
+        if (!postsGridEl || !loadMoreBtn || !statusEl) return;
+
+        let currentPage = 1;
+        let hasMorePosts = true;
+        let isLoading = false;
+        let featuredMapped = false;
+
+        function escapeHtml(value) {
+            return String(value || "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+        }
+
+        function htmlToText(html) {
+            const doc = new DOMParser().parseFromString(html || "", "text/html");
+            return (doc.body.textContent || "").replace(/\s+/g, " ").trim();
+        }
+
+        function truncate(value, maxLength) {
+            if (!value || value.length <= maxLength) return value;
+            return value.slice(0, maxLength - 1).trim() + "…";
+        }
+
+        function formatDate(isoDate) {
+            const date = new Date(isoDate);
+            if (Number.isNaN(date.getTime())) return "";
+            const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            return String(date.getDate()).padStart(2, "0") + " " + months[date.getMonth()] + " " + date.getFullYear();
+        }
+
+        function cachePost(post) {
+            if (!post || !post.slug) return;
+            try {
+                sessionStorage.setItem("ttms_blog_post_" + post.slug, JSON.stringify(post));
+            } catch (error) {
+                // Ignore storage errors (private mode / quota).
+            }
+        }
+
+        function getPostLink(slug, page) {
+            if (!slug) return "blog-detail.html";
+            const pagePart = page ? "&page=" + encodeURIComponent(String(page)) : "";
+            return "blog-detail.html?slug=" + encodeURIComponent(slug) + pagePart;
+        }
+
+        function buildApiUrl(page, perPage) {
+            return API_BASE_URL + "?page=" + page + "&perPage=" + perPage;
+        }
+
+        function buildProxyUrl(targetUrl) {
+            return API_PROXY_BASE_URL + encodeURIComponent(targetUrl);
+        }
+
+        function setStatus(message, isError) {
+            statusEl.textContent = message || "";
+            statusEl.classList.toggle("text-danger", Boolean(isError));
+            statusEl.classList.toggle("text-gray", !isError);
+        }
+
+        function setLoadMoreState() {
+            if (!hasMorePosts) {
+                loadMoreBtn.style.display = "none";
+                return;
+            }
+
+            loadMoreBtn.style.display = "inline-flex";
+            loadMoreBtn.disabled = isLoading;
+            loadMoreBtn.innerHTML = isLoading
+                ? 'Loading... <i class="fas fa-spinner fa-spin text-14 ml-16"></i>'
+                : 'Load more <i class="fas fa-arrow-right text-14 ml-16"></i>';
+        }
+
+        function renderFeaturedPost(post) {
+            if (!post || !featuredLinkEl || !featuredImageEl || !featuredTitleEl || !featuredExcerptEl || !featuredAuthorEl || !featuredDateEl) {
+                return;
+            }
+
+            const title = htmlToText(post.title || "Untitled");
+            const excerpt = truncate(htmlToText(post.excerpt || post.content || ""), 220);
+            const author = htmlToText((post.author && post.author.name) || "TTM Konnect Support");
+            const image = post.featured_image || FALLBACK_IMAGE;
+            const dateText = formatDate(post.date);
+
+            cachePost(post);
+            featuredLinkEl.href = getPostLink(post.slug, 1);
+            featuredImageEl.src = image;
+            featuredImageEl.alt = title;
+            featuredTitleEl.textContent = title;
+            featuredExcerptEl.textContent = excerpt;
+            featuredAuthorEl.textContent = author;
+            featuredDateEl.textContent = dateText;
+        }
+
+        function renderPosts(posts, page) {
+            const fragment = document.createDocumentFragment();
+
+            posts.forEach(function (post) {
+                const title = htmlToText(post.title || "Untitled");
+                const excerpt = truncate(htmlToText(post.excerpt || post.content || ""), 120);
+                const author = htmlToText((post.author && post.author.name) || "TTM Konnect Support");
+                const image = post.featured_image || FALLBACK_IMAGE;
+                const dateText = formatDate(post.date);
+                const postUrl = getPostLink(post.slug, page);
+                cachePost(post);
+
+                const colEl = document.createElement("div");
+                colEl.className = "col-12 col-sm-12 col-lg-4 col-xl-4";
+                colEl.innerHTML = '' +
+                    '<a href="' + escapeHtml(postUrl) + '" class="ttms-post-card wow fadeInUp">' +
+                        '<img src="' + escapeHtml(image) + '" alt="' + escapeHtml(title) + '" class="ttms-post-thumb">' +
+                        '<div class="ttms-post-content">' +
+                            '<h3 class="ttms-post-title">' + escapeHtml(title) + '</h3>' +
+                            '<p class="ttms-post-excerpt">' + escapeHtml(excerpt) + '</p>' +
+                            '<div class="blog-author-detail flex justify-between items-center">' +
+                                '<div class="c-customer-review-meta">' +
+                                    '<div class="user"><img src="' + escapeHtml(DEFAULT_AVATAR) + '" alt=""></div>' +
+                                    '<div class="meta">' +
+                                        '<p class="text-black mb-0">' + escapeHtml(author) + '</p>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<span class="ttms-post-date">' + escapeHtml(dateText) + '</span>' +
+                            '</div>' +
+                        '</div>' +
+                    '</a>';
+
+                fragment.appendChild(colEl);
+            });
+
+            postsGridEl.appendChild(fragment);
+        }
+
+        async function fetchPostsPage(page, perPage) {
+            const targetUrl = buildApiUrl(page, perPage);
+
+            try {
+                const directResponse = await fetch(targetUrl, {
+                    method: "GET",
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                });
+
+                if (!directResponse.ok) {
+                    throw new Error("Failed to load posts. Status " + directResponse.status);
+                }
+
+                return await directResponse.json();
+            } catch (directError) {
+                const proxyResponse = await fetch(buildProxyUrl(targetUrl), {
+                    method: "GET",
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                });
+
+                if (!proxyResponse.ok) {
+                    throw new Error("Failed to load posts. Status " + proxyResponse.status);
+                }
+
+                return await proxyResponse.json();
+            }
+        }
+
+        async function fetchAndRenderPosts() {
+            if (isLoading || !hasMorePosts) return;
+
+            isLoading = true;
+            setLoadMoreState();
+            setStatus("", false);
+
+            try {
+                const payload = await fetchPostsPage(currentPage, POSTS_PER_PAGE);
+                const posts = Array.isArray(payload.posts) ? payload.posts : [];
+
+                let postsToRender = posts;
+                if (currentPage === 1 && posts.length > 0) {
+                    if (!featuredMapped) {
+                        renderFeaturedPost(posts[0]);
+                        featuredMapped = true;
+                    }
+                    postsToRender = posts.slice(1);
+                }
+
+                if (postsToRender.length > 0) {
+                    renderPosts(postsToRender, currentPage);
+                }
+
+                if (posts.length < POSTS_PER_PAGE) {
+                    hasMorePosts = false;
+                    if (currentPage === 1 && postsToRender.length === 0) {
+                        setStatus("No articles available yet.", false);
+                    } else {
+                        setStatus("You have reached the end of the articles list.", false);
+                    }
+                } else {
+                    currentPage += 1;
+                }
+            } catch (error) {
+                setStatus((error && error.message) ? error.message : "Unable to load posts right now.", true);
+            } finally {
+                isLoading = false;
+                setLoadMoreState();
+            }
+        }
+
+        loadMoreBtn.addEventListener("click", function () {
+            fetchAndRenderPosts();
+        });
+
+        setLoadMoreState();
+        fetchAndRenderPosts();
+    })();
+</script>
 <!--end:javascript-->
 
 </body>
