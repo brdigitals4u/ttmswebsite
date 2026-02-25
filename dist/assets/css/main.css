@@ -17,12 +17,33 @@
 
 /* TTMS brand text (replaces old logo image) */
 .ttms-brand {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: 'hk_groteskbold', sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.3px;
+}
+
+.ttms-brand::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url("../logo/trident-final.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex: 0 0 24px;
+}
+
+.header .ttms-brand.ttms-brand-light::before {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 999px;
+  padding: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .ttms-brand.ttms-brand-light {
@@ -31,6 +52,12 @@
 
 .ttms-brand.ttms-brand-dark {
   color: #1f3a5f;
+}
+
+.footer .ttms-brand::before {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
 }
 
 /* Keep service hero headings consistent with desktop hero h2 sizing */
@@ -93,5 +120,35 @@
   .app-desktop .integration .integration-list-right li img {
     width: 17px !important;
     height: 17px !important;
+  }
+}
+
+.button-app-store,
+.button-play-store {
+  display: inline-block;
+  width: 180px;
+  height: 54px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 8px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.button-app-store {
+  background-image: url("../images/button-app@2x.png");
+  margin-top: 10px;
+}
+
+.button-play-store {
+  background-image: url("../images/button-play@2x.png");
+}
+
+@media (max-width: 575.98px) {
+  .button-app-store,
+  .button-play-store {
+    width: 160px;
+    height: 48px;
   }
 }

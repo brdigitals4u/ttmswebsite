@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    var currentYear = new Date().getFullYear();
+    $('.footer-copyright p').each(function(){
+        var text = $(this).text();
+        if(!text) return;
+        $(this).text(text.replace(/\b(19|20)\d{2}\b/, String(currentYear)));
+    });
+
     $('[data-toggle="scroll"]').on('click', function(e){
         e.preventDefault();
         var target = $($(this).data('target'));

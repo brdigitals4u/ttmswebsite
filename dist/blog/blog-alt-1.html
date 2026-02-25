@@ -2,13 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="https://ttmkonnect.com/favicon.ico">
+    <link rel="icon" href="https://ttmkonnect.com/favicon.ico" type="image/x-icon">
     <title>TTMS</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <meta name="description" content="TTMS (ttms.ai) delivers fleet management, dispatch, routing, driver safety, real-time alerts, report generation, ELD device monitoring, AI DashCam insights, integrated dispatch management, and comprehensive reporting.">
+    <meta name="keywords" content="Fleet management, Dispatch, Routing, Driver safety, Real-time alerts, Report generation, ELD device monitoring, AI DashCam insights, Integrated dispatch management, Comprehensive reporting, TTMS">
+    <meta name="author" content="TTMS">
+    <meta name="creator" content="TTMS">
+    <meta name="publisher" content="TTMS">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="canonical" href="https://ttms.ai/blog/blog-alt-1.html">
+    <meta property="og:title" content="TTMS">
+    <meta property="og:description" content="TTMS (ttms.ai) delivers fleet management, dispatch, routing, driver safety, real-time alerts, report generation, ELD device monitoring, AI DashCam insights, integrated dispatch management, and comprehensive reporting.">
+    <meta property="og:url" content="https://ttms.ai/blog/blog-alt-1.html">
+    <meta property="og:site_name" content="TTMS">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://ttmkonnect.com/images/screen1.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TTMS fleet management platform">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TTMS">
+    <meta name="twitter:description" content="TTMS (ttms.ai) delivers fleet management, dispatch, routing, driver safety, real-time alerts, report generation, ELD device monitoring, AI DashCam insights, integrated dispatch management, and comprehensive reporting.">
+    <meta name="twitter:image" content="https://ttmkonnect.com/images/screen1.png">
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/fontawesome/fontawesome.min.css">
     <link rel="stylesheet" href="../assets/css/fontawesome/solid.min.css">
     <link rel="stylesheet" href="../assets/css/fontawesome/brands.min.css">
@@ -257,10 +279,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../services/telematics.html">Integrations</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../company/pricing.html">Pricing</a>
-                        </li>
-                        <li class="nav-item">
+<li class="nav-item">
                             <a class="nav-link" href="../blog/blog-alt-1.html">Blog</a>
                         </li>
                         <li class="nav-item">
@@ -296,12 +315,12 @@
 
 <!--start:fleet-featured-->
 <section class="fleet-featured-wrap pb-48">
-    <div class="container">
+    <div class="container mt-48">
         <a href="blog-detail.html" class="fleet-featured-card wow fadeInUp" id="featuredPostLink">
             <img src="../assets/images/photos/570x380/570x380@2x.jpg" alt="" class="fleet-featured-thumb" id="featuredPostImage">
             <div class="fleet-featured-content">
                 <span class="badge badge-success badge-pill">Latest Fleet Update</span>
-                <h3 class="fleet-featured-title" id="featuredPostTitle">Latest operational update for modern fleets</h3>
+                <h4 class="fleet-featured-title" id="featuredPostTitle">Latest operational update for modern fleets</h4>
                 <p class="fleet-featured-excerpt" id="featuredPostExcerpt">Fleet, compliance, and safety guidance from the TTM Konnect team.</p>
                 <div class="blog-author-detail flex justify-between items-center">
                     <div class="c-customer-review-meta">
@@ -396,6 +415,7 @@
                             <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-instagram"></i></button></li>
                             <li><button class="btn btn-rounded btn-sm bg-gray-100 text-gray btn-ic"><i class="fab fa-linkedin"></i></button></li>
                         </ul>
+                    <div class="download-cta-buttons-wrapper" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap; justify-content: flex-start;"><a target="_blank" class="button-app-store make-space w-button" aria-label="Download on App Store" href="https://www.apple.com/ios/app-store/" style="display: block; flex-shrink: 0;"></a><a target="_blank" class="button-play-store w-button" aria-label="Get it on Google Play" href="https://play.google.com/store/apps/details?id=com.ttmkonnect.eld" style="display: block; flex-shrink: 0;"></a></div>
                     </div>
                 </div>
                 <div class="footer-right col-lg-9 col-md-7 col-sm-12">
@@ -505,6 +525,7 @@
     (function () {
         const API_BASE_URL = "https://ttmkonnect.com/api/posts";
         const API_PROXY_BASE_URL = "https://api.codetabs.com/v1/proxy/?quest=";
+        const BASE_SITE_URL = "https://ttms.ai";
         const POSTS_PER_PAGE = 10;
         const FALLBACK_IMAGE = "../assets/images/ttms/services-hardware-overview.jpg";
         const DEFAULT_AVATAR = "../assets/images/photos/64x64/1.png";
@@ -595,6 +616,52 @@
                 : 'Load more <i class="fas fa-arrow-right text-14 ml-16"></i>';
         }
 
+        function upsertMeta(selector, attribute, value) {
+            if (!value) return;
+            let el = document.head.querySelector(selector);
+            if (!el) {
+                el = document.createElement("meta");
+                if (attribute === "name") {
+                    el.setAttribute("name", selector.replace('meta[name="', "").replace('"]', ""));
+                } else {
+                    el.setAttribute("property", selector.replace('meta[property="', "").replace('"]', ""));
+                }
+                document.head.appendChild(el);
+            }
+            el.setAttribute("content", value);
+        }
+
+        function upsertCanonical(url) {
+            if (!url) return;
+            let el = document.head.querySelector('link[rel="canonical"]');
+            if (!el) {
+                el = document.createElement("link");
+                el.setAttribute("rel", "canonical");
+                document.head.appendChild(el);
+            }
+            el.setAttribute("href", url);
+        }
+
+        function updateListingMeta(post) {
+            if (!post) return;
+            const title = htmlToText(post.title || "TTMS Blog");
+            const excerpt = truncate(htmlToText(post.excerpt || post.content || ""), 180);
+            const image = post.featured_image || "https://ttmkonnect.com/images/screen1.png";
+            const canonicalUrl = BASE_SITE_URL + "/blog/blog-alt-1.html";
+            const pageTitle = title + " | TTMS Blog";
+
+            document.title = pageTitle;
+            upsertMeta('meta[name="description"]', "name", excerpt);
+            upsertMeta('meta[property="og:title"]', "property", pageTitle);
+            upsertMeta('meta[property="og:description"]', "property", excerpt);
+            upsertMeta('meta[property="og:image"]', "property", image);
+            upsertMeta('meta[property="og:url"]', "property", canonicalUrl);
+            upsertMeta('meta[name="twitter:title"]', "name", pageTitle);
+            upsertMeta('meta[name="twitter:description"]', "name", excerpt);
+            upsertMeta('meta[name="twitter:image"]', "name", image);
+            upsertCanonical(canonicalUrl);
+        }
+
         function renderFeaturedPost(post) {
             if (!post || !featuredLinkEl || !featuredImageEl || !featuredTitleEl || !featuredExcerptEl || !featuredAuthorEl || !featuredDateEl) {
                 return;
@@ -614,6 +681,7 @@
             featuredExcerptEl.textContent = excerpt;
             featuredAuthorEl.textContent = author;
             featuredDateEl.textContent = dateText;
+            updateListingMeta(post);
         }
 
         function renderPosts(posts, page) {
@@ -634,7 +702,7 @@
                     '<a href="' + escapeHtml(postUrl) + '" class="ttms-post-card wow fadeInUp">' +
                         '<img src="' + escapeHtml(image) + '" alt="' + escapeHtml(title) + '" class="ttms-post-thumb">' +
                         '<div class="ttms-post-content">' +
-                            '<h3 class="ttms-post-title">' + escapeHtml(title) + '</h3>' +
+                            '<h4 class="ttms-post-title">' + escapeHtml(title) + '</h4>' +
                             '<p class="ttms-post-excerpt">' + escapeHtml(excerpt) + '</p>' +
                             '<div class="blog-author-detail flex justify-between items-center">' +
                                 '<div class="c-customer-review-meta">' +

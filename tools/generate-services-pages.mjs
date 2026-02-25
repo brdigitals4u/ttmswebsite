@@ -11,6 +11,10 @@ const ROOT = path.resolve(__dirname, "..");
 const TEMPLATES_DIR = path.join(ROOT, "dist", "_templates");
 const SERVICES_DIR = path.join(ROOT, "dist", "services");
 const BASE_PATH = "../";
+const META_DESCRIPTION =
+  "TTMS (ttms.ai) delivers fleet management, dispatch, routing, driver safety, real-time alerts, report generation, ELD device monitoring, AI DashCam insights, integrated dispatch management, and comprehensive reporting.";
+const META_KEYWORDS =
+  "Fleet management, Dispatch, Routing, Driver safety, Real-time alerts, Report generation, ELD device monitoring, AI DashCam insights, Integrated dispatch management, Comprehensive reporting, TTMS";
 const LOCAL_LIBRARY_ROOT = path.join(ROOT, "dist", "assets", "images", "services-library");
 const LOCAL_LIBRARY_BASE_URL = `${BASE_PATH}assets/images/services-library`;
 
@@ -667,6 +671,9 @@ async function main() {
     const header = replaceTokens(headerTemplate, {
       BASE_PATH,
       PAGE_TITLE: `${escapeHtml(record.title)} | TTMS Services | TTMS`,
+      META_DESCRIPTION: escapeHtml(META_DESCRIPTION),
+      META_KEYWORDS: escapeHtml(META_KEYWORDS),
+      CANONICAL_URL: `https://ttms.ai/services/${record.slug}.html`,
       BODY_CLASS: "landing-about services-page",
       SERVICE_TITLE: escapeHtml(record.title),
       HERO_TAG: escapeHtml(record.hero_tag || record.category),
@@ -684,6 +691,9 @@ async function main() {
   const indexHeader = replaceTokens(headerTemplate, {
     BASE_PATH,
     PAGE_TITLE: "All Services | TTMS | TTMS",
+    META_DESCRIPTION: escapeHtml(META_DESCRIPTION),
+    META_KEYWORDS: escapeHtml(META_KEYWORDS),
+    CANONICAL_URL: "https://ttms.ai/services/index.html",
     BODY_CLASS: "landing-about services-page services-index",
     SERVICE_TITLE: "TTMS Service Catalog",
     HERO_TAG: "TTMS SERVICE CATALOG",
