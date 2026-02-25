@@ -192,18 +192,18 @@
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
                 <div class="content bg-white box-shadow p-64 rounded-8 mt-56 wow fadeInUp">
-                    <form action="">
+                    <form id="contactSalesForm" novalidate>
                         <div class="form-row">
                             <div class="col col-lg-6 col-md-12 col-sm-12">
                                 <div class="form-group">
                                     <label for="nameInput">Your name *</label>
-                                    <input type="text" class="form-control" placeholder="Your name" id="nameInput">
+                                    <input type="text" class="form-control" placeholder="Your name" id="nameInput" name="name" required>
                                 </div>
                             </div>
                             <div class="col col-lg-6 col-md-12 col-sm-12">
                                 <div class="form-group">
                                     <label for="emailInput">Contact email *</label>
-                                    <input type="email" class="form-control" placeholder="Your name" id="emailInput">
+                                    <input type="email" class="form-control" placeholder="Your email" id="emailInput" name="email" required>
                                 </div>
                             </div>
                         </div>
@@ -211,14 +211,24 @@
                             <div class="col col-lg-6 col-md-12 col-sm-12">
                                 <div class="form-group">
                                     <label for="companyName">Company name *</label>
-                                    <input type="text" class="form-control" placeholder="Company name" id="companyName">
+                                    <input type="text" class="form-control" placeholder="Company name" id="companyName" name="company" required>
                                 </div>
                             </div>
                             <div class="col col-lg-6 col-md-12 col-sm-12">
                                 <div class="form-group">
+                                    <label for="phoneInput">Phone number *</label>
+                                    <input type="tel" class="form-control" placeholder="+1 555 123 4567" id="phoneInput" name="phone" autocomplete="tel" inputmode="tel" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col col-lg-6 col-md-12 col-sm-12">
+                                <div class="form-group">
                                     <label for="countryInput">Country *</label>
-                                    <select class="form-control input-lg selectpicker" id="countryInput">
-                                        <option selected>Indonesia</option>
+                                    <select class="form-control input-lg selectpicker" id="countryInput" name="country" required>
+                                        <option selected>United States</option>
+                                        <option>India</option>
+                                        <option>Indonesia</option>
                                         <option>Singapore</option>
                                         <option>Malaysia</option>
                                         <option>Palestine</option>
@@ -229,12 +239,13 @@
                         </div>
                         <div class="form-group">
                             <label for="messagesInput">Your messages *</label>
-                            <textarea name="" id="messagesInput" cols="30" rows="6" class="form-control" placeholder="Your messages"></textarea>
+                            <textarea id="messagesInput" name="message" cols="30" rows="6" class="form-control" placeholder="Your messages" required></textarea>
                         </div>
                         <div class="form-group mb-32">
                             <p class="text-gray mb-0">By submitting this form you agree to our terms and conditions and our Privacy Policy which explains how we may collect, use and disclose your personal information including to third parties.</p>
                         </div>
-                        <button type="button" class="btn btn-primary">Contact sales</button>
+                        <button type="submit" id="contactSalesSubmitBtn" class="btn btn-primary">Contact sales</button>
+                        <p id="contactSalesFormStatus" class="text-gray mt-16 mb-0" role="status" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
@@ -415,6 +426,149 @@
 <script src="../assets/js/bootstrap-select.min.js"></script>
 <script src="../assets/js/wow.min.js"></script>
 <script src="../assets/js/index.js"></script>
+<script>
+    (function () {
+        const form = document.getElementById("contactSalesForm");
+        const submitBtn = document.getElementById("contactSalesSubmitBtn");
+        const statusEl = document.getElementById("contactSalesFormStatus");
+
+        if (!form || !submitBtn || !statusEl) return;
+
+        const OPNFORM_ENDPOINT = "https://api.opnform.com/forms/contact-form-dwgrbx/answer";
+        const OPNFORM_FIELD_NAME = "54feef27-33c9-487a-9957-5f25c6446bf2";
+        const OPNFORM_FIELD_EMAIL = "f5ecdca7-ed2e-4d09-9e04-3a8d36b25bfd";
+        const OPNFORM_FIELD_PHONE = "b93f3e15-241e-47dc-bd0e-1738a9c77ea9";
+        const OPNFORM_FIELD_NOTE = "7e154b0c-8168-4802-8186-bda35f1aef7d";
+        const COUNTRY_DIAL_CODES = {
+            "Indonesia": "+62",
+            "Singapore": "+65",
+            "Malaysia": "+60",
+            "Palestine": "+970",
+            "Turkey": "+90",
+            "United States": "+1",
+            "India": "+91"
+        };
+        const FIELD_LABELS_BY_ID = {
+            [OPNFORM_FIELD_NAME]: "Name",
+            [OPNFORM_FIELD_EMAIL]: "Email",
+            [OPNFORM_FIELD_PHONE]: "Phone Number",
+            [OPNFORM_FIELD_NOTE]: "Note"
+        };
+
+        function setStatus(message, isError) {
+            statusEl.textContent = message;
+            statusEl.classList.toggle("text-danger", Boolean(isError));
+            statusEl.classList.toggle("text-success", !isError && !!message);
+        }
+
+        function normalizePhone(rawPhone, country) {
+            const value = (rawPhone || "").trim();
+            if (!value) return "";
+
+            if (value.startsWith("+")) {
+                return "+" + value.slice(1).replace(/\D/g, "");
+            }
+
+            const digits = value.replace(/\D/g, "");
+            const dialCode = COUNTRY_DIAL_CODES[country] || "+1";
+            return dialCode + digits.replace(/^0+/, "");
+        }
+
+        function isValidE164(phone) {
+            return /^\+[1-9]\d{7,14}$/.test(phone);
+        }
+
+        form.addEventListener("submit", async function (event) {
+            event.preventDefault();
+            setStatus("", false);
+
+            if (!form.checkValidity()) {
+                setStatus("Please complete all required fields.", true);
+                form.reportValidity();
+                return;
+            }
+
+            submitBtn.disabled = true;
+            const originalButtonText = submitBtn.textContent;
+            submitBtn.textContent = "Submitting...";
+
+            const name = (form.elements.name.value || "").trim();
+            const email = (form.elements.email.value || "").trim();
+            const rawPhone = (form.elements.phone.value || "").trim();
+            const company = (form.elements.company.value || "").trim();
+            const country = (form.elements.country.value || "").trim();
+            const message = (form.elements.message.value || "").trim();
+            const phone = normalizePhone(rawPhone, country);
+
+            if (!isValidE164(phone)) {
+                setStatus("Please enter a valid phone number with country code (example: +1 555 123 4567).", true);
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalButtonText;
+                return;
+            }
+
+            const note = [
+                message,
+                company ? "Company: " + company : "",
+                country ? "Country: " + country : ""
+            ].filter(Boolean).join("\n\n");
+
+            const payload = {
+                [OPNFORM_FIELD_NAME]: name,
+                [OPNFORM_FIELD_EMAIL]: email,
+                [OPNFORM_FIELD_PHONE]: phone,
+                [OPNFORM_FIELD_NOTE]: note
+            };
+
+            try {
+                const response = await fetch(OPNFORM_ENDPOINT, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    let errorMessage = "Unable to submit right now. Please try again in a moment.";
+                    let errorData = null;
+
+                    try {
+                        errorData = await response.json();
+                    } catch (jsonError) {
+                        errorData = null;
+                    }
+
+                    if (errorData && errorData.errors) {
+                        const firstFieldId = Object.keys(errorData.errors)[0];
+                        const fieldErrors = errorData.errors[firstFieldId];
+                        const firstFieldError = Array.isArray(fieldErrors) ? fieldErrors[0] : "";
+                        const fieldLabel = FIELD_LABELS_BY_ID[firstFieldId];
+                        if (fieldLabel && firstFieldError) {
+                            errorMessage = fieldLabel + ": " + firstFieldError;
+                        }
+                    } else if (errorData && typeof errorData.message === "string" && errorData.message.trim()) {
+                        errorMessage = errorData.message;
+                    }
+
+                    throw new Error(errorMessage);
+                }
+
+                form.reset();
+                if (window.jQuery && window.jQuery.fn && window.jQuery.fn.selectpicker) {
+                    window.jQuery("#countryInput").selectpicker("refresh");
+                }
+                setStatus("Thanks. Your message was sent successfully.", false);
+            } catch (error) {
+                setStatus(error && error.message ? error.message : "Unable to submit right now. Please try again in a moment.", true);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalButtonText;
+            }
+        });
+    })();
+</script>
 <!--end:javascript-->
 
 </body>
