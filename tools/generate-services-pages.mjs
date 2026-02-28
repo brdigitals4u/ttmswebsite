@@ -530,7 +530,7 @@ function buildGalleryArticles(record, imageContext, primaryGroup) {
     const galleryGroup = index === 0 ? primaryGroup : index === 1 ? secondaryGroupFor(primaryGroup) : careGroupFor(record);
     return {
     category: "SERVICE GALLERY",
-    title: `${record.title} Visual ${index + 1}`,
+    title: `${record.title}  ${index + 1}`,
     copy: galleryCopy[index] || galleryCopy[galleryCopy.length - 1],
     image_url: image
       ? imageContext.resolve(image, `gallery ${index + 1}`, "1200x800", galleryGroup)

@@ -1,0 +1,118 @@
+/* Minimal global hardening while preserving current page-level styles. */
+:root {
+  --ttms-font-sans: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ttms-font-heading: "hk_groteskbold", "HK Grotesk", "Open Sans", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--ttms-font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ttms-font-heading) !important;
+}
+
+.navbar .navbar-brand {
+  color: #183b56;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand .ttms-header-brand {
+  display: inline-block;
+  color: #183b56 !important;
+  font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  line-height: 28px !important;
+  letter-spacing: normal !important;
+}
+
+.navbar.navbar-white .navbar-brand .ttms-header-brand {
+  color: #fff !important;
+}
+
+.navbar.navbar-dark .navbar-brand .ttms-header-brand {
+  color: #183b56 !important;
+}
+
+img[loading="lazy"] {
+  content-visibility: auto;
+}
+
+img.ttms-main-logo {
+  display: block;
+  width: auto;
+  max-width: min(168px, 42vw);
+  height: auto;
+  max-height: 44px;
+  object-fit: contain;
+}
+
+.navbar .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  max-width: min(168px, 42vw);
+}
+
+.navbar .navbar-brand img.ttms-main-logo {
+  width: auto;
+  max-width: 100%;
+  max-height: 40px;
+}
+
+footer .logo img.ttms-main-logo {
+  width: auto;
+  max-width: 148px;
+  max-height: 36px;
+}
+
+@media (max-width: 575.98px) {
+  img.ttms-main-logo {
+    max-width: 132px;
+    max-height: 34px;
+  }
+
+  .navbar .navbar-brand img.ttms-main-logo {
+    max-height: 32px;
+  }
+}
+
+img.ttms-lazy-image,
+img.lazy {
+  background-color: #f3f4f6;
+  filter: grayscale(1) blur(3px);
+  opacity: 0.94;
+  transition: filter 220ms ease, opacity 220ms ease;
+}
+
+img.ttms-lazy-image.ttms-loaded,
+img.lazy.ttms-loaded {
+  filter: none;
+  opacity: 1;
+}
+
+.ttms-defer-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 960px;
+}
+
+.ttms-defer-section.ttms-section-managed {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 280ms ease, transform 280ms ease;
+}
+
+.ttms-defer-section.ttms-section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}

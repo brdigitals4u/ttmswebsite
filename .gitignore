@@ -1,0 +1,7 @@
+node_modules/
+_site/
+.11ty-vite/
+site/_generated/
+site/_public/
+_site.zip
+.DS_Store

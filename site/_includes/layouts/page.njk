@@ -1,0 +1,17 @@
+<!doctype html>
+<html{{ page.htmlAttrs | safe }}>
+<head>
+  {{ page.headHtml | safe }}
+  {% if page.preconnectOrigin %}
+  <link rel="preconnect" href="{{ page.preconnectOrigin }}" crossorigin>
+  {% endif %}
+  {% for href in page.preloadStyles %}
+  <link rel="preload" href="{{ href }}" as="style">
+  {% endfor %}
+  <link rel="canonical" href="{{ page.cleanPath | withSiteUrl(site.siteUrl) }}">
+</head>
+<body{{ page.bodyAttrs | safe }}>
+{{ page.bodyHtml | safe }}
+<script type="module" src="/vite/main.js"></script>
+</body>
+</html>

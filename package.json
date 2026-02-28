@@ -1,0 +1,29 @@
+{
+  "name": "ttms-eleventy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TTMS clean-url migration using Eleventy + Vite with legacy redirect compatibility.",
+  "scripts": {
+    "clean": "rm -rf _site .11ty-vite site/_generated _site.zip",
+    "ensure:sourcemaps": "node scripts/ensure-legacy-sourcemaps.mjs",
+    "sync:legacy-assets": "node scripts/sync-legacy-assets.mjs",
+    "migrate:html": "node scripts/migrate-html-to-11ty.mjs",
+    "generate:redirects": "node scripts/generate-redirect-map.mjs",
+    "generate:seo": "node scripts/generate-seo-files.mjs",
+    "validate:routes": "node scripts/validate-routes.mjs",
+    "prebuild": "npm run ensure:sourcemaps && npm run sync:legacy-assets && npm run migrate:html && npm run generate:redirects",
+    "build": "eleventy",
+    "postbuild": "npm run generate:seo && npm run validate:routes && (cd _site && zip -rq ../_site.zip .)",
+    "dev": "npm run ensure:sourcemaps && npm run sync:legacy-assets && npm run migrate:html && npm run generate:redirects && eleventy --serve",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "@11ty/eleventy-plugin-vite": "^6.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "vite": "^6.0.11"
+  }
+}

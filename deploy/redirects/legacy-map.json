@@ -1,0 +1,347 @@
+[
+  {
+    "from": "/apps/desktop.html",
+    "to": "/",
+    "status": 308
+  },
+  {
+    "from": "/apps/mobile.html",
+    "to": "/apps/mobile/",
+    "status": 308
+  },
+  {
+    "from": "/auth/error-404-basic.html",
+    "to": "/auth/error-404-basic/",
+    "status": 308
+  },
+  {
+    "from": "/auth/error-404-illustration.html",
+    "to": "/auth/error-404-illustration/",
+    "status": 308
+  },
+  {
+    "from": "/auth/reset-password-illustration.html",
+    "to": "/auth/reset-password-illustration/",
+    "status": 308
+  },
+  {
+    "from": "/auth/reset-password.html",
+    "to": "/auth/reset-password/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signin-basic.html",
+    "to": "/auth/signin-basic/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signin-illustration.html",
+    "to": "/auth/signin-illustration/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signin-left-cover.html",
+    "to": "/auth/signin-left-cover/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signin-popup-image.html",
+    "to": "/auth/signin-popup-image/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signin-popup.html",
+    "to": "/auth/signin-popup/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signin-right-cover.html",
+    "to": "/auth/signin-right-cover/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signup-basic.html",
+    "to": "/auth/signup-basic/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signup-illustration.html",
+    "to": "/auth/signup-illustration/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signup-left-cover.html",
+    "to": "/auth/signup-left-cover/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signup-popup-image.html",
+    "to": "/auth/signup-popup-image/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signup-popup.html",
+    "to": "/auth/signup-popup/",
+    "status": 308
+  },
+  {
+    "from": "/auth/signup-right-cover.html",
+    "to": "/auth/signup-right-cover/",
+    "status": 308
+  },
+  {
+    "from": "/blog/blog-alt-1.html",
+    "to": "/blog/blog-alt-1/",
+    "status": 308
+  },
+  {
+    "from": "/blog/blog-alt-1/blog-detail.html",
+    "to": "/blog/blog-detail/",
+    "status": 308
+  },
+  {
+    "from": "/blog/blog-alt-2.html",
+    "to": "/blog/blog-alt-2/",
+    "status": 308
+  },
+  {
+    "from": "/blog/blog-alt-2/blog-detail.html",
+    "to": "/blog/blog-detail/",
+    "status": 308
+  },
+  {
+    "from": "/blog/blog-detail.html",
+    "to": "/blog/blog-detail/",
+    "status": 308
+  },
+  {
+    "from": "/company/about.html",
+    "to": "/company/about/",
+    "status": 308
+  },
+  {
+    "from": "/company/career-detail.html",
+    "to": "/company/career-detail/",
+    "status": 308
+  },
+  {
+    "from": "/company/career.html",
+    "to": "/company/career/",
+    "status": 308
+  },
+  {
+    "from": "/company/contact",
+    "to": "/contact/",
+    "status": 308
+  },
+  {
+    "from": "/company/contact.html",
+    "to": "/contact/",
+    "status": 308
+  },
+  {
+    "from": "/company/contact/",
+    "to": "/contact/",
+    "status": 308
+  },
+  {
+    "from": "/company/faq.html",
+    "to": "/company/faq/",
+    "status": 308
+  },
+  {
+    "from": "/company/pricing.html",
+    "to": "/company/pricing/",
+    "status": 308
+  },
+  {
+    "from": "/index.html",
+    "to": "/",
+    "status": 308
+  },
+  {
+    "from": "/landing/about-us.html",
+    "to": "/landing/about-us/",
+    "status": 308
+  },
+  {
+    "from": "/landing/agency.html",
+    "to": "/landing/agency/",
+    "status": 308
+  },
+  {
+    "from": "/landing/architecture.html",
+    "to": "/landing/architecture/",
+    "status": 308
+  },
+  {
+    "from": "/landing/cosmetics.html",
+    "to": "/landing/cosmetics/",
+    "status": 308
+  },
+  {
+    "from": "/landing/personal-site.html",
+    "to": "/landing/personal-site/",
+    "status": 308
+  },
+  {
+    "from": "/landing/pricing.html",
+    "to": "/landing/pricing/",
+    "status": 308
+  },
+  {
+    "from": "/landing/real-estate.html",
+    "to": "/landing/real-estate/",
+    "status": 308
+  },
+  {
+    "from": "/landing/travel.html",
+    "to": "/landing/travel/",
+    "status": 308
+  },
+  {
+    "from": "/services/ai-dashcams.html",
+    "to": "/services/ai-dashcams/",
+    "status": 308
+  },
+  {
+    "from": "/services/api-access.html",
+    "to": "/services/api-access/",
+    "status": 308
+  },
+  {
+    "from": "/services/asset-tracking.html",
+    "to": "/services/asset-tracking/",
+    "status": 308
+  },
+  {
+    "from": "/services/compliance-reports.html",
+    "to": "/services/compliance-reports/",
+    "status": 308
+  },
+  {
+    "from": "/services/conference.html",
+    "to": "/services/conference/",
+    "status": 308
+  },
+  {
+    "from": "/services/dispatch-management.html",
+    "to": "/services/dispatch-management/",
+    "status": 308
+  },
+  {
+    "from": "/services/driver-monitoring.html",
+    "to": "/services/driver-monitoring/",
+    "status": 308
+  },
+  {
+    "from": "/services/eld-devices.html",
+    "to": "/services/eld-devices/",
+    "status": 308
+  },
+  {
+    "from": "/services/fleet-analytics.html",
+    "to": "/services/fleet-analytics/",
+    "status": 308
+  },
+  {
+    "from": "/services/fleet-management.html",
+    "to": "/services/fleet-management/",
+    "status": 308
+  },
+  {
+    "from": "/services/fuel-alerts.html",
+    "to": "/services/fuel-alerts/",
+    "status": 308
+  },
+  {
+    "from": "/services/index.html",
+    "to": "/services/",
+    "status": 308
+  },
+  {
+    "from": "/services/insurance.html",
+    "to": "/services/insurance/",
+    "status": 308
+  },
+  {
+    "from": "/services/load-planning.html",
+    "to": "/services/load-planning/",
+    "status": 308
+  },
+  {
+    "from": "/services/maintenance-alerts.html",
+    "to": "/services/maintenance-alerts/",
+    "status": 308
+  },
+  {
+    "from": "/services/oem-devices.html",
+    "to": "/services/oem-devices/",
+    "status": 308
+  },
+  {
+    "from": "/services/performance-metrics.html",
+    "to": "/services/performance-metrics/",
+    "status": 308
+  },
+  {
+    "from": "/services/rent.html",
+    "to": "/services/rent/",
+    "status": 308
+  },
+  {
+    "from": "/services/report-generation.html",
+    "to": "/services/report-generation/",
+    "status": 308
+  },
+  {
+    "from": "/services/rest-food-alerts.html",
+    "to": "/services/rest-food-alerts/",
+    "status": 308
+  },
+  {
+    "from": "/services/route-optimization.html",
+    "to": "/services/route-optimization/",
+    "status": 308
+  },
+  {
+    "from": "/services/safety-alerts.html",
+    "to": "/services/safety-alerts/",
+    "status": 308
+  },
+  {
+    "from": "/services/safety-solutions.html",
+    "to": "/services/safety-solutions/",
+    "status": 308
+  },
+  {
+    "from": "/services/smart-routing.html",
+    "to": "/services/smart-routing/",
+    "status": 308
+  },
+  {
+    "from": "/services/software-library.html",
+    "to": "/services/software-library/",
+    "status": 308
+  },
+  {
+    "from": "/services/telematics.html",
+    "to": "/services/telematics/",
+    "status": 308
+  },
+  {
+    "from": "/services/third-party-trucks.html",
+    "to": "/services/third-party-trucks/",
+    "status": 308
+  },
+  {
+    "from": "/services/trailer-tracking.html",
+    "to": "/services/trailer-tracking/",
+    "status": 308
+  },
+  {
+    "from": "/services/truck-tracking.html",
+    "to": "/services/truck-tracking/",
+    "status": 308
+  }
+]
