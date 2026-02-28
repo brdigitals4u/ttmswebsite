@@ -3,6 +3,7 @@ import "./main.css";
 const DEFERRED_SRC_ATTRS = ["data-src", "data-ttms-src"];
 const DEFERRED_SRCSET_ATTRS = ["data-srcset", "data-ttms-srcset"];
 const DEFERRED_SIZES_ATTRS = ["data-sizes", "data-ttms-sizes"];
+const DEFERRED_SCRIPT_SRC_ATTRS = ["data-ttms-src", "data-src"];
 
 function readDeferredAttr(element, attrNames) {
   for (const attrName of attrNames) {
@@ -178,9 +179,83 @@ function initDeferredSections() {
   deferredSections.forEach((sectionEl) => observer.observe(sectionEl));
 }
 
+function cloneScriptAttributes(sourceScriptEl, targetScriptEl) {
+  Array.from(sourceScriptEl.attributes).forEach((attribute) => {
+    const attrName = attribute.name;
+    if (
+      attrName === "src" ||
+      attrName === "data-src" ||
+      attrName === "data-ttms-src" ||
+      attrName === "data-ttms-lazy-script"
+    ) {
+      return;
+    }
+    targetScriptEl.setAttribute(attrName, attribute.value);
+  });
+}
+
+async function loadLazyLegacyScripts(scriptPlaceholders) {
+  for (const placeholderScriptEl of scriptPlaceholders) {
+    const scriptSrc = readDeferredAttr(placeholderScriptEl, DEFERRED_SCRIPT_SRC_ATTRS);
+    if (!scriptSrc) {
+      continue;
+    }
+
+    await new Promise((resolve) => {
+      const scriptEl = document.createElement("script");
+      cloneScriptAttributes(placeholderScriptEl, scriptEl);
+      scriptEl.src = scriptSrc;
+      scriptEl.defer = true;
+
+      scriptEl.addEventListener("load", resolve, { once: true });
+      scriptEl.addEventListener("error", resolve, { once: true });
+
+      const parentEl = placeholderScriptEl.parentNode || document.body || document.documentElement;
+      if (parentEl && placeholderScriptEl.parentNode) {
+        parentEl.insertBefore(scriptEl, placeholderScriptEl.nextSibling);
+      } else {
+        parentEl.appendChild(scriptEl);
+      }
+    });
+
+    placeholderScriptEl.remove();
+  }
+}
+
+function initLazyLegacyScripts() {
+  const scriptPlaceholders = Array.from(
+    document.querySelectorAll('script[data-ttms-lazy-script="true"]')
+  );
+  if (!scriptPlaceholders.length) {
+    return;
+  }
+
+  let hasStartedLoading = false;
+  const startLoading = () => {
+    if (hasStartedLoading) {
+      return;
+    }
+    hasStartedLoading = true;
+    void loadLazyLegacyScripts(scriptPlaceholders);
+  };
+
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(startLoading, { timeout: 2200 });
+  } else {
+    window.setTimeout(startLoading, 1200);
+  }
+
+  window.addEventListener("pointerdown", startLoading, { once: true });
+  window.addEventListener("keydown", startLoading, { once: true });
+  window.addEventListener("touchstart", startLoading, { once: true, passive: true });
+  window.addEventListener("scroll", startLoading, { once: true, passive: true });
+  window.addEventListener("load", startLoading, { once: true });
+}
+
 function bootstrapPerformanceHydration() {
   initLazyImages();
   initDeferredSections();
+  initLazyLegacyScripts();
 }
 
 if (document.readyState === "loading") {

@@ -31,6 +31,14 @@ const TTMS_PRIMARY_EMAIL = "support@ttmkonnect.com";
 const TTMS_PHONE = "+1 (707) 761-7464";
 const TTMS_ADDRESS_HTML =
   "2455 Mesquite St<br>Oak Hills, CA 92344<br>United States";
+const TTMS_LAZY_LEGACY_SCRIPTS = new Set([
+  "/assets/js/bootstrap-select.min.js",
+  "/assets/js/owl.carousel.min.js",
+  "/assets/js/masonry.pkgd.min.js",
+  "/assets/js/isotope.pkgd.min.js",
+  "/assets/js/wow.min.js",
+  "/assets/js/index.js"
+]);
 
 function normalizeLeadingSlash(value) {
   const text = String(value || "");
@@ -133,12 +141,29 @@ function rewriteHtmlUrls(fragment, currentLegacyPath, legacyCleanMap) {
         .join(", ");
 
       return `${prefix}${quoteA}${rewritten}${quoteB}`;
+    })
+    .replace(/url\((["'])([^"']+)\1\)/gi, (full, quote, url) => {
+      const nextUrl = rewriteUrl(url.trim(), currentLegacyPath, legacyCleanMap);
+      return `url(${quote}${nextUrl}${quote})`;
     });
 }
 
 function addScriptDefer(fragment) {
   return fragment.replace(/<script\b([^>]*\bsrc=["'][^"']+["'][^>]*)>\s*<\/script>/gi, (match, attrs) => {
-    if (/\b(defer|async)\b/i.test(attrs) || /type=["']module["']/i.test(attrs)) {
+    const isModuleScript = /type=["']module["']/i.test(attrs);
+    const srcMatch = attrs.match(/\bsrc=(["'])([^"']+)\1/i);
+    const scriptSrc = srcMatch ? srcMatch[2] : "";
+    const { pathname: scriptPathname } = splitUrlParts(scriptSrc);
+
+    if (!isModuleScript && TTMS_LAZY_LEGACY_SCRIPTS.has(scriptPathname)) {
+      let nextAttrs = removeAttr(attrs, "src");
+      nextAttrs = removeAttr(nextAttrs, "defer");
+      nextAttrs = removeAttr(nextAttrs, "async");
+      nextAttrs = `${nextAttrs} data-ttms-src="${scriptSrc}" data-ttms-lazy-script="true"`;
+      return `<script${nextAttrs}></script>`;
+    }
+
+    if (/\b(defer|async)\b/i.test(attrs) || isModuleScript) {
       return match;
     }
     return `<script${attrs} defer></script>`;

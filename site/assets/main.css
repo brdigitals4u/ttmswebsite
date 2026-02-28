@@ -84,7 +84,7 @@ footer .logo img.ttms-main-logo {
 
 img.ttms-lazy-image,
 img.lazy {
-  background-color: #f3f4f6;
+  background-color: transparent;
   filter: grayscale(1) blur(3px);
   opacity: 0.94;
   transition: filter 220ms ease, opacity 220ms ease;

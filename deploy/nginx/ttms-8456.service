@@ -1,0 +1,21 @@
+# Systemd unit for TTMS on port 8456 only (no port 80).
+# Use when system nginx cannot start because port 80 is in use.
+#
+# On server (one-time):
+#   scp deploy/nginx/ttms-8456.service root@31.97.9.33:/etc/systemd/system/
+#   ssh root@31.97.9.33 'systemctl daemon-reload && systemctl enable --now ttms-8456'
+# Reload after config change: systemctl reload ttms-8456
+
+[Unit]
+Description=Nginx TTMS on port 8456
+After=network.target
+
+[Service]
+Type=forking
+ExecStartPre=/usr/sbin/nginx -t -c /etc/nginx/ttms-8456-standalone.conf
+ExecStart=/usr/sbin/nginx -c /etc/nginx/ttms-8456-standalone.conf
+ExecReload=/bin/kill -s HUP $MAINPID
+PIDFile=/run/nginx-ttms-8456.pid
+
+[Install]
+WantedBy=multi-user.target

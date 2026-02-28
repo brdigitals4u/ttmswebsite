@@ -33,7 +33,9 @@ This repository now builds TTMS as a clean-url static site using Eleventy and Vi
 - Root `/` serves desktop homepage content directly.
 
 ## Deployment
-Use FTP to upload `_site/` output. Follow `deploy/ftp/README.md` and apply `deploy/nginx/ttms.conf.snippet` plus generated `deploy/nginx/legacy-redirects.conf` on the server.
+**SSH (KVM):** After one-time Nginx setup (see `deploy/ftp/README.md`), run `./deploy/deploy.sh` or `npm run deploy` to upload `_site.zip` and extract to the web root; Nginx is reloaded only if redirects changed.
+
+**FTP:** Alternatively use FTP to upload `_site/` output and follow `deploy/ftp/README.md` (apply `deploy/nginx/ttms.conf.snippet` and `deploy/nginx/legacy-redirects.conf` on the server).
 
 ## Blog Sitemap API Settings
 The sitemap generator fetches blog posts from API during build and retries on interval before failing/continuing.

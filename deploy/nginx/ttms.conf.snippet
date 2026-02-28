@@ -9,6 +9,10 @@ location = /apps/desktop/ { return 308 /; }
 location = /apps/desktop { return 308 /; }
 location = /company/contact/ { return 308 /contact/; }
 location = /company/contact { return 308 /contact/; }
+location = /services { return 301 /services/dispatch-management/; }
+location = /services/ { return 301 /services/dispatch-management/; }
+location = /blog { return 301 /blog/blog-detail/; }
+location = /blog/ { return 301 /blog/blog-detail/; }
 
 # Clean URL handling for static Eleventy output.
 location / {
