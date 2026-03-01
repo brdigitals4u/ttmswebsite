@@ -32,6 +32,9 @@ This repository now builds TTMS as a clean-url static site using Eleventy and Vi
 - Legacy URLs (for example `/services/fleet-management.html`) redirect with `308`.
 - Root `/` serves desktop homepage content directly.
 
+## OG / Twitter image
+For social sharing, add `dist/assets/ttm/og-image.jpeg` (e.g. 1200×630). The prebuild step checks for it; the migrate script replaces `og:image` and `twitter:image` on all pages with this asset. If missing, the build fails with instructions.
+
 ## Deployment
 **SSH (KVM):** After one-time Nginx setup (see `deploy/ftp/README.md`), run `./deploy/deploy.sh` or `npm run deploy` to upload `_site.zip` and extract to the web root; Nginx is reloaded only if redirects changed.
 

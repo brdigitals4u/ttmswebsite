@@ -9,6 +9,7 @@ const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, "..");
 const SITE_OUTPUT_DIR = path.join(ROOT, "_site");
 const PRUNE_SCOPES = ["assets", "video"];
+const ALWAYS_KEEP_RELATIVE = new Set(["assets/ttm/og-image.jpeg"]);
 const TEXT_EXTENSIONS = new Set([
   ".html",
   ".css",
@@ -65,6 +66,11 @@ function isTextFile(filePath) {
 function isPrunableFile(filePath) {
   const relative = toPosix(path.relative(SITE_OUTPUT_DIR, filePath));
   return PRUNE_SCOPES.some((scope) => relative.startsWith(`${scope}/`));
+}
+
+function isAlwaysKeepFile(filePath) {
+  const relative = toPosix(path.relative(SITE_OUTPUT_DIR, filePath));
+  return ALWAYS_KEEP_RELATIVE.has(relative);
 }
 
 function normalizeReference(rawRef) {
@@ -175,7 +181,9 @@ async function main() {
     }
   }
 
-  const removableFiles = prunableFiles.filter((filePath) => !referencedAssetFiles.has(filePath));
+  const removableFiles = prunableFiles.filter(
+    (filePath) => !referencedAssetFiles.has(filePath) && !isAlwaysKeepFile(filePath)
+  );
 
   let removedBytes = 0;
   for (const filePath of removableFiles) {

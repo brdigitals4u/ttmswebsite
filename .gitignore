@@ -5,3 +5,4 @@ site/_generated/
 site/_public/
 _site.zip
 .DS_Store
+deploy/.env.npm

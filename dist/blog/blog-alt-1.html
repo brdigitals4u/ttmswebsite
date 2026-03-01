@@ -525,7 +525,7 @@
     (function () {
         const API_BASE_URL = "https://ttmkonnect.com/api/posts";
         const API_PROXY_BASE_URL = "https://api.codetabs.com/v1/proxy/?quest=";
-        const BASE_SITE_URL = "https://ttms.ai";
+        const BASE_SITE_URL = window.location.origin || "https://ttms.ai";
         const POSTS_PER_PAGE = 10;
         const FALLBACK_IMAGE = "../assets/images/ttms/services-hardware-overview.jpg";
         const DEFAULT_AVATAR = "../assets/images/photos/64x64/1.png";

@@ -45,8 +45,13 @@ cmp -s "$REMOTE_REDIRECTS_NEW" "$NGINX_SNIPPET" 2>/dev/null || need_reload=1
 if [[ "$need_reload" -eq 1 ]]; then
   echo "Redirects config changed; updating snippet and reloading Nginx."
   cp "$REMOTE_REDIRECTS_NEW" "$NGINX_SNIPPET"
-  nginx -t
-  systemctl reload nginx
+  if systemctl is-active --quiet ttms-8456 2>/dev/null; then
+    nginx -t -c /etc/nginx/ttms-8456-standalone.conf
+    systemctl reload ttms-8456
+  else
+    nginx -t
+    systemctl reload nginx
+  fi
 else
   echo "Redirects unchanged; skipping Nginx reload."
 fi

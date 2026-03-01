@@ -21,7 +21,7 @@ const DIST_DIR = path.join(ROOT, "dist");
 const GENERATED_DIR = path.join(ROOT, "site", "_generated");
 const PAGES_JSON = path.join(GENERATED_DIR, "pages.json");
 const REPORT_JSON = path.join(GENERATED_DIR, "migration-report.json");
-const SITE_URL = "https://ttms.ai";
+const SITE_URL = (process.env.SITE_URL || "https://ttms.ai").replace(/\/+$/, "");
 const CRITICAL_CONTENT_IMAGE_COUNT = 1;
 const PRIORITY_SECTION_COUNT = 2;
 const LAZY_IMAGE_PLACEHOLDER =
@@ -452,6 +452,10 @@ function normalizeBlogInlineRoutes(bodyHtml) {
   next = next.replace(/(["'])\/blog\/blog-detail\.html\?/gi, '$1/blog/blog-detail/?');
   next = next.replace(/(["'])\/blog\/blog-detail\.html(["'])/gi, '$1/blog/blog-detail/$2');
   next = next.replace(/(["'])\.\.\/assets\//gi, '$1/assets/');
+  next = next.replace(
+    /url\((['"]?)\.\.\/assets\/images\/covers\/cover-blog@2x\.png\1\)/gi,
+    "url(/assets/images/covers/cover-blog@2x.png)"
+  );
 
   return next;
 }
@@ -461,6 +465,72 @@ function deriveSection(cleanPath) {
   if (!trimmed) return "root";
   const [section] = trimmed.split("/");
   return section || "root";
+}
+
+const OG_IMAGE_URL = "/assets/ttm/og-image.jpeg";
+const OG_IMAGE_WIDTH = "1200";
+const OG_IMAGE_HEIGHT = "630";
+const OG_IMAGE_ALT = "TTMS";
+
+function updateOgAndTwitterImage(headHtml) {
+  let next = headHtml
+    .replace(
+      /<meta[^>]*property=["']og:image["'][^>]*>/gi,
+      `<meta property="og:image" content="${OG_IMAGE_URL}">`
+    )
+    .replace(
+      /<meta[^>]*name=["']twitter:image["'][^>]*>/gi,
+      `<meta name="twitter:image" content="${OG_IMAGE_URL}">`
+    );
+
+  if (!/<meta[^>]*property=["']og:image:width["']/i.test(next)) {
+    next = next.replace(
+      /(<meta\s+property=["']og:image["'][^>]*>)/i,
+      `$1\n    <meta property="og:image:width" content="${OG_IMAGE_WIDTH}">`
+    );
+  } else {
+    next = next.replace(
+      /(<meta[^>]*property=["']og:image:width["'][^>]*content=)["'][^"']*["']/i,
+      `$1"${OG_IMAGE_WIDTH}"`
+    );
+  }
+  if (!/<meta[^>]*property=["']og:image:height["']/i.test(next)) {
+    next = next.replace(
+      /(<meta\s+property=["']og:image["'][^>]*>)/i,
+      `$1\n    <meta property="og:image:height" content="${OG_IMAGE_HEIGHT}">`
+    );
+  } else {
+    next = next.replace(
+      /(<meta[^>]*property=["']og:image:height["'][^>]*content=)["'][^"']*["']/i,
+      `$1"${OG_IMAGE_HEIGHT}"`
+    );
+  }
+  if (!/<meta[^>]*property=["']og:image:alt["']/i.test(next)) {
+    next = next.replace(
+      /(<meta\s+property=["']og:image["'][^>]*>)/i,
+      `$1\n    <meta property="og:image:alt" content="${OG_IMAGE_ALT}">`
+    );
+  } else {
+    next = next.replace(
+      /(<meta[^>]*property=["']og:image:alt["'][^>]*content=)["'][^"']*["']/i,
+      `$1"${OG_IMAGE_ALT}"`
+    );
+  }
+  return next;
+}
+
+const HERO_PRELOAD_AND_IMAGESET_PAGES = ["/blog/blog-alt-1/"];
+
+function injectHeroPreloadAndImageSet(headHtml, cleanPath) {
+  const isHeroPage = HERO_PRELOAD_AND_IMAGESET_PAGES.some((p) => cleanPath.startsWith(p) || cleanPath === p.replace(/\/$/, ""));
+  if (!isHeroPage) return headHtml;
+  const preloads = [
+    `<link rel="preload" as="image" href="/assets/images/covers/cover-4@2x.avif" type="image/avif">`,
+    `<link rel="preload" as="image" href="/assets/images/covers/cover-4@2x.webp" type="image/webp">`
+  ].join("\n    ");
+  const imageSetStyle =
+    "<style>.blog-alt-1 .hero{background-image:image-set(url('/assets/images/covers/cover-4@2x.avif') type('image/avif'),url('/assets/images/covers/cover-4@2x.webp') type('image/webp'),url('/assets/images/covers/cover-4@2x.png') type('image/png'))}</style>";
+  return headHtml + "\n    " + preloads + "\n    " + imageSetStyle;
 }
 
 function updateCanonicalSignals(headHtml, cleanPath) {
@@ -523,6 +593,8 @@ async function main() {
 
     let headHtml = rewriteHtmlUrls(headBlock.inner, legacyPath, legacyCleanMap);
     headHtml = updateCanonicalSignals(headHtml, cleanPath);
+    headHtml = updateOgAndTwitterImage(headHtml);
+    headHtml = injectHeroPreloadAndImageSet(headHtml, cleanPath);
     headHtml = addScriptDefer(headHtml);
 
     let bodyHtml = rewriteHtmlUrls(bodyBlock.inner, legacyPath, legacyCleanMap);
