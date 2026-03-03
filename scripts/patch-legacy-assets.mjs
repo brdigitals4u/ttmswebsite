@@ -17,7 +17,11 @@ const MAIN_CSS = path.join(PUBLIC, "assets", "css", "main.css");
 async function patchMainCssImports() {
   try {
     let css = await readFile(MAIN_CSS, "utf8");
-    css = css.replace(/^@import\s+url\([^)]+\);\s*/gm, "");
+    // Keep local imports (e.g. HK Grotesk stylesheet) and remove only remote Google font imports.
+    css = css.replace(
+      /^@import\s+url\((['"]?)(?:https?:)?\/\/fonts\.googleapis\.com\/[^)]+\1\);\s*/gmi,
+      ""
+    );
     await writeFile(MAIN_CSS, css, "utf8");
   } catch (e) {
     if (e.code !== "ENOENT") throw e;
