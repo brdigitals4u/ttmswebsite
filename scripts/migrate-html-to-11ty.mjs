@@ -26,8 +26,8 @@ const CRITICAL_CONTENT_IMAGE_COUNT = 1;
 const PRIORITY_SECTION_COUNT = 2;
 const LAZY_IMAGE_PLACEHOLDER =
   "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-const TTMS_CONTACT_EMAILS = "support@ttmkonnect.com / support@ttm4u.com / info@ttm247.com";
-const TTMS_PRIMARY_EMAIL = "support@ttmkonnect.com";
+const TTMS_CONTACT_EMAILS = "info@ttm247.com / dev1@ttmsconnect.com";
+const TTMS_PRIMARY_EMAIL = "info@ttm247.com";
 const TTMS_PHONE = "+1 (707) 761-7464";
 const TTMS_ADDRESS_HTML =
   "2455 Mesquite St<br>Oak Hills, CA 92344<br>United States";
@@ -460,6 +460,23 @@ function normalizeBlogInlineRoutes(bodyHtml) {
   return next;
 }
 
+function stripLegacyPagesDocsNav(bodyHtml) {
+  let next = bodyHtml;
+  next = next.replace(
+    /<li class="nav-item nav-item-has-children">\s*<a class="nav-link" href="#">\s*<span>\s*Pages\s*<\/span>[\s\S]*?<\/li>/gi,
+    ""
+  );
+  next = next.replace(
+    /<li class="nav-item">\s*<a class="nav-link" href="#">\s*Docs\s*<\/a>\s*<\/li>/gi,
+    ""
+  );
+  return next;
+}
+
+function replaceLegacyDomain(fragment) {
+  return String(fragment).replace(/ttmkonnect\.com/gi, "ttmsconnect.com");
+}
+
 function deriveSection(cleanPath) {
   const trimmed = cleanPath.replace(/^\//, "").replace(/\/$/, "");
   if (!trimmed) return "root";
@@ -562,7 +579,7 @@ function collectPreloadStyles(headHtml) {
 }
 
 function hasTtmkonnectExternal(headHtml) {
-  return /https:\/\/ttmkonnect\.com/i.test(headHtml);
+  return /https:\/\/ttmsconnect\.com/i.test(headHtml);
 }
 
 async function main() {
@@ -592,12 +609,15 @@ async function main() {
     const bodyBlock = extractBlock(rawHtml, "body");
 
     let headHtml = rewriteHtmlUrls(headBlock.inner, legacyPath, legacyCleanMap);
+    headHtml = replaceLegacyDomain(headHtml);
     headHtml = updateCanonicalSignals(headHtml, cleanPath);
     headHtml = updateOgAndTwitterImage(headHtml);
     headHtml = injectHeroPreloadAndImageSet(headHtml, cleanPath);
     headHtml = addScriptDefer(headHtml);
 
     let bodyHtml = rewriteHtmlUrls(bodyBlock.inner, legacyPath, legacyCleanMap);
+    bodyHtml = replaceLegacyDomain(bodyHtml);
+    bodyHtml = stripLegacyPagesDocsNav(bodyHtml);
     bodyHtml = replaceBrandTextWithLogo(bodyHtml);
     bodyHtml = convertHeaderBrandLogoToText(bodyHtml);
     bodyHtml = enforceGetQuoteLinks(bodyHtml);
@@ -626,7 +646,7 @@ async function main() {
       headHtml,
       bodyHtml,
       preloadStyles: collectPreloadStyles(headHtml),
-      preconnectOrigin: hasTtmkonnectExternal(headHtml) ? "https://ttmkonnect.com" : "",
+      preconnectOrigin: hasTtmkonnectExternal(headHtml) ? "https://ttmsconnect.com" : "",
       lastModified: fileStat.mtime.toISOString().slice(0, 10)
     };
 

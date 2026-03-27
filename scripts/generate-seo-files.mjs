@@ -13,7 +13,7 @@ const INDEX_HTML_PATH = path.join(ROOT, "_site", "index.html");
 const OUT_DIR = path.join(ROOT, "_site");
 
 const SITE_URL = (process.env.SITE_URL || "https://ttms.ai").replace(/\/+$/, "");
-const BLOG_API_BASE_URL = process.env.BLOG_API_BASE_URL || "https://ttmkonnect.com/api/posts";
+const BLOG_API_BASE_URL = process.env.BLOG_API_BASE_URL || "https://ttmsconnect.com/api/posts";
 const BLOG_API_PROXY_BASE_URL = process.env.BLOG_API_PROXY_BASE_URL || "https://api.codetabs.com/v1/proxy/?quest=";
 const BLOG_API_PER_PAGE = Number(process.env.BLOG_API_PER_PAGE || 10);
 const BLOG_API_MAX_PAGES = Number(process.env.BLOG_API_MAX_PAGES || 50);

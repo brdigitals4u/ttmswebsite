@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="TTMS">
     <meta name="twitter:description" content="TTMS (ttms.ai) delivers fleet management, dispatch, routing, driver safety, real-time alerts, report generation, ELD device monitoring, AI DashCam insights, integrated dispatch management, and comprehensive reporting.">
-    <meta name="twitter:image" content="https://ttmkonnect.com/images/screen1.png">
+    <meta name="twitter:image" content="https://ttmsconnect.com/images/screen1.png">
 <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/fontawesome/fontawesome.min.css">
     <link rel="stylesheet" href="../assets/css/fontawesome/solid.min.css">
@@ -42,18 +42,43 @@
     <style>
         .app-desktop .header {
             position: relative;
+            background-image: none;
+            overflow: visible;
+            z-index: 20;
+        }
+
+        .app-desktop .header .hero-video-wrap {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .app-desktop .header .hero-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1.03);
+            filter: saturate(1.08) contrast(1.05);
+        }
+
+        .app-desktop .header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
         }
 
         .app-desktop .header::after {
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg,
-                    rgba(0, 124, 225, 0.88) 0%,
-                    rgba(0, 124, 225, 0.72) 48%,
-                    rgba(0, 124, 225, 0.52) 100%);
+            background: linear-gradient(110deg, rgba(7, 40, 120, 0.45) 0%, rgba(10, 99, 232, 0.16) 65%);
             pointer-events: none;
-            z-index: 0;
+            z-index: 1;
         }
 
         .app-desktop .header .navbar {
@@ -63,7 +88,255 @@
 
         .app-desktop .header .hero {
             position: relative;
+            z-index: 30;
+        }
+
+        .app-desktop .hero {
+            position: relative;
+            padding-top: 14px;
+            padding-bottom: 160px;
+        }
+
+        .app-desktop .hero .container {
+            position: relative;
+        }
+
+        .app-desktop .hero .hero-grid {
+            align-items: center;
+        }
+
+        .app-desktop .hero .hero-center-illustration {
+            position: absolute;
+            left: 50%;
+            bottom: 24px;
+            transform: translate(-52%, 108%);
+            width: min(820px, 76vw);
+            z-index: 60 !important;
+            pointer-events: none;
+        }
+
+        .app-desktop .hero .hero-center-illustration img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .app-desktop .hero .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.24);
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 999px;
+            padding: 8px 14px;
+            color: #eff6ff;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .app-desktop .hero .hero-title {
+            color: #fff;
+            font-size: 48px;
+            line-height: 1.16;
+            letter-spacing: -0.4px;
+            margin-bottom: 14px;
+        }
+
+        .app-desktop .hero .hero-title .typing-cursor {
+            display: inline-block;
+            width: 0.08em;
+            margin-left: 2px;
+            background: rgba(255, 255, 255, 0.95);
+            animation: ttms-typing-cursor 0.9s steps(1, end) infinite;
+            vertical-align: -0.04em;
+        }
+
+        @keyframes ttms-typing-cursor {
+            0%, 48% { opacity: 1; }
+            49%, 100% { opacity: 0; }
+        }
+
+        .app-desktop .hero .hero-subtitle {
+            color: rgba(239, 246, 255, 0.92);
+            font-size: 20px;
+            line-height: 1.7;
+            max-width: 620px;
+            margin-bottom: 24px;
+        }
+
+        .app-desktop .hero .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 22px;
+        }
+
+        .app-desktop .hero .btn-hero-primary {
+            background: #fff;
+            color: #0b5dd7;
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-weight: 700;
+            border: 1px solid #fff;
+        }
+
+        .app-desktop .hero .btn-hero-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-weight: 700;
+            border: 1px solid rgba(255, 255, 255, 0.32);
+        }
+
+        .app-desktop .hero .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            max-width: 620px;
+        }
+
+        .app-desktop .hero .hero-stat {
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            padding: 14px 16px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .app-desktop .hero .hero-stat .value {
+            color: #fff;
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .app-desktop .hero .hero-stat .label {
+            color: rgba(224, 242, 254, 0.92);
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        .app-desktop .hero .ops-panel {
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background: rgba(2, 6, 23, 0.55);
+            border-radius: 20px;
+            padding: 16px;
+            box-shadow: 0 24px 80px rgba(2, 6, 23, 0.45);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .app-desktop .hero .ops-panel-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .app-desktop .hero .ops-title {
+            color: #fff;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 3px;
+        }
+
+        .app-desktop .hero .ops-caption {
+            color: rgba(186, 230, 253, 0.9);
+            font-size: 13px;
+            margin: 0;
+        }
+
+        .app-desktop .hero .ops-live-pill {
+            border: 1px solid rgba(110, 231, 183, 0.4);
+            background: rgba(16, 185, 129, 0.14);
+            color: #bbf7d0;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 10px;
+            white-space: nowrap;
+        }
+
+        .app-desktop .hero .ops-route {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.72));
+            padding: 13px;
+        }
+
+        .app-desktop .hero .route-line {
+            height: 8px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #38bdf8 0%, #e0f2fe 45%, #22d3ee 100%);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 14px;
+        }
+
+        .app-desktop .hero .route-line::after {
+            content: "";
+            width: 82px;
+            height: 8px;
+            position: absolute;
+            left: -82px;
+            top: 0;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.8);
+            animation: ttms-route-pulse 4.2s linear infinite;
+        }
+
+        @keyframes ttms-route-pulse {
+            0% { left: -82px; }
+            100% { left: calc(100% + 12px); }
+        }
+
+        .app-desktop .hero .route-events {
+            display: grid;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .app-desktop .hero .route-events li {
+            border: 1px solid rgba(125, 211, 252, 0.22);
+            background: rgba(15, 23, 42, 0.56);
+            color: #e0f2fe;
+            border-radius: 11px;
+            font-size: 13px;
+            padding: 9px 11px;
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .app-desktop .features {
+            position: relative;
             z-index: 1;
+            background-color: #fff;
+        }
+
+        .app-desktop .hero-curve {
+            position: relative;
+            z-index: 1;
+            line-height: 0;
+            margin-top: -1px;
+            background: transparent;
+        }
+
+        .app-desktop .hero-curve svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .app-desktop .hero-curve path {
+            fill: #fff;
         }
 
         .app-desktop .navbar .sub-menu {
@@ -158,6 +431,35 @@
         }
 
         @media (max-width: 767.98px) {
+            .app-desktop .hero {
+                padding-top: 14px;
+                padding-bottom: 160px;
+            }
+
+            .app-desktop .hero .hero-title {
+                font-size: 34px;
+            }
+
+            .app-desktop .hero .hero-subtitle {
+                font-size: 17px;
+                line-height: 1.6;
+            }
+
+            .app-desktop .hero .hero-center-illustration {
+                width: min(620px, 95vw);
+                bottom: 14px;
+                transform: translate(-52%, 92%);
+            }
+
+            .app-desktop .hero .hero-stats {
+                grid-template-columns: 1fr;
+                max-width: 100%;
+            }
+
+            .app-desktop .hero .ops-panel {
+                margin-top: 16px;
+            }
+
             .dispatch-video .video-player {
                 min-height: 260px;
             }
@@ -175,6 +477,12 @@
 
     <!--start:header-->
     <header class="header">
+        <div class="hero-video-wrap" aria-hidden="true">
+            <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+                poster="../assets/images/covers/cover-4@2x.png">
+                <source src="../video/homepage-hero-background.mp4" type="video/mp4">
+            </video>
+        </div>
         <!--start:navBar-->
         <nav class="navbar navbar-expand-lg navbar-white">
             <div class="container">
@@ -301,20 +609,43 @@
         <!--start:hero-->
         <div class="hero">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-                        <div class="content text-center">
-                            <h2 class="text-white mb-24 wow fadeInUp">TTMS - Total Transport Management System</h2>
-                            <p class="text-20 leading-36 text-white mb-40 wow fadeInUp">• Fleet management • Dispatch • Routing • Driver safety • Real-time alerts • Report generation • ELD device monitoring • AI DashCam insights • Integrated dispatch management • Comprehensive reporting</p>
-                            <div class=" wow fadeInUp">
-                                <button type="button" class="btn btn-white btn-lg mx-8">Coming Soon <i
-                                        class="fas fa-arrow-right text-14"></i></button>
-                            </div>
-                            <div class="illustration wow fadeInUp">
-                                <img src="../assets/images/illustrations/ill-macbook@2x.svg" alt="" class="w-100p">
+                <div class="row hero-grid">
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="content wow fadeInUp">
+                            <div class="hero-badge">🛡 Fleet, Dispatch, HOS, and ELD visibility in one place</div>
+                            <h1 class="hero-title"><span id="hero-typed-title" data-full-text="TTMS - Total Transport Management System">TTMS - Total Transport Management System</span><span class="typing-cursor" aria-hidden="true"></span></h1>
+                            <p class="hero-subtitle">Track trucks in motion, monitor driver HOS activity, respond to
+                                live alerts, and keep dispatch, safety, and compliance aligned from one operational
+                                dashboard.</p>
+                            <div class="hero-actions">
+                                <a href="../company/contact.html" class="btn btn-hero-primary">Book a Demo <i
+                                        class="fas fa-arrow-right text-12 ml-8"></i></a>
+                                <a href="../company/contact.html" class="btn btn-hero-secondary">Get a Quote</a>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="ops-panel wow fadeInUp">
+                            <div class="ops-panel-head">
+                                <div>
+                                    <h3 class="ops-title">Operational Command View</h3>
+                                    <p class="ops-caption">Live fleet operations</p>
+                                </div>
+                                <div class="ops-live-pill">● Live tracking enabled</div>
+                            </div>
+                            <div class="ops-route">
+                                <div class="route-line"></div>
+                                <ul class="route-events">
+                                    <li><span>🚚 Truck 218</span><span>62 mph</span></li>
+                                    <li><span>📍 Geofence entered</span><span>2m ago</span></li>
+                                    <li><span>⏱ Break due</span><span>in 18 min</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-center-illustration wow fadeInUp">
+                    <img src="../assets/images/illustrations/ill-macbook@2x.svg" alt="TTMS fleet dashboard on laptop">
                 </div>
             </div>
         </div>
@@ -322,7 +653,7 @@
     </header>
     <!--end:header-->
 
-    <div class="relative">
+    <div class="relative hero-curve">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 175">
             <path fill="#FFF" fill-rule="evenodd" d="M1440 175H0V0c240 53.333 480 80 720 80s480-26.667 720-80v175z">
             </path>
@@ -700,7 +1031,7 @@
                                 </li>
 
                             </ul>
-                            <a class="btn btn-outline-primary mt-24" href="https://ttmkonnect.com" target="_blank"
+                            <a class="btn btn-outline-primary mt-24" href="https://ttmsconnect.com" target="_blank"
                             rel="noopener noreferrer">Know more <i class="fas fa-arrow-right text-14 ml-8"></i></a>
                         </div>
                     </div>
@@ -794,8 +1125,10 @@
                                     <p class="text-gray">Audit-ready compliance reports</p>
                                 </li>
                             </ul>
-                             <a class="btn btn-outline-primary mt-24" href="https://ttmkonnect.com" target="_blank"
+                             <a class="btn btn-outline-primary mt-24" href="https://ttmsconnect.com" target="_blank"
                                 rel="noopener noreferrer">Know more <i class="fas fa-arrow-right text-14 ml-8"></i></a>
+                            <a class="btn btn-primary mt-12" href="https://admin.ttmsconnect.com/sign-in" target="_blank"
+                                rel="noopener noreferrer">Access to Admin Panel <i class="fas fa-arrow-right text-14 ml-8"></i></a>
                         </div>
                     </div>
                     <div class="right col-lg-6 col-md-12 col-sm-12">
@@ -1210,6 +1543,50 @@
     <script src="../assets/js/index.js"></script>
     <script>
         (function () {
+            const typedTitle = document.getElementById('hero-typed-title');
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (typedTitle) {
+                const finalText = typedTitle.getAttribute('data-full-text') || typedTitle.textContent || '';
+                if (!reducedMotion) {
+                    typedTitle.textContent = '';
+                    let idx = 0;
+                    const step = () => {
+                        idx += 1;
+                        typedTitle.textContent = finalText.slice(0, idx);
+                        if (idx < finalText.length) {
+                            window.setTimeout(step, idx < 8 ? 42 : 32);
+                        }
+                    };
+                    window.setTimeout(step, 260);
+                } else {
+                    typedTitle.textContent = finalText;
+                }
+            }
+
+            const heroVideo = document.querySelector('.hero-video');
+            if (heroVideo) {
+                if (reducedMotion) {
+                    heroVideo.pause();
+                } else {
+                    heroVideo.muted = true;
+                    heroVideo.playsInline = true;
+                    const tryPlay = () => {
+                        const playPromise = heroVideo.play();
+                        if (playPromise && typeof playPromise.catch === 'function') {
+                            playPromise.catch(() => {});
+                        }
+                    };
+                    tryPlay();
+                    document.addEventListener('visibilitychange', () => {
+                        if (document.hidden) {
+                            heroVideo.pause();
+                        } else {
+                            tryPlay();
+                        }
+                    });
+                }
+            }
+
             const frame = document.querySelector('.dispatch-video-frame');
             if (!frame) return;
             const video = frame.querySelector('.video-player');
