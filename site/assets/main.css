@@ -133,3 +133,470 @@ img.lazy.ttms-loaded {
   outline: 2px solid #2563eb;
   outline-offset: 2px;
 }
+
+.ttms-network {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 0 20px;
+  background: linear-gradient(90deg, #070a10, #101722, #070a10);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ttms-network .network-label {
+  color: #64748b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  margin-right: 16px;
+}
+
+.ttms-network a {
+  position: relative;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 14px;
+  transition: color 0.2s ease;
+}
+
+.ttms-network a + a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 10px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.ttms-network a:hover,
+.ttms-network a:focus {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.ttms-network a:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+.ttms-network small {
+  font-size: 8px;
+  margin-left: 2px;
+  opacity: 0.45;
+}
+
+.ttms-network a:hover small,
+.ttms-network a:focus small {
+  opacity: 1;
+}
+
+.ttms-network .ttms-network-app-store {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  margin-left: 8px;
+  padding: 0 0 0 14px;
+}
+
+.ttms-network .ttms-network-app-store img {
+  display: block;
+  width: auto;
+  height: 22px;
+}
+
+.ttms-fleet-mini-section {
+  padding: 96px 0 88px;
+  background:
+    radial-gradient(circle at 82% 22%, rgba(37, 99, 235, 0.14), transparent 32%),
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.ttms-fleet-mini-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
+  gap: 56px;
+  align-items: center;
+}
+
+.ttms-fleet-mini-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.ttms-fleet-mini-copy h2 {
+  max-width: 560px;
+  margin: 18px 0 16px;
+  color: #183b56;
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+.ttms-fleet-mini-copy p {
+  max-width: 620px;
+  margin: 0 0 14px;
+  color: #5a7184;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.ttms-fleet-mini-copy .ttms-fleet-mini-lede {
+  color: #30485f;
+  font-size: 19px;
+}
+
+.ttms-fleet-mini-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.ttms-app-store-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 54px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.ttms-app-store-badge:hover,
+.ttms-app-store-badge:focus {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 12px 24px rgba(15, 23, 42, 0.18));
+  text-decoration: none;
+}
+
+.ttms-app-store-badge img {
+  display: block;
+  width: auto;
+  height: 54px;
+}
+
+.ttms-fleet-mini-features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 640px;
+  margin-top: 30px;
+}
+
+.ttms-fleet-mini-features div {
+  padding: 16px;
+  border: 1px solid rgba(24, 59, 86, 0.09);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.ttms-fleet-mini-features strong,
+.ttms-fleet-mini-features span {
+  display: block;
+}
+
+.ttms-fleet-mini-features strong {
+  color: #183b56;
+  font-size: 15px;
+}
+
+.ttms-fleet-mini-features span {
+  margin-top: 4px;
+  color: #5a7184;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.ttms-fleet-mini-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 560px;
+}
+
+.ttms-fleet-mini-orbit {
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background:
+    linear-gradient(rgba(37, 99, 235, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.08) 1px, transparent 1px);
+  background-size: 34px 34px;
+  box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+}
+
+.ttms-phone-shell {
+  position: relative;
+  width: min(100%, 312px);
+  aspect-ratio: 0.48;
+  padding: 14px;
+  border-radius: 38px;
+  background: linear-gradient(145deg, #111827, #334155);
+  box-shadow: 0 34px 70px rgba(15, 23, 42, 0.28);
+  transform: rotate(3deg);
+}
+
+.ttms-phone-speaker {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 72px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.ttms-phone-screen {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #f8fbff;
+  padding: 38px 20px 22px;
+}
+
+.ttms-phone-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ttms-phone-header img {
+  width: min(100%, 188px);
+  height: auto;
+}
+
+.ttms-phone-header span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.ttms-phone-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #0967d2, #23a6d5);
+  color: #fff;
+}
+
+.ttms-phone-status span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ttms-phone-status strong {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.ttms-phone-map {
+  position: relative;
+  height: 170px;
+  margin-top: 18px;
+  overflow: hidden;
+  border-radius: 20px;
+  background:
+    linear-gradient(rgba(37, 99, 235, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.1) 1px, transparent 1px),
+    #eaf4ff;
+  background-size: 28px 28px;
+}
+
+.ttms-phone-map .route {
+  position: absolute;
+  height: 4px;
+  border-radius: 999px;
+  background: #2563eb;
+  transform-origin: left center;
+}
+
+.ttms-phone-map .route-a {
+  left: 28px;
+  top: 98px;
+  width: 170px;
+  transform: rotate(-22deg);
+}
+
+.ttms-phone-map .route-b {
+  left: 86px;
+  top: 48px;
+  width: 128px;
+  background: #14b8a6;
+  transform: rotate(28deg);
+}
+
+.ttms-phone-map .pin {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #ef4444;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.2);
+}
+
+.ttms-phone-map .pin-a {
+  left: 36px;
+  top: 88px;
+}
+
+.ttms-phone-map .pin-b {
+  right: 48px;
+  top: 44px;
+  background: #2563eb;
+}
+
+.ttms-phone-map .pin-c {
+  right: 28px;
+  bottom: 36px;
+  background: #14b8a6;
+}
+
+.ttms-phone-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.ttms-phone-list div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 14px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+}
+
+.ttms-phone-list span {
+  color: #183b56;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ttms-phone-list strong {
+  color: #2563eb;
+  font-size: 12px;
+}
+
+.ttms-fleet-mini-caption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  color: #30485f;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.ttms-fleet-mini-caption i {
+  color: #2563eb;
+  font-size: 11px;
+}
+
+@media (max-width: 991.98px) {
+  .ttms-fleet-mini-section {
+    padding: 76px 0 70px;
+  }
+
+  .ttms-fleet-mini-showcase {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .ttms-fleet-mini-copy h2 {
+    font-size: 38px;
+  }
+
+  .ttms-fleet-mini-visual {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ttms-fleet-mini-section {
+    padding: 60px 0 56px;
+  }
+
+  .ttms-fleet-mini-copy h2 {
+    font-size: 32px;
+  }
+
+  .ttms-fleet-mini-copy p,
+  .ttms-fleet-mini-copy .ttms-fleet-mini-lede {
+    font-size: 16px;
+  }
+
+  .ttms-fleet-mini-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ttms-app-store-badge img {
+    height: 48px;
+  }
+
+  .ttms-fleet-mini-features {
+    grid-template-columns: 1fr;
+  }
+
+  .ttms-fleet-mini-visual {
+    min-height: 500px;
+  }
+
+  .ttms-fleet-mini-orbit {
+    width: 300px;
+    height: 300px;
+  }
+
+  .ttms-phone-shell {
+    max-width: 276px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ttms-network {
+    justify-content: flex-start;
+    padding: 0 14px;
+  }
+
+  .ttms-network .network-label {
+    margin-right: 10px;
+  }
+
+  .ttms-network a {
+    padding: 0 10px;
+  }
+
+  .ttms-network .ttms-network-app-store {
+    padding-left: 10px;
+  }
+}

@@ -47,6 +47,7 @@ The sitemap generator fetches blog posts from API during build and retries on in
 - `BLOG_API_PROXY_BASE_URL` default: `https://api.codetabs.com/v1/proxy/?quest=`
 - `BLOG_API_PER_PAGE` default: `10`
 - `BLOG_API_MAX_PAGES` default: `50`
-- `BLOG_API_RETRY_COUNT` default: `5`
-- `BLOG_API_RETRY_INTERVAL_MS` default: `3000`
+- `BLOG_API_RETRY_COUNT` default: `1`
+- `BLOG_API_RETRY_INTERVAL_MS` default: `1000`
+- `BLOG_API_TIMEOUT_MS` default: `3000`
 - `BLOG_API_REQUIRED` default: `false` (`true` makes build fail if blog API cannot be fetched)

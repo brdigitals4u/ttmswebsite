@@ -17,8 +17,9 @@ const BLOG_API_BASE_URL = process.env.BLOG_API_BASE_URL || "https://ttmsconnect.
 const BLOG_API_PROXY_BASE_URL = process.env.BLOG_API_PROXY_BASE_URL || "https://api.codetabs.com/v1/proxy/?quest=";
 const BLOG_API_PER_PAGE = Number(process.env.BLOG_API_PER_PAGE || 10);
 const BLOG_API_MAX_PAGES = Number(process.env.BLOG_API_MAX_PAGES || 50);
-const BLOG_API_RETRY_COUNT = Number(process.env.BLOG_API_RETRY_COUNT || 5);
-const BLOG_API_RETRY_INTERVAL_MS = Number(process.env.BLOG_API_RETRY_INTERVAL_MS || 3000);
+const BLOG_API_RETRY_COUNT = Number(process.env.BLOG_API_RETRY_COUNT || 1);
+const BLOG_API_RETRY_INTERVAL_MS = Number(process.env.BLOG_API_RETRY_INTERVAL_MS || 1000);
+const BLOG_API_TIMEOUT_MS = Number(process.env.BLOG_API_TIMEOUT_MS || 3000);
 const BLOG_API_REQUIRED = String(process.env.BLOG_API_REQUIRED || "false") === "true";
 const EXCLUDED_SITEMAP_PATHS = new Set([
   "/apps/mobile/",
@@ -132,10 +133,14 @@ async function fetchJsonWithRetries(targetUrl) {
   let lastError;
 
   for (let attempt = 1; attempt <= BLOG_API_RETRY_COUNT; attempt += 1) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), BLOG_API_TIMEOUT_MS);
+
     try {
       const response = await fetch(targetUrl, {
         method: "GET",
-        headers: { Accept: "application/json" }
+        headers: { Accept: "application/json" },
+        signal: controller.signal
       });
 
       if (!response.ok) {
@@ -148,6 +153,8 @@ async function fetchJsonWithRetries(targetUrl) {
       if (attempt < BLOG_API_RETRY_COUNT) {
         await sleep(BLOG_API_RETRY_INTERVAL_MS);
       }
+    } finally {
+      clearTimeout(timeout);
     }
   }
 
